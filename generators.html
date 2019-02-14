@@ -335,24 +335,6 @@ app.controller('appCtrl', function($scope) {
 
     $scope.npc = null;
 
-    $scope.calculateCharaters = function() {
-        $scope.characters.forEach(function(character) {
-            calculateCharacter(character.Name, character);
-        });
-    };
-
-    $scope.calculateCharaters();
-
-    $scope.allAreEmpty = function(skill) {
-        allEmpty = true;
-        $scope.characters.forEach(function(character) {
-            if (character[skill] !== 0 || character[skill] !== "") {
-                allEmpty = true;
-            }
-        });
-        return allEmpty;
-    };
-
     $scope.GetWilderness = function(terrain, onRoad, averagePartyLevel) {
         document.getElementById("encounters").innerHTML = GetWilderness(terrain, onRoad, averagePartyLevel);
     };
