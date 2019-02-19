@@ -4917,97 +4917,97 @@ var GetEmotionalDisposition = function(communityStatus) {
 	case "Utopian":
 		rand = Roll(1,12);
 		if (rand <= 7) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 8) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 9) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 10) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 11) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	case "Prosperous":
 		rand = Roll(1,10);
 		if (rand <= 5) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 6) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 7) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 8) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 9) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	case "Average":
 		rand = Roll(1,8);
 		if (rand <= 3) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 4) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 5) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 6) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 7) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	case "Poor":
 		rand = Roll(1,6);
 		if (rand <= 1) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 2) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 3) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 4) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 5) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	case "Recent Tragedy":
 		rand = Roll(1,12);
 		if (rand <= 1) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 4) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 6) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 8) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 10) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	case "Long Term Oppression":
 		rand = Roll(1,12);
 		if (rand <= 1) {
-			deepEmotion = "Happiness";
+			deepEmotion = "happy";
 		} else if (rand <= 2) {
-			deepEmotion = "Surprise";
+			deepEmotion = "surprised";
 		} else if (rand <= 4) {
-			deepEmotion = "Sadness";
+			deepEmotion = "sad";
 		} else if (rand <= 7) {
-			deepEmotion = "Anger";
+			deepEmotion = "angry";
 		} else if (rand <= 10) {
-			deepEmotion = "Fear";
+			deepEmotion = "afraid";
 		} else {
-			deepEmotion = "Disgust";
+			deepEmotion = "disgusted";
 		}
 		break;
 	}
@@ -5017,609 +5017,609 @@ var GetEmotionalDisposition = function(communityStatus) {
 	var externalExpression = "";
 	var internalExpression = "";
 	switch (deepEmotion) {
-	case "Happiness":
+	case "happy":
 		rand = Roll(2,12) + Roll(1,10) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Disinhibited";
-				internalExpression = "Content";
-				expression = "Liberated";
-				underlyingEmotion = "Joy";
-				stressedEmotion = "Oppressed";
+				externalExpression = "disinhibition";
+				internalExpression = "contentment";
+				expression = "liberation";
+				underlyingEmotion = "joy";
+				stressedEmotion = "feeling oppressed";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Hedonistic";
-				internalExpression = "Blissful";
-				expression = "Ecstatic";
-				underlyingEmotion = "Joy";
-				stressedEmotion = "Miserable";
+				externalExpression = "hedonistism";
+				internalExpression = "bliss";
+				expression = "ecstacy";
+				underlyingEmotion = "joy";
+				stressedEmotion = "misery";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Playful";
-				internalExpression = "Bemused";
-				expression = "Interested";
-				underlyingEmotion = "Interest";
-				stressedEmotion = "Serious";
+				externalExpression = "playfulness";
+				internalExpression = "bemusement";
+				expression = "interest";
+				underlyingEmotion = "interest";
+				stressedEmotion = "seriousness";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Curious";
-				internalExpression = "Evaluate";
-				expression = "Inquisitive";
-				underlyingEmotion = "Interest";
-				stressedEmotion = "Serious";
+				externalExpression = "curiosity";
+				internalExpression = "evaluation";
+				expression = "inquisition";
+				underlyingEmotion = "interest";
+				stressedEmotion = "seriousness";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Condescending";
-				internalExpression = "Prideful";
-				expression = "Proud";
-				underlyingEmotion = "Pride";
-				stressedEmotion = "Resentful";
+				externalExpression = "condescension";
+				internalExpression = "pride";
+				expression = "feeling important";
+				underlyingEmotion = "pride";
+				stressedEmotion = "resentment";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Boastful";
-				internalExpression = "Content";
-				expression = "Confident";
-				underlyingEmotion = "Pride";
-				stressedEmotion = "Resentful";
+				externalExpression = "boasting";
+				internalExpression = "contentment";
+				expression = "confidence";
+				underlyingEmotion = "pride";
+				stressedEmotion = "resentment";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Outgoing";
-				internalExpression = "Content";
-				expression = "Accepted";
-				underlyingEmotion = "Acceptedness";
-				stressedEmotion = "Worried";
+				externalExpression = "being outgoing";
+				internalExpression = "contentment";
+				expression = "acceptedness";
+				underlyingEmotion = "acceptedness";
+				stressedEmotion = "worry";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Generous";
-				internalExpression = "Blissful";
-				expression = "Fulfilled";
-				underlyingEmotion = "Acceptedness";
-				stressedEmotion = "Worried";
+				externalExpression = "generosity";
+				internalExpression = "bliss";
+				expression = "fulfillment";
+				underlyingEmotion = "acceptedness";
+				stressedEmotion = "worry";
 				break;
 			case 17:
 			case 18:
-				externalExpression = "Challenging";
-				internalExpression = "Scheming";
-				expression = "Powerful";
-				underlyingEmotion = "Power";
-				stressedEmotion = "Quiet";
+				externalExpression = "being challenging";
+				internalExpression = "scheming";
+				expression = "power";
+				underlyingEmotion = "power";
+				stressedEmotion = "quietude";
 				break;
 			case 19:
 			case 20:
-				externalExpression = "Brave";
-				internalExpression = "Brave";
-				expression = "Courageous";
-				underlyingEmotion = "Power";
-				stressedEmotion = "Quiet";
+				externalExpression = "bravery";
+				internalExpression = "bravery";
+				expression = "courageous";
+				underlyingEmotion = "power";
+				stressedEmotion = "quietude";
 				break;
 			case 21:
 			case 22:
-				externalExpression = "Dreamer";
-				internalExpression = "Daydreamer";
-				expression = "Peaceful";
-				underlyingEmotion = "Peace";
-				stressedEmotion = "Depressed";
+				externalExpression = "dreaming";
+				internalExpression = "daydreaming";
+				expression = "peace";
+				underlyingEmotion = "peace";
+				stressedEmotion = "depression";
 				break;
 			case 23:
 			case 24:
-				externalExpression = "Parental";
-				internalExpression = "Dutiful";
-				expression = "Loving";
-				underlyingEmotion = "Peace";
-				stressedEmotion = "Depressed";
+				externalExpression = "being parental";
+				internalExpression = "duty";
+				expression = "love";
+				underlyingEmotion = "peace";
+				stressedEmotion = "depression";
 				break;
 			case 25:
 			case 26:
-				externalExpression = "Flirtatious";
-				internalExpression = "Sensual";
-				expression = "Intimate";
-				underlyingEmotion = "Intimacy";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "flirtatiousness";
+				internalExpression = "sensuality";
+				expression = "intimacy";
+				underlyingEmotion = "intimacy";
+				stressedEmotion = "withdrawal";
 				break;
 			case 27:
 			case 28:
-				externalExpression = "Conscientious";
-				internalExpression = "Intuitive";
-				expression = "Sensitive";
-				underlyingEmotion = "Intimacy";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "conscientiousness";
+				internalExpression = "intuition";
+				expression = "sensitivity";
+				underlyingEmotion = "intimacy";
+				stressedEmotion = "withdrawal";
 				break;
 			case 29:
 			case 30:
-				externalExpression = "Excited";
-				internalExpression = "Driven";
-				expression = "Optimistic";
-				underlyingEmotion = "Optimism";
-				stressedEmotion = "Sad";
+				externalExpression = "excitement";
+				internalExpression = "drive";
+				expression = "optimism";
+				underlyingEmotion = "optimism";
+				stressedEmotion = "sadness";
 				break;
 			case 31:
 			case 32:
-				externalExpression = "Talkative";
-				internalExpression = "Receptive";
-				expression = "Open";
-				underlyingEmotion = "Optimism";
-				stressedEmotion = "Sad";
+				externalExpression = "being talkative";
+				internalExpression = "being receptive";
+				expression = "openess";
+				underlyingEmotion = "optimism";
+				stressedEmotion = "sadness";
 				break;
 		}
 		break;
-	case "Surprise":
+	case "surprised":
 		rand = Roll(3,6) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Questioning";
-				internalExpression = "Stunned";
-				expression = "Startled";
-				underlyingEmotion = "Startle";
-				stressedEmotion = "Shocked";
+				externalExpression = "being questioning";
+				internalExpression = "being stunned";
+				expression = "being startled";
+				underlyingEmotion = "being startled";
+				stressedEmotion = "shock";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Pessimistic";
-				internalExpression = "Unsure";
-				expression = "Dismayed";
-				underlyingEmotion = "Startle";
-				stressedEmotion = "Shocked";
+				externalExpression = "pessimism";
+				internalExpression = "unsurity";
+				expression = "dismay";
+				underlyingEmotion = "being startled";
+				stressedEmotion = "shock";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Jaded";
-				internalExpression = "Saddened";
-				expression = "Confused";
-				underlyingEmotion = "Confusion";
-				stressedEmotion = "Disillusioned";
+				externalExpression = "feeling jaded";
+				internalExpression = "sadness";
+				expression = "confusion";
+				underlyingEmotion = "confusion";
+				stressedEmotion = "disillusion";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Questioning";
-				internalExpression = "Contemplative";
-				expression = "Perplexed";
-				underlyingEmotion = "Confusion";
-				stressedEmotion = "Disillusioned";
+				externalExpression = "questioning";
+				internalExpression = "contemplating";
+				expression = "perplexity";
+				underlyingEmotion = "confusion";
+				stressedEmotion = "disillusion";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Talkative";
-				internalExpression = "Stunned";
-				expression = "Amazed";
-				underlyingEmotion = "Amazement";
-				stressedEmotion = "Disappointed";
+				externalExpression = "talkativeness";
+				internalExpression = "being stunned";
+				expression = "amazement";
+				underlyingEmotion = "amazement";
+				stressedEmotion = "disappointment";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Fixated";
-				internalExpression = "Stunned";
-				expression = "Awed";
-				underlyingEmotion = "Amazement";
-				stressedEmotion = "Disappointed";
+				externalExpression = "fixation";
+				internalExpression = "being stunned";
+				expression = "awe";
+				underlyingEmotion = "amazement";
+				stressedEmotion = "disappointment";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Optimistic";
-				internalExpression = "Awaiting";
-				expression = "Excited";
-				underlyingEmotion = "Excitement";
-				stressedEmotion = "Disappointed";
+				externalExpression = "optimism";
+				internalExpression = "awaiting something";
+				expression = "excitement";
+				underlyingEmotion = "excitement";
+				stressedEmotion = "disappointment";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Neurotic";
-				internalExpression = "Nervous";
-				expression = "Energetic";
-				underlyingEmotion = "Excitement";
-				stressedEmotion = "Disappointed";
+				externalExpression = "neurosis";
+				internalExpression = "nervousness";
+				expression = "energy";
+				underlyingEmotion = "excitement";
+				stressedEmotion = "disappointment";
 				break;
 		}
 		break;
-	case "Sadness":
+	case "sad":
 		rand = Roll(2,10) + Roll(1,6) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Hostile";
-				internalExpression = "Ashamed";
-				expression = "Fear";
-				underlyingEmotion = "Guilt";
-				stressedEmotion = "Defensive";
+				externalExpression = "hostility";
+				internalExpression = "shame";
+				expression = "fear";
+				underlyingEmotion = "guilt";
+				stressedEmotion = "defensiveness";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Defensive";
-				internalExpression = "Untrusting";
-				expression = "Disrespected";
-				underlyingEmotion = "Guilt";
-				stressedEmotion = "Defensive";
+				externalExpression = "defensiveness";
+				internalExpression = "untrustworthiness";
+				expression = "disrespect";
+				underlyingEmotion = "guilt";
+				stressedEmotion = "defensiveness";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Desperate";
-				internalExpression = "Lonely";
-				expression = "Rejected";
-				underlyingEmotion = "Abandonment";
-				stressedEmotion = "Desperate";
+				externalExpression = "desperation";
+				internalExpression = "loneliness";
+				expression = "rejection";
+				underlyingEmotion = "abandonment";
+				stressedEmotion = "desperation";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Defensive";
-				internalExpression = "Nervous";
-				expression = "Inadequate";
-				underlyingEmotion = "Abandonment";
-				stressedEmotion = "Desperate";
+				externalExpression = "defensiveness";
+				internalExpression = "nervousness";
+				expression = "inadequacy";
+				underlyingEmotion = "abandonment";
+				stressedEmotion = "desperation";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Motivated";
-				internalExpression = "Meek";
-				expression = "Submissive";
-				underlyingEmotion = "Despair";
-				stressedEmotion = "Defeated";
+				externalExpression = "motivation";
+				internalExpression = "meekness";
+				expression = "submission";
+				underlyingEmotion = "despair";
+				stressedEmotion = "defeat";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Needy";
-				internalExpression = "Meek";
-				expression = "Worthless";
-				underlyingEmotion = "Despair";
-				stressedEmotion = "Defeated";
+				externalExpression = "neediness";
+				internalExpression = "meekness";
+				expression = "worthlessness";
+				underlyingEmotion = "despair";
+				stressedEmotion = "defeat";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Motivated";
-				internalExpression = "Subservient";
-				expression = "Insecure";
-				underlyingEmotion = "Depression";
-				stressedEmotion = "Obedient";
+				externalExpression = "motivation";
+				internalExpression = "subservitude";
+				expression = "insecurity";
+				underlyingEmotion = "depression";
+				stressedEmotion = "obedience";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Defensive";
-				internalExpression = "Nervous";
-				expression = "Inadequate";
-				underlyingEmotion = "Depression";
-				stressedEmotion = "Obedient";
+				externalExpression = "defensiveness";
+				internalExpression = "nervousness";
+				expression = "inadequacy";
+				underlyingEmotion = "depression";
+				stressedEmotion = "obedience";
 				break;
 			case 17:
 			case 18:
-				externalExpression = "Worried";
-				internalExpression = "Nervous";
-				expression = "Anxious";
-				underlyingEmotion = "Loneliness";
-				stressedEmotion = "Frightened";
+				externalExpression = "worry";
+				internalExpression = "nervousness";
+				expression = "anxiety";
+				underlyingEmotion = "loneliness";
+				stressedEmotion = "fright";
 				break;
 			case 19:
 			case 20:
-				externalExpression = "Frazzled";
-				internalExpression = "Lost";
-				expression = "Overwhelmed";
-				underlyingEmotion = "Loneliness";
-				stressedEmotion = "Frightened";
+				externalExpression = "being frazzled";
+				internalExpression = "feeling lost";
+				expression = "feeling overwhelmed";
+				underlyingEmotion = "loneliness";
+				stressedEmotion = "fright";
 				break;
 			case 21:
 			case 22:
-				externalExpression = "Frightened";
-				internalExpression = "Jumpy";
-				expression = "Scared";
-				underlyingEmotion = "Boredom";
-				stressedEmotion = "Frightened";
+				externalExpression = "fright";
+				internalExpression = "being jumpy";
+				expression = "feeling scared";
+				underlyingEmotion = "boredom";
+				stressedEmotion = "fright";
 				break;
 			case 23:
 			case 24:
-				externalExpression = "Hysterical";
-				internalExpression = "Jumpy";
-				expression = "Terrified";
-				underlyingEmotion = "Boredom";
-				stressedEmotion = "Frightened";
+				externalExpression = "being hysterical";
+				internalExpression = "being jumpy";
+				expression = "terror";
+				underlyingEmotion = "boredom";
+				stressedEmotion = "fright";
 				break;
 		}
 		break;
-	case "Anger":
+	case "angry":
 		rand = Roll(2,12) + Roll(1,10) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Tearful";
-				internalExpression = "Withdrawn";
-				expression = "Hurt";
-				underlyingEmotion = "Hurt";
-				stressedEmotion = "Tearful";
+				externalExpression = "tearfulness";
+				internalExpression = "withdrawal";
+				expression = "hurt";
+				underlyingEmotion = "hurt";
+				stressedEmotion = "tearfulness";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Defensive";
-				internalExpression = "Embarrassed";
-				expression = "Embarrassed";
-				underlyingEmotion = "Hurt";
-				stressedEmotion = "Tearful";
+				externalExpression = "defensiveness";
+				internalExpression = "embarrassment";
+				expression = "embarrassment";
+				underlyingEmotion = "hurt";
+				stressedEmotion = "tearfulness";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Jealous";
-				internalExpression = "Seething";
-				expression = "Threatened";
-				underlyingEmotion = "Threatened";
-				stressedEmotion = "Argumentative";
+				externalExpression = "jealousy";
+				internalExpression = "seething";
+				expression = "feeling threatened";
+				underlyingEmotion = "feeling threatened";
+				stressedEmotion = "being argumentative";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Hostile";
-				internalExpression = "Worried";
-				expression = "Insecure";
-				underlyingEmotion = "Threatened";
-				stressedEmotion = "Argumentative";
+				externalExpression = "hostility";
+				internalExpression = "worry";
+				expression = "insecurity";
+				underlyingEmotion = "feeling threatened";
+				stressedEmotion = "being argumentative";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Hostile";
-				internalExpression = "Worried";
-				expression = "Hateful";
-				underlyingEmotion = "Hatefulness";
-				stressedEmotion = "Tearful";
+				externalExpression = "hostility";
+				internalExpression = "worry";
+				expression = "hatefulness";
+				underlyingEmotion = "hatefulness";
+				stressedEmotion = "tearfulness";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Resentful";
-				internalExpression = "Seething";
-				expression = "Resentful";
-				underlyingEmotion = "Hatefulness";
-				stressedEmotion = "Tearful";
+				externalExpression = "resentment";
+				internalExpression = "seething";
+				expression = "resentment";
+				underlyingEmotion = "hatefulness";
+				stressedEmotion = "tearfulness";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Enraged";
-				internalExpression = "Seething";
-				expression = "Mad";
-				underlyingEmotion = "Mad";
-				stressedEmotion = "Violent";
+				externalExpression = "rage";
+				internalExpression = "seething";
+				expression = "feeling mad";
+				underlyingEmotion = "feeling mad";
+				stressedEmotion = "violence";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Furious";
-				internalExpression = "Seething";
-				expression = "Furious";
-				underlyingEmotion = "Mad";
-				stressedEmotion = "Violent";
+				externalExpression = "furiousity";
+				internalExpression = "seething";
+				expression = "furiousity";
+				underlyingEmotion = "feeling mad";
+				stressedEmotion = "violence";
 				break;
 			case 17:
 			case 18:
-				externalExpression = "Confrontational";
-				internalExpression = "Wary";
-				expression = "Aggressive";
-				underlyingEmotion = "Agression";
-				stressedEmotion = "Aggressive";
+				externalExpression = "confrontation";
+				internalExpression = "being wary";
+				expression = "aggression";
+				underlyingEmotion = "aggression";
+				stressedEmotion = "aggression";
 				break;
 			case 19:
 			case 20:
-				externalExpression = "Aggressive";
-				internalExpression = "Seething";
-				expression = "Hostile";
-				underlyingEmotion = "Agression";
-				stressedEmotion = "Aggressive";
+				externalExpression = "aggression";
+				internalExpression = "seething";
+				expression = "hostility";
+				underlyingEmotion = "aggression";
+				stressedEmotion = "aggression";
 				break;
 			case 21:
 			case 22:
-				externalExpression = "Furious";
-				internalExpression = "Edgy";
-				expression = "Frustrated";
-				underlyingEmotion = "Frustration";
-				stressedEmotion = "Violent";
+				externalExpression = "furiousity";
+				internalExpression = "being edgy";
+				expression = "frustration";
+				underlyingEmotion = "frustration";
+				stressedEmotion = "violence";
 				break;
 			case 23:
 			case 24:
-				externalExpression = "Irritated";
-				internalExpression = "Edgy";
-				expression = "Irritated";
-				underlyingEmotion = "Frustration";
-				stressedEmotion = "Violent";
+				externalExpression = "irritation";
+				internalExpression = "being edgy";
+				expression = "irritation";
+				underlyingEmotion = "frustration";
+				stressedEmotion = "violence";
 				break;
 			case 25:
 			case 26:
-				externalExpression = "Rejecting";
-				internalExpression = "Withdrawn";
-				expression = "Distant";
-				underlyingEmotion = "Distance";
-				stressedEmotion = "Snappy";
+				externalExpression = "rejection";
+				internalExpression = "withdrawal";
+				expression = "distance";
+				underlyingEmotion = "distance";
+				stressedEmotion = "snappiness";
 				break;
 			case 27:
 			case 28:
-				externalExpression = "Suspicious";
-				internalExpression = "Edgy";
-				expression = "Suspicious";
-				underlyingEmotion = "Distance";
-				stressedEmotion = "Snappy";
+				externalExpression = "suspicion";
+				internalExpression = "being edgy";
+				expression = "suspicion";
+				underlyingEmotion = "distance";
+				stressedEmotion = "snappiness";
 				break;
 			case 29:
 			case 30:
-				externalExpression = "Interrogating";
-				internalExpression = "Skeptical";
-				expression = "Critical";
-				underlyingEmotion = "Critical";
-				stressedEmotion = "Angry";
+				externalExpression = "interrogation";
+				internalExpression = "skepticism";
+				expression = "criticality";
+				underlyingEmotion = "criticality";
+				stressedEmotion = "anger";
 				break;
 			case 31:
 			case 32:
-				externalExpression = "Sarcastic";
-				internalExpression = "Wry";
-				expression = "Sarcastic";
-				underlyingEmotion = "Critical";
-				stressedEmotion = "Angry";
+				externalExpression = "sarcasm";
+				internalExpression = "being wry";
+				expression = "sarcasm";
+				underlyingEmotion = "criticality";
+				stressedEmotion = "anger";
 				break;
 		}
 		break;
-	case "Fear":
+	case "afraid":
 		rand = Roll(2,10) + Roll(1,6) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Hostile";
-				internalExpression = "Ashamed";
-				expression = "Fear";
-				underlyingEmotion = "Humiliation";
-				stressedEmotion = "Defensive";
+				externalExpression = "hostility";
+				internalExpression = "shame";
+				expression = "fear";
+				underlyingEmotion = "humiliation";
+				stressedEmotion = "defensiveness";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Defensive";
-				internalExpression = "Untrusting";
-				expression = "Disrespected";
-				underlyingEmotion = "Humiliation";
-				stressedEmotion = "Defensive";
+				externalExpression = "defensiveness";
+				internalExpression = "untrustworthiness";
+				expression = "disrespect";
+				underlyingEmotion = "humiliation";
+				stressedEmotion = "defensiveness";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Desperate";
-				internalExpression = "Lonely";
-				expression = "Rejected";
-				underlyingEmotion = "Rejection";
-				stressedEmotion = "Desperate";
+				externalExpression = "desperation";
+				internalExpression = "loneliness";
+				expression = "rejection";
+				underlyingEmotion = "rejection";
+				stressedEmotion = "desperation";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Defensive";
-				internalExpression = "Nervous";
-				expression = "Inadequate";
-				underlyingEmotion = "Rejection";
-				stressedEmotion = "Desperate";
+				externalExpression = "defensiveness";
+				internalExpression = "nervousness";
+				expression = "inadequacy";
+				underlyingEmotion = "rejection";
+				stressedEmotion = "desperation";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Motivated";
-				internalExpression = "Meek";
-				expression = "Submissive";
-				underlyingEmotion = "Submission";
-				stressedEmotion = "Defeated";
+				externalExpression = "motivation";
+				internalExpression = "meekness";
+				expression = "submission";
+				underlyingEmotion = "submission";
+				stressedEmotion = "defeat";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Needy";
-				internalExpression = "Meek";
-				expression = "Worthless";
-				underlyingEmotion = "Submission";
-				stressedEmotion = "Defeated";
+				externalExpression = "neediness";
+				internalExpression = "meekness";
+				expression = "worthlessness";
+				underlyingEmotion = "submission";
+				stressedEmotion = "defeat";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Motivated";
-				internalExpression = "Subservient";
-				expression = "Insecure";
-				underlyingEmotion = "Insecure";
-				stressedEmotion = "Obedient";
+				externalExpression = "motivation";
+				internalExpression = "subservitude";
+				expression = "insecurity";
+				underlyingEmotion = "insecurity";
+				stressedEmotion = "obedience";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Defensive";
-				internalExpression = "Nervous";
-				expression = "Inadequate";
-				underlyingEmotion = "Insecure";
-				stressedEmotion = "Obedient";
+				externalExpression = "defensiveness";
+				internalExpression = "nervousness";
+				expression = "inadequacy";
+				underlyingEmotion = "insecurity";
+				stressedEmotion = "obedience";
 				break;
 			case 17:
 			case 18:
-				externalExpression = "Worried";
-				internalExpression = "Nervous";
-				expression = "Anxious";
-				underlyingEmotion = "Anxiety";
-				stressedEmotion = "Frightened";
+				externalExpression = "worry";
+				internalExpression = "nervousness";
+				expression = "anxiety";
+				underlyingEmotion = "anxiety";
+				stressedEmotion = "fright";
 				break;
 			case 19:
 			case 20:
-				externalExpression = "Frazzled";
-				internalExpression = "Lost";
-				expression = "Overwhelmed";
-				underlyingEmotion = "Anxiety";
-				stressedEmotion = "Frightened";
+				externalExpression = "being frazzled";
+				internalExpression = "feeling lost";
+				expression = "feeling overwhelmed";
+				underlyingEmotion = "anxiety";
+				stressedEmotion = "fright";
 				break;
 			case 21:
 			case 22:
-				externalExpression = "Frightened";
-				internalExpression = "Jumpy";
-				expression = "Scared";
-				underlyingEmotion = "Scared";
-				stressedEmotion = "Frightened";
+				externalExpression = "fright";
+				internalExpression = "jumpiness";
+				expression = "being scared";
+				underlyingEmotion = "being scared";
+				stressedEmotion = "fright";
 				break;
 			case 23:
 			case 24:
-				externalExpression = "Hysterical";
-				internalExpression = "Jumpy";
-				expression = "Terrified";
-				underlyingEmotion = "Scared";
-				stressedEmotion = "Frightened";
+				externalExpression = "hystericalness";
+				internalExpression = "jumpiness";
+				expression = "terror";
+				underlyingEmotion = "being scared";
+				stressedEmotion = "fright";
 				break;
 		}
 		break;
-	case "Disgust":
+	case "disgusted":
 		rand = Roll(3,6) - 2;
 		switch (rand) {
 			case 1:
 			case 2:
-				externalExpression = "Critical";
-				internalExpression = "Disapproval";
-				expression = "Disapproval";
-				underlyingEmotion = "Disapproval";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "criticality";
+				internalExpression = "disapproval";
+				expression = "disapproval";
+				underlyingEmotion = "disapproval";
+				stressedEmotion = "withdrawal";
 				break;
 			case 3:
 			case 4:
-				externalExpression = "Argumentative";
-				internalExpression = "Seething";
-				expression = "Loathing";
-				underlyingEmotion = "Disapproval";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "argumentation";
+				internalExpression = "seething";
+				expression = "loathing";
+				underlyingEmotion = "disapproval";
+				stressedEmotion = "withdrawal";
 				break;
 			case 5:
 			case 6:
-				externalExpression = "Disgusted";
-				internalExpression = "Disapproving";
-				expression = "Disappointment";
-				underlyingEmotion = "Disappointment";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "disgust";
+				internalExpression = "disapproval";
+				expression = "disappointment";
+				underlyingEmotion = "disappointment";
+				stressedEmotion = "withdrawal";
 				break;
 			case 7:
 			case 8:
-				externalExpression = "Revolted";
-				internalExpression = "Disapproving";
-				expression = "Revolted";
-				underlyingEmotion = "Disappointment";
-				stressedEmotion = "Withdrawn";
+				externalExpression = "being revolted";
+				internalExpression = "disapproval";
+				expression = "being revolted";
+				underlyingEmotion = "disappointment";
+				stressedEmotion = "withdrawal";
 				break;
 			case 9:
 			case 10:
-				externalExpression = "Revolted";
-				internalExpression = "Avoidant";
-				expression = "Awful";
-				underlyingEmotion = "Awful";
-				stressedEmotion = "Leave";
+				externalExpression = "being revolted";
+				internalExpression = "avoidance";
+				expression = "awfulness";
+				underlyingEmotion = "awfulness";
+				stressedEmotion = "leaving";
 				break;
 			case 11:
 			case 12:
-				externalExpression = "Critical";
-				internalExpression = "Avoidant";
-				expression = "Detestable";
-				underlyingEmotion = "Awful";
-				stressedEmotion = "Leave";
+				externalExpression = "criticality";
+				internalExpression = "avoidance";
+				expression = "detestation";
+				underlyingEmotion = "awfulness";
+				stressedEmotion = "leaving";
 				break;
 			case 13:
 			case 14:
-				externalExpression = "Critical";
-				internalExpression = "Avoidant";
-				expression = "Avoidance";
-				underlyingEmotion = "Avoidance";
-				stressedEmotion = "Leave";
+				externalExpression = "criticality";
+				internalExpression = "avoidance";
+				expression = "avoidance";
+				underlyingEmotion = "avoidance";
+				stressedEmotion = "leaving";
 				break;
 			case 15:
 			case 16:
-				externalExpression = "Unsure";
-				internalExpression = "Hesitant";
-				expression = "Hesitance";
-				underlyingEmotion = "Avoidance";
-				stressedEmotion = "Leave";
+				externalExpression = "unsurity";
+				internalExpression = "hesitation";
+				expression = "hesitation";
+				underlyingEmotion = "avoidance";
+				stressedEmotion = "leaving";
 				break;
 		}
 		break;
