@@ -117,7 +117,7 @@
             <h2>Rockslides and Avalanches</h2>
             <p>If a creature is in the path of a rock slide or avalanche, the creature must make a Dexterity saving throw with a DC equal to 5 + 1 for each falling object of large size or larger. On a failure, the creature takes ld6 bludgeoning damage for each falling object of large size or larger and is knocked prone. If the creature failed the saving throw by 5 or more, they are restrained, and they or an adjacent creature must succeed on a DC 20 Strength check to free themselves. If a creature is restrained in this way by an avalanche, they cannot breathe.</p>
             <h2>Sandstorms</h2>
-            <p>Have the same effects as regular storms (though they don't necessarily require precipitation} but with the addition that each exposed character must make a DC 10 Constitution saving throw at the end of each minute or suffer ldlO slashing damage.</p>
+            <p>Have the same effects as regular storms (though they don't necessarily require precipitation} but with the addition that each exposed character must make a DC 10 Constitution saving throw at the end of each minute or suffer 1d1O slashing damage.</p>
             <h2>Thin Ice</h2>
             <p>Thin ice has a weight capacity of 3d10 x 10 pounds per 10 foot area. Whenever the total weight exceeds the weight capacity, the ice breaks, and all creatures and objects fall through.</p>
         </div>
@@ -380,9 +380,60 @@
                     </div>
                     <div class="" style="height: 400px;">
                         <p>{{watches[watch]}}</p>
-                        <p>Wind: {{previousWeather.wind}}</p>
-                        <p>Precipitation: {{previousWeather.precipitation}}</p>
-                        <p>Temperature: {{previousWeather.temperature}}</p>
+                        <p>Wind:
+                            <span ng-show="previousWeather.wind==0">None</span>
+                            <span ng-show="previousWeather.wind==1">1-10 mph</span>
+                            <span ng-show="previousWeather.wind==2">11-20 mph</span>
+                            <span ng-show="previousWeather.wind==3">21-30 mph</span>
+                            <span ng-show="previousWeather.wind==4">31-40 mph</span>
+                            <span ng-show="previousWeather.wind==5">41-60 mph</span>
+                            <span ng-show="previousWeather.wind==6">61-100 mph</span>
+                            <span ng-show="previousWeather.wind==7">100+ mph</span>
+                        </p>
+                        <p>Precipitation:
+                            <span ng-show="previousWeather.precipitation==0">None</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature > 32">Drizzle</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Slight Flurries</span>
+                            <span ng-show="previousWeather.precipitation==2 && previousWeather.temperature > 32">Light Rain</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Flurries</span>
+                            <span ng-show="previousWeather.precipitation==3 && previousWeather.temperature > 32">Rain</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Heavy Flurries</span>
+                            <span ng-show="previousWeather.precipitation==4 && previousWeather.temperature > 32">Downpour</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Snow</span>
+                            <span ng-show="previousWeather.precipitation==5 && previousWeather.temperature > 32">Heavy Downpour</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Heavy Snow</span>
+                            <span ng-show="previousWeather.precipitation==6 && previousWeather.temperature > 32">Drenching Downpour</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Small Blizzard</span>
+                            <span ng-show="previousWeather.precipitation==7 && previousWeather.temperature > 32">Massive Downpour</span>
+                            <span ng-show="previousWeather.precipitation==1 && previousWeather.temperature <= 32">Heavy Blizzard</span>
+                        </p>
+                        <p>Temperature: {{previousWeather.temperature}}&deg;</p>
+                        <p>Effects:</p>
+                        <ul>
+                            <li ng-show="previousWeather.temperature > 100"><b>Extreme Heat.</b> At temperatures exceeding 100 degrees Fahrenheit, injury and illness from heat becomes a very real issue. If a character is exposed and lacks sufficient drinking water, they must make a Constitution saving throw at the end of each hour or suffer one level of exhaustion. The DC begins at 5, and increases by 1 for each additional hour. Characters wearing medium or heavy armor make this saving throw at disadvantage. Characters with resistance or immunity to fire damage automatically succeed, as do creatures naturally adapted to extremely hot environments.</li>
+                            <li ng-show="previousWeather.temperature < 0"><b>Extreme Cold.</b> At temperatures less than 0 degrees Fahrenheit, the cold weather becomes dangerous. If a character is exposed to the cold, they must make a DC 10 Constitution saving throw at the end of each hour or suffer one level of exhaustion. Characters with resistance or immunity to cold damage automatically succeed on this saving throw, as do creatures naturally adapted to extremely cold environments. If a character wears warm-weather gear, they automatically succeed on the saving throw as well.</li>
+                            <li ng-show="previousWeather.wind >= 6 && previousWeather.precipitation >= 6"><b>Extreme Storm.</b> Occasionally, extreme winds will combine with heavy rain or snow to form an extreme storm: a cyclone, hurricane, tornado, or worse. Inside the storm, all movement speed is halved, the area is heavily obscured, all creatures automatically fail all Perception checks relying on sight, sound, or smell Any creature or object weighing less than 150 lb. must make a DC 20 Strength saving throw at the end of each round or be thrown 6d10 feet in a random direction, suffering 6d6 bludgeoning damage on impact with any other object or the ground.</li>
+                            <li ng-show="previousWeather.wind == 0 && previousWeather.precipitation == 1 && previousWeather.temperature >= 15 & previousWeather.temperature <= 55 && (watch <= 2 || watch == 5)"><b>Light fog.</b> An area covered in light fog - such as a mist-clad mountainside - is considered lightly obscured. An area covered in heavy fog - such as a shrouded ghost town - is considered heavily obscured. Some spells, like gust of wind, can help to clear fog in an area, as can more naturally-occurring wind.</li>
+                            <li ng-show="previousWeather.wind >= 4 && previousWeather.precipitation <= 1 && wetness == Arid"><b>Sandstorm. </b>Has the same effects as regular storms (though they don't necessarily require precipitation) but with the addition that each exposed character must make a DC 10 Constitution saving throw at the end of each minute or suffer 1d1O slashing damage.</li>
+                            <li ng-show="previousWeather.precipitation >= 1 && previousWeather.temperature > 32"><b>Light Rain.</b> Disadvantage on ability checks to climb or scale objects and ability checks made to maintain balance or keep one's footing.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature > 32"><b>Heavy Rain.</b> The area becomes light obscured.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature > 32"><b>Heavy Rain.</b> Open flames are extinguished.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature > 32"><b>Heavy Rain.</b> Disadvantage on Perception checks to relying on hearing or scent.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature > 32"><b>Heavy Rain.</b> Disadvantage on Survival checks to track creatures.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature > 32"><b>Heavy Rain.</b> Advantage on Survival checks to forage for water.</li>
+                            <li ng-show="previousWeather.precipitation >= 1 && previousWeather.temperature <= 32"><b>Light Snow.</b> The area becomes lightly obscured.</li>
+                            <li ng-show="previousWeather.precipitation >= 1 && previousWeather.temperature <= 32"><b>Light Snow.</b> Advantage on Survival checks to track creatures.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature <= 32"><b>Heavy Snow.</b> The area becomes difficult terrain.</li>
+                            <li ng-show="previousWeather.precipitation >= 4 && previousWeather.temperature <= 32"><b>Heavy Snow.</b> Survival checks to forage for water automatically succeed.</li>
+                            <li ng-show="previousWeather.wind >= 1"><b>Low Winds.</b> Clears light fog, smoke, or fumes.</li>
+                            <li ng-show="previousWeather.wind >= 4"><b>High Winds.</b> Disadvantage on ranged weapon attacks.
+                            <li ng-show="previousWeather.wind >= 4"><b>High Winds.</b> Clears all fog, smoke, or fumes.</li>
+                            <li ng-show="previousWeather.wind >= 4"><b>High Winds.</b> Extinguishes open flames.</li>
+                            <li ng-show="previousWeather.wind >= 4"><b>High Winds.</b> Disadvantage on Perception checks relying on hearing.</li>
+                            <li ng-show="previousWeather.wind >= 4"><b>High Winds.</b> Medium and smaller creatures with a fly speed must return to the ground at the end of their tum, or fall Creatures with a hover speed have their speed halved.</li>
+                            <li ng-show="previousWeather.wind >= 4 && previousWeather.precipitation >= 4"><b>Storm.</b> The area becomes heavily obscured.</li>
+                            <li ng-show="previousWeather.wind >= 4 && previousWeather.precipitation >= 4"><b>Storm.</b> If not already, the area becomes difficult terrain.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
