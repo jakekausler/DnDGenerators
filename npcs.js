@@ -292,7 +292,7 @@ var GetRandomizedRace = function(raceName) {
 		features.push("Darkvision");
 		features.push("Feline Agility");
 		features.push("Cat's Claws");
-		Languages = ["Common"];
+		languages = ["Common"];
 		numLanguages += 1;
 		skillProficiencies.push("Perception");
 		skillProficiencies.push("Stealth");
@@ -6194,7 +6194,7 @@ var GetReligion = function(race, cls, background, prejudices, isRural) {
 	} else if (rand <= 2) {
 		beliefSystem = "Animist";
 	} else if (rand <= 4) {
-		beliefSystem = "Monotheist -";
+		beliefSystem = "Monotheist - ";
 		god = randomChoice(gods);
 		while (anyInclude(prejudices, god)) {
 			god = randomChoice(gods);
@@ -6292,8 +6292,10 @@ var GetReligion = function(race, cls, background, prejudices, isRural) {
 	if (!association.startsWith("Solitary")) {
 		if (background.Occupation.Primary == "Religious") {
 			religiousRole = background.Occupation.Secondary;
+			religiousRoleDescription = background.Occupation.Description;
 		} else {
 			if (Roll(1,100) <= 5) {
+				rand = Roll(1,100);
 				if (rand < 7) {
 					religiousRole = "Abbot/Abbess";
 					religiousRoleDescription = "Leader of a monastery or convent.";
@@ -6346,6 +6348,9 @@ var GetReligion = function(race, cls, background, prejudices, isRural) {
 				religiousRoleDescription = "A generic follower of the religion";
 			}
 		}
+	} else {
+		religiousRole = "Follower";
+		religiousRoleDescription = "A generic follower of the religion";
 	}
 
 	return {
@@ -6363,7 +6368,6 @@ var GetReligion = function(race, cls, background, prejudices, isRural) {
 
 var GetAffinity = function() {
 	rand = Roll(1,8);
-	console.log(rand);
 	switch (rand) {
 	case 1:
 		rand2 = Roll(1,8);
