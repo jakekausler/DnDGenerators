@@ -3452,8 +3452,8 @@ var GetOccupation = function(isRural) {
 			occupation.NumLanguages = LookupOccupation(occupation.Primary, occupation.Secondary).NumLanguages;
 			occupation.StatWeights = LookupOccupation(occupation.Primary, occupation.Secondary).SuggestedAbilities;
 		} else if (rand2 <= 78) {
-			occupation.Secondary = "Spinster-yarn and cord maker";
-			occupation.Description = capitalizeFirstLetter("");
+			occupation.Secondary = "Spinster";
+			occupation.Description = capitalizeFirstLetter("yarn and cord maker");
 			occupation.Classes = LookupOccupation(occupation.Primary, occupation.Secondary).Classes;
 			occupation.ExtraChoices = LookupOccupation(occupation.Primary, occupation.Secondary).SkillProficiencies;
 			occupation.SkillProficiencies = [];
@@ -7072,10 +7072,10 @@ var GetNPCStats = function(race, cls, background, religion) {
 		statWeights[key] += cls.StatWeights[key];
 	}
 	for (key in background.Occupation.StatWeights) {
-		statWeights[key] += background.Occupation.StatWeights;
+		statWeights[key] += background.Occupation.StatWeights[key];
 	}
 	for (key in religion.StatWeights) {
-		statWeights[key] += religion.StatWeights;
+		statWeights[key] += religion.StatWeights[key];
 	}
 	skillProficiencies = new Set();
 	for (var i in race.SkillProficiencies) {
@@ -7092,7 +7092,9 @@ var GetNPCStats = function(race, cls, background, religion) {
 	});
 
 	for (key in statWeights) {
-		statWeights[key] += Roll(1,3) - 1;
+		console.log(key, statWeights[key]);
+		statWeights[key] += 0.5 - Math.random();
+		console.log(key, statWeights[key]);
 	}
 
 	var rolls = [
