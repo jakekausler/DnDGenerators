@@ -31,13 +31,13 @@ var GetNextPrecipitation = function(wetness, previousPrecipitation) {
 		rain = previousPrecipitation + Math.floor((Roll(1,8)+Roll(1,12)-17)/3);
 		break;
 	case "Temperate":
-		rain = previousPrecipitation + Math.floor((Roll(1,8)+Roll(1,12)-11)/3);
+		rain = previousPrecipitation + Math.floor((Roll(1,8)+Roll(1,12)-12)/3);
 		break;
 	case "Muggy":
 		rain = previousPrecipitation + Math.floor((Roll(1,8)+Roll(2,12)-16)/6);
 		break;
 	case "Sea":
-		rain = previousPrecipitation + Math.floor((Roll(2,8)+Roll(2,12)-21)/6);
+		rain = previousPrecipitation + Math.floor((Roll(2,8)+Roll(2,12)-21)/5);
 		break;
 	}
 	if (rain < 0) {
