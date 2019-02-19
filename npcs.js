@@ -1,3 +1,11 @@
+var GetRegionHappinesses = function() {
+	return CommunityStatuses;
+};
+
+var GetPossiblePrejudices = function() {
+	return AllPrejudices;
+};
+
 var GetNPC = function(communityStatus, communityPrejudices, isRural=true) {
 	var race = GetNPCRace();
 	var background = GetNPCBackground(race, isRural);

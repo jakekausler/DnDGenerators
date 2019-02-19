@@ -9,7 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.4/seedrandom.min.js"></script>
     <script src="http://simjs.com/_downloads/random-0.26.js"></script>
     <script src="skills.js"></script>
-    <script src="descriptions.js"></script>
     <script src="npcbackgrounds.js"></script>
     <script src="npcs.js"></script>
     <script src="cities.js"></script>
@@ -97,25 +96,19 @@
             <md-tab-body>
             <div class="panel no-outline">
                 <h1>NPC Generator</h1>
-                <!-- <md-tabs md-dynamic-height="true">
-                <md-tab>
-                <md-tab-label>Personality</md-tab-label>
-                <md-tab-body>
-                <div class="panel no-outline">
-                    <iframe src="http://www.npcgenerator.com/"></iframe>
-                </div>
-                </md-tab-body>
-                </md-tab>
-                <md-tab>
-                <md-tab-label>Details</md-tab-label>
-                <md-tab-body>
-                <div class="panel no-outline">
-                    <iframe src="https://rpgtinker.com/"></iframe>
-                </div>
-                </md-tab-body>
-                </md-tab>
-                </md-tabs> -->
-                <md-button ng-click="GetNPC()">Generate</md-button>
+                <md-input-container>
+                    <label>Region Happiness State</label>
+                    <md-select ng-model="regionHappiness">
+                        <md-option ng-value="t" ng-repeat="t in regionHappinesses">{{t}}</md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container>
+                    <label>Regional Prejudices</label>
+                    <md-select ng-model="prejudices" multiple>
+                        <md-option ng-value="t" ng-repeat="t in possiblePrejudices">{{t}}</md-option>
+                    </md-select>
+                </md-input-container>
+                <md-button ng-click="GetNPC(regionHappiness, prejudices)">Generate</md-button>
                 <div class="" style="height: 400px;">
                     <div ng-hide="npc === null">
                         <div>
@@ -152,7 +145,7 @@
                                 <p><b>Saving Throws:</b> <span ng-repeat="throw in npc.Proficiencies.SavingThrowProficiencies">{{throw}}{{$last ? '' : ', '}}</span></p>
                                 <p><b>Languages:</b> <span ng-repeat="lang in npc.Languages">{{lang}}{{$last ? '' : ', '}}</span></p>
                                 <h5>Personality</h5>
-                                <p><b>Emotional Disposition.</b> Usually feels {{npc.Personality.EmotionalDisposition.DeepEmotion}}. This expresses itself through {{npc.Personality.EmotionalDisposition.Expression}}. Externally, this comes out as {{npc.Personality.EmotionalDisposition.ExternalExpression}}, and internally it is {{npc.Personality.EmotionalDisposition.InternalExpression}}. When stressed, the character will revert to {{npc.Personality.EmotionalDisposition.StressedEmotion}}.</p>
+                                <p><b>Emotional Disposition.</b> Usually feels {{npc.Personality.EmotionalDisposition.DeepEmotion}}. This expresses itself through {{npc.Personality.EmotionalDisposition.Expression}}, and is underlaid by {{npc.Personality.EmotionalDisposition.UnderlyingEmotion}}. Externally, this comes out as {{npc.Personality.EmotionalDisposition.ExternalExpression}}, and internally it manifests as {{npc.Personality.EmotionalDisposition.InternalExpression}}. When stressed, the character will revert to {{npc.Personality.EmotionalDisposition.StressedEmotion}}.</p>
                                 <p><b>Primary Motivation.</b> {{npc.Personality.PrimaryMotivator}}</p>
                                 <p><b>Moodiness.</b> {{npc.Personality.Moodiness}}</p>
                                 <div ng-repeat="trait in npc.Personality.CoreTraits">
@@ -476,6 +469,11 @@ app.controller('appCtrl', function($scope) {
 
     $scope.npc = null;
 
+    $scope.regionHappinesses = GetRegionHappinesses();
+    $scope.possiblePrejudices = GetPossiblePrejudices();
+    $scope.regionHappiness = $scope.regionHappinesses[0];
+    $scope.prejudices = [];
+
     $scope.calculateCharaters = function() {
         $scope.characters.forEach(function(character) {
             calculateCharacter(character.Name, character);
@@ -517,8 +515,8 @@ app.controller('appCtrl', function($scope) {
         $scope.shop = GetShop(useSeed, name, type, location);
     };
 
-    $scope.GetNPC = function() {
-        $scope.npc = GetNPC("Average", []);
+    $scope.GetNPC = function(regionHappiness, prejudices) {
+        $scope.npc = GetNPC(regionHappiness, prejudices);
         console.log($scope.npc);
         document.getElementById("npc").innerHTML = $scope.npc.Description;
     };
