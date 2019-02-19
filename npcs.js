@@ -4264,7 +4264,7 @@ var GetSiblings = function(race, age, characterGender) {
 				siblingAge = age + Roll(1,4);
 			}
 		} else if (ageRelation == "younger") {
-			siblingAge += Math.abs(Roll(2,6) + Roll(2,4) - 10);
+			siblingAge -= Math.abs(Roll(2,6) + Roll(2,4) - 10);
 			if (siblingAge == age) {
 				siblingAge = age - Roll(1,4);
 			}
@@ -6193,7 +6193,7 @@ var GetReligion = function(race, cls, background, prejudices, isRural) {
 		}
 		beliefSystem += god;
 	} else if (rand <= 17) {
-		beliefSystem = "Polytheist - Emphesis in following - ";
+		beliefSystem = "Polytheist - Emphesis in following ";
 		god = randomChoice(gods);
 		while (anyInclude(prejudices, god)) {
 			god = randomChoice(gods);
