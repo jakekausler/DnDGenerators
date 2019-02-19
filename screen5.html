@@ -121,7 +121,7 @@
                                     <b>Age:</b> {{npc.Background.Age}} ({{npc.Background.AgeCategory}})<br>
                                     <b>Romantic Status:</b> {{npc.Background.Romance}}<br>
                                     <b>Sexuality:</b> {{npc.Background.Sexuality}}<br>
-                                    <b>Kids:</b> {{npc.Background.Kids}}
+                                    <span ng-show="npc.Background.Kids > 0"><b>Kids:</b> {{npc.Background.Kids}}</span>
                                 </p>
                                 <h5>Stats</h5>
                                 <table class="stats">
@@ -140,10 +140,10 @@
                                     <li ng-repeat="feature in npc.Stats.Features">{{feature}}</li>
                                 </ul>
                                 <h5>Proficiencies</h5>
-                                <p><b>Skills:</b> <span ng-repeat="skill in npc.Proficiencies.SkillProficiencies">{{skill}}{{$last ? '' : ', '}}</span></p>
-                                <p><b>Tools:</b> <span ng-repeat="tool in npc.Proficiencies.ToolProficiencies">{{tool}}{{$last ? '' : ', '}}</span></p>
-                                <p><b>Saving Throws:</b> <span ng-repeat="throw in npc.Proficiencies.SavingThrowProficiencies">{{throw}}{{$last ? '' : ', '}}</span></p>
-                                <p><b>Languages:</b> <span ng-repeat="lang in npc.Languages">{{lang}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Proficiencies.SkillProficiencies.length > 0"><b>Skills:</b> <span ng-repeat="skill in npc.Proficiencies.SkillProficiencies">{{skill}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Proficiencies.ToolProficiencies.length > 0"><b>Tools:</b> <span ng-repeat="tool in npc.Proficiencies.ToolProficiencies">{{tool}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Proficiencies.SavingThrowProficiencies.length > 0"><b>Saving Throws:</b> <span ng-repeat="throw in npc.Proficiencies.SavingThrowProficiencies">{{throw}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Languages.length > 0"><b>Languages:</b> <span ng-repeat="lang in npc.Languages">{{lang}}{{$last ? '' : ', '}}</span></p>
                                 <h5>Personality</h5>
                                 <p><b>Emotional Disposition.</b> Usually feels {{npc.Personality.EmotionalDisposition.DeepEmotion}}. This expresses itself through {{npc.Personality.EmotionalDisposition.Expression}}, and is underlaid by {{npc.Personality.EmotionalDisposition.UnderlyingEmotion}}. Externally, this comes out as {{npc.Personality.EmotionalDisposition.ExternalExpression}}, and internally it manifests as {{npc.Personality.EmotionalDisposition.InternalExpression}}. When stressed, the character will revert to {{npc.Personality.EmotionalDisposition.StressedEmotion}}.</p>
                                 <p><b>Primary Motivation.</b> {{npc.Personality.PrimaryMotivator}}</p>
@@ -153,16 +153,16 @@
                                     <ul><li><i>{{trait.Value}}.</i> {{trait.ValueDescription}}</li></ul>
                                 </div>
                                 <p><b>Sense of Humor.</b> {{npc.Personality.Humor}}</p>
-                                <p><b>Hobbies.</b> <span ng-repeat="v in npc.Personality.Hobbies">{{v}}{{$last ? '' : ', '}}</span></p>
-                                <p><b>Quirks.</b> <span ng-repeat="v in npc.Personality.Quirks">{{v}}{{$last ? '' : ', '}}</span></p>
-                                <p><b>MentalDisorders.</b> <span ng-repeat="v in npc.Personality.MentalDisorders">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Personality.Hobbies.length > 0"><b>Hobbies.</b> <span ng-repeat="v in npc.Personality.Hobbies">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Personality.Quirks.length > 0"><b>Quirks.</b> <span ng-repeat="v in npc.Personality.Quirks">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <p ng-show="npc.Personality.MentalDisorders.length > 0"><b>MentalDisorders.</b> <span ng-repeat="v in npc.Personality.MentalDisorders">{{v}}{{$last ? '' : ', '}}</span></p>
                                 <h5>Preferences</h5>
                                 <p><b>Affinities.</b> <i>{{npc.Disposition.Affinities.Feature}}.</i><br>
                                 Likes people with these attributes: {{npc.Disposition.Affinities.PositiveShift}}<br>
                                 Dislikes people with these attributes: {{npc.Disposition.Affinities.NegativeShift}}</p>
                                 <p><b>Religion.</b> {{npc.Disposition.Religion.BeliefSystem}}<br>
-                                <i>Association.</i> {{npc.Disposition.Religion.Association}}<br>
-                                <i>Role.</i> {{npc.Disposition.Religion.ReligiousRole}} - {{npc.Disposition.Religion.ReligiousRoleDescription}}<br>
+                                <span ng-hide="npc.Disposition.Religion.BeliefSystem == 'Atheist' || npc.Disposition.Religion.BeliefSystem == 'Agnostic'"><i>Association.</i> {{npc.Disposition.Religion.Association}}</span><br>
+                                <span ng-hide="npc.Disposition.Religion.BeliefSystem == 'Atheist' || npc.Disposition.Religion.BeliefSystem == 'Agnostic'"><i>Role.</i> {{npc.Disposition.Religion.ReligiousRole}} - {{npc.Disposition.Religion.ReligiousRoleDescription}}</span><br>
                                 <i>Attitude.</i> {{npc.Disposition.Religion.AttitudeAbout}}<br>
                                 <i>Expression.</i> {{npc.Disposition.Religion.Expression}}<br>
                                 <i>Proselytization.</i> {{npc.Disposition.Religion.Proselytization}}<br></p>
