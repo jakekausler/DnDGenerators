@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="App" ng-cloak>
+    <md-grid-list md-cols="8" md-row-height="12.4%">
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Dexterity</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Acrobatics • Balance</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Walk across an icy surface</td></tr>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Walk on a narrow ledge</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Cross a widly swaying rope bridge</td></tr>
+                    <tr><td width="20%">Very Hard</td><td width="10%">DC 25</td><td>Walk across a tightrope; surf down a staircase on a shield</td></tr>
+                    </table>
+                    <h2>Acrobatics • Tumble</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Swing from a chandelier</td></tr>
+                    <tr><td width="20%">Very Hard</td><td width="10%">DC 25</td><td>Somersault over a creature of the same size</td></tr>
+                    </table>
+                    <h2>Sleigh of Hand • Conceal an object</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Perform a simple feats of sleight of hand</td></tr>
+                    <tr><td width="20%">Contest (vs. Percep)</td><td width="10%"></td><td>Palm an object while under observation</td></tr>
+                    </table>
+                    <h2>Sleigh of Hand • Planting & Stealing objects</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>If creature doesnt know about you</td></tr>
+                    <tr><td width="20%">Contest (vs. Percep)</td><td width="10%"></td><td>If you are interacting with a creature (Hugging someone)</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Stealth • Hiding from sight</h2>
+                    <table>
+                    <tr><td width="20%">Contest (vs. Percep)</td><td width="10%"></td><td>Hide in a obscured area from creatures that can’t see you</td></tr>
+                    </table>
+                    <h2>Improvised Tasks • Open a Lock*</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Pick a simple lock</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Pick a typical lock</td></tr>
+                    <tr><td width="20%">Very Hard</td><td width="10%">DC 25</td><td>Pick an elaborate lock</td></tr>
+                    <tr><td width="20%">Formidable</td><td width="10%">DC 30</td><td>Pick a masterwork lock</td></tr>
+                    <tr><td width="20%">Formidable</td><td width="10%">DC 30</td><td>Pick a magical lock (requires feat)</td></tr>
+                    </table>
+                    <h2>Improvised Tasks • Disarm a Trap*</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Keep a pit trap from opening when its triggered</td></tr>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Keep a scything blade trap from triggering</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Prevent a poison needle or gas trap from springing</td></tr>
+                    <tr><td width="20%">Very Hard</td><td width="10%">DC 25</td><td>Disarm an intricate trap</td></tr>
+                    <tr><td width="20%">Formidable</td><td width="10%">DC 30</td><td>Disarm a magic trap</td></tr>
+                    </table>
+                    <p class="Footnote">* Requires Thieves’ Tools</p>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Constitution</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Concentration</h2>
+                    <p>Some spells must be maintained with concentration, spell description specifies how long you can concentrate on it. You can end concentration at any time (no action required.) The following factors can break your concentration:</p>
+                    <ul>
+                    <li>You cast another spell that requires concentration.</li>
+                    <li>You take damage. Succeed on a Constitution Saving Throw to maintain your concentration, with a DC equal to 10 or half the damage you take, whichever number is higher.</li>
+                    <li>You’re incapacitated or killed.</li>
+                    <li>You’re overwhelmed by an enormous distraction, such as a wave crashing into you.
+                    Succeed on a DC 10 Constitution Saving Throw to maintain your concentration.</li>
+                    </ul>
+                    <h2>Forced March</h2>
+                    <p>At the end of each hour a PC must make a Constitution saving throw with DC (10 + number of hours traveled past 8). On a failed save, the PC advances one level of exhaustion.</p>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Suffocating</h2>
+                    <p>You can hold your breath for minutes equal to 1 + Constitution Modifier (min 30 sec). When you run out of breath or if you are choking, you can survive for a number of rounds equal to your Constitution Modifier (min 1 round). At the start of your next turn, you are dying, drop to 0 HP and you can’t regain any hit points or be stabilized until you can breath again.</p>
+                    <h2>Food</h2>
+                    <p>A PC must consume 1 lb. of food per day (1/2 for small and 1/4 for tiny). Half ration: ½ day of starvation per full day. After 3 + Constitution Modifier Days of starvation, one level of exhaustion per full day without food, or Constitution Save (DC 10) vs. exhaustion per full day on half rations.</p>
+                    <h2>Water</h2>
+                    <p>1 Gal. (2 Waterskins) Per character per day (1/2 for small and 1/4 for tiny). Double in hot conditions. Half ration: Constitution Save (DC 15). No water for 1 day, one level of exhaustion at the end of the day, if character already has one or more levels of exhaustion, it takes two levels in either case.</p>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Wisdom</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Animal Handling • Calm or befriend an animal</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Get animal to keep moving while tired</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Train animal for a task; calm aggressive wild animal</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Calm panicked animal; rear wild animal</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Tame wild animal</td></tr>
+                    </table>
+                    <h2>Insight • Sense Motive</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Discern who among a cagey group is the leader; read a person’s motives or attitude</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Interpret enemies’ hand signs</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Sense an outside influence on a person, such as an enchantment spell</td></tr>
+                    <tr><td>Contest (vs. Deception)</td><td></td><td>Recognize a lie; see through a disguise</td></tr>
+                    </table>
+                    <h2>Medicine • Administer a First Aid</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Identify a common ailment or poison from its symptoms; stabilize a dying creature</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Identify a rare ailment or poison</td></tr>
+                    </table>
+                    <h2>Perception • Listen</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Eavesdrop on a conversation through a door</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Eavesdrop on a whispered conversation through a door</td></tr>
+                    <tr><td>Contest (vs. Stealth)</td><td></td><td>Hear someone who’s trying to be silent</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Perception • Spot</h2>
+                    <table>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Find a tiny item such as gem in a pile of other items</td></tr>
+                    <tr><td>Contest (vs. Stealth)</td><td></td><td>Spot a creature that is hiding</td></tr>
+                    </table>
+                    <h2>Survival • Track</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Track a creature through snow or mud</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Track a creature through a forest</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Track a creature across dirt or grass</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Track a creature across bare stone</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Track a creature across dirt or grass after rainfall</td></tr>
+                    </table>
+                    <h2>Survival • Wilderness Survival</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Hunt/forage for food while traveling in the wilderness</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Avoid natural hazards, such as quicksand</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Keep from getting lost while traveling in the wilderness</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Charisma</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Deception • Decieve someone</h2>
+                    <table>
+                    <tr><td width="20%">Contest (vs. Insight)</td><td width="10%"></td><td>Fast-talk or con someone; adopt a disguise; impersonate someone’s voice; tell a lie etc.</td></tr>
+                    </table>
+                    <h2>Intimidation</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Pry information out of a commoner a child</td></tr>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Pry information out of a scared prisoner</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Get an unruly crowd to move out of the way; convincing street thugs to back down</td></tr>
+                    <tr><td width="20%">Contest (vs. Insight)</td><td width="10%"></td><td>Intimidate to get your way against a strong willed individual</td></tr>
+                    </table>
+                    <h2>Performance • Task or Public entertainment</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Entertain a crowd with a tale, music, acting dancing</td></tr>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Give a calming or inspiring speech</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Persuasion</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Calm and comfort a distraught person; make cordial a request</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Convincing a chamberlain to let your party see the King</td></tr>
+                    </table>
+                    <h2>Improvised Tasks • Gather Information</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Gather the common gossip in a town or neighborhood;</td></tr>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Find what you need in a unfamiliar city; find out who’s really in power</td></tr>
+                    <tr><td width="20%">Hard</td><td width="10%">DC 20</td><td>Discover local information only a few other people know</td></tr>
+                    <tr><td width="20%">Very Hard</td><td width="10%">DC 25</td><td>Dig up obscure community news or lore</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+    </md-grid-list>
+</body>
+<!-- application bootstrap  -->
+<script type="text/javascript">
+angular.module('App', ['ngMaterial', 'ngMessages']);
+</script>
+</html>

@@ -1,0 +1,550 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.4/seedrandom.min.js"></script>
+    <script src="http://simjs.com/_downloads/random-0.26.js"></script>
+    <script src="skills.js"></script>
+    <script src="descriptions.js"></script>
+    <script src="npcbackgrounds.js"></script>
+    <script src="npcs.js"></script>
+    <script src="cities.js"></script>
+    <script src="encounters.js"></script>
+    <script src="shops.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="App" ng-controller="appCtrl" ng-cloak>
+    <md-grid-list md-cols="11" md-row-height="12.4%">
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Rain</h1>
+            <table>
+            <tr><th></th><th>Clear Skies</th><th>Light Precipitation</th><th>Heavy Precipitation</th></tr>
+            <tr><th>Clear Skies</th><td>1-16</td><td>17-19</td><td>20</td></tr>
+            <tr><th>Light Precipitation</th><td>1-9</td><td>10-17</td><td>18-20</td></tr>
+            <tr><th>Heavy Precipitation</th><td>1-6</td><td>7-13</td><td>14-20</td></tr>
+            </table>
+            <h2>Clear Skies</h2>
+            <ul>
+                <li>No effect.</li>
+            </ul>
+            <h2>Light Rain</h2>
+            <ul>
+                <li>Disadvantage on ability checks to climb or scale objects and ability checks made to maintain balance or keep one's footing.</li>
+            </ul>
+            <h2>Light Snow</h2>
+            <ul>
+                <li>The area becomes lightly obscured.</li>
+                <li>Advantage on Survival checks to track creatures.</li>
+            </ul>
+            <h2>Heavy Rain</h2>
+            <ul>
+                <li>Disadvantage on ability checks to climb or scale objects and ability checks made to maintain balance or keep one's footing.</li>
+                <li>The area becomes light obscured.</li>
+                <li>Open flames are extinguished.</li>
+                <li>Disadvantage on Perception checks to relying on hearing or scent.</li>
+                <li>Disadvantage on Survival checks to track creatures.</li>
+                <li>Advantage on Survival checks to forage for water.</li>
+            </ul>
+            <h2>Heavy Snow</h2>
+            <ul>
+                <li>The area becomes lightly obscured</li>
+                <li>Advantage on Survival checks to track creatures.</li>
+                <li>The area becomes difficult terrain.</li>
+                <li>Survival checks to forage for water automatically succeed</li>
+            </ul>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Wind</h1>
+            <table>
+            <tr><th></th><th>No Wind</th><th>Low Winds</th><th>High Winds</th></tr>
+            <tr><th>No Wind</th><td>1-14</td><td>15-19</td><td>20</td></tr>
+            <tr><th>Low Winds</th><td>1-10</td><td>11-17</td><td>18-20</td></tr>
+            <tr><th>High Winds</th><td>1-8</td><td>9-14</td><td>15-20</td></tr>
+            </table>
+            <h2>No Wind</h2>
+            <ul>
+                <li>No effect.</li>
+            </ul>
+            <h2>Low Winds</h2>
+            <ul>
+                <li>Clears light fog, smoke, or fumes.</li>
+            </ul>
+            <h2>High Winds</h2>
+            <ul>
+                <li>Disadvantage on ranged weapon attacks.</li>
+                <li>Clears all fog, smoke, or fumes.</li>
+                <li>Extinguishes open flames.</li>
+                <li>Disadvantage on Perception checks relying on hearing.</li>
+                <li>Medium and smaller creatures with a fly speed must return to the ground at the end of their tum, or fall Creatures with a hover speed have their speed halved</li>
+            </ul>
+            <h2>Storm</h2>
+            <p>Occurs when high winds and heavy precipitation occur simultaneously.</p>
+            <ul>
+                <li>The area becomes heavily obscured.</li>
+                <li>If not already, the area becomes difficult terrain.</li>
+            </ul>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="8">
+        <div class="panel">
+            <h1>Dangers</h1>
+            <h2>Extreme Cold</h2>
+            <p>At temperatures less than 0 degrees Fahrenheit, the cold weather becomes dangerous. If a character is exposed to the cold, they must make a DC 10 Constitution saving throw at the end of each hour or suffer one level of exhaustion. Characters with resistance or immunity to cold damage automatically succeed on this saving throw, as do creatures naturally adapted to extremely cold environments. If a character wears warm-weather gear, they automatically succeed on the saving throw as well.</p>
+            <h2>Extreme Heat</h2>
+            <p>At temperatures exceeding 100 degrees Fahrenheit, injury and illness from heat becomes a very real issue. If a character is exposed and lacks sufficient drinking water, they must make a Constitution saving throw at the end of each hour or suffer one level of exhaustion. The DC begins at 5, and increases by 1 for each additional hour. Characters wearing medium or heavy armor make this saving throw at disadvantage. Characters with resistance or immunity to fire damage automatically succeed, as do creatures naturally adapted to extremely hot environments.</p>
+            <h2>Extreme Storms</h2>
+            <p>Occasionally, extreme winds will combine with heavy rain or snow to form an extreme storm: a cyclone, hurricane, tornado, or worse. Inside the storm, all movement speed is halved, the area is heavily obscured, all creatures automatically fail all Perception checks relying on sight, sound, or smell Any creature or object weighing less than 150 lb. must make a DC 20 Strength saving throw at the end of each round or be thrown 6d10 feet in a random direction, suffering 6d6 bludgeoning damage on impact with any other object or the ground.</p>
+            <h2>Fog</h2>
+            <p>There are two basic kinds of fog: light fog and heavy fog. An area covered in light fog - such as a mist-clad mountainside - is considered lightly obscured. An area covered in heavy fog - such as a shrouded ghost town - is considered heavily obscured. Some spells, like gust of wind, can help to clear fog in an area, as can more naturally-occurring wind.</p>
+            <h2>Frigid Water</h2>
+            <p>A creature can spend a number of minutes in frigid water equal to its Constitution modifier. For each additional minute, the creature must make a DC 10 Constitution saving throw or suffer one level of exhaustion. Creatures with cold damage resistance or immunity automatically succeed on the saving throw, as do any creatures adapted to living in ice-cold water.</p>
+            <h2>Geysers</h2>
+            <p>If a creature stands with 20 feet of the geyser's vent when it erupts, the creature immediately takes 6d6 fire damage as they are scalded with boiling water. If a creature stands directly over the geyser's vent when it erupts, they immediately take an additional 6d6 bludgeoning damage and must succeed on a DC 20 Strength saving throw or be pushed back 10 feet and knocked prone.</p>
+            <h2>Lava</h2>
+            <p>When a creature first enters lava on its turn, the creature immediately takes 10d10 fire damage, and takes an additional 10d10 damage at the start of each of its turns while standing in or otherwise touching the lava. If a creature is fully submerged in the lava, they take 18d10 fire damage at the start of each of their turns.</p>
+            <h2>Quicksand</h2>
+            <p>When a creature enters an area of quicksand, they immediately sink 1d4 + 1 feet into the quicksand and become restrained At the start of each of the creature's turns, it sinks an additional 1d4 feet. As long as the creature hasn't been completely submerged, it can attempt to escape using an action to make a Strength check with a DC of 10 plus the number of feet the creature has sunk. If the creature is completely submerged, it can't breathe. A creature outside of the quicksand can pull another creature within its reach out of the quicksand using an action to make a Strength check with a DC of 5 plus the number of feet the target creature has sunk.</p>
+            <h2>Rockslides and Avalanches</h2>
+            <p>If a creature is in the path of a rock slide or avalanche, the creature must make a Dexterity saving throw with a DC equal to 5 + 1 for each falling object of large size or larger. On a failure, the creature takes ld6 bludgeoning damage for each falling object of large size or larger and is knocked prone. If the creature failed the saving throw by 5 or more, they are restrained, and they or an adjacent creature must succeed on a DC 20 Strength check to free themselves. If a creature is restrained in this way by an avalanche, they cannot breathe.</p>
+            <h2>Sandstorms</h2>
+            <p>Have the same effects as regular storms (though they don't necessarily require precipitation} but with the addition that each exposed character must make a DC 10 Constitution saving throw at the end of each minute or suffer ldlO slashing damage.</p>
+            <h2>Thin Ice</h2>
+            <p>Thin ice has a weight capacity of 3d10 x 10 pounds per 10 foot area. Whenever the total weight exceeds the weight capacity, the ice breaks, and all creatures and objects fall through.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="5" md-rowspan="8">
+        <div class="panel">
+            <md-tabs md-dynamic-height="true">
+            <md-tab>
+            <md-tab-label><span class="fas fa-user"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>NPC Generator</h1>
+                <!-- <md-tabs md-dynamic-height="true">
+                <md-tab>
+                <md-tab-label>Personality</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <iframe src="http://www.npcgenerator.com/"></iframe>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                <md-tab>
+                <md-tab-label>Details</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <iframe src="https://rpgtinker.com/"></iframe>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                </md-tabs> -->
+                <md-button ng-click="GetNPC()">Generate</md-button>
+                <div class="" style="height: 400px;">
+                    <div ng-hide="npc === null">
+                        <div>
+                            <h2>{{npc.Name}}</h2>
+                            <div>
+                                <h3>{{npc.Race.Size}} {{npc.Background.Gender}} <span ng-hide="npc.Race.Subrace===''">{{npc.Race.Subrace}} </span>{{npc.Race.Name}} {{npc.Class.Name}}</h3>
+                                <p>
+                                    <b>{{npc.Background.Occupation.Secondary}} ({{npc.Background.Occupation.Primary}})</b><span ng-hide="npc.Background.Occupation.Description===''"><b>:</b>  {{npc.Background.Occupation.Description}}</span><br>
+                                    <b>Alignment:</b> {{npc.Background.Alignment}}<br>
+                                    <b>Age:</b> {{npc.Background.Age}} ({{npc.Background.AgeCategory}})<br>
+                                    <b>Romantic Status:</b> {{npc.Background.Romance}}<br>
+                                    <b>Sexuality:</b> {{npc.Background.Sexuality}}<br>
+                                    <b>Kids:</b> {{npc.Background.Kids}}
+                                </p>
+                                <h5>Stats</h5>
+                                <table class="stats">
+                                    <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+                                    <tr><td>{{npc.Stats.Stats.Strength}}</td><td>{{npc.Stats.Stats.Dexterity}}</td><td>{{npc.Stats.Stats.Constitution}}</td><td>{{npc.Stats.Stats.Intelligence}}</td><td>{{npc.Stats.Stats.Wisdom}}</td><td>{{npc.Stats.Stats.Charisma}}</td></tr>
+                                    <tr><td>({{npc.Stats.Modifiers.Strength}})</td><td>({{npc.Stats.Modifiers.Dexterity}})</td><td>({{npc.Stats.Modifiers.Constitution}})</td><td>({{npc.Stats.Modifiers.Intelligence}})</td><td>({{npc.Stats.Modifiers.Wisdom}})</td><td>({{npc.Stats.Modifiers.Charisma}})</td></tr>
+                                </table>
+                                <p>
+                                    <b>Level:</b> {{npc.Stats.Level}}<br>
+                                    <b>AC:</b> {{npc.Stats.AC}}<br>
+                                    <b>Hit Points:</b> {{npc.Stats.HitPoints}}<br>
+                                    <b>Speed:</b> {{npc.Stats.Speed}}<br>
+                                    <b>Proficiency Bonus:</b> {{npc.Stats.ProficiencyBonus}}<br>
+                                </p>
+                                <ul>
+                                    <li ng-repeat="feature in npc.Stats.Features">{{feature}}</li>
+                                </ul>
+                                <h5>Proficiencies</h5>
+                                <p><b>Skills:</b> <span ng-repeat="skill in npc.Proficiencies.SkillProficiencies">{{skill}}{{$last ? '' : ', '}}</span></p>
+                                <p><b>Tools:</b> <span ng-repeat="tool in npc.Proficiencies.ToolProficiencies">{{tool}}{{$last ? '' : ', '}}</span></p>
+                                <p><b>Saving Throws:</b> <span ng-repeat="throw in npc.Proficiencies.SavingThrowProficiencies">{{throw}}{{$last ? '' : ', '}}</span></p>
+                                <p><b>Languages:</b> <span ng-repeat="lang in npc.Languages">{{lang}}{{$last ? '' : ', '}}</span></p>
+                                <h5>Personality</h5>
+                                <p><b>Emotional Disposition.</b> Usually feels {{npc.Personality.EmotionalDisposition.DeepEmotion}}. This expresses itself through {{npc.Personality.EmotionalDisposition.Expression}}. Externally, this comes out as {{npc.Personality.EmotionalDisposition.ExternalExpression}}, and internally it is {{npc.Personality.EmotionalDisposition.InternalExpression}}. When stressed, the character will revert to {{npc.Personality.EmotionalDisposition.StressedEmotion}}.</p>
+                                <p><b>Primary Motivation.</b> {{npc.Personality.PrimaryMotivator}}</p>
+                                <p><b>Moodiness.</b> {{npc.Personality.Moodiness}}</p>
+                                <div ng-repeat="trait in npc.Personality.CoreTraits">
+                                    <b>{{trait.Type}}.</b><i> {{trait.TypeDescription}}</i>
+                                    <ul><li><i>{{trait.Value}}.</i> {{trait.ValueDescription}}</li></ul>
+                                </div>
+                                <p><b>Sense of Humor.</b> {{npc.Personality.Humor}}</p>
+                                <p><b>Hobbies.</b> <span ng-repeat="v in npc.Personality.Hobbies">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <p><b>Quirks.</b> <span ng-repeat="v in npc.Personality.Quirks">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <p><b>MentalDisorders.</b> <span ng-repeat="v in npc.Personality.MentalDisorders">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <h5>Preferences</h5>
+                                <p><b>Affinities.</b> <i>{{npc.Disposition.Affinities.Feature}}.</i><br>
+                                Likes people with these attributes: {{npc.Disposition.Affinities.PositiveShift}}<br>
+                                Dislikes people with these attributes: {{npc.Disposition.Affinities.NegativeShift}}</p>
+                                <p><b>Religion.</b> {{npc.Disposition.Religion.BeliefSystem}}<br>
+                                <i>Association.</i> {{npc.Disposition.Religion.Association}}<br>
+                                <i>Role.</i> {{npc.Disposition.Religion.ReligiousRole}} - {{npc.Disposition.Religion.ReligiousRoleDescription}}<br>
+                                <i>Attitude.</i> {{npc.Disposition.Religion.AttitudeAbout}}<br>
+                                <i>Expression.</i> {{npc.Disposition.Religion.Expression}}<br>
+                                <i>Proselytization.</i> {{npc.Disposition.Religion.Proselytization}}<br></p>
+                                <p><b>Prejudices.</b> <span ng-repeat="v in npc.Disposition.Prejudices">{{v}}{{$last ? '' : ', '}}</span></p>
+                                <h5>Description</h5>
+                                <div id="npc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </md-tab-body>
+            </md-tab>
+            <md-tab>
+            <md-tab-label><span class="fas fa-city"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>Settlement Generator</h1>
+                <md-tabs md-dynamic-height="true">
+                <md-tab>
+                <md-tab-label>Town Details</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <iframe src="https://www.kassoon.com/dnd/town-generator/"></iframe>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                <md-tab>
+                <md-tab-label>Kingdom Details</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <iframe src="https://www.rpglibrary.org/utils/meddemog/"></iframe>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                </md-tabs>
+            </div>
+            </md-tab-body>
+            </md-tab>
+            <md-tab>
+            <md-tab-label><span class="fas fa-shield-alt"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>Encounter Generator</h1>
+                <md-tabs md-dynamic-height="true">
+                <md-tab>
+                <md-tab-label>Encounters</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <div class="">
+                        <md-input-container>
+                            <label>Average Party Level</label>
+                            <input ng-model="averagePartyLevel" type="number" min="1" max="20" step="1">
+                        </md-input-container>
+                        <md-input-container>
+                            <md-checkbox ng-model="onRoad">On Road</md-checkbox>
+                        </md-input-container>
+                        <md-input-container>
+                            <label>Current Terrain</label>
+                            <md-select ng-model="terrain">
+                                <md-option ng-value="t" ng-repeat="t in terrains">{{t}}</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container>
+                            <md-button ng-click="enc_data = GetWilderness(terrain, onRoad, averagePartyLevel)">Generate Wilderness Encounter</md-button>
+                            <md-button ng-click="enc_data = GetMonsterEncounter(terrain, averagePartyLevel)">Generate Monster Encounter</md-button>
+                        </md-input-container>
+                    </div>
+                    <div class="" style="height: 400px;">
+                        <p id="encounters"></p>
+                    </div>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                <md-tab>
+                <md-tab-label>Monsters</md-tab-label>
+                <md-tab-body>
+                <div class="panel no-outline">
+                    <iframe src="http://kobold.club/fight/#/encounter-builder"></iframe>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                </md-tabs>
+            </div>
+            </md-tab-body>
+            </md-tab>
+            <md-tab>
+            <md-tab-label><span class="fas fa-shopping-cart"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>Shop Generator</h1>
+                <div class="">
+                    <md-input-container>
+                        <label>Shop Name</label>
+                        <input ng-model="shopName">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Shop Type</label>
+                        <md-select ng-model="shopType">
+                            <md-option ng-value="t" ng-repeat="t in shopTypes">{{t}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Shop Location</label>
+                        <md-select ng-model="shopLocation">
+                            <md-option ng-value="t" ng-repeat="t in shopLocations">{{t}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container>
+                        <md-checkbox ng-model="useSeed">Use Seed</md-checkbox>
+                    </md-input-container>
+                    <md-input-container>
+                        <md-button ng-click="shop_data = GetShop(useSeed, shopName, shopType, shopLocation)">Generate Shop</md-button>
+                    </md-input-container>
+                    <div class="" style="height: 400px;">
+                        <h2>{{shop.Name}}</h2>
+                        <p>Money on Hand: {{shop.MoneyOnHand}}</p>
+                        <p>Shop Type: {{shop.Type}}</p>
+                        <p>Shop Quality: {{shop.Quality}}</p>
+                        <table>
+                            <tr><th>Item</th><th>Price</th><th>Quantity</th><th>Page</th><th>Notes</th></tr>
+                            <tr ng-repeat="item in shop.Inventory"><td>{{item.Name}}</td><td>{{item.Price}}</td><td>{{item.Quantity}}</td><td>{{item.Page}}</td><td>{{item.Notes}}</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </md-tab-body>
+            </md-tab>
+            <md-tab>
+            <md-tab-label><span class="fas fa-dollar-sign"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>Treasure Generator</h1>
+                <div class="">
+                    <div>
+                        <md-input-container>
+                            <label>Hoard CR</label>
+                            <input ng-model="cr" type="number" min="1" max="40" step="0.25">
+                        </md-input-container>
+                        <md-input-container>
+                            <md-button ng-click="tr_data = GetStandardTreasure(cr)">Generate Standard Hoard</md-button>
+                            <md-button ng-click="tr_data = GetAlternateTreasure(cr)">Generate Alternate Hoard</md-button>
+                        </md-input-container>
+                    </div>
+                    <div class="" style="height: 400px;">
+                        <p id="treasure"></p>
+                    </div>
+                </div>
+            </div>
+            </md-tab-body>
+            </md-tab>
+            <md-tab>
+            <md-tab-label><span class="fas fa-bolt"></span></md-tab-label>
+            <md-tab-body>
+            <div class="panel no-outline">
+                <h1>Weather Generator</h1>
+                <div class="">
+                    <div>
+                        <md-input-container>
+                            <label>Advance Watches</label>
+                            <input ng-model="advanceBy" type="number" min="1" step="1">
+                        </md-input-container>
+                        <md-input-container>
+                            <label>Average Temperature for the Day</label>
+                            <input ng-model="averageTemperature" type="number" step="1">
+                        </md-input-container>
+                        <md-input-container>
+                            <label>Current Wetness</label>
+                            <md-select ng-model="wetness">
+                                <md-option ng-value="w" ng-repeat="w in wetnesses">{{w}}</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container>
+                            <md-button ng-click="GetNextWeather(wetness, averageTemperature, watch, advanceBy, previousWeather)">Get Next Weather</md-button>
+                        </md-input-container>
+                    </div>
+                    <div class="" style="height: 400px;">
+                        <p>{{watches[watch]}}</p>
+                        <p>Wind: {{previousWeather.wind}}</p>
+                        <p>Precipitation: {{previousWeather.precipitation}}</p>
+                        <p>Temperature: {{previousWeather.temperature}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </md-tab-body>
+        </md-tab>
+        </md-tabs>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Merchant Types</h1>
+            <table>
+                <tr><th>d100</th><th>Merchants</th></tr>
+                <tr><td>1-6</td><td>Alcohol and Refreshments</td></tr>
+                <tr><td>7-10</td><td>Animals</td></tr>
+                <tr><td>11-15</td><td>Books and Maps</td></tr>
+                <tr><td>16-19</td><td>Flowers and Seeds</td></tr>
+                <tr><td>20-25</td><td>Food and Animal Parts</td></tr>
+                <tr><td>26-29</td><td>Furniture and Interior Decor</td></tr>
+                <tr><td>30-34</td><td>High Fashion</td></tr>
+                <tr><td>35-38</td><td>Jewelry and Gems</td></tr>
+                <tr><td>39-43</td><td>Knick-Knacks</td></tr>
+                <tr><td>44-48</td><td>Leatherworking</td></tr>
+                <tr><td>49-52</td><td>Mechanical Contraptions</td></tr>
+                <tr><td>53-57</td><td>Medium and Heavy Armor and Shields</td></tr>
+                <tr><td>58-61</td><td>Potions Poisons and Herbs</td></tr>
+                <tr><td>62-66</td><td>Religious Idols and Blessings</td></tr>
+                <tr><td>67-71</td><td>Songs and Instruments</td></tr>
+                <tr><td>72-75</td><td>Spell Tomes and Scrolls</td></tr>
+                <tr><td>76-80</td><td>Thieving Supplies</td></tr>
+                <tr><td>81-86</td><td>Tools</td></tr>
+                <tr><td>87-91</td><td>Vehicles and Transportation</td></tr>
+                <tr><td>92-96</td><td>Weapons</td></tr>
+                <tr><td>97-100</td><td>Legendary Merchant</td></tr>
+            </table>
+            <table>
+                <tr><th>d12</th><th>Legendary Merchants</th></tr>
+                <tr><td>1</td><td>Astral Traveller</td></tr>
+                <tr><td>2-3</td><td>Enchantments</td></tr>
+                <tr><td>4</td><td>Fey Bargins</td></tr>
+                <tr><td>5-6</td><td>Magic Items</td></tr>
+                <tr><td>7-8</td><td>Magical Creatures</td></tr>
+                <tr><td>9-10</td><td>Necromancy</td></tr>
+                <tr><td>11</td><td>Needful Things</td></tr>
+                <tr><td>12</td><td>Time-Lost</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Region Types</h1>
+            <table>
+            <tr><th>Type</th><th>Travel Time</th><th>Food DC</th><th>Water DC</th><th>Navigation DC</th></tr>
+            <tr><td>Arctic</td><td>Normal</td><td>15</td><td>13</td><td>10</td></tr>
+            <tr><td>Coastal</td><td>Normal</td><td>10</td><td>15</td><td>13</td></tr>
+            <tr><td>Desert</td><td>Normal</td><td>18</td><td>20</td><td>13</td></tr>
+            <tr><td>Forest</td><td>1/2 Speed</td><td>10</td><td>10</td><td>15</td></tr>
+            <tr><td>Grassland</td><td>Normal</td><td>10</td><td>13</td><td>10</td></tr>
+            <tr><td>Hills</td><td>1/2 Speed</td><td>13</td><td>10</td><td>13</td></tr>
+            <tr><td>Mountains</td><td>1/3 Speed</td><td>15</td><td>15</td><td>15</td></tr>
+            <tr><td>Extreme Mountains</td><td>1/4 Speed</td><td>18</td><td>18</td><td>18</td></tr>
+            <tr><td>Swamp</td><td>1/4 Speed</td><td>13</td><td>10</td><td>15</td></tr>
+            <tr><td>Underdark</td><td>1/2 Speed</td><td>15</td><td>15</td><td>18</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+    </md-grid-list>
+</body>
+<!-- application bootstrap  -->
+<script type="text/javascript">
+var app = angular.module('App', ['ngMaterial', 'ngMessages']);
+app.controller('appCtrl', function($scope) {
+    $scope.skills = getSkills();
+    $scope.characters = getCharacters();
+    $scope.baseSkills = getBaseSkills();
+
+    $scope.terrains = GetTerrains();
+    $scope.averagePartyLevel = 1;
+    $scope.onRoad = false;
+    $scope.terrain = "Urban";
+
+    $scope.cr = 1;
+
+    $scope.wetnesses = ["Arid", "Temperate", "Muggy", "Sea"];
+    $scope.watches = ['12am - 4am', '4am - 8am', '8am - 12pm', '12pm - 4pm', '4pm - 8pm', '8pm - 12am'];
+
+    $scope.watch = 2;
+    $scope.wetness = "Temperate";
+    $scope.advanceBy = 1;
+    $scope.averageTemperature = 72;
+    $scope.previousWeather = {
+        wind: 0,
+        precipitation: 0,
+        temperature: 0
+    };
+
+    $scope.shopTypes = GetShopTypes();
+    $scope.shopLocations = GetShopLocations();
+
+    $scope.shopName = "Shop";
+    $scope.shopLocation = $scope.shopLocations[0];
+    $scope.shopType = $scope.shopTypes[0];
+    $scope.useSeed = false;
+
+    $scope.shop = {
+        Name: $scope.shopName,
+        MoneyOnHand: 0,
+        Quality: "",
+        Type: "",
+        Inventory: []
+    };
+
+    $scope.npc = null;
+
+    $scope.calculateCharaters = function() {
+        $scope.characters.forEach(function(character) {
+            calculateCharacter(character.Name, character);
+        });
+    };
+
+    $scope.calculateCharaters();
+
+    $scope.allAreEmpty = function(skill) {
+        allEmpty = true;
+        $scope.characters.forEach(function(character) {
+            if (character[skill] !== 0 || character[skill] !== "") {
+                allEmpty = true;
+            }
+        });
+        return allEmpty;
+    };
+
+    $scope.GetWilderness = function(terrain, onRoad, averagePartyLevel) {
+        document.getElementById("encounters").innerHTML = GetWilderness(terrain, onRoad, averagePartyLevel);
+    };
+    $scope.GetMonsterEncounter = function(terrain, averagePartyLevel) {
+        document.getElementById("encounters").innerHTML = GetMonsterEncounter(terrain, averagePartyLevel);
+    };
+
+    $scope.GetStandardTreasure = function(cr) {
+        document.getElementById("treasure").innerHTML = RandomTreasureHoard(cr, true);
+    };
+    $scope.GetAlternateTreasure = function(cr) {
+        document.getElementById("treasure").innerHTML = RandomTreasureHoard(cr, false);
+    };
+
+    $scope.GetNextWeather = function(wetness, averageTemperature, watch, advanceBy, previousWeather) {
+        $scope.previousWeather = GetNextWeather(wetness, averageTemperature, watch, advanceBy, previousWeather);
+        $scope.watch = ($scope.advanceBy + $scope.watch) % $scope.watches.length;
+    };
+
+    $scope.GetShop = function(useSeed, name, type, location) {
+        $scope.shop = GetShop(useSeed, name, type, location);
+    };
+
+    $scope.GetNPC = function() {
+        $scope.npc = GetNPC("Average", []);
+        console.log($scope.npc);
+        document.getElementById("npc").innerHTML = $scope.npc.Description;
+    };
+});
+
+</script>
+</html>

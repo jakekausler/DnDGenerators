@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="App" ng-cloak>
+    <md-grid-list md-cols="10" md-row-height="12.4%">
+        <md-grid-tile md-colspan="6" md-rowspan="4">
+        <div class="panel">
+            <md-grid-list md-cols="3" md-row-height="97.5%">
+                <md-grid-tile>
+                    <div class="panel no-outline">
+                        <h1>Chase</h1>
+                        <p>During the chase, participants can freely use the DASH action a number of times equal to 3 + its CON modifier.</p>
+                        <p>Each additional DASH requires the creature to succeed on a DC 10 CON check at the end of its turn or take one level of Exhaustion.</p>
+                        <p>Stopping to cast spells will allow the pursued to increase their lead, and may well mean they will get away, but it is certainly not forbidden.</p>
+                        <h2>Ending the Chase</h2>
+                        <p>Each quarry makes a DEX (Stealth) check at the end of each round, after everyone has had their turn. The result is compared to the Passive PER score of the pursuer(s).</p>
+                        <p>If the quarry is NEVER out of the pursuer’s sight, the check fails automatically.</p>
+                        <p>Otherwise, if the Stealth check is higher than the PER score, the quarry escapes. If not, the chase continues.</p>
+                        <h2>Escape Factors</h2>
+                        <table>
+                            <tr><th>Factor</th><th>Steath Has...</th></tr>
+                            <tr><td>Quarry has many things to hide behind</td><td>Advantage</td></tr>
+                            <tr><td>Quarry is in a very crowded or noisy area</td><td>Advantage</td></tr>
+                            <tr><td>Quarry has few things to hide behind</td><td>Disadvantage</td></tr>
+                            <tr><td>Quarry is in an uncrowded or quiet area </td><td>Disadvantage</td></tr>
+                            <tr><td>The lead pursuer is a ranger or has proficiency in Survival</td><td>Disadvantage</td></tr>
+                        </table>
+                        <h2>Chase Complications</h2>
+                        <p>As with any good chase scene, complications can arise to make a chase more pulse-pounding.</p>
+                        <p>Complications occur randomly. Each participant in the chase rolls a d20 at the end of its turn. Consult the appropriate table to determine whether a complication occurs. If it does, it affects the next chase participant in the initiative order, not the participant who rolled the die. The participant who rolled the die or the participant affected by the complication can spend inspiration to negate the complication.</p>
+                    </div>
+                </md-grid-tile>
+                <md-grid-tile>
+                    <div class="panel no-outline">
+                        <h2>Urban Chase Complications</h2>
+                        <table>
+                            <tr><th>d20</th><th>Complication</th></tr>
+                            <tr><td>1</td><td>A large obstacle such as a horse or cart blocks your way. Make a DC 15 Dexterity (Acrobatics) check to get past the obstacle. On a failed check, the obstacle' counts as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>2</td><td>A crowd blocks your way. Make a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check (your choice) to make your way through the crowd unimpeded. On a failed check, the crowd counts as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>3</td><td>A large stained-glass window or similar barrier blocks your path. Make a DC 10 Strength saving throw to smash through the barrier and keep going. On a failed save, you bounce off the barrier and fall prone.</td></tr>
+                            <tr><td>4</td><td>A maze of barrels, crates, or similar obstacles stands in your way. Make a DC 10 Dexterity (Acrobatics) or intelligence check (your choice) to navigate the maze. On a failed check, the maze counts as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>5</td><td>The ground beneath your feet is slippery with rain, spilled oil, or some other liquid. Make a DC 10 Dexterity saving throw. On a failed save, you fall prone.</td></tr>
+                            <tr><td>6</td><td>You come upon a pack of dogs fighting over food. Make a DC 10 Dexterity (Acrobatics) check to get through the pack unimpeded. On a failed check, you are bitten and take 1d4 piercing damage, and the dogs count as 5 feet of difficult terrain.</td></tr>
+                            <tr><td>7</td><td>You run into a brawl in progress. Make a DC 15 Strength (Athletics), Dexterity (Acrobatics), or Charisma (Intimidation) check (your choice) to get past the brawlers unimpeded. On a failed check, you take 2d4 bludgeoning damage, and the brawlers count as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>8</td><td>A beggar blocks your way. Make a DC 10 Strength (Athletics), Dexterity (Acrobatics), or Charisma (Intimidation) check (your choice) to slip past the beggar. You succeed automatically if you toss the beggar a coin. On a failed check, the beggar counts as 5 feet of difficult terrain.</td></tr>
+                            <tr><td>9</td><td>An overzealous guard, (see the Monster Manual for game statistics), mistakes you for someone else. If you move 20 feet or more on your turn, the guard makes an opportunity attack against you with a spear (+3 to hit; 1d6 + 1 piercing damage on a hit)</td></tr>
+                            <tr><td>10</td><td>You are forced to make a sharp turn to avoid colliding with something impassable. Make a DC 10 Dexterity saving throw to navigate the turn. On a failed save, you collide with something hard' and take 1d4 bludgeoning damage.</td></tr>
+                            <tr><td>11-20</td><td>No complication.</td></tr>
+                        </table>
+                    </div>
+                </md-grid-tile>
+                <md-grid-tile>
+                    <div class="panel no-outline">
+                        <h2>Wild Chase Complications</h2>
+                        <table>
+                            <tr><th>d20</th><th>Complication</th></tr>
+                            <tr><td>1</td><td>Your path takes you through a rough patch of brush. Make a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check (your choice) to get past the brush. On a failed check, the brush counts as 5 feet of difficult terrain.</td></tr>
+                            <tr><td>2</td><td>Uneven ground threatens to slow your progress. Make a DC 10 Dexterity (Acrobatics) check to navigate the area. On a failed check, the ground counts as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>3</td><td>You run through a swarm of insects (see the Monster Manual for game statistics, with the DM choosing whichever kind of insects makes the most sense). The swarm makes an opportunity attack against you (+3 to hit; 4d4 piercing damage on a hit).</td></tr>
+                            <tr><td>4</td><td>A stream, ravine, or rock bed blocks your path. Make a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check (your choice) to cross the impediment. On a failed check, the impediment counts as 10 feet of difficult terrain.</td></tr>
+                            <tr><td>5</td><td>Make a DC 10 Constitution saving throw. On a failed save, you are blinded by blowing sand, dirt, ash, snow, or pollen until the end of your turn. While blinded in this way, your speed is halved.</td></tr>
+                            <tr><td>6</td><td>A sudden drop catches you by surprise. Make a DC 10 Dexterity saving throw to navigate the impediment. On a failed save, you fall 1d4 x 5 feet, taking 1d6 bludgeoning damage per 10 feet fallen as normal, and land prone.</td></tr>
+                            <tr><td>7</td><td>You blunder into a hunter's snare. Make a DC 15 Dexterity saving throw to avoid it. On a failed save, you are caught in a net and restrained. See chapter 5, "Equipment," of the Player's Handbook for rules on escaping a net.</td></tr>
+                            <tr><td>8</td><td>You are caught in a stampede of spooked animals. Make a DC 10 Dexterity saving throw. On a failed save, you are knocked about and take 1d4 bludgeoning damage and 1d4 piercing damage.</td></tr>
+                            <tr><td>9</td><td>Your path takes you near a patch of razorvine. Make a DC 15 Dexterity saving throw or use 10 feet of movement (your choice) to avoid the razorvine. On a failed save, you take 1d10 slashing damage.</td></tr>
+                            <tr><td>10</td><td>A creature indigenous to the area chases after you. The DM chooses a creature appropriate for the terrain.</td></tr>
+                            <tr><td>11-20</td><td>No complication.</td></tr>
+                        </table>
+                    </div>
+                </md-grid-tile>
+            </md-grid-list>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Character Advancement</h1>
+            <table>
+                <tr><th>Experience Points</th><th>Level</th><th>Proficiency Bonus</th></tr>
+                <tr><td>0</td><td>1</td><td>+ 2</td></tr>
+                <tr><td>300</td><td>2</td><td>+ 2</td></tr>
+                <tr><td>900</td><td>3</td><td>+ 2</td></tr>
+                <tr><td>2700</td><td>4</td><td>+ 2</td></tr>
+                <tr><td>6500</td><td>5</td><td>+ 3</td></tr>
+                <tr><td>14000</td><td>6</td><td>+ 3</td></tr>
+                <tr><td>23000</td><td>7</td><td>+ 3</td></tr>
+                <tr><td>34000</td><td>8</td><td>+ 3</td></tr>
+                <tr><td>48000</td><td>9</td><td>+ 4</td></tr>
+                <tr><td>64000</td><td>10</td><td>+ 4</td></tr>
+                <tr><td>85000</td><td>11</td><td>+ 4</td></tr>
+                <tr><td>100000</td><td>12</td><td>+ 4</td></tr>
+                <tr><td>120000</td><td>13</td><td>+ 5</td></tr>
+                <tr><td>140000</td><td>14</td><td>+ 5</td></tr>
+                <tr><td>165000</td><td>15</td><td>+ 5</td></tr>
+                <tr><td>195000</td><td>16</td><td>+ 5</td></tr>
+                <tr><td>225000</td><td>17</td><td>+ 6</td></tr>
+                <tr><td>265000</td><td>18</td><td>+ 6</td></tr>
+                <tr><td>305000</td><td>19</td><td>+ 6</td></tr>
+                <tr><td>355000</td><td>20</td><td>+ 6</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="6">
+        <div class="panel">
+            <h1>CR, Proficiency, and XP</h1>
+            <table>
+                <tr><th width="50%">CR</th><th>Proficiency</th><th>XP</th></tr>
+                <tr><td>0</td><td>+ 2</td><td>0 or 10</td></tr>
+                <tr><td>1/8</td><td>+ 2</td><td>25</td></tr>
+                <tr><td>1/4</td><td>+ 2</td><td>50</td></tr>
+                <tr><td>1/2</td><td>+ 2</td><td>100</td></tr>
+                <tr><td>1</td><td>+ 2</td><td>200</td></tr>
+                <tr><td>2</td><td>+ 2</td><td>450</td></tr>
+                <tr><td>3</td><td>+ 2</td><td>700</td></tr>
+                <tr><td>4</td><td>+ 2</td><td>1100</td></tr>
+                <tr><td>5</td><td>+ 3</td><td>1800</td></tr>
+                <tr><td>6</td><td>+ 3</td><td>2300</td></tr>
+                <tr><td>7</td><td>+ 3</td><td>2900</td></tr>
+                <tr><td>8</td><td>+ 3</td><td>3900</td></tr>
+                <tr><td>9</td><td>+ 4</td><td>5000</td></tr>
+                <tr><td>10</td><td>+ 4</td><td>5900</td></tr>
+                <tr><td>11</td><td>+ 4</td><td>7200</td></tr>
+                <tr><td>12</td><td>+ 4</td><td>8400</td></tr>
+                <tr><td>13</td><td>+ 5</td><td>10000</td></tr>
+                <tr><td>14</td><td>+ 5</td><td>11500</td></tr>
+                <tr><td>15</td><td>+ 5</td><td>13000</td></tr>
+                <tr><td>16</td><td>+ 5</td><td>15000</td></tr>
+                <tr><td>17</td><td>+ 6</td><td>18000</td></tr>
+                <tr><td>18</td><td>+ 6</td><td>20000</td></tr>
+                <tr><td>19</td><td>+ 6</td><td>22000</td></tr>
+                <tr><td>20</td><td>+ 6</td><td>25000</td></tr>
+                <tr><td>21</td><td>+ 7</td><td>33000</td></tr>
+                <tr><td>22</td><td>+ 7</td><td>41000</td></tr>
+                <tr><td>23</td><td>+ 7</td><td>50000</td></tr>
+                <tr><td>24</td><td>+ 7</td><td>62000</td></tr>
+                <tr><td>25</td><td>+ 8</td><td>75000</td></tr>
+                <tr><td>26</td><td>+ 8</td><td>90000</td></tr>
+                <tr><td>27</td><td>+ 8</td><td>105000</td></tr>
+                <tr><td>28</td><td>+ 8</td><td>120000</td></tr>
+                <tr><td>29</td><td>+ 9</td><td>135000</td></tr>
+                <tr><td>30</td><td>+ 9</td><td>155000</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Obscured Areas</h1>
+            <h2>Lightly Obscured</h2>
+            <p>Creatures have disadvantage on Wisdom (Perception) checks</p>
+            <h2>Heavily Obscured</h2>
+            <p>Vision is blocked; creatures are effectively blinded.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Falling</h1>
+            <p>You can squeeze through a space one size smaller than you. You must spend 1 extra foot for every foot you move there, while squeezing you have Disadvantage on attack rolls and Dexterity saving throws.</p>
+            <p>Attack rolls against you have Advantage.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Lights</h1>
+            <table>
+                <tr><th>Source</th><th>Bright</th><th>Dim</th><th>Duration</th></tr>
+                <tr><th>Mundane</th><th></th><th></th><th></th></tr>
+                <tr><td>Candle</td><td>5' r</td><td>+ 5' r</td><td>1 hour</td></tr>
+                <tr><td>Lamp</td><td>15' r</td><td>+ 30' r</td><td>6 hours</td></tr>
+                <tr><td>Lanturn, bullseye</td><td>60' cone</td><td>+ 60' cone</td><td>6 hours</td></tr>
+                <tr><td>Lanturn, hooded</td><td>30' r</td><td>+ 30' r</td><td>6 hours</td></tr>
+                <tr><td>Torch</td><td>20' r</td><td>+ 20' r</td><td>1 hour</td></tr>
+                <tr><th>Magical</th><td></td><td></td><td></td></tr>
+                <tr><td>Continual Flame</td><td>20' r</td><td>+ 20' r</td><td>Until dispelled</td></tr>
+                <tr><td>Dancing Lights</td><td>&ndash;</td><td>10' r</td><td>Up to 1 min</td></tr>
+                <tr><td>Faerie Fire</td><td>&ndash;</td><td>10' r</td><td>Up to 1 min</td></tr>
+                <tr><td>Flame Blade</td><td>10' r</td><td>+ 10' r</td><td>Up to 10 mins</td></tr>
+                <tr><td>Flaming Sphere</td><td>20' r</td><td>+ 20' r</td><td>Up to 1 min</td></tr>
+                <tr><td>Holy Aura</td><td>&ndash;</td><td>5' r</td><td>Up to 1 min</td></tr>
+                <tr><td>Light</td><td>20' r</td><td>+ 20' r</td><td>1 hour</td></tr>
+                <tr><td>Moonbeam</td><td>&ndash;</td><td>5' cylinder</td><td>Up to 1 min</td></tr>
+                <tr><td>Prismatic Wall</td><td>100'</td><td>+ 100'</td><td>10 mins</td></tr>
+                <tr><td>Wall of Fire</td><td>60'</td><td>+ 60'</td><td>Up to 1 min</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Don/Duff Armor</h1>
+            <table>
+            <tr><th>Category</th><th>Don</th><th>Doff</th></tr>
+            <tr><td>Light Armour</td><td>1 min</td><td>1 min</td></tr>
+            <tr><td>Medium Armour</td><td>5 min</td><td>1 min</td></tr>
+            <tr><td>Heavy Armour</td><td>10 min</td><td>5 min</td></tr>
+            <tr><td>Shield</td><td>1 action</td><td>1 action</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Surprise</h1>
+            <p>Compare the Dexterity (Stealth) check of anyone hiding with the Passive Wisdom (Perception) score of those on the opposing side.</p>
+            <p>Any character or monster that doesn‘t notice a threat is surprised at the start of the encounter.</p>
+            <p>If you’re surprised, you can’t move or take an action on your first turn of the combat, and you can’t take a reaction until that turn ends. A member of a group can be surprised even if the other members aren’t.</p>
+            <p>If neither side tries to be stealthy, they automatically notice each other.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Squeezing</h1>
+            <p>You take 1d6 Bludgeoning damage for every 10 feet you fell (max 20d6).</p>
+            <p>You land prone, unless you avoid taking damage from the fall.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>DCs</h1>
+            <table>
+            <tr><th>Task Difficulty</th><th>DC</th></tr>
+            <tr><td>Very Easy</td><td>5</td></tr>
+            <tr><td>Easy</td><td>10</td></tr>
+            <tr><td>Medium</td><td>15</td></tr>
+            <tr><td>Hard</td><td>20</td></tr>
+            <tr><td>Very Hard</td><td>25</td></tr>
+            <tr><td>Nearly Impossible</td><td>30</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Cover</h1>
+            <table>
+                <tr><th>Cover</th><th>AC and DEX Save Bonus</th></tr>
+                <tr><td>½ cover</td><td>+ 2</td></tr>
+                <tr><td>¾ cover</td><td>+ 5</td></tr>
+            </table>
+            <p>In Total cover the target can't be targeted directly, but might still be affected by AoE spells etc.</p>
+        </div>
+        </md-grid-tile>
+    </md-grid-list>
+</body>
+<!-- application bootstrap  -->
+<script type="text/javascript">
+angular.module('App', ['ngMaterial', 'ngMessages']);
+</script>
+</html>

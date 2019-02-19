@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="App" ng-cloak>
+    <md-grid-list md-cols="10" md-row-height="12.4%">
+        <md-grid-tile md-colspan="2" md-rowspan="8">
+        <div class="panel">
+            <h1>Travel Activities</h1>
+            <h2>Notice Threats</h2>
+            <p>A character can keep an eye for danger and threats as the party travels, making it more difficult for enemies to ambush them, or traps to take effect. A party member that is noticing threats can use their passive Wisdom (Perception) score to notice potential threats while travelling.</p>
+            <h2>Navigate</h2>
+            <p>A character can try to prevent the group from becoming lost as they traverse the wilds. A party member that is navigating can make Wisdom (Survival) checks to navigate. A party member can assist the navigator, provided that they are proficient in Surviva\ have the Keen Mind feat, or have at least one level in ranger. Having a party member assist the navigator grants advantage on all Wisdom (Survival) checks to navigate.</p>
+            <h2>Forage</h2>
+            <p>A character can check for food or water sources, potentially gathering resources as they travel Rules for foraging while travelling are found in the "Food and Water" section of this guide.</p>
+            <h2>Track</h2>
+            <p>A character can follow a trail or set of tracks while pursuing a creature or group of creatures. Rules for tracking are found later in this section. Generally speaking, a party does not need both a navigator and a tracker, though rare exceptions may occur.</p>
+            <h2>Draw a Map</h2>
+            <p>A character can draw a map, helping the party be aware of their position in the wilds. No check is required</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Water Purity</h1>
+            <h2>Water</h2>
+            <table>
+            <tr><th>Source</th><th>Cleanliness DC</th></tr>
+            <tr><td>Puddle/Pond</td><td>10</td></tr>
+            <tr><td>Swamp/Brackish</td><td>20</td></tr>
+            <tr><td>Seawater</td><td>30</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Tracking</h1>
+            <table>
+            <tr><th>Ground Surface</th><th>DC</th></tr>
+            <tr><td>Soft surface, e.g. snow, mud</td><td>10</td></tr>
+            <tr><td>Dirt or Grass</td><td>15</td></tr>
+            <tr><td>Bare Stone</td><td>20</td></tr>
+            <tr><td>Each day since creature passed</td><td>+ 5</td></tr>
+            <tr><td>Creature left a trail, e.g. blood</td><td>- 5</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="8">
+        <div class="panel">
+            <h1>Damage/Dying</h1>
+            <h2>Unconscious</h2>
+            <p>At 0 hit points, you fall unconscious. You become conscious if you regain any hit points.</p>
+            <h2>Death Saves</h2>
+            <p>Whenever you start your turn with 0 hit points, you must make a DEATH save (DC10). Third success, you become stable; third failure, you die. Successes and failures don’t need to be consecutive, and both are reset when you regain any hit points or become stable. Natural 1: Counts as two failures. Natural 20: You regain 1 hit point.</p>
+            <h2>Damage at 0hp</h2>
+            <p>Each time a creature with 0 HP takes damage, it suffers a death fail, two from a critical hit. If the damage equals the creatures HP max, it dies.</p>
+            <h2>Stabilizing Creature</h2>
+            <p>You can use your action to administer first aid to an unconscious creature and attempt to stabilize it. (DC 10 Medicine Check). A stable unconscious creature doesn’t make death saving throws, it regains 1 hit point after 1d4 Hours. If the creature takes any damage in this state, its no longer stable and must start rolling death saving throws again.</p>
+            <h2>Instant Death</h2>
+            <p>You die if the remaining damage after 0 equals or exceeds your hit point maximum.</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Object Hit Points</h1>
+            <table>
+            <tr><th>Size</th><th>Fragile</th><th>Resilient</th></tr>
+            <tr><td>Tiny (Lock)</td><td>1d4</td><td>2d4</td></tr>
+            <tr><td>Small (Chest)</td><td>1d6</td><td>3d6</td></tr>
+            <tr><td>Medium (Barrel)</td><td>1d8</td><td>4d8</td></tr>
+            <tr><td>Large (Cart)</td><td>1d10</td><td>5d10</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Food Purity</h1>
+            <h2>Food</h2>
+            <table>
+            <tr><th>Source</th><th>Cleanliness DC</th></tr>
+            <tr><td>Raw Meat</td><td>10</td></tr>
+            <tr><td>Rotten Meat/Dairy</td><td>25</td></tr>
+            <tr><td>Other Rotten Food</td><td>20</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Exhaustion</h1>
+            <table>
+            <tr><td>Level 1</td><td>Disadvantage on Ability Checks</td></tr>
+            <tr><td>Level 2</td><td>Speed Halved</td></tr>
+            <tr><td>Level 3</td><td>Disadvantage on attack rolls and saving throws</td></tr>
+            <tr><td>Level 4</td><td>Hit point maximum halved</td></tr>
+            <tr><td>Level 5</td><td>Speed reduced to 0</td></tr>
+            <tr><td>Level 6</td><td>Death</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="2">
+        <div class="panel">
+            <h1>Object ACs</h1>
+            <table>
+            <tr><th>Substance</th><th>AC</th></tr>
+            <tr><td>Cloth, Paper, Rope</td><td>11</td></tr>
+            <tr><td>Crystal, Glass, Ice</td><td>13</td></tr>
+            <tr><td>Wood, Bone</td><td>15</td></tr>
+            <tr><td>Stone</td><td>17</td></tr>
+            <tr><td>Iron, Steel</td><td>19</td></tr>
+            <tr><td>Mithril</td><td>21</td></tr>
+            <tr><td>Adamantine</td><td>23</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Rest</h1>
+            <h2>Short Rest</h2>
+            <p>A short rest is at least 1 hour. A PC can spend any/all Hit Dice during a short rest.</p>
+            <h2>Long Rest</h2>
+            <p>A long rest is at least 8 hours, once per 24 hour period. Sleep or perform light activity; reading, talking, eating, or standing watch for no more than 2 hours of the rest period. If the rest was interrupted, you must start over unless the interruption lasted less than 1 hour. You must have at least 1 hit point to take a long rest. At the end of the rest, regain all your hit points and half your maximum Hit Dice. You can remove 1 Level of Exhaustion if you had enough Food and Water for last 24 Hours</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Travel Rate</h1>
+            <table>
+            <tr><th>Pace</th><th>Hour</th><th>Watch</th><th>Day</th><th>Effect</th></tr>
+            <tr><td>Fast</td><td>4 miles</td><td>16 miles</td><td>32 miles</td><td>- 5 to passive perception, -5 to survival checks made to navigate. Cannot do any travel activities other than noticing threats and navigating.</td></tr>
+            <tr><td>Normal</td><td>3 miles</td><td>12 miles</td><td>24 miles</td><td>None</td></tr>
+            <tr><td>Slow</td><td>2 miles</td><td>8 miles</td><td>16 miles</td><td>Able to use stealth, + 5 to survival checks made to navigate</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="4">
+        <div class="panel">
+            <h1>Getting Lost</h1>
+            <h2>Slightly Lost</h2>
+            <table>
+            <tr><th>d12</th><th>New Direction</th></tr>
+            <tr><td>1-5</td><td>Diagonally to the left</td></tr>
+            <tr><td>6-7</td><td>Straight Ahead</td></tr>
+            <tr><td>8-12</td><td>Diagonally to the right</td></tr>
+            </table>
+            <h2>Significantly Lost</h2>
+            <table>
+            <tr><th>d12</th><th>New Direction</th></tr>
+            <tr><td>1-2</td><td>Directly left</td></tr>
+            <tr><td>3-5</td><td>Diagonally to the left</td></tr>
+            <tr><td>6-7</td><td>Straight Ahead</td></tr>
+            <tr><td>8-10</td><td>Diagonally to the right</td></tr>
+            <tr><td>11-12</td><td>Directly right</td></tr>
+            </table>
+        </div>
+        </md-grid-tile>
+    </md-grid-list>
+</body>
+<!-- application bootstrap  -->
+<script type="text/javascript">
+angular.module('App', ['ngMaterial', 'ngMessages']);
+</script>
+</html>

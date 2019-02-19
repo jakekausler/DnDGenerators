@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="App" ng-cloak>
+    <md-grid-list md-cols="8" md-row-height="12.4%">
+        <md-grid-tile md-colspan="2" md-rowspan="8">
+        <div class="panel">
+            <h1>Conditions</h1>
+            </ul>
+			<h2>Blinded</h2>
+			<ul>
+            <li>Automatically fails any ability checks that requires sight.</li>
+            <li>Attack rolls against the creature have Advantage</li>
+            <li>The creature has Disadvantage on attack rolls.</li>
+            </ul>
+			<h2>Charmed</h2>
+			<ul>
+            <li>Charmed creature can’t target the charmer.</li>
+            <li>The charmer has advantage on any ability checks to interact socially with the creature</li>
+            </ul>
+			<h2>Deafened</h2>
+			<ul>
+            <li>Deafened creature automatically fails any ability checks that requires hearing.</li>
+            </ul>
+			<h2>Frightened</h2>
+			<ul>
+            <li>Creature has Disadvantage on ability checks and attack rolls while the source of its fear is within line of sight</li>
+            <li>Creature can‘t willingly move closer to the source of it‘s fear.</li>
+            </ul>
+			<h2>Grappled</h2>
+			<ul>
+            <li>A grappled creature‘s speed becomes 0.</li>
+            <li>The condition ends if the grappler is incapacitated, or if some effect removes the grappled creature from the reach of the grappler or grappling effect.</li>
+            </ul>
+			<h2>Incapacitated</h2>
+			<ul>
+            <li>Incapacitated reature can‘t take actions /reactions.</li>
+            </ul>
+			<h2>Invisible</h2>
+			<ul>
+            <li>An Invisible creature is impossible to see without the aid of magic or a special sense. (Heavily Obscured)</li>
+            <li>The creature‘s location can be detected by any noise it make or any tracks it leaves.</li>
+            <li>Attack rolls against the creature have Disadvantage, and the creature‘s attack rolls have Advantage.</li>
+            </ul>
+			<h2>Paralyzed</h2>
+			<ul>
+            <li>A Paralyzed creature is Incapacitated and can‘t move or speak.</li>
+            <li>The creature automatically fails Strenght and Dexterity Saves.</li>
+            <li>Attack rolls against the creature have Advantage.</li>
+            <li>Any Attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.</li>
+            </ul>
+            <h2>Petrified</h2>
+            <ul>
+            <li>A Petrified creature is transformed, along with any nonmagical objects it is wearing/carrying, into a solid inanimate substance.</li>
+            <li>The creature is Incapacitated, cant‘t move or speak and is unaware of its surroundings.</li>
+            <li>Attack rolls against the creature have Advantage.</li>
+            <li>The creature automatically fails Strength and Dexterity saves.</li>
+            <li>The creature has resistance to all damage.</li>
+            <li>The creature is immune to poison and disease, poison or disease already in its system is suspended, not neutralized.</li>
+            <li>Weight of the creature increases by a factor of 10, and it ceases aging.</li>
+            </ul>
+            <h2>Poisoned</h2>
+            <ul>
+            <li>A Poisioned creature has Disadvantage on attack rolls and ability checks.</li>
+            </ul>
+            <h2>Prone</h2>
+            <ul>
+            <li>A Prone creature‘s only movement option is to crawl (half speed), unless it stands up and thereby ends the condition.</li>
+            <li>The creature has Disadvantage on attack rolls.</li>
+            <li>An attack roll against the creature has Advantage if the attacked is within 5 feet of the creature. Otherwise, the attack roll has Disadvantage.</li>
+            </ul>
+            <h2>Restrained</h2>
+            <ul>
+            <li>A restrained creature‘s speed becomes 0.</li>
+            <li>Attack rolls against the creature have Advantage, and the creature‘s attack rolls have Disadvantage.</li>
+            <li>The creature has Disadvantage on Dexterity saves.</li>
+            </ul>
+            <h2>Stunned</h2>
+            <ul>
+            <li>A Stunned creature is Incapacitated, can‘t move, and can speak only falteringly.</li>
+            <li>The creature automatically fails Strength and Dexterity saves.</li>
+            <li>Attack rolls against the creature have Advantage.</li>
+            </ul>
+            <h2>Unconscious</h2>
+            <ul>
+            <li>An Unconscious creature is Incapacitated, can‘t move or speak, and is unaware of its surrounding.</li>
+            <li>The creature drops whatever its holding and falls prone.</li>
+            <li>The creature atumatically fails Strength and Dexterity saves.</li>
+            <li>Attack rolls againts the creature have Advantage.</li>
+            <li>Any attack that hits the creature is critical hit if the attacker is within 5 feet of the creature.</li>
+            </ul>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="8">
+        <div class="panel">
+            <h1>Actions in Combat</h1>
+            <h2>Attack</h2>
+            <p>Make one melee or ranged attack, a grapple or a shove.</p>
+            <h2>Cast a Spell</h2>
+            <p>Cast a spell with a casting time of 1 action.</p>
+            <h2>Dash</h2>
+            <p>Gain extra movement equal to your speed.</p>
+            <h2>Disengage</h2>
+            <p>Your movement doesn’t provoke opportunity attacks.</p>
+            <h2>Dodge</h2>
+            <p>Until the start of your next turn, any attack against you has Disadvantage if you can see the attacker. You also gain Advantage on DEX Saves. Benefit is lost incapacitated or if your speed drops to 0.</p>
+            <h2>Help</h2>
+            <p>Give another creature Advantage on next attack roll (you must be within 5 ft. of the target) or ability check.</p>
+            <h2>Hide</h2>
+            <p>Stealth check to attempt to become hidden. See Stealth rules for more details.</p>
+            <h2>Ready</h2>
+            <p>Take a reaction in response to a defined trigger event, or ready a spell and hold its energy. (req. concentration)</p>
+            <h2>Search</h2>
+            <p>Make a Perception or Investigation Check to locate something. Use an Object / Item Interact with a seond object on your turn (first interaction is free), or magical item.</p>
+            <h2>Disarm</h2>
+            <p>Use an attack to make attack roll opposed by target’s Athletics or Acrobatics check. Target has advantage if holding the item with 2 or more hands.</p>
+            <h2>Overrun/Tumble</h2>
+            <p>Athletics or Acrobatics contest. If you win, you can move through the hostile’s space once this turn.</p>
+            <h2>Grapple/Shove</h2>
+            <p>Athletics contested by Athletics or Acrobatics (DEX). If you win, you can Grapple the target, knock it prone or shove it 5 ft. away from you. Counts as Attack Action.</p>
+            <h2>Shove Aside</h2>
+            <p>Athletics with Disadvantage contested by Athletics or Acrobatics (DEX). If you win, you can move the target 5 ft. to a different space within its reach.</p>
+            <h2>Special Ability</h2>
+            <p>Use a class feature or other special ability that requires your action for its use.</p>
+            <h2>Improvise</h2>
+            <p>Take an Action not described here, providing your DM allows it. (e.g. Break down a door, intimidate foes, etc.)</p>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Strength</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Athlethics • Climb</h2>
+                    <table>
+                    <tr><td width="20%">Climb</td><td width="10%">DC 0-5</td><td>With sufficient handholds ½ your movement speed</td></tr>
+                    <tr><td>Easy</td><td>DC 10</td><td>Scale a cliff with plenty of handholds</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Climb a rough stone wall</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Climb a sheer surface with scant handholds</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Climb an oiled rope</td></tr>
+                    </table>
+                    <h2>Athlethics • Jump</h2>
+                    <table>
+                    <tr><td width="20%">Long Jump</td><td width="10%">DC 0-5</td><td>1 foot per STR with 10ft run-up, ½ from standing</td></tr>
+                    <tr><td>High Jump</td><td>DC 0-5</td><td>3+STR Mod. In feet with 10ft runup, ½ from standing</td></tr>
+                    <tr><td>Easy</td><td>DC 10</td><td>Jump a few feet farther than you normally could</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Throw a grappling hook in the middle of a long jump</td></tr>
+                    </table>
+                    <h2>Athlethics • Swim</h2>
+                    <table>
+                    <tr><td width="20%">Swim</td><td width="10%">DC 0-5</td><td>½ your movement speed, each hour you must succeed on DC 10 Constitution saving throw or gain one level of exhaustion</td></tr>
+                    <tr><td>Easy</td><td>DC 10</td><td>Tread water in rough conditions</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Swim in stormy waters</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Swim free of a vortex</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Improvised Tasks • Break an Object</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Force open a stuck wooden door</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Force open a stuck heavy door</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Break open a solid locked door; break rope bonds/manacles</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Break open a solid barred door or elaborate lock</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Break open a heavy barred door with masterwork lock</td></tr>
+                    </table>
+                    <h2>Improvised Tasks • Mighty Strength</h2>
+                    <table>
+                    <tr><td width="20%">Moderate</td><td width="10%">DC 15</td><td>Push through an earthen tunnel that is too small</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Hang on to a wagon while being dragged behind it</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Tip over a large stone statue; keep a boulder from rolling</td></tr>
+                    <tr><td>Contest (vs. STR)</td><td></td><td>Push a door open when someone else is holding it</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+        <md-grid-tile md-colspan="4" md-rowspan="4">
+        <div class="panel">
+            <h1>Intelligence</h1>
+            <md-grid-list md-cols="2" md-row-height="95%">
+                <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Arcana, History, Nature, Religion • Recall Lore</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Recall widely known facts; identify a common symbol</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Recall specific details about widely known facts; recall vague information about slightly obscure facts; identify an uncomon monster;</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Recall specific details about obscure facts; recall vague information about truly esotric facts; identify a spell as it is being cast; understand a dialect of a known language</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Recall specific details about truly esoteric facts known only to a few; identify an especially rare monster; decipher a simple message in an unfamiliar language; identify the persistent effects of a spell</td></tr>
+                    <tr><td>Formidable</td><td>DC 30</td><td>Identify a unique monster</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile md-colspan="1" md-rowspan="1">
+                <div class="panel no-outline">
+                    <h2>Investigation • Searching for clues</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Find a simple tripwire or a pit covered with branches and leaves</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Find the signs of a creature passing across dry ground and deduce its nature and the direction of its travels; find a hidden compartment in a chest</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Find a typical secret door or a pressure plate in the floor;</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Find a particularly well-hidden secret door or pressure plate</td></tr>
+                    </table>
+                    <h2>Improvised Tasks • Clever Solutions</h2>
+                    <table>
+                    <tr><td width="20%">Easy</td><td width="10%">DC 10</td><td>Communicate a simple idea to a creature that doesn’t share your language.</td></tr>
+                    <tr><td>Moderate</td><td>DC 15</td><td>Deduce what kind of weapon caused an injury; estimate the value of a piece of jewelry; pull together a disguise to help an ally pass as a city guard</td></tr>
+                    <tr><td>Hard</td><td>DC 20</td><td>Determine how to cause part of a tunnel to collapse; estimate the value of a gemstone</td></tr>
+                    <tr><td>Very Hard</td><td>DC 25</td><td>Estimate the value of a rare, antique or exotic item</td></tr>
+                    <tr><td>Contest (vs. Insight)</td><td></td><td>Pass off a forged document as real</td></tr>
+                    </table>
+                </div>
+            </md-grid-tile>
+        </div>
+        </md-grid-tile>
+    </md-grid-list>
+</body>
+<!-- application bootstrap  -->
+<script type="text/javascript">
+angular.module('App', ['ngMaterial', 'ngMessages']);
+</script>
+</html>
