@@ -402,114 +402,10 @@ var GetRandomizedRace = function(raceName) {
 	};
 };
 
-var RaceNames = {
-	"Human":{
-		"Male": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir", "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth", "Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur", "Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak", "An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen", "Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
-		"Female": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida", "Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele", "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis", "Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra", "Bai", "Chao", "Jia", "Lei", "Mei", "Qiao", "Shui", "Tai", "Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"]
-	},
-	"Half-Elf":{
-		"Male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis", "Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir", "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth", "Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur", "Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak", "An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen", "Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
-		"Female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia" ,"Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida", "Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele", "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis", "Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra", "Bai", "Chao", "Jia", "Lei", "Mei", "Qiao", "Shui", "Tai", "Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"]
-	},
-	"Halfling":{
-		"Male": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
-		"Female": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"]
-	},
-	"Dwarf":{
-		"Male": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
-		"Female": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"]
-	},
-	"Tiefling":{
-		"Male": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"],
-		"Female": ["Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta"]
-	},
-	"Dragonborn":{
-		"Male": ["Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Mehen", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn"],
-		"Female": ["Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit"]
-	},
-	"Elf":{
-		"Male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
-		"Female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"]
-	},
-	"Half-Orc":{
-		"Male": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk"],
-		"Female": ["Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola", "Volen", "Yevelda"]
-	},
-	"Gnome":{
-		"Male": ["Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"],
-		"Female": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"]
-	},
-	"Lizardfolk":{
-		"Male": ["Achuak", "Aryte", "Baeshra", "Darastrix", "Garurt", "Irhtos", "Jhank", "Kepesk", "Kethend", "Korth", "Kosj", "Kothar", "Litrix", "Mirik", "Othokent", "Sauriv", "Throden", "Thurkear", "Usk", "Valignat", "Vargach", "Verthica", "Vutha", "Vyth"],
-		"Female": ["Achuak", "Aryte", "Baeshra", "Darastrix", "Garurt", "Irhtos", "Jhank", "Kepesk", "Kethend", "Korth", "Kosj", "Kothar", "Litrix", "Mirik", "Othokent", "Sauriv", "Throden", "Thurkear", "Usk", "Valignat", "Vargach", "Verthica", "Vutha", "Vyth"]
-	},
-	"Tabaxi":{
-		"Male": ["Cloud", "Timber", "Jade", "Bird", "Thunder", "Snake", "Smoke"],
-		"Female": ["Cloud", "Timber", "Jade", "Bird", "Thunder", "Snake", "Smoke"]
-	},
-	"Triton":{
-		"Male": ["Corus", "Delnis", "Jhimas", "Keros", "Molos", "Nalos", "Vodos", "Zunis"],
-		"Female": ["Aryn", "Belthyn", "Duthyn", "Feloren", "Otanyn", "Shalryn", "Vlaryn", "Wolyn"]
-	},
-	"Kenku":{
-		"Male": ["Boiler", "Clawer", "Knocker", "Hammer", "Hooter", "Horse Neigh", "Parrot Call", "Hatchet Split", "Hide Smack", "Kettle Bubble", "Mauler", "Biter", "Cobbler", "Singer", "Horse Snort", "Seal Flop", "Beaver Chew", "Crate Creak", "Hatchet Cut", "Hide Flick", "Lasher", "Slammer", "Roaster", "Giraffe Smash", "Parrot Squawk", "Bear Stomp", "Furnace Door", "Chisel Cut"],
-		"Female": ["Boiler", "Clawer", "Knocker", "Hammer", "Hooter", "Horse Neigh", "Parrot Call", "Hatchet Split", "Hide Smack", "Kettle Bubble", "Mauler", "Biter", "Cobbler", "Singer", "Horse Snort", "Seal Flop", "Beaver Chew", "Crate Creak", "Hatchet Cut", "Hide Flick", "Lasher", "Slammer", "Roaster", "Giraffe Smash", "Parrot Squawk", "Bear Stomp", "Furnace Door", "Chisel Cut"]
-	},
-	"Aasimar":{
-		"Male": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir", "Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd", "Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor", "Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth", "Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur", "Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak", "An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen", "Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
-		"Female": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida", "Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele", "Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora", "Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra", "Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis", "Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra", "Bai", "Chao", "Jia", "Lei", "Mei", "Qiao", "Shui", "Tai", "Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"]
-	},
-	"Firbolg":{
-		"Male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
-		"Female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"]
-	},
-	"Gith":{
-		"Male": ["Amak", "Arja'rok", "Dak'kon", "Djakh", "Djelekh", "D'keth", "Fri'hi", "Hailcii'n", "Hifek", "Karan", "Karath", "Kars'ten", "Keluk", "Menyar-Ag-Gith", "M'narr", "Parakk", "Ra'as", "Retholien", "Rivek", "Rrek", "Rr'ka", "Selqant", "Toryg", "Try'ig'or", "Vilquar", "Zerchai", "Zerthimon"],
-		"Female": ["Ach'ali", "Devorxa", "Elezpah", "Harana'ii", "Ji'li'kai", "K'atzn'ii", "Kii'na", "Lar'il", "Moraan", "Rashka – Protector of Nath'kt'lan", "Ro'jhi", "T'cha", "Treena", "T'shaa", "Torpel'lin"]
-	},
-	"Goliath":{
-		"Male": ["Aukan", "Eglath", "Gae-Al", "Gauthak", "Ilikan", "Keothi", "Kuori", "Lo-Kag", "Manneo", "Maveith", "Nalla", "Orilo", "Paavu", "Pethani", "Thalai", "Thotham", "Uthal", "Vaunea", "Vimak"],
-		"Female": ["Aukan", "Eglath", "Gae-Al", "Gauthak", "Ilikan", "Keothi", "Kuori", "Lo-Kag", "Manneo", "Maveith", "Nalla", "Orilo", "Paavu", "Pethani", "Thalai", "Thotham", "Uthal", "Vaunea", "Vimak"]
-	}
-};
-
 var GetNPCName = function(race, gender) {
 	var name = randomChoice(RaceNames[race.Name][gender]);
 	return name;
 };
-
-var MusicalInstruments = [
-	"Bagpipes",
-	"Drum",
-	"Dulcimer",
-	"Flute",
-	"Lute",
-	"Lyre",
-	"Horn",
-	"Pan",
-	"Shawm",
-	"Viol"
-];
-
-var ArtisanTools = [
-	"Alchemist's supplies",
-	"Brewer's supplies",
-	"Calligrapher's supplies",
-	"Carpenter's tools",
-	"Cartographer's Tools",
-	"Cobbler's tools",
-	"Cook's utensils",
-	"Glassblower's tools",
-	"Jeweler's tools",
-	"Leatherworker's tools",
-	"Mason's Tools",
-	"Painter's supplies",
-	"Potter's tools",
-	"Smith's Tools",
-	"Tinker's Tools",
-	"Weaver's tools",
-	"Woodcarver's tools"
-];
 
 var GetRandomizedClass = function(className, race, background) {
 	var level = Math.min(Math.floor(new Random().exponential(0.5) + 1), 20);
@@ -4081,7 +3977,6 @@ var LookupOccupation = function(primary, secondary) {
 	return BackgroundMap[primary][secondary];
 };
 
-
 var GetParents = function(race, gender) {
 	var genderPronoun = GetGenderPronoun(gender);
 	var genderPossessivePronoun = GetGenderPossessivePronoun(gender);
@@ -4612,56 +4507,6 @@ var GetAge = function(race) {
 	}
 };
 
-var RandomThreshold = function() {
-	return Math.random() * 0.2 + 0.9;
-};
-
-// var GetHeight = function(race) {
-// 	switch (race.Name) {
-// 	case 'Dragonborn':
-// 		return Math.floor((Roll(2,8) + 66) * RandomThreshold());
-// 	case 'Dwarf':
-// 		return Math.floor((Roll(2,4) + 44) * RandomThreshold());
-// 	case 'Elf':
-// 		return Math.floor((Roll(2,10) + 54) * RandomThreshold());
-// 	case 'Gnome':
-// 		return Math.floor((Roll(2,4) + 35) * RandomThreshold());
-// 	case 'Half Elf':
-// 		return Math.floor((Roll(2,8) + 57) * RandomThreshold());
-// 	case 'Half Orc':
-// 		return Math.floor((Roll(2,10) + 58) * RandomThreshold());
-// 	case 'Halfling':
-// 		return Math.floor((Roll(2,4) + 31) * RandomThreshold());
-// 	case 'Human':
-// 		return Math.floor((Roll(2,10) + 56) * RandomThreshold());
-// 	case 'Tiefling':
-// 		return Math.floor((Roll(2,8) + 56) * RandomThreshold());
-// 	}
-// };
-
-// var GetWeight = function(race) {
-// 	switch (race.Name) {
-// 	case 'Dragonborn':
-// 		return Math.floor(Roll(2,6) * 175 * RandomThreshold());
-// 	case 'Dwarf':
-// 		return Math.floor(Roll(2,6) * 115 * RandomThreshold());
-// 	case 'Elf':
-// 		return Math.floor(Roll(1,4) * 90 * RandomThreshold());
-// 	case 'Gnome':
-// 		return Math.floor(Roll(1,1) * 35 * RandomThreshold());
-// 	case 'Half Elf':
-// 		return Math.floor(Roll(2,4) * 110 * RandomThreshold());
-// 	case 'Half Orc':
-// 		return Math.floor(Roll(2,6) * 140 * RandomThreshold());
-// 	case 'Halfling':
-// 		return Math.floor(Roll(1,1) * 35 * RandomThreshold());
-// 	case 'Human':
-// 		return Math.floor(Roll(2,4) * 110 * RandomThreshold());
-// 	case 'Tiefling':
-// 		return Math.floor(Roll(2,4) * 110 * RandomThreshold());
-// 	}
-// };
-
 var GetGender = function() {
 	return Math.random() < 0.5 ? "Male": "Female";
 };
@@ -4909,15 +4754,6 @@ var GetPrimaryMotivator = function() {
 		return "Vice - To enable or engage in self-destructive behavior";
 	}
 };
-
-var CommunityStatuses = [
-	"Utopian",
-	"Prosperous",
-	"Average",
-	"Poor",
-	"Recent Tragedy",
-	"Long Term Oppression"
-];
 
 var GetEmotionalDisposition = function(communityStatus) {
 	var deepEmotion = "";
@@ -5831,125 +5667,6 @@ var GetHumor = function() {
 	}
 };
 
-var Quirks = [
-	"Humming",
-	"Dancing",
-	"Sleepwalking",
-	"Facial tics",
-	"Exhibitionism",
-	"Fingernail biting",
-	"Eavesdropping",
-	"Daydreaming",
-	"Talking in sleep",
-	"Stuttering",
-	"Compulsive lying",
-	"Whistling",
-	"Name dropping",
-	"Self-inflict pain/injury",
-	"Mumbling",
-	"Constant grooming",
-	"Foot tapping",
-	"Lip biting/licking",
-	"Coin flipping",
-	"Chewing (e.g. sticks, small bones)",
-	"Knuckle cracking",
-	"Collects odd things",
-	"Singing",
-	"Snacking (nuts, seeds, etc.)",
-	"Reciting poetry",
-	"Constant eating",
-	"Pacing",
-	"Blade sharpening",
-	"Counting",
-	"Hair pulling",
-	"Snoring",
-	"Walking backwards",
-	"Teeth sucking",
-	"Excessively touching others",
-	"Substance use (non-addicted)",
-	"Hair pulling",
-	"Animal hater",
-	"Insomnia",
-	"Beard/hair stroking",
-	"Nose picking",
-	"Needless apologizing",
-	"Exaggeration",
-	"Superstitious (omens, luck, etc.)",
-	"Belching",
-	"Sleeping in odd places",
-	"Repeating others",
-	"Smelling things",
-	"Teeth picking",
-	"Stealing",
-	"Tree climbing"
-];
-
-var Hobbies = [
-	"Acrobatics",
-	"Acting",
-	"Astrology",
-	"Music appreciation",
-	"Theatre",
-	"Gaming (e.g. chess)",
-	"Boating/Sailing",
-	"Collecting",
-	"Calligraphy",
-	"Cards",
-	"Carving",
-	"Combat competition",
-	"Cooking",
-	"Dancing",
-	"Dicing",
-	"Animal fighting",
-	"Eating",
-	"Drinking",
-	"Embroidery",
-	"Falconry",
-	"Fishing",
-	"Fortune-telling",
-	"Singing",
-	"Gambling",
-	"Gardening",
-	"Glassmaking",
-	"Animal racing",
-	"Horse riding",
-	"Hunting",
-	"Invention",
-	"Jewelry making",
-	"Jousting",
-	"Juggling",
-	"Metalwork",
-	"Painting",
-	"Philosophizing",
-	"Reading",
-	"Research",
-	"Riddles",
-	"Sewing",
-	"Sports (Wrestling, racing, etc)",
-	"Storytelling",
-	"Swimming",
-	"Art appreciation",
-	"Weaving",
-	"Woodworking",
-	"Writing",
-	"Playing an instrument",
-	"Pipe smoking",
-	"Bird watching"
-];
-
-var MentalDisorders = [
-	"Addiction - Chronic, compulsive drug/activity indulgence, despite harmful consequences. Can decide if it is mild, moderate, or severe.",
-	"Amnesia - Severe memory loss; can be loss before a certain point (retrograde) or after (anterograde).",
-	"Bipolar Disorder - Erratic swings from periods of mania to major depression.",
-	"PTSD - Anxiety disorder developed after exposure to a terrifying event or ordeal resulting in potential re-experiencing of the ordeal, nightmares, hypervigilance, trouble sleeping, being easily startled, and avoidance of anything that is a reminder of the event.",
-	"Major Depression - Impaired physical functions (e.g., sleep, appetite); loss of interest and pleasure; low energy & motivation; possibly accompanied by severe pessimism, hopelessness, guilt, and suicidal thoughts/intent.",
-	"Fugue - Abrupt travel away from home, an inability to remember important aspects of one's life, and the partial or complete adoption of a new identity.",
-	"Hypochondria - Preoccupation with fears of having a serious disease or physical problem based on little or no real evidence.",
-	"Schizophrenia - Delusions (unreal beliefs, e.g. savior complex or assigning unusual significance or meaning to normal events); hallucinations (unreal sensations, usually auditory, i.e. 'voices'); disorganized speech; grossly disorganized or catatonic behavior; paranoia.",
-	"OCD - Obsessive-Compulsive Disorder described the existence of both regular compulsions (overwhelming need to engage in a ritualized behavior) and obsessions (persistent, often irrational, and seemingly uncontrollable thoughts).",
-	"Phobia - Extreme anxiety and fear associated with an object or situation. Can include anything, for instance: specific monsters/animals, fire/water, heights, magic, open/enclosed spaces, heights, or darkness."
-];
-
 var GetQuirks = function() {
 	var quirks = [];
 	quirks.push(randomChoice(Quirks));
@@ -5963,7 +5680,7 @@ var GetQuirks = function() {
 };
 
 var GetHobbies = function() {
-var hobbies = [];
+	var hobbies = [];
 	hobbies.push(randomChoice(Hobbies));
 	while (Math.random() < 0.2) {
 		q = randomChoice(Hobbies);
@@ -5986,122 +5703,6 @@ var GetMentalDisorders = function() {
 		}
 	}
 	return mentalDisorders;
-};
-
-var AllPrejudices = [
-	"Males",
-	"Females",
-	"The Lower Class",
-	"The Middle Class",
-	"The Upper Class",
-	"Babies",
-	"Children",
-	"Teenagers",
-	"Young Adults",
-	"Middle Aged People",
-	"The Elderly",
-	"Homosexuals",
-	"Bisexuals",
-	"Magic Users",
-	"Dragonborn",
-	"Dwarfs",
-	"Elfs",
-	"Gnomes",
-	"Half-Elfs",
-	"Half-Orcs",
-	"Halflings",
-	"Humans",
-	"Tieflings",
-	"Aarakocras",
-	"Aasimars",
-	"Bug Bears",
-	"Firbolgs",
-	"Goblins",
-	"Grungs",
-	"Hobgoblins",
-	"Kenkus",
-	"Kobolds",
-	"Lizardfolks",
-	"Orcs",
-	"Tabaxis",
-	"Tritons",
-	"Yuan-Ti Purebloods",
-	"Giths",
-	"Changelings",
-	"Eladrins",
-	"Genasis",
-	"Goliaths",
-	"Minotaurs",
-	"Shifters",
-	"Warforged Creatures",
-	"Fighters",
-	"Rangers",
-	"Clerics",
-	"Rogues",
-	"Wizards",
-	"Bards",
-	"Monks",
-	"Sorcerers",
-	"Warlocks",
-	"Barbarians",
-	"Paladins",
-	"Druids",
-	"Followers of Auril",
-	"Followers of Azuth",
-	"Followers of Bane",
-	"Followers of Beshaba",
-	"Followers of Bhaal",
-	"Followers of Chauntea",
-	"Followers of Cyric",
-	"Followers of Deneir",
-	"Followers of Eldath",
-	"Followers of Gond",
-	"Followers of Helm",
-	"Followers of Ilmater",
-	"Followers of Kelemvor",
-	"Followers of Lathander",
-	"Followers of Leira",
-	"Followers of Lliira",
-	"Followers of Loviatar",
-	"Followers of Malar",
-	"Followers of Mask",
-	"Followers of Mielikki",
-	"Followers of Milil",
-	"Followers of Myrkul",
-	"Followers of Mystra",
-	"Followers of Oghma",
-	"Followers of Savras",
-	"Followers of Selûne",
-	"Followers of Shar",
-	"Followers of Silvanus",
-	"Followers of Sune",
-	"Followers of Talona",
-	"Followers of Talos",
-	"Followers of Tempus",
-	"Followers of Torm",
-	"Followers of Tymora",
-	"Followers of Tyr",
-	"Followers of Umberlee",
-	"Followers of Waukeen",
-	"Atheists",
-	"Agnostics",
-	"People with Careers with the Lesser Nobility",
-	"People with Religious Careers",
-	"People who work in the Legal/Judicial",
-	"People with Careers in the Military",
-	"People with Careers in Academics",
-	"People work in the Merchant/Servicer industry",
-	"People who work in the Agriculture industry",
-	"People who work as Entertainers",
-	"People who are known as a Scoundrel/Underclass",
-];
-var anyInclude = function(arr, str) {
-	for (var i in arr) {
-		if (arr[i].includes(str)) {
-			return true;
-		}
-	}
-	return false;
 };
 
 var GetPrejudices = function(race, cls, background, communityPrejudices) {
@@ -6145,46 +5746,6 @@ var GetPrejudices = function(race, cls, background, communityPrejudices) {
 	}
 	return prejudices;
 };
-
-var gods = [
-	"Auril",
-	"Azuth",
-	"Bane",
-	"Beshaba",
-	"Bhaal",
-	"Chauntea",
-	"Cyric",
-	"Deneir",
-	"Eldath",
-	"Gond",
-	"Helm",
-	"Ilmater",
-	"Kelemvor",
-	"Lathander",
-	"Leira",
-	"Lliira",
-	"Loviatar",
-	"Malar",
-	"Mask",
-	"Mielikki",
-	"Milil",
-	"Myrkul",
-	"Mystra",
-	"Oghma",
-	"Savras",
-	"Selûne",
-	"Shar",
-	"Silvanus",
-	"Sune",
-	"Talona",
-	"Talos",
-	"Tempus",
-	"Torm",
-	"Tymora",
-	"Tyr",
-	"Umberlee",
-	"Waukeen"
-];
 
 var GetReligion = function(race, cls, background, prejudices, isRural) {
 	var rand = Roll(1, 20);
@@ -6966,11 +6527,13 @@ var GetDress = function(genderPossessivePronoun) {
 };
 
 var GetGenderPronoun = function(gender) {
-	 return gender === "Male"? "he": "she";
+	 return gender === "Male" ? "he" : "she";
 };
+
 var GetGenderPossessivePronoun = function(gender) {
 	return gender === "Male"? "his": "her";
 };
+
 var GetGenderObjectPronoun = function(gender) {
 	return gender === "Male"? "him": "her";
 };
@@ -7007,27 +6570,6 @@ var GetNPCDescription = function(gender, ageCategory, race) {
 	var build = GetBuild();
 	var dress = GetDress(genderPossessivePronoun);
 	return capitalizeFirstLetter(build) + (complextion !== ""? ", "+ complextion : "") + " "+ ageCategory + ". "+ capitalizeFirstLetter(genderPronoun) + " has "+ hair + ". "+ (features.length > 0 ? ""+ capitalizeFirstLetter(genderPronoun) + " has "+ features.join(" and ") + ". ": "") + ""+ capitalizeFirstLetter(genderPronoun) + " is dressed "+ dress + ".";
-};
-
-var SkillMap = {
-	"Athletics": "Strength",
-	"Acrobatics": "Dexterity",
-	"Sleight of Hand": "Dexterity",
-	"Stealth": "Dexterity",
-	"Arcana": "Intelligence",
-	"History": "Intelligence",
-	"Investigation": "Intelligence",
-	"Nature": "Intelligence",
-	"Religion": "Intelligence",
-	"Animal Handling": "Wisdom",
-	"Insight": "Wisdom",
-	"Medicine": "Wisdom",
-	"Perception": "Wisdom",
-	"Survival": "Wisdom",
-	"Deception": "Charisma",
-	"Intimidation": "Charisma",
-	"Performance": "Charisma",
-	"Persuasion": "Charisma"
 };
 
 var GetNPCStats = function(race, cls, background, religion) {
@@ -7179,25 +6721,6 @@ var GetNPCStats = function(race, cls, background, religion) {
 		Features: new Set(race.Features.concat(cls.Features))
 	};
 };
-
-var Languages = [
-	"Common",
-	"Dwarvish",
-	"Elvish",
-	"Giant",
-	"Gnomish",
-	"Goblin",
-	"Halfling",
-	"Orc",
-	"Abyssal",
-	"Celestial",
-	"Draconic",
-	"Deep Speech",
-	"Infernal",
-	"Primodial",
-	"Sylvan",
-	"Undercommon"
-];
 
 var GetNPCLanguages = function(race, cls, background) {
 	var languages = new Set(race.Languages.concat(cls.Languages));
