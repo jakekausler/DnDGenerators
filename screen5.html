@@ -108,7 +108,10 @@
                         <md-option ng-value="t" ng-repeat="t in possiblePrejudices">{{t}}</md-option>
                     </md-select>
                 </md-input-container>
-                <md-button ng-click="GetNPC(regionHappiness, prejudices)">Generate</md-button>
+                        <md-input-container>
+                            <md-checkbox ng-model="isUrban">IsUrban</md-checkbox>
+                        </md-input-container>
+                <md-button ng-click="GetNPC(regionHappiness, prejudices, isUrban)">Generate</md-button>
                 <div class="" style="height: 400px;">
                     <div ng-hide="npc === null">
                         <div>
@@ -473,6 +476,7 @@ app.controller('appCtrl', function($scope) {
     $scope.possiblePrejudices = GetPossiblePrejudices();
     $scope.regionHappiness = $scope.regionHappinesses[0];
     $scope.prejudices = [];
+    $scope.isUrban = false;
 
     $scope.calculateCharaters = function() {
         $scope.characters.forEach(function(character) {
@@ -515,8 +519,8 @@ app.controller('appCtrl', function($scope) {
         $scope.shop = GetShop(useSeed, name, type, location);
     };
 
-    $scope.GetNPC = function(regionHappiness, prejudices) {
-        $scope.npc = GetNPC(regionHappiness, prejudices);
+    $scope.GetNPC = function(regionHappiness, prejudices, isUrban) {
+        $scope.npc = GetNPC(regionHappiness, prejudices, isUrban);
         console.log($scope.npc);
         document.getElementById("npc").innerHTML = $scope.npc.Description;
     };
