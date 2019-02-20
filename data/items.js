@@ -1,4 +1,4 @@
-var items = {
+var Items = {
   "Common": [
     {
       "Author": "Unknown",
