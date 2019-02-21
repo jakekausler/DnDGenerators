@@ -1,14500 +1,7582 @@
-var Items = {
-  "Common": [
-    {
-      "Author": "Unknown",
-      "Category": "Wondrous Item",
-      "Description": "Three jet black spheres, about the size of an apple, that smell distinctly of cooked pastry. ",
-      "Est. Value": "20. gp",
-      "Name": "Pie Bombs",
-      "Properties": "If thrown (or dropped) with force, each sphere will magically transform into a large pie. The subsequent effect is similar to having thrown a pie at someone, only a lot more unexpected.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A large bale of rare furs.",
-      "Est. Value": "40. gp",
-      "Name": "Bale of Furs",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A dried out and preserved homunculus. This one is a winged humanoid creature, similar to a small gargoyles or tiny demon. It's eye have been replaced with beads and it is stiff and unmoving.",
-      "Est. Value": "20. gp",
-      "Name": "Dehydrated Homunculi",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A simple silver dagger with a blood line that runs down the center of the blade to drain its victim’s blood.",
-      "Est. Value": "5. gp",
-      "Name": "Draining Dagger",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A thin malachite bracelet with a silver clasp.",
-      "Est. Value": "6. gp",
-      "Name": "Malachite Bracelet",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 5 ft. tall book stand in maple-wood, the front of which is carved into the likeness of three intertwined foxes. ",
-      "Est. Value": "6. gp",
-      "Name": "Bookstand",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "30 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Bountiful Spade",
-      "Properties": "1d4 Bludgeoning - Simple",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Three vicious little mollusks (1hp, Armour 1) that explode in a 2m blast (d8) when killed. ",
-      "Est. Value": "",
-      "Name": "Dire Barnacle",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "This gem normally looks like quartz, but if allowed to absorb heat will change in color to resemble a bright orange garnet. When smashed against something, it is drained of color and will light that thing on fire",
-      "Est. Value": "",
-      "Name": "Firestone Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An age-worn ivory figurine, which, nonetheless, bears an uncanny resemblance to a young woman the characters have just met.",
-      "Est. Value": "",
-      "Name": "Mysterious Ivory Figurine",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A foot-high bronze statuette of a pair of entwined nymphs, dancing.",
-      "Est. Value": "8. gp",
-      "Name": "Nymph Statuette",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An old boot filled with chunks/flakes of silver-bearing quartz ore.",
-      "Est. Value": "50. gp",
-      "Name": "Old Boot",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An unhafted axe head of exceptional craftsmanship. It’s faces are inlaid with a faience scene showing a crowd of human villagers throwing a Halfling down a well.",
-      "Est. Value": "50. gp",
-      "Name": "Ornate Axe Head",
-      "Properties": "1d6 Slashing - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An ivory and copper smoking pipe with stale tobacco inside.",
-      "Est. Value": "4. gp",
-      "Name": "Ornate Smoking Pipe",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A wooden leg, carved to appear as a standing leopard with green agate eyes. (Agates: 4gp each; the whole leg, with eyes: 10gp)",
-      "Est. Value": "10. gp",
-      "Name": "Ornate Wooden Leg",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "'Phoenix Egg' from a peddler in the City of Brass. After consulting with a few scholars, he later found that (at least in my world lore) Phoenixes are born of primal energy and not hatched, and that he had in fact purchased a very large jar of Alchemist's Fire.",
-      "Est. Value": "",
-      "Name": "Phoenix Egg",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A piglet.",
-      "Est. Value": "",
-      "Name": "Piglet",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Refillable curved poison dagger",
-      "Est. Value": "",
-      "Name": "Poison Dagger",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Pouch of poisoned throwing needles (see dagger damage & dart range)",
-      "Est. Value": "",
-      "Name": "Poisoned Throwing Needles",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A large, leather-bound tome has a large illustrated potion vial stitched into the front cover. Above the illustration, written in Dwarven is the title; 'The Art of Potionmaking'. Further examination reveals this to be a comprehensive guide to potionmaking written by a Dwarf called Zygmunt Brigge.",
-      "Est. Value": "20. gp",
-      "Name": "'The Art of Potionmaking' by Zygmunt Brigge",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Dwarven",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Baldur's Gate",
-      "Category": "Treasure",
-      "Description": "A necklace patterened with Agni Mani. These ornamental stones were usually found in desert regions. In the Realms, the name applies specifically only to black tektite material. ",
-      "Est. Value": "20. gp",
-      "Name": "Agni Mani Necklace",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A detailed account of an adventurer who lived in an Kobold tribe for a number of years. You get a sense that there may have been some embellishment at some points, but it is otherwise an interesting examination of their general nature.",
-      "Est. Value": "10. gp",
-      "Name": "Among the Kobolds",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A tome whose pages have been yellowed with age and used to press metallic leaves of gold, silver, platinum, brass, copper, and bronze.",
-      "Est. Value": "20. gp",
-      "Name": "Ancient Tome",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A thick copper necklace set with a small aquamarine. ",
-      "Est. Value": "7. gp",
-      "Name": "Aquamarine Necklace",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A sheepskin bedroll.",
-      "Est. Value": "1. gp",
-      "Name": "Bedroll",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "7 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This dark red-brown heliotrope can sometimes be mistaken for a Stone of Invisibility but this one bears no overt magical powers.",
-      "Est. Value": "50. gp",
-      "Name": "Bloodstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "The bonesaw was used to amputate body parts after the skin had already been cut through with the amputation knife.",
-      "Est. Value": "15. gp",
-      "Name": "Bonesaw",
-      "Properties": "1d8 Slashing | Finesse",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This peculiar spear-like weapon is popular among travelers and law enforcement. The brandistock's three-pronged head is retractable, which renders it indistinguishable from a quarterstaff (unless closely inspected). Extending the blades is instantaneous, but pulling them back requires you to spend an action. ",
-      "Est. Value": "10. gp",
-      "Name": "Brandistock",
-      "Properties": "1d8 Piercing, Special, Two-Handed",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A brass chamber pot in which has been hidden 3 pieces of rosy quartz.",
-      "Est. Value": "12. gp",
-      "Name": "Brass Chamber Pot",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "A set of brass knuckles. Used, but in good condition.",
-      "Est. Value": "0.5 gp",
-      "Name": "Brass Knuckles",
-      "Properties": "1d4 Bludgeoning, Light, Hidden",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "A tower shield of bronze, cast into the likeness of a chimera’s heads and enameled to provide the appropriate colors. +3 AC, Strength 17, Stealth Disadvantage.",
-      "Est. Value": "85. gp",
-      "Name": "Bronze Tower Shield",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "18 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This is an opaque orange gemstone set in a small brooch.",
-      "Est. Value": "50. gp",
-      "Name": "Carnelian Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "An old pyromancy tome from Carthus containing pyromancies crafted for battle. It gives the impression it might have fallen through from a different plane of existence.",
-      "Est. Value": "25. gp",
-      "Name": "Carthus Tome of Pyromancy",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A carved wooden mantle, meant to be mounted above a fireplace, crafted of ash-wood and stained a medium brown. The left side is carved in images of demons and flames, the right in images of angels and air. The top is carved into an idyllic forest theme and has a moon above the left corner and a sun above the right.",
-      "Est. Value": "65. gp",
-      "Name": "Carved Wooden Mantle",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "100 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An electrum pendant shaped like a curled-up cat.",
-      "Est. Value": "6. gp",
-      "Name": "Cat Pendant",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "A reinforced gauntlet which protects the knuckles and transforms mere punches into lethal blows. This weapon cannot be disarmed. It takes an action to don or doff a cestus.",
-      "Est. Value": "0.5 gp",
-      "Name": "Cestus",
-      "Properties": "1d4 Bludgeoning - Light, Special, Hidden",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This pale white gemstone has a waxy luster and is slightly translucent.   ",
-      "Est. Value": "50. gp",
-      "Name": "Chalcedony Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A dozen chicken eggs; hollowed out and filled with white flour.",
-      "Est. Value": "0.6 gp",
-      "Name": "Chicken Eggs",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Rabbit-fur mittens and hat sized for a child.",
-      "Est. Value": "1. gp",
-      "Name": "Child's Mittens and Hat",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An apple-green gemstone consisting of a variety of chalcedony that contains nickel.",
-      "Est. Value": "50. gp",
-      "Name": "Chrysoprase Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This golden gem has been expertly worked into an oval but has long since fallen out of whatever ring or brooch it was carved for.",
-      "Est. Value": "50. gp",
-      "Name": "Citrine Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A leather bag containing an embroidered black silk shirt with eight silver buttons.",
-      "Est. Value": "8. gp",
-      "Name": "Classy Shirt",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A leather vest with climbing gear: 12 iron pitons, a hammer, 50’ of silk rope, a grappling hook, a set of bronze crampons, thick leather gloves, and a leather harness seat..",
-      "Est. Value": "32. gp",
-      "Name": "Climbing Harness",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cloak of griffon feathers set on black velvet.",
-      "Est. Value": "60. gp",
-      "Name": "Cloak of Griffon Feathers",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lbs."
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A child’s cloth doll with a small silver brooch pinned to it in the shape of a butterfly.",
-      "Est. Value": "4. gp",
-      "Name": "Cloth Doll",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small cask of yellow clothiers’ dye.",
-      "Est. Value": "8. gp",
-      "Name": "Clothier's Dye",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A life-sized copper and silver statuette of a cockatrice.",
-      "Est. Value": "17. gp",
-      "Name": "Cockatrice Statue",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lbs."
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "This book appears to be a phrasebook for those looking to learn the basics of the Orcish language. It has an entire section of swear words, which is most amusing. The book seems to have an effect on anyone using the phrase book to speak in Black Speech. They become prone to shouting louder and louder the less they are understood. Nobody knows why this is; the book is not magical in the slightest.",
-      "Est. Value": "10. gp",
-      "Name": "Colloquial Black Speech for Orcs, Trolls and Men",
-      "Properties": "Enables the reader to speak basic Orcish phrases.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Four bars of copper.",
-      "Est. Value": "8. gp",
-      "Name": "Copper Bars",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A copper necklace set with a small amulet shaped into a symbol representing the sun.",
-      "Est. Value": "2. gp",
-      "Name": "Copper Necklace",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A copper tongue scraper",
-      "Est. Value": "4. gp",
-      "Name": "Copper Tongue Scraper",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cow. It's a real hoofer.",
-      "Est. Value": "10. gp",
-      "Name": "Cow",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1500 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large crystal vase, silver trimmed, with a dozen dead roses and some stagnant water within.",
-      "Est. Value": "15. gp",
-      "Name": "Crystal Vase",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "1d20 normal bone darts. They resemble fletched knitting needles, about 1 foot in length. Not used often by themselves, but rather as ammunition in a blowgun. Can be dipped in poison and used as an effective delivery device.",
-      "Est. Value": "0.8 gp",
-      "Name": "Dart",
-      "Properties": "Finesse, Undersized, Thrown (30/60)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1/4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "The skeletal remains of a long-dead warrior, wearing a suit of plate armor which still glistens as if it had been polished yesterday. The name of every warrior to ever don the armor has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with precisely written, black runes. A careful inspection of the armor will reveal that there remains room for one last name.",
-      "Est. Value": "",
-      "Name": "Dead Warrior",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "80 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "The remnants of a massive door of stone which has been smashed into rubble. A magic mouth which had once adorned the door remains intact. As the PCs draw near it will issue its warning: “Disturb not this chamber, lest the world suffer.” Whatever the mouth was set to guard is gone – the chamber beyond the broken door is empty.",
-      "Est. Value": "",
-      "Name": "Door Rubble",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "The double spear is a polearm comprising of a wooden haft with a short thrusting blade at either end. It can be used in one or two hands like a spear, but in the hands of a master both heads can be used effectively. If you use the Double Weapon Master feat to make an additional attack with a double spear, it deals 1d6 piercing damage. ",
-      "Est. Value": "5. gp",
-      "Name": "Double Spear",
-      "Properties": "1d6 Piercing - Thrown (20/60), Versatile (1d8)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A battle pennant, triangular in shape, of a black dragon on red silk. The staff is a silver-tipped lance. (Pennant: 30gp, Lance: 25gp)",
-      "Est. Value": "55. gp",
-      "Name": "Dragon Banner",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Shield",
-      "Description": "A large copper shield, embossed with a copper dragon’s head. “Elvalynte” is inscribed on the interior in a flowing script. (34gp)",
-      "Est. Value": "",
-      "Name": "Dragon Head Shield",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An electrum drow house-medallion bearing the image of a crimson scorpion with the house name inscribed on the back in the drow tongue (House Ulrather).",
-      "Est. Value": "20. gp",
-      "Name": "Drow Medallion",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A finely crafted compass of gold and silver, decorated and labelled with ornate, dwarven and draconic runes. Once every 1d4 hours it randomly changes the cardinal direction to which its arrow points.",
-      "Est. Value": "",
-      "Name": "Dwarven Compass",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A dwarven holy symbol in silver; shaped into a flaming war-hammer set against an anvil-shaped backdrop. ",
-      "Est. Value": "55. gp",
-      "Name": "Dwarven Holy Symbol",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A prismatic crystal which echoes back – in a deep, melodious voice – every word which is said around it two seconds after it has been said.",
-      "Est. Value": "",
-      "Name": "Echo Crystal",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A detailed rose, with petals and thorns, constructed of silver and electrum.",
-      "Est. Value": "40. gp",
-      "Name": "Electrum Rose",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large (18”x28”), rectangular electrum sheet with ancient writing on it. The writing, if deciphered, is a brief history of a powerful magical item known as the House of Winds, with several clues as to where the item may have been lost fourteen hundred years ago. The House of Winds is described as an ornate mithril helm of legendary power.",
-      "Est. Value": "75. gp",
-      "Name": "Electrum Sheet",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "115 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A collection of six elephant tusks.",
-      "Est. Value": "64. gp",
-      "Name": "Elephant Tusks",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "14 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small wooden case holding four pairs of fairy wings.",
-      "Est. Value": "20. gp",
-      "Name": "Fairy Wing Cage",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large, ornate field tent such as a lord would have, room for 12 persons",
-      "Est. Value": "",
-      "Name": "Field Tent",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Fire Agate is the name given to chalcedony which contains thin lines of iridescent goethite. When properly cut, the iridescence displays red, brown, gold, and green hues, and the finest specimens are partly translucent. ",
-      "Est. Value": "30. gp",
-      "Name": "Fire Agate Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A bandolier holding 8 silver flasks (empty (x3), brandy (x2), acid (x1), ogre blood (x1), gold dust (x1, value of gold: 12gp). (Flasks: 3gp each, bandolier: 5gp, ogre blood (to alchemist): 12gp, acid: 10gp, brandy: ",
-      "Est. Value": "12. gp",
-      "Name": "Flask Bandolier",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Utility belt of flasks",
-      "Est. Value": "",
-      "Name": "Flask Belt",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A ceremonial short spear; ash wood with an iron point. Seven red and three blue dyed vulture feathers are attached to the head of the spear. The iron is fluted to whistle through the air, if thrown.",
-      "Est. Value": "3. gp",
-      "Name": "Fluted Short Spear",
-      "Properties": "1d6 Piercing - Simple - Thrown, Versatile (1d8) - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A life sized ivory carving of a chicken.",
-      "Est. Value": "20. gp",
-      "Name": "Foul Ivory Statue",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A frost giant necklace of silver upon which are pierced 17 human-sized hands. All of them appear to be the right hand of their former owner.",
-      "Est. Value": "55. gp",
-      "Name": "Frost Giant's Necklace",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "A heavy cast iron frying pan. This can be used for frying, searing, browning and whacking people over the head! It has the remnants of this morning's breakfast smeared around it's rim. Damage is doubled when wielder has proficiency with cooking.",
-      "Est. Value": "0.1 gp",
-      "Name": "Frying Pan",
-      "Properties": "1d6 Bludgeoning - Versatile ",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A wicker basket with a pair of mink furs within.",
-      "Est. Value": "20. gp",
-      "Name": "Fur Basket",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small colored-glass window pane depicting the crowning of the first king.",
-      "Est. Value": "10. gp",
-      "Name": "Glass Window",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A miniature crystal – small enough to lie upon the outstretched finger of a halfling child – glows softly, and pulses whenever an object colored red is brought near.",
-      "Est. Value": "",
-      "Name": "Glowing Crystal",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An eight inch golden horn, likely more of a ceremonial object than of any real value as an instrument.",
-      "Est. Value": "70. gp",
-      "Name": "Golden Horn",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A roughly beaten golden orb, roughly 10 inches in diameter. The orb is etched with the likeness of an orcish skull with an axe embedded in it. This was used by an orcish chieftain as his “royal orb”.",
-      "Est. Value": "72. gp",
-      "Name": "Golden Orb",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A golden signet ring, origin unknown.",
-      "Est. Value": "60. gp",
-      "Name": "Golden Signet Ring",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A grandfather’s broadsword, plain but quality. An unknown script runs along the inner side of the scabbard.",
-      "Est. Value": "20. gp",
-      "Name": "Grandfather's Broadsword",
-      "Properties": "2d4 Piercing",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This mighty spear is favoured by centaurs.",
-      "Est. Value": "75. gp",
-      "Name": "Great Spear",
-      "Properties": "1d8 Piercing - Oversized (1d10), Thrown (20/60), Two-Handed",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A simple hand axe and belt sheath. The axehead is inlaid with dwarvish runes which reference the high quality of items made by Tomu Aethmalk, the blacksmith who crafted the axe.",
-      "Est. Value": "5. gp",
-      "Name": "Dwarven Hand Axe",
-      "Properties": "1d6 Slashing - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Silver hand sized harp",
-      "Est. Value": "",
-      "Name": "Hand Harp",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A hand-fan of clipped, black-dyed harpy feathers bound with copper wiring.",
-      "Est. Value": "15. gp",
-      "Name": "Harpy Feather Fan",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Potpourri with demon blood – invigorating & entrancing",
-      "Est. Value": "",
-      "Name": "Hell Scented Potpourri",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Seven lengths of extremely thick, 30’ long, hemp rope, such as that used for catapults.",
-      "Est. Value": "35. gp",
-      "Name": "Hemp Rope",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Concealed punching dagger-bracer",
-      "Est. Value": "200. gp",
-      "Name": "Hidden Blade Bracer",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60  When you attack and hit a creature that is surprised with this dagger, it must make a Constitution saving throw DC 18. On a failed save, the target takes an extra 2d4 damage from your attack.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A dozen quality daggers in a rolled up rug.",
-      "Est. Value": "24. gp",
-      "Name": "Hidden Daggers",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A broken holy sword, inscribed with the name of a legendary Paladin.",
-      "Est. Value": "20. gp",
-      "Name": "Holy Sword of Pentorus",
-      "Properties": "1d8 Slashing - Versatile (1d10)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "The holy symbol of a god long thought dead and gone.",
-      "Est. Value": "",
-      "Name": "Holy Symbol",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Potion",
-      "Description": "Three vials of holy water.",
-      "Est. Value": "25. gp",
-      "Name": "Holy Water",
-      "Properties": "See PHB page ",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "This book peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's charisma by a single point. They're wrong, that can only be done by magic, but what you read is your own.",
-      "Est. Value": "10. gp",
-      "Name": "How to Win Friends and Influence People",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Iol is actually short for Iolite (cordierite), although a common nickname is 'violet stone' even though its overall hue is usually blue. Iols are usually cut into faceted gems to best display the stone's color change as it is viewed from different directions. Small, cut iols can be clear, but larger specimens usually contain silky inclusions of another substance such as hemitite crystals, which give the same rich golden flash of color as in sunstones. ",
-      "Est. Value": "50. gp",
-      "Name": "Iol Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Potion",
-      "Description": "An iron flask holding a viscous liquid of intense, emerald-green that smells faintly of citrus fruit. The liquid is a concentrated, magical dye for clothing and the like, equal to four full barrels of normal dye. If consumed, it turns the drinker green for a full month.",
-      "Est. Value": "65. gp",
-      "Name": "Iron Flask",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A lovely ivory-colored dress of silk with flowing sleeves. The dress has tiny pearls sewn at the neckline.",
-      "Est. Value": "70. gp",
-      "Name": "Ivory Dress",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small sack containing 32 carved ivory mice",
-      "Est. Value": "",
-      "Name": "Ivory Mice",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A decorative fountain, crafted elegantly from a single block of jade and decorated with gold leaf, in which the water flows in the wrong direction.",
-      "Est. Value": "",
-      "Name": "Jade Fountain",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small, white jade pendant without necklace. The pendant depicts a unicorn rampant with a cracked back leg.",
-      "Est. Value": "10. gp",
-      "Name": "Jade Pendant",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "A small steel shield, triangular, emblazoned with a griffon device in red on a field of gray. This battered shield is inscribed on the interior with the words: “May this shield be your protection in battle, Jallak. Honor the Galbrand name.”",
-      "Est. Value": "7. gp",
-      "Name": "Jallak's Shield",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Baldur's Gate",
-      "Category": "Treasure",
-      "Description": "Jasper is an opaque quartz found in reds, browns, and blacks. Very rare specimens are blue or have bands of blue against the other colours. Jasper can be crushed and used in making potions and magical devices which protect against poison. ",
-      "Est. Value": "50. gp",
-      "Name": "Jasper Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 6’ stack of 1” x 8” x 12’ planks of rare, scented jewel wood",
-      "Est. Value": "",
-      "Name": "Jewel Wood",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A large tome filled with over one hundred recipes for wild boar, goose, and venison; written by Kilan Wester, a former royal chef (retired).",
-      "Est. Value": "95. gp",
-      "Name": "Kilan Wester's Royal Recipes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Knife vest – holds 1d12 knives!",
-      "Est. Value": "",
-      "Name": "Knife Vest",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large (36” diameter) bronze bell.",
-      "Est. Value": "10. gp",
-      "Name": "Large Bronze Bell",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A leather bag containing 6 green dragon scales (young adult).",
-      "Est. Value": "30. gp",
-      "Name": "Leather Bag of Dragon Scales",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Pulsating organ of leviathan (is sack/cloth)",
-      "Est. Value": "",
-      "Name": "Leviathan Organ",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A large tome which details advanced techniques in the field of potion making. It's dust cover is a little tatty but the pages inside have kept well and it still has plenty of life left in it.",
-      "Est. Value": "30. gp",
-      "Name": "Libatius Borage's Advanced Potion Making",
-      "Properties": "Grants advantage to Alchemy checks.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Fossilized skull of lich-arcane power source",
-      "Est. Value": "",
-      "Name": "Lich Skull",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large bronze wardrobe, banded in steel, which contains Violet Fungi (hp 15) and a human body with rotting noble’s clothing, a rusty dagger, and a thin platinum bracelet set with a moonstone. ",
-      "Est. Value": "75. gp",
-      "Name": "Malivar's Wardrobe",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "This tome has been bound in iron plates, giving the sense that it could take a real beating if needed. It's been well kept, however, and inscribed in the front is the title, 'Mallius Metallius' with the subtitle, 'A Layman's Guide to Metallurgy'.",
-      "Est. Value": "30. gp",
-      "Name": "Mallius Metallius, A Layman's Guide to Metallurgy",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Quest Hook",
-      "Description": "A sword of truly mammoth proportions. Resting within a chamber more than thirty meters long, the sword stretches from one end to the other. Whatever creature was meant to wield this mighty weapon would truly stagger the imagination of a dragon.",
-      "Est. Value": "0. gp",
-      "Name": "Mammoth Sword",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "20000 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A mithril-headed branding-iron bearing the sigil of the Manticora Trading House.",
-      "Est. Value": "100. gp",
-      "Name": "Manticora Branding Iron",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "A typical manual of bodily health provides the reader with valuable information regarding preventative medicine, basic first aid, and proper muscle toning.",
-      "Est. Value": "10. gp",
-      "Name": "Manual of Bodily Health",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "A typical Manual of Gainful Exercise provides the reader with a strictly regimented routine of daily stretches and tests designed to increase muscle bulk. ",
-      "Est. Value": "10. gp",
-      "Name": "Manual of Gainful Exercise",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "A typical manual of quickness of action provides the reader with a wide variety of tips and pointers regarding the motion and coordination of one's hands and feet. This small tome is much in demand by people from many walks of life, including rogues wishing to improve their slight-of-hand and paladins wanting to perfect their thrust and parry. ",
-      "Est. Value": "10. gp",
-      "Name": "Manual of Quickness of Action",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A masquerade mask crafted of leather and peacock feathers.",
-      "Est. Value": "12. gp",
-      "Name": "Masquerade Mask",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "With an elegant hinged case of black onyx, the characters find a set of masterwork gaming darts. Although useless for combat, the darts will give a +2 skill check bonus to anyone using them to play a game of darts (due to their superb balance and construction).",
-      "Est. Value": "",
-      "Name": "Masterwork Gaming Darts",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Within a wooden box carved with pastoral scenes lies a leather purse, and within the purse are a handful of seeds. If these seeds are planted, they will take root and grow into plants of unnatural shape, hue, and life unlike anything seen upon this world, and operating by utterly alien principles.",
-      "Est. Value": "100. gp",
-      "Name": "Matroshka Seeds",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cabinet containing 24 glass jars of various medicinal herbs",
-      "Est. Value": "60. gp",
-      "Name": "Medicinal Herbs",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "2 oz bottle of mineral oil",
-      "Est. Value": "4. gp",
-      "Name": "Mineral Oil",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Moonstone is an opaque, white feldspar gem polished to a bluish sheen. Old legends say that the sight of a moonstone would cause a lycanthrope to revert to his animal form. Whether or not this is true is unknown as anyone close enough to find out apparently hasn't lived to tell the tale. However moonstones have been used in spells that effect this particular curse. ",
-      "Est. Value": "50. gp",
-      "Name": "Moonstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A dagger sheath of bronze, set with a small moonstone.",
-      "Est. Value": "10. gp",
-      "Name": "Moonstone Sheath",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Book",
-      "Description": "A bestiary!",
-      "Est. Value": "2. gp",
-      "Name": "Moradin's Magical Bestiary",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Dwarven",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This gemstone has opaque bands of black and white across it's surface.",
-      "Est. Value": "50. gp",
-      "Name": "Onyx Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Orb of venom-Applies to all of user attacks. Target takes an additional 1d4 poison damage on their next turn.",
-      "Est. Value": "",
-      "Name": "Orb Of Venom",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "This appears to be a cookbook written by an unnamed Orc. It has some insightful notes on how best to cook Owlbear and a rather unpleasant section on what spices go well with human flesh. ",
-      "Est. Value": "5. gp",
-      "Name": "Orcish Cookbook",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Orc",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Potion",
-      "Description": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action. ",
-      "Est. Value": "50. gp",
-      "Name": "Potion of Healing",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A cloth or leather pouch that can hold up to 20 sling bullets or 50 blowgun needles, among other things. ",
-      "Est. Value": "0.5 gp",
-      "Name": "Pouch",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A large carry pouch made from the skin of a monkey. Inside are 1d6 Potions of Healing. ",
-      "Est. Value": "50. gp",
-      "Name": "Pouch of Healing Potions",
-      "Properties": "You regain 2d4 + 2 hit points when you drink these potions. The potion's red liquid glimmers when agitated.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Bands of white-yellow sard cross the surface of this dark onyx gemstone.",
-      "Est. Value": "50. gp",
-      "Name": "Sardonyx Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping. ",
-      "Est. Value": "0.5 gp",
-      "Name": "Scythe",
-      "Properties": "2d4 Slashing - Heavy, Two-Handed",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A relatively small compendium of information about healing tonics.",
-      "Est. Value": "20. gp",
-      "Name": "Seimai's Guide to Healing Tonics",
-      "Properties": "Grants advantage to Medicine checks.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Shandon is another name for natrolite; its slender, colorless crystals yield tiny faceted gems used often in veils and robes in order to capture the beading effect of water glistening upon the material. ",
-      "Est. Value": "90. gp",
-      "Name": "Shandon Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Skydrop is the common name given to clear or lightly colored tektite material; fragments of glass of celestial (meteoric) origin, found in the vast shifting sands of Anauroch and other deserts. ",
-      "Est. Value": "40. gp",
-      "Name": "Skydrop Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "A spade is a simple tool designed for digging soil, the head can be made of any material that can hold its shape, but is most frequently made of metal to facilitate cutting into soil. ",
-      "Est. Value": "2gp",
-      "Name": "Spade",
-      "Properties": "1d4 Bludgeoning - Simple",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Star Diopside is the most prized form of a hard, durable gemstone that is rarely found in attractive colours. It is usually too dark for beauty, however mountain and streambed-pebble crystals of a pale green hue make attractive stones such as diopside. When a gem is found that is darker green it can be cut in such a fashion so to produce four- or six-rayed stars. ",
-      "Est. Value": "95. gp",
-      "Name": "Star Diopside Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This gemstone is a polished pink sphere. When viewed at a specific angle with a source of light an asterism (star-effect) is visible across it's surface. ",
-      "Est. Value": "50. gp",
-      "Name": "Star Rose Quartz",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Sunstone is a feldspar jem, closely related to moonstone, and more properly known as oligoclase. Sunstone can be colorless or faintly greenish and of facet grade, but most common by far is its softer (cabochon) variety. This yields gemstones that have bright red or orange spangles (minute crystals) suspended in a nearly colorless background in a parallel fashion, giving the whole a rich golden or redish brown color. ",
-      "Est. Value": "50. gp",
-      "Name": "Sunstone Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Tchazar is the common name given to aragonite, a straw-yellow gemstone found in elongated, prism-shaped crystal form. It is soft and fragile, and requires skilled cutting to yield faceted gems.. ",
-      "Est. Value": "50. gp",
-      "Name": "Tchazar Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "The Recipes and Ruminations of One Dradeel of Tethir is a book with food recipes from Dradeel. Even a casual look will inform the reader that he was a wizard with an addled mind.",
-      "Est. Value": "10. gp",
-      "Name": "The Recipes and Ruminations of One Dradeel of Tethir",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "This tatty old tome is missing a number of pages, leaving whatever the third rule of Poisoncraft was completely unknown. Hopefully you'll manage with the first two, unlike whomever owned this book before you.",
-      "Est. Value": "40. gp",
-      "Name": "The Three Rules to Poisoncraft",
-      "Properties": "Grants advantage to Alchemy checks.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small cedar cask of dwarven pipe tobacco.",
-      "Est. Value": "25. gp",
-      "Name": "Tobacco Cask",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "A typical Tome of Clear Thought contains a collection of esoteric and scholarly literature, often involving obscure mathematical or algebraic formulae or the occasional reference to inter-planar biology..",
-      "Est. Value": "40. gp",
-      "Name": "Tome of Clear Thought",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "A typical Tome of Understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises and theories of magic and metaphysics.",
-      "Est. Value": "10. gp",
-      "Name": "Tome of Understanding",
-      "Properties": "Grants advantage to History checks.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A delicate silver chain set with a tourmaline.",
-      "Est. Value": "28. gp",
-      "Name": "Tourmaline Chain",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "This gemstone has not yet been finished, but even in its unpolished state it's bright cyan gleam is arresting to the eye.",
-      "Est. Value": "35. gp",
-      "Name": "Unfinished Zircon Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A tattered, and sadly unusable, scroll fragment, inscribed with a spell unknown to any living mage.",
-      "Est. Value": "5. gp",
-      "Name": "Unusable Scroll",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A five gallon cask of usk brandy.",
-      "Est. Value": "80. gp",
-      "Name": "Usk Brandy",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs. ",
-      "Est. Value": "50. gp",
-      "Name": "Vial of Antitoxin",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Waterstar is also called achroite or colourless tourmaline and is rare in the Realms. This stone is riddled with flaws and inclusions and hence only a small portion is fit for cutting. ",
-      "Est. Value": "80. gp",
-      "Name": "Waterstar Gem",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Mundane",
-      "Description": "A set of wooden wind chimes which plays a different tune depending upon the direction of the wind which disturbs it.",
-      "Est. Value": "0.5 gp",
-      "Name": "Wooden Wind Chimes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Ziose is the name given by sages to a particular facet-grade variety of ziosite; a rare mineral that yields cut stones that flash three vivid hues depending on how the light catches them; purple, blue, and red, or purple, green, and red. Very large (fist- or foot-sized) gems are found and are prized for use in pendants and brooches. ",
-      "Est. Value": "60. gp",
-      "Name": "Ziose Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Zircon is a brownish crystal found in igneous (volcanic) rocks. Zircon attains its pale blue shade with heating and cutting (usually facet-cut). ",
-      "Est. Value": "50. gp",
-      "Name": "Zircon Gemstone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A silver-headed heavy mace, the head of which is shaped into the likeness of a ram’s head.",
-      "Est. Value": "90. gp",
-      "Name": "Ram's Head Mace",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Random monster taxidermy",
-      "Est. Value": "",
-      "Name": "Random Monster Taxidermy",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A life-size basalt statue of a raven.",
-      "Est. Value": "25. gp",
-      "Name": "Raven Statue",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 3’ square replica of a castle, in wood, complete with ramparts and miniature ballistae and toy soldiers. Scribbled in some spots are notes written in draconic that suggest a plan to assault the castle (“Kill guard here first”, “Murder holes overhead”, Fireball this area”, etc…)",
-      "Est. Value": "65. gp",
-      "Name": "Replica Castle",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "120 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Reversible, finely crafted robes",
-      "Est. Value": "",
-      "Name": "Reversible Robes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "This large sledge hammer has been cast entirely out of steel. There is a small symbol of a rat moulded into the hammer head, above Dwarvish lettering that indicates the weight.",
-      "Est. Value": "2. gp",
-      "Name": "Sledge Hammer",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A simple steel dagger with an oak handle and matching leather sheath.",
-      "Est. Value": "2. gp",
-      "Name": "Dagger",
-      "Properties": "1d4 Piercing - Simple - Finesse, Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A huge wooden greatclub, made from an old oak branch that has been carved and sanded into the shape of a large nail, with the narrower end wrapped in leather as a crude handle.",
-      "Est. Value": "0.2 gp",
-      "Name": "Greatclub",
-      "Properties": "1d8 Bludgeoning - Simple - Two-Handed",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A straight wooden handle with a basic steel axe head on one end. It has been balanced well enough to use as a throwing axe.",
-      "Est. Value": "5. gp",
-      "Name": "Handaxe",
-      "Properties": "1d6 Slashing - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A long thin shaft armed with a leaf-shaped head. It has a tassled based, to allow the javelineer to retrieve it after it has been thrown.",
-      "Est. Value": "0.5 gp",
-      "Name": "Javelin",
-      "Properties": "1d6 Piercing - Simple - Thrown - Range: 30/120",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A small sledge hammer with a haft made of wood about one and a half feet long.",
-      "Est. Value": "2. gp",
-      "Name": "Light Hammer",
-      "Properties": "1d4 Bludgeoning - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This mace is essentially just a wooden shaft with a flanged iron head mounted on the end.",
-      "Est. Value": "5. gp",
-      "Name": "Mace",
-      "Properties": "1d6 Bludgeoning - Simple",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "One of man's earliest weapons, dating back to the most primitive of times. A simple wooden pole with a steel spearhead on the end.",
-      "Est. Value": "1. gp",
-      "Name": "Spear",
-      "Properties": "1d6 Piercing - Simple - Thrown, Versatile (1d8) - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A simple handaxe made from a smooth tree branch and a sharp piece of knapped flint. ",
-      "Est. Value": "0.8 gp",
-      "Name": "Primitive Hand Axe",
-      "Properties": "1d4 Slashing - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A woodcutter's tool of choice for felling trees. Its formidable weight and uneven balancing make it a slow, inefficient weapon.",
-      "Est. Value": "1. gp",
-      "Name": "Woodcutter's Axe",
-      "Properties": "1d10 Slashing - Simple - Heavy, Two-Handed",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "7 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A round glass container filled with a clear liquid. It has a paper label indicating in common that it contains acid, and to warning not to accidentally break the glass.",
-      "Est. Value": "25. gp",
-      "Name": "Acid (Vial)",
-      "Properties": "See PHB page 148.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "A basic wooden abacus, designed for merchants and treasurers. It comes with a simple latched case to protect the counting beads from damage. ",
-      "Est. Value": "2. gp",
-      "Name": "Abacus",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Weapon",
-      "Description": "An ash crossbow with a wooden shaft. This crossbow has been designed for smaller, foot long bolts, and is a comfortable ranged weapon for any sized creature.",
-      "Est. Value": "25. gp",
-      "Name": "Light Crossbow",
-      "Properties": "1d8 Piercing - Loading, Two-Handed - Ammunition (Range: 80/320)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Weapon",
-      "Description": "A small, easy to conceal missile weapon. They might not do a lot of damage on their own but when your opponent has three of these embedded in their face before they can get within 10 feet of you they might reconsider the fight.",
-      "Est. Value": "0.05 gp",
-      "Name": "Dart",
-      "Properties": "1d4 Piercing - Finesse - Thrown (Range: 20/60)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1/4 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Weapon",
-      "Description": "A small bow used by travelers and adventurers alike for protection. It doesn't do a lot of damage, but it can be used to attack foes from a distance.",
-      "Est. Value": "25. gp",
-      "Name": "Shortbow",
-      "Properties": "1d6 Piercing - Two-Handed, Ammunition (Range: 80/320)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Weapon",
-      "Description": "A basic a leather strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. Note: Always be careful not to knock yourself out.",
-      "Est. Value": "0.1 gp",
-      "Name": "Sling",
-      "Properties": "1d4 Bludgeoning - Ammunition (Range: 30/120)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "The legendary sword once owned by the Goblin hero 'Stink', who was also known as the 'Hero of Thyme' after he slew a greedy Human merchant and stole a wagon of expensive cooking spices. The sword itself appears to be ornate and magical in nature from afar, but when handled it is clear that it is simply a clever replica made out of gypsum and mud that has been painted.",
-      "Est. Value": "100. gp",
-      "Name": "The Plaster Sword",
-      "Properties": "Due to it's storied history, the sword provides a +2 on any charisma based check when dealing with Goblins. If any attempt to use the sword as a weapon is made, it will break and can not be repaired.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This throwing weapon was originally used by forest-dwelling Orcs to hunt game. Its unique shape allows it to return after being thrown.",
-      "Est. Value": "1. gp",
-      "Name": "Boomerang",
-      "Properties": "1d4 Bludgeoning - Thrown (Range: 30/90) Special: Does not require direct line of sight, due to a curved trajectory.  If the attack misses, the weapon returns to the thrower's position and can be caught with a free action.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This combat boomering does not resembe the conventional 'V' shape of a normal boomerang and instead has more of a 'tick mark' shape. One end has a smaller wing which is both thicker and carefully reinforced with metal studs. It can be used as both a ranged weapon as expected, but can also be used in close quarters as a club.",
-      "Est. Value": "2. gp",
-      "Name": "Combat Boomerang",
-      "Properties": "1d6 Bludgeoning  - Thrown (Range: 30/90) Special: Does not require direct line of sight, due to a curved trajectory.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A curved sword favored by lizardmen. It can be used to attack directly or can be thrown like a boomerang.",
-      "Est. Value": "5. gp",
-      "Name": "Boomerang Sword",
-      "Properties": "1d6 Slashing - Thrown (Range: 30/90) Special: Does not require direct line of sight, due to a curved trajectory.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "A three bladed disk which can either be used in melee or as a thrown weapon. The circular handle is made from dark wood and has the design of an owl's head in the middle.",
-      "Est. Value": "25. gp",
-      "Name": "Glaive",
-      "Properties": "1d4 Slashing - Finesse - Light - Thrown (Range: 30/60) Special: The weapon returns to the thrower's position after an attack and can be caught with a free action.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "The ornamentation that adorns this blade is a traditional elven design. It's forged from a very durable and rust-proof metal.",
-      "Est. Value": "20. gp",
-      "Name": "Elven Sword",
-      "Properties": "1d8 Slashing - Versatile (1d10)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A human skeleton in rotted priest’s robes wearing a ring and necklace. (Electrum ring: 4gp Silver necklace: 3gp)",
-      "Est. Value": "",
-      "Name": "Priest Skeleton",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A goblin skull that has been dipped in molten copper. (1gp)",
-      "Est. Value": "1. gp",
-      "Name": "Prism's Copper Goblin",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "If worn on a hand, the entire arm will vanish.  It will return after 24 hours have elapsed.  Roll a d10: 1 - tattoo on arm, 2 - arm injured, 3 - gained a ring, probably a wedding ring, 4 - ring missing, 5-10 - nothing special.  It will have a similar effect on legs.",
-      "Est. Value": "",
-      "Name": "Ring of the Adventurous Limb",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "Collection of documents with traces of royal bloodlines",
-      "Est. Value": "",
-      "Name": "Royal Documents",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A silver hand mirror with mother-of-pearl backing.",
-      "Est. Value": "28. gp",
-      "Name": "Silver Hand Mirror",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Trap",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Fungus Spores",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Trap",
-      "Description": "A popular Goblin trap; a 50 ft length of neatly coiled wire that has nails welded onto it at regular intervals. The resulting product can be used either by running it across the floor or by intertwining it along a fence or wall.",
-      "Est. Value": "20. gp",
-      "Name": "Stabby String",
-      "Properties": "Stabby String can be left semi-coiled on the floor, at half it's length, to create difficult terrain. Any creature that attempts to pass over the Stabby String is subject to 1d4 piercing damage.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Trap",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Burning Oil",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Pendulum",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A dusty scroll which contains a political essay written by a witch called Virginia Woolfsblood. The essay delves into the systemic oppression of witches and advocates for the magical education and liberation of women in general.",
-      "Est. Value": "30. gp",
-      "Name": "A Dungeon of One's Own ",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A common, bright purple gemstone.",
-      "Est. Value": "50. gp",
-      "Name": "Amethyst",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "When used (worn), this seemingly golden crown turns to sand and falls to the ground where it reforms into a crown. Any gold, silver, or copper item it is placed near will also gain this property. A coin would only turn to sand when it was being used (spent), etc ",
-      "Est. Value": "",
-      "Name": "Sand Crown Crown",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "A thick leather satchel containing an adventurer's’ kit: 6 wax candles, two pieces of white chalk, two pieces of red chalk, a small bag of (100) clay marbles, a whistle, four pieces of charcoal, three large sacks, six iron pitons, a hammer, a tinderbox with flint and steel, 2 empty copper vials, a chunk of coal, and three large sheets of paper.",
-      "Est. Value": "10. gp",
-      "Name": "Satchel",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Silver pan/satyr pipes/flute",
-      "Est. Value": "",
-      "Name": "Satyr Pipes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Nigh-indestructible scroll case – leviathan ivory, jewel encrusted, demon paintings on side – scraps of scroll inside",
-      "Est. Value": "",
-      "Name": "Scroll Case",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 40’ coil of rare sea shells strung on a silken cord",
-      "Est. Value": "",
-      "Name": "Sea Shell Coil",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Studded leather armor made from sharkskin set with iron disks.",
-      "Est. Value": "100. gp",
-      "Name": "Sharkskin Armour",
-      "Properties": "Light Armor - Armor Class: 12 + Dex Modifier",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "A high quality sharpening stone",
-      "Est. Value": "",
-      "Name": "Sharpening Stone",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A leather string holding 11 silver shuriken. ",
-      "Est. Value": "12. gp",
-      "Name": "Shurikens",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "A pouch filled with 13 silver sling bullets. Each bullet is engraved with the holy symbol of Pelor.",
-      "Est. Value": "10. gp",
-      "Name": "Silver Bullets",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large chunk of raw silver ore.",
-      "Est. Value": "5. gp",
-      "Name": "Silver Ore",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "25 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A set of five small silver statuettes (each about 2” tall) consisting of a cat, an owl, a falcon, a horse and a griffon.",
-      "Est. Value": "45. gp",
-      "Name": "Silver Statuettes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Two six-fingered gloves, along with a matching seven-fingered glove. The set is made of supple black leather, and stitched with fine, silver thread.",
-      "Est. Value": "",
-      "Name": "Six Fingered Gloves",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A single, platinum skeleton-key on a platinum ring. The key is finely crafted, with a delicate design etched in elvish characters along the length and across the bow.",
-      "Est. Value": "37. gp",
-      "Name": "Skeleton Key",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "Key chain with multiple types of ‘skeleton keys’",
-      "Est. Value": "",
-      "Name": "Skeleton Key Chain",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "A bearer-order allowing the possessor to take ownership of a dozen slaves from Zoealage the flesh-monger",
-      "Est. Value": "",
-      "Name": "Slave Order",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A long, narrow wooden box containing forty, ½ lb rolls of quality smoking leaf.",
-      "Est. Value": "",
-      "Name": "Smoking Box",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A six foot long smoking pipe made of ivory, possibly a narwhal horn, carved to look like a twisting serpent.",
-      "Est. Value": "",
-      "Name": "Smoking Pipe",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "Smugglers boots – great for hiding a concealed backup dagger or wand",
-      "Est. Value": "",
-      "Name": "Smuggler's Boots",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "A hooded cloak with a dozen inside pockets.",
-      "Est. Value": "",
-      "Name": "Smuggler's Coat",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A scimitar with a gold and snakeskin hilt set with a citrine.",
-      "Est. Value": "100. gp",
-      "Name": "Snakeskin Scimitar",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Four pairs of snow serpent fur felt stockings",
-      "Est. Value": "20. gp",
-      "Name": "Snow Serpent Stockings",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A two gallon stone ware jug containing hallucinogenic tree sap syrup ",
-      "Est. Value": "20. gp",
-      "Name": "Special Syrup",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "A pair of blue enameled steel spiked gauntlets. The palms of both gauntlets are designed to display the Cambersome family crest, a stylized ‘C’ shaped into the likeness of a coiled serpent.",
-      "Est. Value": "90. gp",
-      "Name": "Steel Spiked Gauntlets",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A stuffed falcon, tattered with age, with black onyx eyes. (Onyx value: 5gp each)",
-      "Est. Value": "",
-      "Name": "Stuffed Falcon",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A short quiver holding 3 sunrods.",
-      "Est. Value": "6. gp",
-      "Name": "Sunrod Quiver",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A well-sealed cake box with intact cake",
-      "Est. Value": "",
-      "Name": "Tasty Cake",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Ritualistic tattooing kit",
-      "Est. Value": "",
-      "Name": "Tattoo Kit",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cracked mask of teak wood, colored in (chipped) blue and red paint depicting the face of a fairy (4sp)",
-      "Est. Value": "",
-      "Name": "Teak Mask",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "An ornately carved quarterstaff of teakwood. The end is carved into the likeness of a dragon’s head, with (painted red) flame issuing from its mouth and the butt end carved into an entwining serpent-like tail. (5gp)",
-      "Est. Value": "5. gp",
-      "Name": "Teakwood Quarterstaff",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The neverburning torch. A jet black torch, with an inscription in gold upon its side: “Only in your hour of darkest need will I light.” All attempts – magical or otherwise – to light the torch will fail, but if the character carrying the torch ever finds himself upon the brink of death, the torch will flare to life.",
-      "Est. Value": "",
-      "Name": "The Neverburning Torch",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Scalpel capable of cutting any substance",
-      "Est. Value": "",
-      "Name": "The Scalpel",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Found on the corpse of an enemy from the realm of chaos.",
-      "Est. Value": "",
-      "Name": "The Torturer's Dagger",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60  Any wounds inflicted using this dagger are healed two rounds later.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "You find a barrel filled with broken crockery. Near the bottom is a mouse nest in which, amidst the tangled mouse fur, lays a silver ring set with a polished tigerseye.",
-      "Est. Value": "200. gp",
-      "Name": "Tigerseye Ring",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Box of ‘Top Secret Battle Monkeys’",
-      "Est. Value": "",
-      "Name": "Top Secret Battle Monkeys",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "Piece of Legendary weapon & map with possible locations for other pieces",
-      "Est. Value": "",
-      "Name": "Treasure Map I",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "A peg leg inscribed with a pirate’s treasure map. The map is either false or its treasure has long since been plundered. If you wish to provide the PCs with a true map, then one may be found in the hollow compartment within the leg.",
-      "Est. Value": "",
-      "Name": "Treasure Map II",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A leather harness bearing three short quivers (sized for quarrels, rather than arrows). The first holds a dozen red-fletched quarrels, the second a dozen green fletched quarrels, and the third has a dozen white fletched quarrels.",
-      "Est. Value": "5. gp",
-      "Name": "Triple Harness",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "When blown, any trolls within a mile or so will approach the players",
-      "Est. Value": "",
-      "Name": "Troll Horn",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An oboe-like musical instrument made from a troll’s femur.",
-      "Est. Value": "",
-      "Name": "Troll Oboe",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A set of panpipes carved from the bones of a unicorn. When played, they do not make the slightest sound.",
-      "Est. Value": "",
-      "Name": "Unicorn Pipes",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "This leather-bound recipe book appears to be aimed at adventurers who aren't satified with merely fighting monsters and taking their treasure. It features a mixed selection of recipies, with side-notes on how best to prepare the remains of each creature included. 'Braized Dragon Liver and Onions', 'Eye of the Beholder Soup', 'Rust Monster Jerky' and 'Gelatinous Cube Jelly' are particular standouts.",
-      "Est. Value": "40. gp",
-      "Name": "The Book of Monster Recipes",
-      "Properties": "Allows the reader to prepare meals from most common monsters without poisoning themselves.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A bowl full of golden apples found in the midst of ruins which have long been left desolate and uninhabited. They are quite edible and unspoiled. If they are taken beyond the ruins, they will lose their golden sheen and appear – in all respects – as normal, red apples. So long as they remain within the ruins, however, they are golden, and will not age or rot.",
-      "Est. Value": "",
-      "Name": "Unspoiled Golden Apples",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Seventy-three clay vials of oil (1 pint each). ",
-      "Est. Value": "75. gp",
-      "Name": "Vials of Oil",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "Wand Chamber – fashioned to look like a scroll case, it contains 1d12 slots to hold wands – think of it as a circular bandolier for your everyday wizard",
-      "Est. Value": "",
-      "Name": "Wand Chamber",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Box with runic markings for destroy/to be destroyed containing cursed object",
-      "Est. Value": "",
-      "Name": "Warning Box",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "Water damaged ledger – hidden location",
-      "Est. Value": "",
-      "Name": "Water Damaged Ledger",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A weapons cabinet, unlocked and immovable, containing: 12 score arrows (1gp/score), 40 javelins (1gp each), 120 crossbow bolts (1sp/each), and a short bow (30gp).",
-      "Est. Value": "94. gp",
-      "Name": "Weapon Cabinet",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An elaborate, whalebone scrimshaw carving of intertwined orbs, each showing the legend of creation story of one of the seven civilized religions, roughly 10” in diameter.",
-      "Est. Value": "45. gp",
-      "Name": "Whalebone Scrimshaw",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cane of the purest white ivory, decorated with ruins unknown to modern scholars, and topped with a handle of polished amber. Trapped within the amber is a strange creature unlike any the PCs have ever seen before.",
-      "Est. Value": "",
-      "Name": "White Ivory Cane",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small ball of white marble – roughly three inches across – which hovers in the air until it is touched or disturbed, at which point it falls to the floor and ceases to exhibit any supernatural properties.",
-      "Est. Value": "",
-      "Name": "White Marble Ball",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large, wrought-iron sign crafted to read: “Beware of Wyvern” in a bold script.",
-      "Est. Value": "70. gp",
-      "Name": "Wrought Iron Sign",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "80 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small, brown glass jar, sealed with wax, with a gray dust inside. A white label is affixed to the jar, and reads: “Zombie Dust” in a shaky script. (It is zombie dust.)",
-      "Est. Value": "3. gp",
-      "Name": "Zombie Dust",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This thermometer has a long, silver blade and a pommeled wooden handle. 'Come here, monster! I just want to take your temperature!'",
-      "Est. Value": "",
-      "Name": "Terrible Thermometer",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A normal hand axe, only there's two of them.",
-      "Est. Value": "10. gp",
-      "Name": "Double Axe",
-      "Properties": "1d6 Slashing - Simple - Light, Thrown - Range: 20/60",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Belt of Fattening",
-      "Properties": "Cursed Putting on this belt causes the user to gain 200lb over the period of a short rest.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Morph Blade",
-      "Properties": "This blade can switching between piecing, slashing and bludgeoning damage as a bonus action.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Lucky Coin",
-      "Properties": "Coin always lands heads up.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Wand of Pillows",
-      "Properties": "At any time, if the users says 'Floomp' a pillow will magically appear. After the eighth pillow apparates, they start simply teleporting to the user in order.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Gravedigger",
-      "Properties": "1d4 Bludgeoning Attack with advantage and 1d10 against undead enemies",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Potion",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Giggle Water",
-      "Properties": "small vial of liquid that when drunk makes the drinker continuously giggle for 1 hour. When that wears off they hiccup for 1 hour",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Entangled Coins",
-      "Properties": "Two coins, when flipped at close to the same time will always land the same way, no matter how far apart they are",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Gooch_Ticklr",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Ring of Fire Detection",
-      "Properties": "A bronze ring that houses magical protection. It alerts the wearer of fire by etchings becoming red and glowing when fire is within a 10 foot radius, even behind walls",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "u/DngnMaster",
-      "Category": "Wondrous Item",
-      "Description": "A simple straw hat.",
-      "Est. Value": "30. gp",
-      "Name": "Drunkard's Hat",
-      "Properties": "The wearer of this hat always knows the direction to the nearest alcholic beverage.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
-      "Est. Value": "10. gp",
-      "Name": "Leather Armor",
-      "Properties": "Light Armor Armor Class: 11 + Dex Modifier",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Padded armor consists of quilted layers of cloth and batting.",
-      "Est. Value": "5. gp",
-      "Name": "Padded Armor",
-      "Properties": "Light Armor - Armor Class: 11 + Dex Modifier Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
-      "Est. Value": "45. gp",
-      "Name": "Studded Armor",
-      "Properties": "Light Armor Armor Class: 12 + Dex Modifier",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "13 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.",
-      "Est. Value": "10. gp",
-      "Name": "Hide Armor",
-      "Properties": "Medium Armor Armor Class: 12 + Dex Modifier (max 2)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "12 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.",
-      "Est. Value": "400. gp",
-      "Name": "Breastplate Armor",
-      "Properties": "Medium Armor - Armor Class: 14 + Dex Modifier (max 2)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.",
-      "Est. Value": "750. gp",
-      "Name": "Half Plate Armor",
-      "Properties": "Medium Armor - Armor Class: 15 + Dex Modifier (max 2) Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
-      "Est. Value": "50. gp",
-      "Name": "Chain Shirt Armor",
-      "Properties": "Medium Armor - Armor Class: 13 + Dex Modifier (max 2)",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.",
-      "Est. Value": "50. gp",
-      "Name": "Scale Mail Armor",
-      "Properties": "Medium Armor - Armor Class: 14 + Dex Modifier (max 2) Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "45 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.",
-      "Est. Value": "30. gp",
-      "Name": "Ring Mail Armor",
-      "Properties": "Heavy Armor - Armor Class: 14 Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.",
-      "Est. Value": "1,500. gp",
-      "Name": "Plate Armor",
-      "Properties": "Heavy Armor - Armor Class: 18 Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Strength: 15",
-      "Weight": "65 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.",
-      "Est. Value": "75. gp",
-      "Name": "Chain Mail Armor",
-      "Properties": "Heavy Armor - Armor Class: 16 Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Strength: 13",
-      "Weight": "55 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.",
-      "Est. Value": "200. gp",
-      "Name": "Splint Armor",
-      "Properties": "Heavy Armor - Armor Class: 17 Disadvantage on Stealth",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "Strength: 15",
-      "Weight": "60 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Armor",
-      "Description": "A shield is made from wood or metal and is carried in one hand.",
-      "Est. Value": "10. gp",
-      "Name": "Shield",
-      "Properties": "Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Adventuring Gear",
-      "Description": "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts.",
-      "Est. Value": "200. gp",
-      "Name": "Ammo Belt",
-      "Properties": "More reliable than a quiver.",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
-      "Est. Value": "50. gp",
-      "Name": "Alchemist's Fire",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A simple silver ring that bears no inscription or identifying marks on it's surface.",
-      "Est. Value": "10. gp",
-      "Name": "Silver Ring",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A dagger sheath of hardened leather, set with a number of cheap decorative stones. Any dagger kept within this sheath is automatically sharpened as if it were a fresh blade.",
-      "Est. Value": "200. gp",
-      "Name": "Sharpening Sheath",
-      "Properties": "",
-      "Rarity": "Common",
-      "Rarity Number": "2",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Acid Splash spell.",
-      "Name": "Acid Splash Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blade Ward spell.",
-      "Name": "Blade Ward Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Chill Touch spell.",
-      "Name": "Chill Touch Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Control Flames spell.",
-      "Name": "Control Flames Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Create Bonfire spell.",
-      "Name": "Create Bonfire Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dancing Lights spell.",
-      "Name": "Dancing Lights Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Druidcraft spell.",
-      "Name": "Druidcraft Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Eldritch Blast spell.",
-      "Name": "Eldritch Blast Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fire Bolt spell.",
-      "Name": "Fire Bolt Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Friends spell.",
-      "Name": "Friends Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Frostbite spell.",
-      "Name": "Frostbite Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Guidance spell.",
-      "Name": "Guidance Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Gust spell.",
-      "Name": "Gust Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Infestation spell.",
-      "Name": "Infestation Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Light spell.",
-      "Name": "Light Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mage Hand spell.",
-      "Name": "Mage Hand Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Stone spell.",
-      "Name": "Magic Stone Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mending spell.",
-      "Name": "Mending Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Message spell.",
-      "Name": "Message Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Minor Illusion spell.",
-      "Name": "Minor Illusion Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mold Earth spell.",
-      "Name": "Mold Earth Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Poison Spray spell.",
-      "Name": "Poison Spray Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Prestidigitation spell.",
-      "Name": "Prestidigitation Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Primal Savagery spell.",
-      "Name": "Primal Savagery Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Produce Flame spell.",
-      "Name": "Produce Flame Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ray of Frost spell.",
-      "Name": "Ray of Frost Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Resistance spell.",
-      "Name": "Resistance Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sacred Flame spell.",
-      "Name": "Sacred Flame Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shape Water spell.",
-      "Name": "Shape Water Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shillelagh spell.",
-      "Name": "Shillelagh Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shocking Grasp spell.",
-      "Name": "Shocking Grasp Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Spare the Dying spell.",
-      "Name": "Spare the Dying Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thaumaturgy spell.",
-      "Name": "Thaumaturgy Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thorn Whip spell.",
-      "Name": "Thorn Whip Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thunderclap spell.",
-      "Name": "Thunderclap Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Toll the Dead spell.",
-      "Name": "Toll the Dead Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the True Strike spell.",
-      "Name": "True Strike Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Vicious Mockery spell.",
-      "Name": "Vicious Mockery Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Word of Radiance spell.",
-      "Name": "Word of Radiance Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Absorb Elements spell.",
-      "Name": "Absorb Elements Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Alarm spell.",
-      "Name": "Alarm Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Animal Friendship spell.",
-      "Name": "Animal Friendship Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Armor of Agathys spell.",
-      "Name": "Armor of Agathys Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Arms of Hadar spell.",
-      "Name": "Arms of Hadar Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Bane spell.",
-      "Name": "Bane Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Beast Bond spell.",
-      "Name": "Beast Bond Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Bless spell.",
-      "Name": "Bless Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Burning Hands spell.",
-      "Name": "Burning Hands Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Catapult spell.",
-      "Name": "Catapult Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cause Fear spell.",
-      "Name": "Cause Fear Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ceremony spell.",
-      "Name": "Ceremony Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Chaos Bolt spell.",
-      "Name": "Chaos Bolt Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Charm Person spell.",
-      "Name": "Charm Person Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Chromatic Orb spell.",
-      "Name": "Chromatic Orb Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Color Spray spell.",
-      "Name": "Color Spray Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Command spell.",
-      "Name": "Command Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Compelled Duel spell.",
-      "Name": "Compelled Duel Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Comprehend Languages spell.",
-      "Name": "Comprehend Languages Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Create or Destroy Water spell.",
-      "Name": "Create or Destroy Water Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cure Wounds spell.",
-      "Name": "Cure Wounds Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Detect Evil and Good spell.",
-      "Name": "Detect Evil and Good Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Detect Magic spell.",
-      "Name": "Detect Magic Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Detect Poison and Disease spell.",
-      "Name": "Detect Poison and Disease Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Disguise Self spell.",
-      "Name": "Disguise Self Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dissonant Whispers spell.",
-      "Name": "Dissonant Whispers Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Divine Favor spell.",
-      "Name": "Divine Favor Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Earth Tremor spell.",
-      "Name": "Earth Tremor Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ensnaring Strike spell.",
-      "Name": "Ensnaring Strike Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Entangle spell.",
-      "Name": "Entangle Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Expeditious Retreat spell.",
-      "Name": "Expeditious Retreat Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Faerie Fire spell.",
-      "Name": "Faerie Fire Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the False Life spell.",
-      "Name": "False Life Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Feather Fall spell.",
-      "Name": "Feather Fall Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Find Familiar spell.",
-      "Name": "Find Familiar Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fog Cloud spell.",
-      "Name": "Fog Cloud Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Goodberry spell.",
-      "Name": "Goodberry Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Grease spell.",
-      "Name": "Grease Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Guiding Bolt spell.",
-      "Name": "Guiding Bolt Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hail of Thorns spell.",
-      "Name": "Hail of Thorns Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Healing Word spell.",
-      "Name": "Healing Word Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hellish Rebuke spell.",
-      "Name": "Hellish Rebuke Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Heroism spell.",
-      "Name": "Heroism Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hex spell.",
-      "Name": "Hex Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hunter's Mark spell.",
-      "Name": "Hunter's Mark Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ice Knife spell.",
-      "Name": "Ice Knife Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Identify spell.",
-      "Name": "Identify Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Illusory Script spell.",
-      "Name": "Illusory Script Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Inflict Wounds spell.",
-      "Name": "Inflict Wounds Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Jump spell.",
-      "Name": "Jump Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Longstrider spell.",
-      "Name": "Longstrider Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mage Armor spell.",
-      "Name": "Mage Armor Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Missile spell.",
-      "Name": "Magic Missile Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Protection from Evil and Good spell.",
-      "Name": "Protection from Evil and Good Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Purify Food and Drink spell.",
-      "Name": "Purify Food and Drink Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ray of Sickness spell.",
-      "Name": "Ray of Sickness Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sanctuary spell.",
-      "Name": "Sanctuary Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Searing Smite spell.",
-      "Name": "Searing Smite Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shield spell.",
-      "Name": "Shield Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shield of Faith spell.",
-      "Name": "Shield of Faith Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Silent Image spell.",
-      "Name": "Silent Image Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sleep spell.",
-      "Name": "Sleep Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Snare spell.",
-      "Name": "Snare Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Speak with Animals spell.",
-      "Name": "Speak with Animals Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tasha's Hideous Laughter spell.",
-      "Name": "Tasha's Hideous Laughter Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tenser's Floating Disk spell.",
-      "Name": "Tenser's Floating Disk Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thunderous Smite spell.",
-      "Name": "Thunderous Smite Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thunderwave spell.",
-      "Name": "Thunderwave Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Unseen Servant spell.",
-      "Name": "Unseen Servant Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Witch Bolt spell.",
-      "Name": "Witch Bolt Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wrathful Smite spell.",
-      "Name": "Wrathful Smite Spell Scroll",
-      "Rarity": "Common"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Zephyr Strike spell.",
-      "Name": "Zephyr Strike Spell Scroll",
-      "Rarity": "Common"
-    }
-  ],
-  "Legendary": [
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The sapling of a young tree. Within a few minutes it will have grown into a wizened oak. A few moments more and the tree slowly fades from existence as a young seedling pushes up from the ground and begins the cycle anew.",
-      "Est. Value": "",
-      "Name": "Perpetual Tree",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Garnet is a general class of crystals ranging from deep red to violet in colour. a typical cut for this rare isometric gem is 12 to 24 sides, with the very rare 36 sides being known from time to time. This may be the only 48 sided garnet in existance. and as such it is highly prized.",
-      "Est. Value": "10,000. gp",
-      "Name": "48-sided Garnet Gemstone",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "An apparatus of Kwalish appears to be a large, sealed iron barrel, but it has a secret catch that opens a hatch in one end. Inside, a character finds ten levers. The levers perform various functions, including extending or retracting the legs, tail, pincers and feelers, covering and uncovering the portholes, moving the apparatus, snapping its pincers, opening and closing its magically-lit 'eyes', rising and sinking in water, and opening or closing the hatch. When activated the apparatus looks like a giant lobster.",
-      "Est. Value": "10,000. gp",
-      "Name": "Apparatus of Kwalish",
-      "Properties": "See DMG page 151.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "500 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "Apple of the God’s – gain random ability of 1 god aspect at risk of save vs death, then random forbidden fruit side effect; ability is 1 per day/50% chance success",
-      "Est. Value": "5,000. gp",
-      "Name": "Apple of the Gods",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You have a +3 bonus to AC while wearing this armor. ",
-      "Est. Value": "24,000. gp",
-      "Name": "Armor +3",
-      "Properties": "Light, Medium or Heavy",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "8 - 60"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.",
-      "Est. Value": "18,000. gp",
-      "Name": "Armor of Invulnerability",
-      "Properties": "Plate Armor",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "65 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A long steel blade with an amber edge and lustrous golden hilt. When first discovered, the blade is without detail, but is filled with runes as members of other races volunteer their blood as tribute to the blade's cause.",
-      "Est. Value": "3,000. gp",
-      "Name": "Balering, the Sword of Balance",
-      "Properties": "1d8, plus an additional 1d8 radiant damage to Dragons, Garou, and Spiders for each rune that appears on the blade. The blade is adorned with a rune for every 3 different races that willingly shed their blood on the sword.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 27. If your Strength is already equal to or greater than 27, the item has no effect on you.",
-      "Est. Value": "36,000. gp",
-      "Name": "Belt of Cloud Giant Strength",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 29. If your Strength is already equal to or greater than 29, the item has no effect on you.",
-      "Est. Value": "45,000. gp",
-      "Name": "Belt of Storm Giant Strength",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Weapon",
-      "Description": "This greatsword belongs to the current mortal champion of Vingaret, the goddess of vengeance. Once per day, the attuned champion can choose to have one attack with Bloodgaze deal an extra 1D10 damage to the target if the target was the last creature to attack the champion. This damage increases to 2D10 when the champion reaches 7th level and to 3D10 when the champion reaches 15th level.",
-      "Est. Value": "50,000. gp",
-      "Name": "Bloodgaze, Champion of Vingaret",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "15 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "Gives insane buffs, will eventually turn you into one of whatever it's namesake is.",
-      "Est. Value": "",
-      "Name": "Bound Armor of the Demon",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "40 - 60"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "Gives insane buffs, will eventually turn you into one of whatever it's namesake is.",
-      "Est. Value": "",
-      "Name": "Bound Armor of the Fey",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "40 - 60"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "Gives insane buffs, will eventually turn you into one of whatever it's namesake is.",
-      "Est. Value": "",
-      "Name": "Bound Armor of the Lich",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "40 - 60"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A small brass flame-shaped charm on a black cord. The center of the flame is overlaid with platinum and is visible in darkness. Holding it in your hands fills you with a tingling sense of ambition and an urge to act.",
-      "Est. Value": "2,000. gp",
-      "Name": "Brass Halo",
-      "Properties": "CHA +2 Whenever you cast a spell, roll a d20. On a 20, that spell will be cast as a 10th level spell. A spell slot of the lowest castable level is expended as a result.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A flattened bronze halo that hovers behind the bearer's head. It spins rapidly when the bearer exhibits great presence of mind.",
-      "Est. Value": "1,000. gp",
-      "Name": "Bronze Halo",
-      "Properties": "INT +2 You may add 1d20 to any dice roll you make. A bolt of lightning then strikes you, dealing lightning damage equal to the result of the roll. This can only be done once per dice roll.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "u/giratina2648",
-      "Category": "Wondrous Item",
-      "Description": "A commanding cloak of authority, used to hide whole legions of armies against the Starwizards of the astral planes. ",
-      "Est. Value": "",
-      "Name": "Cloak of the Shadow General",
-      "Properties": "1/ Day: Creatures within a 30 feet radius, including the user, are granted the effects of greater invisibility, and cannot be detected by Truesight and other means of reveal, e.g. Mordenkainen's Faithful Hound. Charges are restored at dusk.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A copper band with a scale-pattern etched into it. At the top of the bracelet is a broken inset where a platinum decoration used to be.",
-      "Est. Value": "0. gp",
-      "Name": "Copper Band of the Deceiver",
-      "Properties": "Grants the wearer a feeling of safety that they become instantly addicted to. Wearing it for a full day creates a feeling of dependency, requiring a DC 12 wisdom save to overcome and remove the bracelet. Attempting to do so makes the user panicked and sickened and fearful of the dangers of the world. The DC increases by 2 for each day that they bracelet is worn. After a week, the bearer will look sickly and lose their will to eat. After a month, they will become dark and boney, and begin to develop scarring, and their features will become shifted and demonic. This transition continues until they resemble a waifish demonic figure.  The wearer of this bracelet is immortal in the physical sense, no amount of harm will cause them to die.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A copper gauntlet that never greens. The bearer feels a sense of influence and importance.",
-      "Est. Value": "1,500. gp",
-      "Name": "Copper Halo",
-      "Properties": "STR +2 You may point at a creature and give it a command. The command must be phrased as helping you or helping another person to complete a task. If the target has less than 10 intelligence, it obeys you. If its Intelligence is 10 or higher, it makes a DC 17 Wisdom save or follows your command. You may do this to any number of targets, but if one of them fails to listen to you, the effect may break on all others (roll 1d2, success on 1).",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "u/giratina2648",
-      "Category": "Armor",
-      "Description": "Nigh-unbreakable golemsteel armor enchanted to withstand nearly any strike. If a ranged attack targets a friendly creature besides yourself within five feet radius, you can move them and take the shot to negate the damage and effects instead; if they are within a 10 feet radius, use your reaction. ",
-      "Est. Value": "",
-      "Name": "Eternity Armor",
-      "Properties": "Heavy Armor | AC 20 | Str 20 | Stealth: Disadvantage",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "80 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A necklace of large gold-and-platinum prayer beads, 12 beads in all. They project a feeling of safety and austere silence.",
-      "Est. Value": "1,000. gp",
-      "Name": "Golden Halo",
-      "Properties": "WIS +2 You may choose one target within ten feet to be encapsulated in an opaque sphere of white force. The target must have 100 or less current HP. When a target is captured in a sphere, a bead on the necklace will turn platinum. Once inside the sphere, time ceases to pass within it, effectively preserving the captive indefinitely. The captives can be released at will.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "A thick, flesh-like leather vest adorned with occult symbols and human teeth. Parts of it are ragged with wear, and it feels clammy to the touch.",
-      "Est. Value": "5,000. gp",
-      "Name": "Hallowed Skin",
-      "Properties": "Grants 12 AC +Dex. Undead creatures revere the bearer of this garment, and will not attack you, unless they are in threat of being destroyed. A good-aligned character wearing this vest will become nauseous, and suffers fitful nightmares on any night after this has been worn, preventing them from benefitting from a long rest.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "This ring is set with a hemispherical glass eyeball that looks around when it is worn. It functions as an alternative eye for the user and is not affected by magic.",
-      "Est. Value": "9,000. gp",
-      "Name": "Observer's Ring",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Two disks of hardened quicksilver laying atop one another. If they are separated, a tornado springs up between them – anchored on each end to a disk.",
-      "Est. Value": "",
-      "Name": "Pocket Tornado",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Potion",
-      "Description": "Bottle with a liquid with rainbow colors. When you drink it you automatically succeed on death saving throws for one hour.",
-      "Est. Value": "",
-      "Name": "Potion of Temporary Immortality",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "A single, elegant seaglass colored earring made of clear glasslike material. Its exact shape changes slowly over time, shifting from one watery artful shape to another.",
-      "Est. Value": "5,000. gp",
-      "Name": "Seaglass Earring",
-      "Properties": "The attuned bearer of this earring may cast the 'Control Water' spell once per day, using Charisma as their modifier. The bearer may also take an aqueous form once per day, becoming immune to nonmagical damage, gaining a swim speed of 60 ft, and may effuse through pinhole openings for up to 1 minute.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A small silver ring shaped from the circle of Captain Wellby's hat.",
-      "Est. Value": "2,000. gp",
-      "Name": "Silver Halo",
-      "Properties": "DEX +2 Activate to slip between dimensions - for one minute you can choose to be invisible, ghostly or fully real. You can move through objects at will, and can still affect the material world.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "A black and crimson cloak with tattered edges that are ever-glowing as it were on fire on moments ago.",
-      "Est. Value": "2,000. gp",
-      "Name": "Smoldering Cloak",
-      "Properties": "If an attack would strike you in combat, you may use your reaction to become a cloud of thick, black smoke, and may move up to 15 feet without provoking attacks of opportunity. You must complete a short rest before using this ability again. If you suffer 10 or more fire damage from any source, the feature becomes available again.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A simple, sturdy longsword with a broad blade. There is a shining sun sigil at the crossguard. The blade shines as if reflecting sunlight, even in the dimmest rooms.",
-      "Est. Value": "10,000. gp",
-      "Name": "Solarion",
-      "Properties": "1d8, +1d6 fire, +1d6 radiant. As a bonus action, you may hold the sword above your head, under a clear, bright day in order to charge the sword with power. Doing so increases the fire and radiant damage of the weapon to 2d6 for one minute. The blade also emits a bright light in 60 feet at will.",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Weapon",
-      "Description": "This warhammer belonged to a famous dwarven general known as Thaxton the Fierce. It grants a +1 bonus to attack and damage rolls, as well as Intimidation checks, to the user. If the user is a dwarf, this bonus is increased to +2.",
-      "Est. Value": "",
-      "Name": "Thaxton's Hammer",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Book",
-      "Description": "The Book of Kaza is a famed tome written by the lich, Kaza. It is said to deal with the darkest secrets of necromancy, though the pages appear to be blank when you look at it. Kaza was destroyed during the upheaval of Nethril's final days. How it has come to its present location after so many years is anyone's guess.        ",
-      "Est. Value": "4,500. gp",
-      "Name": "The Book of Kaza",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Language: Abyssal",
-      "Weight": "1 1/2 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "'The Box of Do Want' which made anyone looking into the box desire whatever it was that I put inside of it. A rock? The shopkeeper wants it so badly they're willing to pay their entire fortune. A spoon? The tavern keeper is willing to give you his daughter.",
-      "Est. Value": "",
-      "Name": "The Box of 'Do Want'",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "J",
-      "Category": "Wondrous Item",
-      "Description": "This legendary eyeball, said to have once been that of a gynosphinx, has the capability to scry at a radius of around 1000 miles. To use it, one must attune to it and to do so, one must gouge out one of their own eyes and replace it with the Eye of Far Seeing (similar to the eye of vecna).",
-      "Est. Value": "30,000. gp",
-      "Name": "The Eye of Far Seeing",
-      "Properties": "Inserting this eye into one of your own eyes lots gives the ability to scry at will twice (or thrice) a day. If it is used more than that, your vision in that eye will start to fade and you will suffer exhaustion. ",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Vial #2 contains speculumia, a slightly greenish opaque liquid that when drunk suddenly causes a cloud of smoke and summons an exact copy of whoever drank it. The new person is completely the same as the drinker and will actually think that he is the one who drank the drink, the sudden cloud of smoke will prevent anyone witnessing the situation from being able to tell which one is the original person.",
-      "Est. Value": "",
-      "Name": "Vial #2",
-      "Properties": "",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "William Orfanakos",
-      "Category": "Weapon",
-      "Description": "A legendary longsword that glows a dark red when ",
-      "Est. Value": "10,000. gp",
-      "Name": "Soul Stealer",
-      "Properties": "When this weapon is used to kill an intelligent creature, it's soul is absorbed into the blade. These souls can be released as a bonus action for 1d4 psychic damage per soul. All of the souls must be released at once. 1d12 Slashing - Versatile (2d8)",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "Requires Attunement",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Gnomish Stop Clock",
-      "Properties": "Allows you to stop time. However, if you ever let go of the clock while time is stopped it will shatter, restoring time but freezing the user",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Key Dagger",
-      "Properties": "Appears to be a silvered 1d4 dagger with some cuts running up it’s spine. But when the blade is inserted into a lock, it acts as the correct key",
-      "Rarity": "Legendary",
-      "Rarity Number": "6",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Abi-Dalzim’s Horrid Wilting spell.",
-      "Name": "Abi-Dalzim’s Horrid Wilting Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Animal Shapes spell.",
-      "Name": "Animal Shapes Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Antimagic Field spell.",
-      "Name": "Antimagic Field Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Antipathy (Sympathy) spell.",
-      "Name": "Antipathy (Sympathy) Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Antipathy Sympathy spell.",
-      "Name": "Antipathy Sympathy Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Clone spell.",
-      "Name": "Clone Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Control Weather spell.",
-      "Name": "Control Weather Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Demiplane spell.",
-      "Name": "Demiplane Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dominate Monster spell.",
-      "Name": "Dominate Monster Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Earthquake spell.",
-      "Name": "Earthquake Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Feeblemind spell.",
-      "Name": "Feeblemind Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Glibness spell.",
-      "Name": "Glibness Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Holy Aura spell.",
-      "Name": "Holy Aura Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Illusory Dragon spell.",
-      "Name": "Illusory Dragon Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Incendiary Cloud spell.",
-      "Name": "Incendiary Cloud Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Maddening Darkness spell.",
-      "Name": "Maddening Darkness Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Maze spell.",
-      "Name": "Maze Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mighty Fortress spell.",
-      "Name": "Mighty Fortress Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mind Blank spell.",
-      "Name": "Mind Blank Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Power Word Stun spell.",
-      "Name": "Power Word Stun Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sunburst spell.",
-      "Name": "Sunburst Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Telepathy spell.",
-      "Name": "Telepathy Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tsunami spell.",
-      "Name": "Tsunami Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Astral Projection spell.",
-      "Name": "Astral Projection Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Foresight spell.",
-      "Name": "Foresight Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Gate spell.",
-      "Name": "Gate Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Imprisonment spell.",
-      "Name": "Imprisonment Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Invulnerability spell.",
-      "Name": "Invulnerability Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mass Heal spell.",
-      "Name": "Mass Heal Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mass Polymorph spell.",
-      "Name": "Mass Polymorph Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Meteor Swarm spell.",
-      "Name": "Meteor Swarm Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Power Word Heal spell.",
-      "Name": "Power Word Heal Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Power Word Kill spell.",
-      "Name": "Power Word Kill Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Prismatic Wall spell.",
-      "Name": "Prismatic Wall Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Psychic Scream spell.",
-      "Name": "Psychic Scream Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shapechange spell.",
-      "Name": "Shapechange Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Storm of Vengeance spell.",
-      "Name": "Storm of Vengeance Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Time Stop spell.",
-      "Name": "Time Stop Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the True Polymorph spell.",
-      "Name": "True Polymorph Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the True Resurrection spell.",
-      "Name": "True Resurrection Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Weird spell.",
-      "Name": "Weird Spell Scroll",
-      "Rarity": "Legendary"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wish spell.",
-      "Name": "Wish Spell Scroll",
-      "Rarity": "Legendary"
-    }
-  ],
-  "Mundane": [
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "Three oily rags in an old wicker basket.",
-      "Est. Value": "0.2 gp",
-      "Name": "Oily Rags",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "On the floor, you find a single pickle wrapped in an oily paper bag. It has a strong distinct smell, but otherwise seems like a normal pickle.",
-      "Est. Value": "0.05 gp",
-      "Name": "Pickle",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "A used, slightly rusted double-bladed sword.",
-      "Est. Value": "2. gp",
-      "Name": "Ancient Sword",
-      "Properties": "1d4 Piercing - Finesse, Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Baldur's Gate",
-      "Category": "Treasure",
-      "Description": "Andar is hard and durable, yielding translucent gems that flash green-red or brown-red when properly faceted.",
-      "Est. Value": "15. gp",
-      "Name": "Andar Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A round translucent white gemstone with a ring of striped brown through its center.",
-      "Est. Value": "10. gp",
-      "Name": "Banded Agate Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A large barrel of pickled eels. The barrel can be re-used, but it's unlikely the smell of pickled eel will ever truly be washed out.",
-      "Est. Value": "5. gp",
-      "Name": "Barrel o' Eels",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "35 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A newly crafted barrel filled with iron nails. Might be difficult for the players to get this around if they don't have a cart.",
-      "Est. Value": "5. gp",
-      "Name": "Barrel o' Nails",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A string of eight beaver pelts.",
-      "Est. Value": "1. gp",
-      "Name": "Beaver Pelts",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An old leather belt.",
-      "Est. Value": "0.15 gp",
-      "Name": "Belt",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An ornate black velvet mask sitched with silver thread.",
-      "Est. Value": "25. gp",
-      "Name": "Black Velvet Mask",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A blank scroll. It could have any spell in the world on it, eventually. The possibilities are endless.",
-      "Est. Value": "0.5 gp",
-      "Name": "Blank Scroll",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A thick woolen blanket. Something like this is perfect for wrapping up during those long cold nights spent staring at a cave wall.",
-      "Est. Value": "0.35 gp",
-      "Name": "Blanket",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A blood-stained dress which, despite being found in ruins which have lain undisturbed for centuries, is still a vibrant, stunning blue.",
-      "Est. Value": "2. gp",
-      "Name": "Blood Stained Dress",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Book",
-      "Description": "A blood-soaked book; a partially written history about a long-lost keep on the borderlands. The last written page is done in a different hand, and is scrawled with “The rules have changed!” in large, bold letters. Roughly a third of the book (of 100 pages) has been used. ",
-      "Est. Value": "5. gp",
-      "Name": "Blood-Soaked Book",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small quartz gemstone shaped in a bevelled square. It is transparent pale blue in color.",
-      "Est. Value": "10. gp",
-      "Name": "Blue Quartz Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A finely woven blue wool scarf.",
-      "Est. Value": "1. gp",
-      "Name": "Blue Scarf",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A butter churn made of bone slats, bound with hoops of silver. A scrimshaw scene depicting a crowd of human villagers beating a Halfling with shovels and hoes wraps around it.",
-      "Est. Value": "0.5 gp",
-      "Name": "Bone Butter Churn",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A pair of engraved bone dice.",
-      "Est. Value": "25. gp",
-      "Name": "Bone Dice",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "Bits of bone from an unknown creature.",
-      "Est. Value": "0. gp",
-      "Name": "Bone Fragments",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A long needle carved out of bone.",
-      "Est. Value": "0.25 gp",
-      "Name": "Bone Needle",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This is simply a regular sword that has been partially broken, in combat or however. Most people would just get rid of it, but maybe this sword has a nice hilt or sentimental value. ",
-      "Est. Value": "0.5 gp",
-      "Name": "Broken Sword",
-      "Properties": "1d4 Piercing, Finesse, Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "Six red wax candles. ",
-      "Est. Value": "0.01 gp",
-      "Name": "Candle",
-      "Properties": "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet. ",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A carved ox bone female figure statue on a wooden base. The statue is 16' in height.",
-      "Est. Value": "25. gp",
-      "Name": "Carved Bone Statuette",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small piece of chalk used to draw on any hard surface.",
-      "Est. Value": "0.05 gp",
-      "Name": "Chalk",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An old scrap of cloth from a shirt or sheet of some kind. ",
-      "Est. Value": "0. gp",
-      "Name": "Cloth Scrap",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "These holy garments are made of silk interwoven with gold threads.",
-      "Est. Value": "25. gp",
-      "Name": "Cloth-of-gold Vestments",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small wooden comb.",
-      "Est. Value": "0.2 gp",
-      "Name": "Comb",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A cast iron cooking pot. It smells like it was last used for soup.",
-      "Est. Value": "0.2 gp",
-      "Name": "Cooking Pot",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "Heavy, solid copper acorns with perfect natural detail.",
-      "Est. Value": "1. gp",
-      "Name": "Copper Acorns",
-      "Properties": "These acorns drop from the oak-like trees that sprout on the graves of Copper Dragons. They can be lethal when falling, often embedding themselves in the ground.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small copper chalice with a silver filigree.",
-      "Est. Value": "25. gp",
-      "Name": "Copper Chalice",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "Using a crowbar grants advantage to Strength checks where the crowbar’s leverage can be applied.",
-      "Est. Value": "2. gp",
-      "Name": "Crowbar",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A wooden box. Carved by someone who has had no formal training in woodworking, and it shows.",
-      "Est. Value": "0.15 gp",
-      "Name": "Crude Box",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A crudely carved wooden holy symbol.",
-      "Est. Value": "0.5 gp",
-      "Name": "Crude Holy Symbol",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A crudely carved wooden pipe.",
-      "Est. Value": "0.15 gp",
-      "Name": "Crude Pipe",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "Metal box of unidentifiable powder.",
-      "Est. Value": "0.5 gp",
-      "Name": "Curious Powder Box",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A long-dead fey, dried and petrified as a trophy and hanging from ceiling.",
-      "Est. Value": "5. gp",
-      "Name": "Dead Fey",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "120 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "The mounted head of a deer, it's impossibly massive horns have broken in places.",
-      "Est. Value": "5. gp",
-      "Name": "Deer Bust",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "7 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A one-gallon cask of Demon’s Vale Wine; a fiery red wine known to be made from hot peppers.",
-      "Est. Value": "10. gp",
-      "Name": "Demon's Vale Wine",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A six sided dice. Probably used in some silly tabletop game.",
-      "Est. Value": "0.15 gp",
-      "Name": "Dice (6 Sided)",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "18 dried rashers of meat, possibly the largest rashers you have ever seen. They are wrapped in a sheep bladder cloth which has been labelled 'THUNDERER MEAT' in large, rough handwriting.",
-      "Est. Value": "10. gp",
-      "Name": "Dinosaur Bacon",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "Hanging from a drying rack are two large Dire Bat wings. It is unclear how long they have been seperated from the rest of the bat, but they are in good condition and could potentially be used as a crafting material.",
-      "Est. Value": "2. gp",
-      "Name": "Dire Bat Wings",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A disk of finely polished stone. On one side, the Elvish rune for death is inscribed in blackest obsidian. Upon the other, the Dwarven rune for life is inscribed in the palest ivory.",
-      "Est. Value": "4. gp",
-      "Name": "Disk of Balance",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "The party finds a complete set of bronze and carved stone weight training equipment issued to the 4th army of some Ancient Empire. There is an inscription in one of the weights that reads 'Dost thou even lift, brother?'",
-      "Est. Value": "20. gp",
-      "Name": "Weight Training Equipment",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "200 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A flower that has been dried out to preserve it.",
-      "Est. Value": "0. gp",
-      "Name": "Dried Flower",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A ruby the size of a man’s fist which sparkles and gleams with the promise of untold wealth in the faintest of lights, but which crumbles to dust upon the lightest touch.",
-      "Est. Value": "0. gp",
-      "Name": "Dust Ruby",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "An archer’s bracer of leather and electrum.",
-      "Est. Value": "2.5 gp",
-      "Name": "Electrum Bracer",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A leather ball stuffed with chicken feathers. On a DC 15 peception check the player can find an electrum ring amongst the feathers.",
-      "Est. Value": "3.5 gp",
-      "Name": "Leather Ball",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An empty vial, just waiting to be filled with something more valuable than itself.",
-      "Est. Value": "0.35 gp",
-      "Name": "Empty Vial",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This simple agate gem has translucent circles of white dotted around its surface which bring to mind the image of an eye.",
-      "Est. Value": "10. gp",
-      "Name": "Eye Agate Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A life sized copper statue of a fat cat with amber eyes that purrs when stroked. Curiously, it does not detect as magic.",
-      "Est. Value": "5. gp",
-      "Name": "Fat Cat Statue",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A 5’ diameter wheel of fine, aged cheese",
-      "Est. Value": "0.5 gp",
-      "Name": "Fine Cheese",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "Useful for catching fish.",
-      "Est. Value": "1. gp",
-      "Name": "Fishing Tackle",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Armor",
-      "Description": "A small wooden shield bound in human skin bearing a tattoo that appears to be some sort of map. The skin is held in place with a rim of beaten copper.",
-      "Est. Value": "7. gp",
-      "Name": "Flesh Shield",
-      "Properties": "Provides +2 AC",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Treasure",
-      "Description": "A carved steel striker and a piece of shaped flint that allows the user to start a fire.",
-      "Est. Value": "0.3 gp",
-      "Name": "Flint & Steel",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A handheld water pan with a number of chunks of pyrite in it, otherwise known as 'Fool's Gold'. You might be able to convince someone that these nuggets are real gold, but not for very long.",
-      "Est. Value": "0.5 gp",
-      "Name": "Fool's Gold",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A bag containing 1d8 torches infused with pleasant fragrances. This may have been owned by a tanner, to cover the overwhelming stench of tannin that is used in the leathermaking process.",
-      "Est. Value": "4. gp",
-      "Name": "Fragrant Torches",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A wizard called Frolee appears to have mass produced a five page guide to mustaches and beards. It has a unique, hairy cover made out of bearskin.",
-      "Est. Value": "2. gp",
-      "Name": "Frolee's Guide to Follicle Perfection",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A wreath of eight garlic buds.",
-      "Est. Value": "0.2 gp",
-      "Name": "Garlic",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A teal gem.",
-      "Est. Value": "1. gp",
-      "Name": "Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small Azurite gem. It is opaque and a deep mottled blue in colour.",
-      "Est. Value": "10. gp",
-      "Name": "Gem of Azurite",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A 14 inch diameter sealed glass sphere containing water and an ornamental fish.",
-      "Est. Value": "3. gp",
-      "Name": "Glass Sphere",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "A sparkling handful of raw gems.",
-      "Est. Value": "0.01 gp",
-      "Name": "Glittering Glass",
-      "Properties": "These convincing rocks are actually made of a river-tumbled glassy stone that is said to form from the aftermath of elemental turmoil.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "This is a tiny jar of glitternight dust. (a narcotic)",
-      "Est. Value": "3. gp",
-      "Name": "Glitternight Dust",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small green stone that gives off a feint light that's practically imperceptable in anything other than pitch black darkness. It could be used as a marker or a light source in a pinch.",
-      "Est. Value": "2. gp",
-      "Name": "Glow Stone",
-      "Properties": "Provides dim-light for a 5 foot radius.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A pound of goat jerky.",
-      "Est. Value": "0.2 gp",
-      "Name": "Goat Jerky",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small gold bracelet. It's design is plain so as to be appropriate for anyone.",
-      "Est. Value": "25. gp",
-      "Name": "Gold Bracelet",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A charming golden locket with a painted portrait inside.",
-      "Est. Value": "25. gp",
-      "Name": "Gold Locket",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A crosspeen hammer forged from steel. It has a gently crowned flat face that has been hardened and tempered for toughness. The handle is hand carved ash, flame treated and oiled.",
-      "Est. Value": "1. gp",
-      "Name": "Hammer",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "2. gp",
-      "Name": "Hand Mirror",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A rather dull gray-black hematite gem with the remains of a necklace fasten on its back.",
-      "Est. Value": "10. gp",
-      "Name": "Hematite",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A reliquary containing the bones of an ancient holy man",
-      "Est. Value": "0. gp",
-      "Name": "Holy Bones",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "An old tome, written for the clergy of Pelor. It has a stiff leather dust jacket which has been worn down on the spine and a broken clasp once used to attach a chain",
-      "Est. Value": "4. gp",
-      "Name": "Holy Book",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "A wooden holy symbol. ",
-      "Est. Value": "0.25 gp",
-      "Name": "Holy Symbol",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A quart of honey.",
-      "Est. Value": "1. gp",
-      "Name": "Honey",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A small, crystal vial of a clear, viscous liquid that smells strongly of honeysuckle.",
-      "Est. Value": "4. gp",
-      "Name": "Honeysuckle Potion",
-      "Properties": "Drinking this potion will heal a character 1d4 - 1 health.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A delicately carved hope chest of polished cherry wood. The box contains nothing but a remarkably fine, gray sand drawn from some unknown locale. Beneath the new moon, this sand glows a faint blue.",
-      "Est. Value": "10. gp",
-      "Name": "Hope Chest",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "30 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Inhalation herbs & essences provide natural healing remedies for all manner of symptoms such as headaches, colds and flu.",
-      "Est. Value": "0.2 gp",
-      "Name": "Inhalation Herbs & Essences",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A vial of black ink, for use with a quill.",
-      "Est. Value": "0.6 gp",
-      "Name": "Ink",
-      "Properties": "When unstoppered underwater, this item causes an inky cloud to fill a 10′ cubic area which lasts for the duration of the room. It effectively renders all characters and monsters in the area obscured from ranged attacks.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An iron belt buckle that's beginning to rust.",
-      "Est. Value": "0.03 gp",
-      "Name": "Iron Buckle",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An iron earring. Missing it's twin.",
-      "Est. Value": "0.1 gp",
-      "Name": "Iron Earring",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A large iron nail, useful for fixing things together.",
-      "Est. Value": "0.03 gp",
-      "Name": "Iron Nail",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A large iron spike, useful for fixing heavy items together.",
-      "Est. Value": "0.35 gp",
-      "Name": "Iron Spike",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An iron torc with six small silver figurines: A hare, a horse, a spear, a wolf’s head, a simple circle, and an oak tree.",
-      "Est. Value": "9. gp",
-      "Name": "Iron Torc",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Whale ivory leg prosthetic",
-      "Est. Value": "5. gp",
-      "Name": "Ivory Peg Leg",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A jar containing six eyeballs (2 human, 1 goblin, 1 ogre, 1 worg, and 1 hawk) in a clear liquid.",
-      "Est. Value": "2. gp",
-      "Name": "Jar o' Eyeballs",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "½ of jerked meat",
-      "Est. Value": "0.1 gp",
-      "Name": "Jerked Meats",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 35 lb keg of iron nails",
-      "Est. Value": "2. gp",
-      "Name": "Keg o' Nails",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "35 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A pair of bear fur knee breeches, slightly worn from having been used when horse riding.",
-      "Est. Value": "1. gp",
-      "Name": "Knee Breeches",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Lantern",
-      "Properties": "A Lantern provides bright light within a radius of 10 squares.  The light lasts 8 hours per pint of oil.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A gem of lapis lazuli, dark blue in colour with light yellow flecks.",
-      "Est. Value": "10. gp",
-      "Name": "Lapis Lazuli Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large pile of coal. Two small, rough diamonds are hidden near the bottom. (20gp, 25 gp)",
-      "Est. Value": "",
-      "Name": "Large Pile of Coal",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Satchel of gold painted lead coins.",
-      "Est. Value": "0.1 gp",
-      "Name": "Lead Coins",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Leather Quiver",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Leather Satchel",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A bright red hooded cape sized for a child, spattered with dried blood.",
-      "Est. Value": "1. gp",
-      "Name": "Little Riding Hood",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Lynx eye is a specific type of labradorite (a feldspar gemstone). Labradorite as a class of stones is pale to dark gray and has patches of colored reflections. This 'flash' is most commonly blue but can be of all shades. 'Green Flash' labradorite is called lynx eye in the Realms. ",
-      "Est. Value": "10. gp",
-      "Name": "Lynx Eye Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Baldur's Gate",
-      "Category": "Treasure",
-      "Description": "Lynx eye is a special type of labradorite. It is pale to dark grey and has patches of coloured reflections. This 'flash' is most commonly blue but can be of all shades. 'Green Flash' labradorite is called Lynx Eye in the local regions.",
-      "Est. Value": "10. gp",
-      "Name": "Lynx Eye Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "Someone used this to get married",
-      "Est. Value": "10. gp",
-      "Name": "Magical Ring of Engagement",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "2. gp",
-      "Name": "Magnifying Glass",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A large malachite gem. It is striated light and dark green across its polished surface.",
-      "Est. Value": "10. gp",
-      "Name": "Malachite Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A mask carved to look like the face of a man, but which has been fitted for something wholly other.",
-      "Est. Value": "1. gp",
-      "Name": "Man Mask",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Mechanical mice which run through the walls of an ancient keep. They have done so for longer than written record can attest. They seem to be a benign presence – lacking even the slightest pestilent qualities of their flesh-and-blood counterparts – and have become an accepted presence here. Who their creator was, how they are fueled, and what purpose they serve (if any) are mysteries which may never be solved.",
-      "Est. Value": "",
-      "Name": "Mechanical Mice",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "D3 sprigs of mistletoe",
-      "Est. Value": "10. gp",
-      "Name": "Mistletoe",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A beautiful moss agate gem. It is a translucent pink with a mossy gray texture.",
-      "Est. Value": "10. gp",
-      "Name": "Moss Agate Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An unused fishing net made out of spun mammoth hairs.",
-      "Est. Value": "0.5 gp",
-      "Name": "Net",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small opaque black gem.",
-      "Est. Value": "10. gp",
-      "Name": "Obsidian Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "A flask of oil suitable for use in a lantern. ",
-      "Est. Value": "0.5 gp",
-      "Name": "Oil",
-      "Properties": "Enough to last for 48 hours. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A ragged old hat with a moth eaten brim.",
-      "Est. Value": "0.03 gp",
-      "Name": "Old Hat",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "An old pouch. Works as any pouch might, but it has a hole in it.",
-      "Est. Value": "0.15 gp",
-      "Name": "Old Pouch",
-      "Properties": "Every day, player loses 1d4 of any small object stored in the pouch.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Father’s old round shield, beneath the boss is the sigil of ______, valiant conduct by the bearer may draw the eye of the God.",
-      "Est. Value": "1. gp",
-      "Name": "Old Round Shield",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A rotten saddlebag with a few coins spilling out. The copper coins have some verdigris and the silver coins are badly tarnished.",
-      "Est. Value": "2. gp",
-      "Name": "Old Saddlebag",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A rotting wheelbarrow holding 167 torches.",
-      "Est. Value": "1.6 gp",
-      "Name": "Old Wheelbarrow",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A spare bit of parchment.",
-      "Est. Value": "0.35 gp",
-      "Name": "Parchment",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A straight wooden handle with a curved iron pick useful for breaking up rocky surfaces or hard earth. It would not make for an effecitve weapon, but without the head the handle would make for a rudimentary club.",
-      "Est. Value": "2. gp",
-      "Name": "Pick Axe",
-      "Properties": "1d4 Bludgeoning - Simple - Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A classic 52 card set of playing cards.",
-      "Est. Value": "0.5 gp",
-      "Name": "Playing Cards",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A fragrant bowl of potpourri.",
-      "Est. Value": "0.05 gp",
-      "Name": "Potpourri",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This rhodochrosite gem is a light pink colour and shaped to resemble a small heart.",
-      "Est. Value": "10. gp",
-      "Name": "Rhodochrosite Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A stone that has been worn down to a smooth finish. Probably from a river bed.",
-      "Est. Value": "0. gp",
-      "Name": "River Stone",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Adventuring Gear",
-      "Description": "100’ of rope",
-      "Est. Value": "",
-      "Name": "Rope",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "0.3 gp",
-      "Name": "Saw",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "1. gp",
-      "Name": "Scroll Case",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This silk handkerchief is embroidered with a pale pink pattern.",
-      "Est. Value": "25. gp",
-      "Name": "Silk Handkerchief",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A large jug with a wide mouth coated in silver.",
-      "Est. Value": "25. gp",
-      "Name": "Silver Ewer",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A slightly dirty mirror set in a painted wooden frame.",
-      "Est. Value": "25. gp",
-      "Name": "Small Mirror",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "Some fresh, waxy soap. It smells faintly of lavender.",
-      "Est. Value": "0.15 gp",
-      "Name": "Soap",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "that says encouraging things like 'Everything's GREAT!' and 'Your body temperature is squarely within normal human range!'",
-      "Est. Value": "",
-      "Name": "Spork of Positive Reinforcement",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A steel chain measuring 1 foot long.",
-      "Est. Value": "0.75 gp",
-      "Name": "Steel Chain",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "10. gp",
-      "Name": "Steel Lockbox",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Has no function, but glows and vibrates in a way that suggests it could be used for distributing extreme pain. ",
-      "Est. Value": "",
-      "Name": "Threatening Probe",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Translucent brown with a bright golden center.",
-      "Est. Value": "10. gp",
-      "Name": "Tiger Eye Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A tin drinking cup.",
-      "Est. Value": "0.1 gp",
-      "Name": "Tin Cup",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A full tinderbox.",
-      "Est. Value": "0.15 gp",
-      "Name": "Tinderbox",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small amount of tobacco wrapped in a large soft leaf.",
-      "Est. Value": "0.15 gp",
-      "Name": "Tobacco",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "A short stick with oil-soaked cloth wrapped around one end so it can burn as a torch.",
-      "Est. Value": "0.2 gp",
-      "Name": "Torch",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Turquoise is an opaque aqua stone with darker mottling, and is found in the more arid reaches of the Realms. Horsemen will often place a sliver of this stone in a horse's harness as a sign of good luck. ",
-      "Est. Value": "10. gp",
-      "Name": "Turquoise Gem",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A paper note that's been left on a damp floor. It's completely illegible.",
-      "Est. Value": "0. gp",
-      "Name": "Unreadable Note",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Adventuring Gear",
-      "Description": "An old whetstone and a half-used vial of oil. The stone itself is ever-so-slightly worn into a curve from years of use, but it will be decades before it's wear renders it useless.",
-      "Est. Value": "0.15 gp",
-      "Name": "Used Whetstone",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/SPYROHAWK",
-      "Category": "Ring",
-      "Description": "",
-      "Est. Value": "0. gp",
-      "Name": "Vanishing Ring",
-      "Properties": "After half a day of wearing this ring, it disappears completely and is not found again.",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A wooden walking stick.",
-      "Est. Value": "0.15 gp",
-      "Name": "Walking Stick",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A dozen glow wasps in a round wire cage with handle. Equal to a torch light at night. Require food and water daily.",
-      "Est. Value": "",
-      "Name": "Wasplight Lantern",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "A waterskin made from a sheep's bladder.",
-      "Est. Value": "0.2 gp",
-      "Name": "Waterskin",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A weighted dice.",
-      "Est. Value": "0.5 gp",
-      "Name": "Weighted Die (6 Sided)",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small wooden whistle.",
-      "Est. Value": "0.5 gp",
-      "Name": "Whistle",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A grey and white wolf pelt.",
-      "Est. Value": "0.5 gp",
-      "Name": "Wolf Pelt",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A weather worn wooden board, inscribed with patterns which make it clear that it was once used for a game whose rules have long since been lost to time.",
-      "Est. Value": "",
-      "Name": "Wooden Board",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A long wooden spike, used to fix soft items together or kill vampires while they sleep.",
-      "Est. Value": "0.15 gp",
-      "Name": "Wooden Spike",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Wormrose Incense",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A narcotic made from the petal of a wormrose flower.",
-      "Est. Value": "5. gp",
-      "Name": "Wormscrape",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "½ tin of raisins.",
-      "Est. Value": "0.1 gp",
-      "Name": "Raisins",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A crude club made to clobber animals and people alike, carved roughly from a thick cedar branch.",
-      "Est. Value": "0.1 gp",
-      "Name": "Club",
-      "Properties": "1d4 Bludgeoning - Simple - Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A length of stoud wood ranging six to nine feet in length and shod with metal at both ends.",
-      "Est. Value": "0.2 gp",
-      "Name": "Quarterstaff",
-      "Properties": "1d6 Bludgeoning - Simple - Versatile (1d8)",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A farming tool that can be used as a weapon if needed. It has a long curved blade attached to a short wooden handle.",
-      "Est. Value": "1. gp",
-      "Name": "Sickle",
-      "Properties": "1d4 Slashing - Simple - Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small chain with flint stone in the shape of a triangle hanging from it. Popular tradition states that this is a 'Thunderstone', a rock that has fallen from the sky during a storm. The fact that is resembles a primitive axe head, however, may fall upon deaf ears. ",
-      "Est. Value": "0.2 gp",
-      "Name": "Thunderstone Amulet",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BOTW",
-      "Category": "Weapon",
-      "Description": "A kitchen implement often used for serving delicious soups. It was carved from the wood of a sturdy tree, so it actually packs quite the wallop.",
-      "Est. Value": "0.2 gp",
-      "Name": "Soup Ladel",
-      "Properties": "1d4 Bludgeoning - Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A farming tool primarily used for tilling fields. Its fine craftsmanship is sturdy enough to withstand backbreaking fieldwork, but its battle applications are untested.",
-      "Est. Value": "0.2 gp",
-      "Name": "Farming Hoe",
-      "Properties": "1d4 Bludgeoning - Two-Handed",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "Made for paddling boats, but it was made sturdy enough to fight strong currents. Maybe it's useful for self-defense in a pinch.",
-      "Est. Value": "0.2 gp",
-      "Name": "Boat Oar",
-      "Properties": "1d4 Bludgeoning - Two-Handed",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "Just a mop to the untrained eye, it excels at tidying up the place. But it owes its sturdy construction to a true craftsman, so it actually has some combat merit.",
-      "Est. Value": "0.2 gp",
-      "Name": "Wooden Mop",
-      "Properties": "1d4 Bludgeoning - Two-Handed",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A farming tool used to collect hay efficiently. It's light enough to be used by anyone. The four prongs are very sharp.",
-      "Est. Value": "0.2 gp",
-      "Name": "Farming Pitchfork",
-      "Properties": "1d4 Piercing - Two-Handed",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A fisherman's tool that excels at catching large fish. Its particularly sharp spearhead makes it valuable as a weapon as well.",
-      "Est. Value": "0.4 gp",
-      "Name": "Fishing Harpoon",
-      "Properties": "1d6 Piercing - Versatile (1d8) - Thrown (Range: 20/60)",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A finely made silver chalice etched in arcane symbols. An arcane check will find no trace of magic, however, and it may be that these are simply aesthetic.",
-      "Est. Value": "7. gp",
-      "Name": "Silver Chalice",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "A silver-tipped quill with an elaborate white feather.",
-      "Est. Value": "7. gp",
-      "Name": "Silver-tipped Quill",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A broad dagger with a hilt that can be unscrewed. The space revealed is sufficient to hold up to 25 coins, and currently holds 10 gold coins and 15 silver coins.",
-      "Est. Value": "15. gp",
-      "Name": "Smuggler's Dagger",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Trap",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Marbles",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "An old dead rat. It has begun to decay, and eminates an unpleasant smell.",
-      "Est. Value": "0. gp",
-      "Name": "Dead Rat",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PHB",
-      "Category": "Adventuring Gear",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Hourglass",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "u/LeBlondes",
-      "Category": "Weapon",
-      "Description": "The Garrote Wire can only be used on a medium or small creature while the user has advantage on the attack roll. On hit, the target takes 1d4 slashing damage and is grappled. Until the grapple ends, the target cannot breath and begins to choke, and the user has advantage on attack rolls against it.",
-      "Est. Value": "2. gp",
-      "Name": "Garotte Wire",
-      "Properties": "1d4 Slashing - Finesse - Light - Two-Handed",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "This perculiar dice is made out of copper and has two sides. Engraved on one side is the portrait of a long forgotten ruler, on the other is an ornate two headed chimera. Useful for making decisions. Doesn't roll well.",
-      "Est. Value": "1. gp",
-      "Name": "Two-Sided Die",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Fable II",
-      "Category": "Treasure",
-      "Description": "Well, it's brown, but that doesn't necessarily make it chocolate. Still, at least its sweet. In an unusual and repugnant way.",
-      "Est. Value": "1. gp",
-      "Name": "Mudbrick Chocolate",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Someone has managed to cram all the stench of an Ogre into one reeking bottle. Why? The world may never know. No human should ever willingly apply this to their body or attire.        ",
-      "Est. Value": "0.5 gp",
-      "Name": "'Eau D'Ogre' Perfume",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A sack of prized flower bulbs",
-      "Est. Value": "",
-      "Name": "Sack of Flower Bulbs",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "Receipt for delivery of slaves",
-      "Est. Value": "",
-      "Name": "Sales Receipt",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Package of d6 sausages",
-      "Est. Value": "",
-      "Name": "Sausages",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Book",
-      "Description": "A scroll detailing the bound service of two men-at-arms sworn to six months of service.",
-      "Est. Value": "",
-      "Name": "Service Record",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A silver brooch depicting a mage’s tower. (This could be a pass for magical wards at the mage’s tower, at the DM’s discretion.)",
-      "Est. Value": "12. gp",
-      "Name": "Silver Brooch",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A set of 8 silver spoons.",
-      "Est. Value": "2. gp",
-      "Name": "Silver Spoons",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A 1 quart jar of rare purple snail dye.",
-      "Est. Value": "",
-      "Name": "Snail Dye",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A straw broom",
-      "Est. Value": "",
-      "Name": "Straw Broom",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Tactical defense stick…",
-      "Est. Value": "",
-      "Name": "Tactical Defense Stick",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "D8 springs of wolfsbane",
-      "Est. Value": "",
-      "Name": "Wolfsbane",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "You'll never know if the owner willingly parted with this prosthetic. You do know that it makes an effective cudgel.",
-      "Est. Value": "",
-      "Name": "Peg Leg",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A pick axe has a curved iron head that is useful for breaking up rocky surfaces. A prick axe has an uncomfortable knobbly handle and the axe head constantly falls off.",
-      "Est. Value": "",
-      "Name": "Prick Axe",
-      "Properties": "1d4 Piercing - Simple - Light",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Treasure",
-      "Description": "This is a small jar of Adamantine dust, most likely the end result of exposing a Drow item to the light of day. It seems the previous owner wasn't quite ready to let go of it.",
-      "Est. Value": "1. gp",
-      "Name": "Adamantine Dust",
-      "Properties": "",
-      "Rarity": "Mundane",
-      "Rarity Number": "1",
-      "Requirements": "",
-      "Weight": "1 lb"
-    }
-  ],
-  "Other": [
-    {
-      "Author": "Author",
-      "Category": "Category",
-      "Description": "Description",
-      "Est. Value": "Est. Value",
-      "Name": "Name",
-      "Properties": "Properties",
-      "Rarity": "Rarity",
-      "Rarity Number": "Rarity Number",
-      "Requirements": "Requirements",
-      "Weight": "Weight"
-    }
-  ],
-  "Rare": [
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Whenever an arrow is fired in the vicinity of this amulet’s wearer, it will strike the amulet wearer",
-      "Est. Value": "",
-      "Name": "Arrow Magnet Amulet",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/Bloka2au",
-      "Category": "Wondrous Item",
-      "Description": "A plain wooden spoon that appears to have been used in many, many meals. The spoon comes in a stained walnut box with two brass hinges and a brass hook on the front. No other markings are present. [Any markings made on the box or spoon will disappear in 24 hours. The box itself is magical in nature and will alter any spoon made to the same size of the Spoon of Cooking to become a duplicate of the Spoon of Cooking.]",
-      "Est. Value": "",
-      "Name": "Bloka Tao's Spoon of Cooking",
-      "Properties": "Any creature that touches the spoon must make a DC 12 Charisma save or be dominated by the spoon for 1d2 hours. The spoon then urges the creature to make the most delicious meal they can from the immediately available ingredients. ",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Provides +2 AC when worn, but attracts the attention of crabs, who will come from nearby and cling to the wearer",
-      "Est. Value": "",
-      "Name": "Crab Crown",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Anything significant that happens to the doll happens to you, beneficial or harmful.",
-      "Est. Value": "",
-      "Name": "Curse Doll",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A staff that could change into a hammer and give him extra strength while it was in that mode.",
-      "Est. Value": "",
-      "Name": "Mr. Hammer's Crazy Staff",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A gear-driven ships navigational calculator enclosed in a jewelwood box.",
-      "Est. Value": "5,000. gp",
-      "Name": "Navigational Calculator",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "The silver hilt of a sword with a grip of black leather. The blade is missing, or never existed to begin with. One night per year, however, on the eve of the new year, the hilt is possessed of a ghostly blade – allowing it to perform its duties as a sword once more.",
-      "Est. Value": "1,000. gp",
-      "Name": "New Year's Sword",
-      "Properties": "1d8+4 Slashing - Versatile (1d10+4)",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Martial Weapon Expertise Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A charm of twisted black obsidian. Touching the charm unleashes strange, ghostly visions from a strange and alien world – utterly different in every particular, but eerily similar to our own world in its broad scope and form.",
-      "Est. Value": "",
-      "Name": "Obsidian Charm",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "An owlbear costume. Gives the wearer a +10 to disguise when attempting to disguise as an Owlbear.",
-      "Est. Value": "",
-      "Name": "Owlbear Costume",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Ash of phoenix in necklace choker – instant revive to wearer (takes 10 rounds/1 minute)",
-      "Est. Value": "",
-      "Name": "Phoenix Choker",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Potion",
-      "Description": "Potion 3: Phoenix Restorative. The next time the drinker is reduced to 0 hit points, they deal area fire damage, and return to full health, only happens once. The player has no special knowledge this is true, but the flavor of the draught burns their throat but leaves them feeling oddly optimistic. Fire damage dealt should be based on circumstance, but if you can get away with lots, it'd be the most fun.",
-      "Est. Value": "",
-      "Name": "Phoenix Restorative Potion",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Weapon",
-      "Description": "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.",
-      "Est. Value": "100. gp",
-      "Name": "1d20 Ammunition +2",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and it's magic causes it to weigh only 1 pound, regardless of the weight of creatures inside. ",
-      "Est. Value": "960. gp",
-      "Name": "1d4 + 4 Beads of Force",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A large tome bound in thick bison-hide that is a common-orcish language primer, as well as a primer on orcish culture. The author of the primer, Darius Woodherd, seems to have added a lot of information on orcish heraldry and politics, as well. Darius spent almost twenty years amongst the orcs of the north, and eventually married an orc before being killed a score of years ago in a rival tribe’s ambush. ",
-      "Est. Value": "90. gp",
-      "Name": "A Study of Orcs, by Darius Woodherd",
-      "Properties": "Grants a +2 circumstance check on speaking orcish, knowledge of orcish history and heraldry, and on diplomacy checks with orcs.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "A large, nearly unbreakable leaf from Tree of Adamant.",
-      "Est. Value": "200. gp",
-      "Name": "Adamant Leaf",
-      "Properties": "The leaf is extremely durable; no amount of force applied to the leaf is able to break it and it can only be damaged by Piercing or Slashing with a weapon. ",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A transparent dark green Alexandrite emerald.",
-      "Est. Value": "500. gp",
-      "Name": "Alexandrite Emerald",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This amulet is a golden disk on a chain. It usually bears the image of a lion or other powerful animal. ",
-      "Est. Value": "8,000. gp",
-      "Name": "Amulet of Health",
-      "Properties": "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher. ",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement.",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "Miniature golden replica of ancient mythical temple – location map inside",
-      "Est. Value": "30. gp",
-      "Name": "Ancient Temple Replica",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "Animated pet rock – capable of killing people!",
-      "Est. Value": "250. gp",
-      "Name": "Animated Pet Rock",
-      "Properties": "Spend a bonus action to have the rock attack anything within 25 feet of the pet owner, can only be used every other turn (the rock needs to return to its owner!). Deals 1d4+1 bludgeoning damage.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A tiny toy soldier which marches ceaselessly back and forth – eternally vigilant and pissed off if anyone disturbs.",
-      "Est. Value": "300. gp",
-      "Name": "Animated Toy Soldier",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A dirty canvas bag containing twenty pounds of an aphrodisiac root.",
-      "Est. Value": "400. gp",
-      "Name": "Aphrodisiac Root",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Aquamarine is a hard, transparent form of beryl, blue-green in colour. These sought after gems are found primarily among the tribes that roam the tundra.",
-      "Est. Value": "500. gp",
-      "Name": "Aquamarine",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "A large arbalest/bolt thrower. It is disassembled and crated for shipping. It requires four strong men to lift. When reassembled, it hurls a 5’ bolt for 2d12 damage. ",
-      "Est. Value": "3,000. gp",
-      "Name": "Arbalest",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2000 lb"
-    },
-    {
-      "Author": "AtomicArchitect",
-      "Category": "Wondrous Item",
-      "Description": "This loincloth causes the wearer to have extremely elevated self confidence. As a result, they get +2 on Bluff Diplomacy and Intimidate checks, and -2 on Listen Search Spot and Appraise checks, they also tend to make reckless decisions more often.",
-      "Est. Value": "500. gp",
-      "Name": "Architect's Underwear of Confidence",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You have a +1 bonus to AC while wearing this armor.",
-      "Est. Value": "1,500. gp",
-      "Name": "Armor +1",
-      "Properties": "Light, Medium or Heavy",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "8 - 60"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "This is a set of Studded Leather Armour that has been enchanted with the spirit of a long dead barbarian warrior. Once per day it allows the user to channel it's rageful spirit.",
-      "Est. Value": "300. gp",
-      "Name": "Armor of Barbarian Rage",
-      "Properties": "Light Armor (AC is 14+DEX mod) - Once per day the user can use Barbarian Rage during this rage: You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels, counting your own level as the levels you would have in barbarian, as shown in the Rage Damage column of the Barbarian table. You have resistance to bludgeoning, piercing, and slashing damage. You cannot cast any spells while in the rage and any concentration spells being maintained when you enter rage instantly fade. This effect lasts for 1 minute, or dissipates if you do not deal physical or take any type of damage in a turn. ",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "13 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly from the options below. ",
-      "Est. Value": "6,000. gp",
-      "Name": "Armor of Resistance",
-      "Properties": "Light, Medium or Heavy",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "8 - 60"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The DM chooses the type or determines it randomly. Curse. This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic: removing the armor fails to end the curse. While cursed you have vulnerability to two of the three damage type associated with the armor (not the one to which it grants resistance). ",
-      "Est. Value": "",
-      "Name": "Armor of Vulnerability",
-      "Properties": "Plate Armor",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "65 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You gain a +2 bonus to AC against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.",
-      "Est. Value": "6,000. gp",
-      "Name": "Arrow-catching Shield",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "Created by the very old and very crotchety wizard Arval long ago, this hollow silver box the size of a deck of playing cards has a rotating dial on top, as well as a button. When the button is pressed, a single target of the wielder's choice is linked with the device magically. By then rotating the dial, the user can alter his target's voice by up to 100%. That is to say the target can be either muted or doubled in volume, and anywhere in between. A will save DC 30 is required to resist the effect.",
-      "Est. Value": "1,800. gp",
-      "Name": "Arval's Soundpiece",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Container",
-      "Description": "Halves the weight of anything placed inside of it. Nothing larger than the backpack can fit inside the backpack.",
-      "Est. Value": "1,000. gp",
-      "Name": "Backpack of Effortlessness",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A coin that always comes up tails. Placing it anywhere tails side down causes it to flip itself over after 1 round. It takes 50 pounds of pressure to prevent this flip.",
-      "Est. Value": "600. gp",
-      "Name": "Bad Coin",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "1d6 angel feathers aura of good; razor sharp; stronger than steel (can be used as weapon like dagger)",
-      "Est. Value": "",
-      "Name": "Bag of Angel Feathers",
-      "Properties": "1d4 Piercing - Finesse, Light, Range, Thrown - 20/60",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "The Bag of Ash acts like a jar of infinite water, except it just makes a grey, sooty ash.",
-      "Est. Value": "600. gp",
-      "Name": "Bag of Ash",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "Inside this heavy cloth bag are 3d4 dry beans. The bag weights 1/2 pound plus 1/4 pound for each bean it contains.",
-      "Est. Value": "",
-      "Name": "Bag of Beans",
-      "Properties": "See DMG page 152.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This ordinary rust coloured cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag’s color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.",
-      "Est. Value": "3,000. gp",
-      "Name": "Bag of Tricks, Rust",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This ordinary tan cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag’s color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.    ",
-      "Est. Value": "6,480. gp",
-      "Name": "Bag of Tricks, Tan",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "Ballistic Fist Hammer (Hammer with each side acting as ballistic fists from Fallout series)",
-      "Est. Value": "",
-      "Name": "Ballistic Fist Hammer",
-      "Properties": "Damage? Will determine cost.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "7 lb"
-    },
-    {
-      "Author": "/u/Silanoch",
-      "Category": "Weapon",
-      "Description": "Despite appearing to be a normal dagger, even those not able to recognise the presence of magic can tell that there is something imbued in the unassuming metal hilt and blade.  When appraised it transpires that this blade was buried with a banshee and it's spirit has somehow been absorbed. Now whomever uses the dagger carries the risk that its spirit will be unleashed.",
-      "Est. Value": "2,000. gp",
-      "Name": "Banshee Spirit Dagger",
-      "Properties": "On a critical hit, it'll scream like her. It hasn't happened yet, but I imagine it'll either force the target to make a will save or be feared, or possibly drop to zero hit points.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "To all intents and purposes this resembles a Belt of Fire Giant Stength, and it certainly does have a giant's strength enchantment on it; unfortunately, the it was accidentally made with the strength of a baby fire giant. Fire giant babies have roughly the same strength as an average human man. ",
-      "Est. Value": "1,000. gp",
-      "Name": "Belt of Baby Fire Giant Strength",
-      "Properties": "While wearing this belt, your Strength score changes to 10. If your Strength is already equal to or greater than 10, the item has no effect on you.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, you gain the following benefits: Your Constitution score increases by 2, to a maximum of 20. You have advantage on Charisma (Persuasion) checks made to interact with dwarves. In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one. If you aren't a dwarf, you gain the following additional benefits while wearing the belt: You have advantage on saving throws against poison, and you have resistance against poison damage. You have darkvision out to a range of 60 feet. You can speak, read, and write Dwarvish. ",
-      "Est. Value": "6,000. gp",
-      "Name": "Belt of Dwarvenkind",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 21. If your Strength is already equal to or greater than 21, the item has no effect on you.",
-      "Est. Value": "13,000. gp",
-      "Name": "Belt of Hill Giant Strength",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Weapon",
-      "Description": "You gain +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon your hit point maximum increased by 1 for each level you have attained.",
-      "Est. Value": "",
-      "Name": "Berserker Axe",
-      "Properties": "Cursed.  See DMG page 155.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "Shake this lantern well and you get 2d4 hours of light. It takes a standard action to shake the lantern and requires 8 hours to 'recharge'.",
-      "Est. Value": "100. gp",
-      "Name": "Bioluminescent Fluid Lantern",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Black Opal has a greenish hue with black mottling and gold flecks. Usually found in ancient hot springs, the gem is tumbled smooth and cut cabochon. The phrase in the north 'Black as an opal' is used as a subtle form of praise for kind-hearted rogues and the like. ",
-      "Est. Value": "1,000. gp",
-      "Name": "Black Opal",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A dark blue-black Pearl.",
-      "Est. Value": "500. gp",
-      "Name": "Black Pearl",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A worn coin with notched edges.",
-      "Est. Value": "200. gp",
-      "Name": "Blacksalt’s Luckmaker",
-      "Properties": "This coin will always come up heads. It takes on the appearance of any other coinage it is mixed in with, but retains its notched edges.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A hard, roughly cut piece of basalt rock which bleeds when pressure is applies to it.",
-      "Est. Value": "300. gp",
-      "Name": "Bleeding Rock",
-      "Properties": "The rock has a soft limit of 800ml blood a day.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Allows comprehension of all written languages. Unfortunately, said comprehension is only granted when the blindfold is worn over the eyes - meaning you cannot see to read anything. Perhaps your group can find a work around?",
-      "Est. Value": "100. gp",
-      "Name": "Blindfold of Reading",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Semi-reliable Blindfold of Trap Awareness, sends shivers down the wearer’s spine when traps are near – or at random times.",
-      "Est. Value": "",
-      "Name": "Blindfold of Trap Awareness",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A scabbard stained the dark color of rust. Any blade which is placed within the scabbard will emerge covered in a sheen of blood.",
-      "Est. Value": "3,000. gp",
-      "Name": "Blood Scabbard",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A silver ring with a transparent blue-white sapphire.",
-      "Est. Value": "1,000. gp",
-      "Name": "Blue Sapphire Ring",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A silver ring with a Blue Spinel gemstone embedded on it.",
-      "Est. Value": "500. gp",
-      "Name": "Blue Spinel Ring",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "Crossbow bolt of chaos – 1 random effect on hit",
-      "Est. Value": "",
-      "Name": "Bolt of Chaos",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Bone crushing mace – critical renders limb useless; two handed by any smaller than large",
-      "Est. Value": "",
-      "Name": "Bone Crushing Mace",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Write the name of your antagonist in your flesh and he will leave you be. Causes one hit point of damage for every letter inscribed in the bearer's flesh. Lasts until the damage is healed.",
-      "Est. Value": "",
-      "Name": "Bone Stylus",
-      "Properties": "1d4 Piercing | Finesse, Light",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "An elegant, decorative hand held scepter made of bronze and small jewels. You can hear a mild humming resonance when held to your ear.",
-      "Est. Value": "500. gp",
-      "Name": "Booming Scepter",
-      "Properties": "Speaking directly into the scepter causes your voice to amplify so that it can be heard for 300 ft around for one minute. It requires 8 hours to build up its potency again.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine via Matt Mercer",
-      "Category": "Armor",
-      "Description": "Plain leather boots, tattered and worn, but glistening with a soft white light similar to the sunlight reflecting off freshly fallen snow.",
-      "Est. Value": "1,500. gp",
-      "Name": "Boots of Feral Leaping",
-      "Properties": "When you wear these boots you can instill your leaps with incredible bursts of power. As a bonus action, you can attempt to leap. Make a DC16 Strength check: if you are successful, you can leap either 15 feet vertically or 20 feet horizontally. On a failure, you are knocked prone where you stand.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While you wear these boots, you can use an action to cast the levitate spell on yourself at will. ",
-      "Est. Value": "4,000. gp",
-      "Name": "Boots of Levitation",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest. ",
-      "Est. Value": "4,000. gp",
-      "Name": "Boots of Speed",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Potion",
-      "Description": "Once per day, restores 4d2 HP.This goes up to 4d4 at 5, 6d4 at 10,  8d4 at 15 and 10d4 at 20. Cannot use during Combat",
-      "Est. Value": "",
-      "Name": "Bottle",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Potion",
-      "Description": "This bottle stinks before it's even been opened. The stench of it's contents will protect whomever can stomach to wear it from almost any wandering predators. It's very difficult to get said stench out of adventuring gear, however. Potency may vary on weather, but it should ward of predators for at least a day or two.",
-      "Est. Value": "200. gp",
-      "Name": "Bottle of Giant's Urine",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A reusable bottle cork embossed with gold leaf and set with amethysts.",
-      "Est. Value": "750. gp",
-      "Name": "Bottle Stopper",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn. The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.",
-      "Est. Value": "8,000. gp",
-      "Name": "Bowl of Commanding Water Elementals",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield. ",
-      "Est. Value": "6,000. gp",
-      "Name": "Bracers of Defense",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can't be used this way again until the next dawn. ",
-      "Est. Value": "8,000. gp",
-      "Name": "Brazier of Commanding Fire Elementals",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "This buckler has been enchanted with the power to protect you and your allies.",
-      "Est. Value": "",
-      "Name": "Buckler of Friendship",
-      "Properties": "For one round, all allies gain +1 AC.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small bag containing 58 clay sling bullets. Each bullet has a 12 gp opal hidden inside.",
-      "Est. Value": "696. gp",
-      "Name": "Bullet Bag",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A diamond of incredible beauty which slowly shifts its color from the purest white to canary to blue to black and back again.",
-      "Est. Value": "250. gp",
-      "Name": "Canary Diamond",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "These three chickens have been trained to check for traps, unfortunately they are not very good at it. Once released, each chicken will roam a dungeon at 30 feet a round and will walk in the direction of any nearby traps. If there are no nearby traps, they will walk in the direction that the players imagine there to be traps (they are prone to getting caught up in the moment). Each chicken will accidentally set off any trap it is feasible for it to set off and be killed by the trap. The chicken have name tags and are called Dara, Demi and Miki.",
-      "Est. Value": "0.2 gp",
-      "Name": "Carlin's Courageous Chickens",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "18 lbs."
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This is a ceremonial dagger made of electrum with a black pearl in it's pommel.",
-      "Est. Value": "750. gp",
-      "Name": "Ceremonial Dagger",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Fin Fen",
-      "Category": "Wondrous Item",
-      "Description": "This Cloak is woven together from the fur of a lion and goat over the skin of a serpent. It bears the emblem of house Chimera.",
-      "Est. Value": "5,000. gp",
-      "Name": "Chimera's Mantel",
-      "Properties": "While wearing this cloak and attuned to it, you gain fire resistance. In addition you can use your action to exhale fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 7d8 fire damage on a failed save, or half as much damage on a successful one. Once you use this ability, you cannot do so again until you take a short rest.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "A left-handed glove. It remains warm regardless of atmosphere, and is almost painfully hot to be touched with.",
-      "Est. Value": "150. gp",
-      "Name": "Cinder Glove",
-      "Properties": "Rubbing the fingertips of this glove together creates flames that can ignite easily flammable objects. Holding a creature with it causes painful burns that will blister the skin, and unarmed strikes with this glove deal an additional 1 fire damage.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Cursed. Anything who puts on this circlet is sent into an irreversible state of misery for 1d4 hours.",
-      "Est. Value": "400. gp",
-      "Name": "Circlet of Inconsolable Weeping",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "This rope coils itself after 10 rounds of being uncoiled, regardless of what is happening to it. It will undo all knots and will wind itself up around one end (always the same end). This process always takes 1 round.",
-      "Est. Value": "800. gp",
-      "Name": "Coiling Rope (50 feet)",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "1’, 10’, or 20’ – any size you need!",
-      "Est. Value": "500. gp",
-      "Name": "Collapsible Rod",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "10 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A large sword with jewels that sequentially light up after activation. After the last jewel is lit, the sword will explode!",
-      "Est. Value": "3,000. gp",
-      "Name": "Countdown Cutlass",
-      "Properties": "Each time an attack roll with the Countdown Cutlass succeeds, one of the 10 gemstones illuminates. Upon a successful hit with 10 stones illuminated (the 11th hit), the item explodes, dealing 4d8 fire damage in a 10-foot radius centered around the cutlass. The cutlass is consumed and cannot be remade.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A normal, if not well-crafted looking shortsword. There is a sigil of a chicken on the bottom of the pommel.",
-      "Est. Value": "0. gp",
-      "Name": "Cowardly Blade",
-      "Properties": "Damage: 1d6+1 slashing (considered magical). If the wielder receives a critical hit, faces imminent death, or is subjected to a fear effect, the sword falls to pieces.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/Ragatan",
-      "Category": "Treasure",
-      "Description": "This wooden crate is about 60cm by 60cm by 40cm, with 'Chaos Mushrooms' burned into the lid in Sylvan. It fizzes with a faint magical aura, and smells delicious",
-      "Est. Value": "2,000. gp",
-      "Name": "Crate of Chaos Mushrooms",
-      "Properties": "The box contains 1d10+4 'Chaos Mushrooms', which are considered a delecacy at Fey dinner parties. If a creature eats one of the Chaos Mushrooms, they must roll on the Wild Magic Surge table (PHB, p104) and are subject to the result. Each mushroom eaten requires a seperate roll. ",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "30 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A set of Armor Spikes made out of thick, sharp silver. They can be attached to full or half-plate, and behave like normal armor spikes. However, they grow faintly in total darkness - - enough for the wearer to see 5 ft, or for another person to see the wearer from up to 50 ft away.",
-      "Est. Value": "650. gp",
-      "Name": "Crescent Armor Spikes",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Crystal prism (d20 x 10 gp)",
-      "Est. Value": "200. gp",
-      "Name": "Crystal Prism",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Demonic themed tarot/playing cards – extra planar repercussions based on game played; tarot tales come true",
-      "Est. Value": "",
-      "Name": "Cursed Tarot Cards",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "DC save to avoid bleeding damage",
-      "Est. Value": "",
-      "Name": "Dagger of Bleeding",
-      "Properties": "1d4 Piercing; Finesse, Light, Range, Thrown",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A preserved Minotaur head, old but still retaining most detail. The skin is old and decrepit, yet both the horns have been dipped in molten gold. When donned, this helmet magically causes the wearer to appear as a living minotaur—as well as protecting the wearer against critical hits. The user's stats remain the same, however, and the player only appears to be a minotaur (+4 on intimidate checks).",
-      "Est. Value": "2,400. gp",
-      "Name": "Dehydrated Minotaur Helm",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A long, Hollow wooden rod with a narrow opening at one end, and a wider one at the other.",
-      "Est. Value": "250. gp",
-      "Name": "Digiridoom",
-      "Properties": "1d6, Finesse, blowing into the narrow end of the rod creates a circle of silence within 10 feet for as long as the note is sustained.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Like a regular compass, except with multiple needles each pointing toward different useful things, such as: north, the nearest source of fresh water, the strongest nearby evil aura, nearest large concentration of gold, nearest civilization (exact definition of civilization may vary by user), and nearest storm. Needles lengthen and shorten as the object gets closer or further away.",
-      "Est. Value": "",
-      "Name": "Dowsing Compass",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Object of secret door detection/lay out visualization",
-      "Est. Value": "",
-      "Name": "Dowsing Rod",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A set of golden combs shapes as dragons, each set with red garnets as the eyes.",
-      "Est. Value": "750. gp",
-      "Name": "Dragon Comb Set",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Trained rat in wooden cage – sniffs out gold in exchange for treats. One trail ration per sniff.",
-      "Est. Value": "",
-      "Name": "Dragon Scale Tombe",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A long, black feather with violet iridescence. The shaft glows softly white in moonlight.",
-      "Est. Value": "1,500. gp",
-      "Name": "Dreaming Nightfeather",
-      "Properties": "Holding this feather at night will allow you to fly with a speed of 60 feet, as long as your eyes are closed. The feather ignites in sunlight.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Potion",
-      "Description": "Upon taking a single sip of this potion, you are afflicted with some form of madness. Roll 1d6. On a 1-3 you are afflicted with a short-term madness (DMG p. 259); on a 4-5 you are afflicted with a long-term madness (DMG p. 260); on a 6 you are afflicted with an indefinite madness.(DMG p. 260). The remainder of the elixir loses its magical properties, becoming merely a foul tasting liquid.",
-      "Est. Value": "100. gp",
-      "Name": "Elixir of Madness",
-      "Properties": "Cursed.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An embroidered glove set designed for human sized hands, each with jewel chips.",
-      "Est. Value": "2,500. gp",
-      "Name": "Embroidered Gloves",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An Emerald is a brilliant green beryl, cleaved along straight box like lines, with rectangular cutting in the finished gem. Emeralds are often connected with health, and so are used ornamentally for such a purpose.",
-      "Est. Value": "1,000. gp",
-      "Name": "Emerald",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Extra dimensional flask – holds 1 gallon",
-      "Est. Value": "",
-      "Name": "Extra-Dimensional Flask",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An eye patch with a mock eye set in blue sapphire and moonstone.",
-      "Est. Value": "2,500. gp",
-      "Name": "Eye Patch",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A small wooden box with a silver embossed flame on the lid. Inside is a pipe-shape horn that spouts a tiny flame that can not be snuffed. The box is not flammable.",
-      "Est. Value": "350. gp",
-      "Name": "Filligins Uncontrollable Flame",
-      "Properties": "When the flame ignites an object, the fire cannot be doused by any other method than returning the flame to the pipe. When the fire runs out of fuel, it will reduce to a candle-like flame and remain indefinitely.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A filthy bucket, bolted to the floor, ¾ full of urine, containing silver coins, rings and necklaces.",
-      "Est. Value": "820. gp",
-      "Name": "Filthy Bucket",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "A heavy rug that has been kept rolled up. When unrolled, it reveals that the surface of the rug is permanently on fire. When rolled back up the fire disappears.",
-      "Est. Value": "",
-      "Name": "Fire Blanket",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This Fire Opal is a translucent fiery red colour and is set within a broken brooch. It takes no effort to wedge it out.",
-      "Est. Value": "1,000. gp",
-      "Name": "Fire Opal",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A fine gold chain set with a fire opal.",
-      "Est. Value": "2,500. gp",
-      "Name": "Fire Opal Chain",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Weapon",
-      "Description": "This imposing, three-headed flail has a +2 bonus to attack and damage rolls. Any creature that takes damage from this flail may immediately make a saving throw against any one ongoing effect that is affecting them.",
-      "Est. Value": "",
-      "Name": "Flail of Flagellation",
-      "Properties": "1d8 Bludgeoning - Two-Handed",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A pure white lily that becomes rigid when picked. Its petals are icy cold and shatter like glass if mishandled.",
-      "Est. Value": "150. gp",
-      "Name": "Frostbite Lilly",
-      "Properties": "If kept intact, this flower will refrigerate any container smaller than a 6x6x6 cube for up to one week. The six petals may be plucked and crushed, creating a sheen of ice in a 10 foot radius. If used over water, this will freeze 3 inches thick.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "The curse of the gauntlets was that no magic would ever help you, beneficial or baneful and anything you were in contact with would lose its magical properties while you're touching it. found out the contact one when visiting flying mage's tower. I was no longer welcome there, but with certain classes the gloves are pretty sweet even considering the downside. Oh also the curse had a very specific trigger, the gauntlets could only be removed if you cast remove curse on them and then had a chaotic neutral halfling pull them off of you with the intention of stealing them. even if you hacked your arms off and then had regeneration cast on you your hands would grow back with the gauntlets on them.",
-      "Est. Value": "",
-      "Name": "Gauntlets",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Six giant temple candles. Each is 6’ tall, 1’ thick, and weighs 100 lbs. They are made of fine white wax, rolled in gold dust, and set with emeralds. (320 gps each)",
-      "Est. Value": "1,920. gp",
-      "Name": "Giant Temple Candles",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Baldur's Gate",
-      "Category": "Wondrous Item",
-      "Description": "The cursed Girdle of Femininity and Masculinity, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover. ",
-      "Est. Value": "200. gp",
-      "Name": "Girdle of Femininity/Masculinity",
-      "Properties": "Changes the gender of the wearer. Requires 'Remove Curse'.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A gold circlet set with four aquamarines.",
-      "Est. Value": "2,500. gp",
-      "Name": "Gold Circlet",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small gold idol.",
-      "Est. Value": "750. gp",
-      "Name": "Gold Idol",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "Gold plated idols – possession = death penalty",
-      "Est. Value": "160. gp",
-      "Name": "Gold Plated Idols",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Potion",
-      "Description": "http://www.dandwiki.com/wiki/Grog_of_Susbtantial_Whimsy_%283.5e_Equipment%29",
-      "Est. Value": "",
-      "Name": "Grog of Substantial Whimsy",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Thunder Hammer – deafening or stunned, DC save, 40’ radius",
-      "Est. Value": "",
-      "Name": "Hammer of Thunderous Power",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A carved harp of exotic wood with an ivory inlay and zircon gems.",
-      "Est. Value": "750. gp",
-      "Name": "Harp",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "80 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Description needed.",
-      "Est. Value": "",
-      "Name": "Headband of Enslavement",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Wondrous Item",
-      "Description": "At the end of a long rest, a Bard attuned to this item may perform a dancing ritual while wearing it. That bard makes a Performance check. Each creature that watches the whole ritual performance may replace their result for one attack roll, ability check, or saving throw with the result of the bard's performance check. The ritual performance takes 5 minutes to complete. ",
-      "Est. Value": "",
-      "Name": "Headdress of the Dawn Dancer",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Helm – cherubic infant embellishment, emits confusion spell at wil",
-      "Est. Value": "",
-      "Name": "Helm of Confusion",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "A 'God-Helmet' that explained the universe when you put it on. It usually just fried your brain though, small chance of enlightenment or instant death.",
-      "Est. Value": "",
-      "Name": "Helm of Unsurvivable Knowledge",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A hollow glass sphere of surprising proportions – nearly three meters across. If it is broken those nearby will catch the barest scent of alien perfumes, hinting at strange lands belonging to the ancient time when the sphere was first forged and air trapped within it.",
-      "Est. Value": "1,000. gp",
-      "Name": "Hollow Glass Sphere",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Once per day this item grants one extra attack for it's user.",
-      "Est. Value": "",
-      "Name": "Hyperstone",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "5x range, normal range 5x dmg, 2xs range = 4xs dmg, 3xs range = 3xs dmg, etc… - explodes & destroyed after use except at 5xs or 4xs range",
-      "Est. Value": "",
-      "Name": "Javelin of Explosions",
-      "Properties": "1d6 Piercing - Simple - Thrown - Range: 30/120",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A jeweled anklet.",
-      "Est. Value": "2,500. gp",
-      "Name": "Jeweled Anklet",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "A sizeable cut diamond with bluish tint.",
-      "Est. Value": "500. gp",
-      "Name": "Lost Diamond",
-      "Properties": "Whenever this diamond is sought, it has a DC 12 to be found. If it is not found, it is in the ethereal plane, and remains there for 30 minutes until reappearing.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A viscous potion in a clear glass bottle. It is uncomfortably hot to hold, and glows a faint orange in darkness.",
-      "Est. Value": "150. gp",
-      "Name": "Magmatic Elixir",
-      "Properties": "When you drink this potion, make a constitution saving throw with a DC of 14. If you fail the save, you painfully vomit the substance, and suffer 2d6 fire damage. Otherwise, you gain the ability to breath fire for ten minutes. Breathing on enemies deals 2d6 + your current level in damage to foes in a 15 foot line, and ignites flammable objects.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Self-guided grappling hook - +10 to ranged attack roll for aiming",
-      "Est. Value": "",
-      "Name": "Magnetic Grappling Hook",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Near-Empty-Ever-Full One Arrow Quiver – always only 1 arrow, will reappear after being shot.",
-      "Est. Value": "",
-      "Name": "Malluf's Not-Quite-Full, Not-Quite-Empty Quiver",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An embroidered silk and velvet mantle set with numerous moonstones. ",
-      "Est. Value": "2,500. gp",
-      "Name": "Mantle Set",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An old painting, a lot treasure by a painter of some renoun.",
-      "Est. Value": "2,500. gp",
-      "Name": "Masterpiece Painting",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A black leather collar, stiff from wear and riddled with bite marks.",
-      "Est. Value": "75. gp",
-      "Name": "Mongrel Collar",
-      "Properties": "While wearing this collar, you are unable to speak. At most, you may utter grunts and yelps like a dog.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An ornate golden music box.",
-      "Est. Value": "2,500. gp",
-      "Name": "Music Box",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "Black leather saddle with streaks of red through the leather itself. A small amount of black smoke emanates from the saddle when it is holding still.",
-      "Est. Value": "2,000. gp",
-      "Name": "Necromancer's Saddle",
-      "Properties": "You can use an action to place this saddle on the corpse or skeleton of a Large creature and animate it as an undead mount. The undead creature's bones shift as necessary to create something similar to a warhorse skeleton (MM 273), which follows your mental commands as long as you are riding it. The effect lasts until you remove the saddle, or until the next dawn. When the effect ends, the undead creature crumbles into dust.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "30 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A common looking pipeweed, which smells only a little sweeter than the most common varieties. Close inspection reveals occasional black burrs mixed among the leaves.",
-      "Est. Value": "150. gp",
-      "Name": "Nightmare Pipeweed",
-      "Properties": "Smoking this pipeweed causes a brief feeling of relaxation and elation. A few minutes in, however, the experience falls into terror. The smoker will hallucinate that they are being pursued by a nightmarish figment that is never fully visible. The pursuer will never actually reach them, but if the smoker fails a wisdom check of DC 15, they will be compelled to flee in a random direction for ten minutes.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An obsidian statuette of a demon with a golden inlay and fittings.",
-      "Est. Value": "750. gp",
-      "Name": "Obsidian Statuette",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A very heavy, hard staff engrained with beautiful swirling, natural patterns across the wood. It has a large diameter and is slightly tapered to be thicker at one end. It can be used like a normal quarterstaff, except at 1d8 damage. However, in the hands of a Druid or a 5th-level Ranger, the staff's thicker tip can be lit at-will like a Sunrod of any color. The wielder is also capable of easily distinguishing any non-natural (magical) trees, and can speak Entish (so long as they could already speak Elvish).",
-      "Est. Value": "4,000. gp",
-      "Name": "Olivewood Staff",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A translucent pale blue Opal with green and golden mottling.",
-      "Est. Value": "1,000. gp",
-      "Name": "Opal",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This longsword seems to have been made more for show than for use. It is silver-plated steel and has a jet gemstone set inside the hilt.",
-      "Est. Value": "750. gp",
-      "Name": "Ornate Longsword",
-      "Properties": "1d8 Slashing - Versatile (1d10)",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Marial Weapon Expertise",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A small, leather-bound book filled with prophecies. All of them will be found to be true, but the last of them is dated just a few weeks ago.",
-      "Est. Value": "150. gp",
-      "Name": "Outdated Book of Prophecies",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Language: Elvish",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A necklace string of small pink pearls.",
-      "Est. Value": "2,500. gp",
-      "Name": "Pearl Necklace",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A circular Peridot of rich green colouring with milky inclusions.",
-      "Est. Value": "500. gp",
-      "Name": "Peridot Gemstone",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A viscous, golden liquid inside of a corked glass vial.",
-      "Est. Value": "1,000. gp",
-      "Name": "Philter of Blave",
-      "Properties": "After drinking the potion, you are compelled to speak first in every conversation and become unable to say anything which is not a deliberate and blatant lie. You believe the lies yourself [and reality itself can alter in minor ways, as determined by the DM, to reflect what you say. Your lies cannot place yourself or any other creature in immediate physical harm]. For the duration of the effect, you automatically succeed on saving throws against any spell or effect which would compel you to speak the truth. These effects last for 1 hour.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A platinum bracelet set with a sapphire.",
-      "Est. Value": "2,500. gp",
-      "Name": "Platinum Bracelet",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A large carry pouch made from the skin of a monkey. Inside are 1d6 Potions of Superior Healing. ",
-      "Est. Value": "750. gp",
-      "Name": "Pouch of Healing Potions",
-      "Properties": "You regain 8d4 + 8 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Wondrous Item",
-      "Description": "This cursed item hovers just behind whoever it is attuned to, generating startling sounds and lights at random intervals. A character attuned to the Prism of Paranoia cannot sleep or benefit from long or short rests, but has +10 to passive Perception.",
-      "Est. Value": "",
-      "Name": "Prism of Paranoia",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "An cherrywood cloak that repels water perfectly.",
-      "Est. Value": "550. gp",
-      "Name": "Rafting Cloak",
-      "Properties": "This cloak may be spread like a blanket over open water. When it is, it can support up to 300 lbs as a raft, staying perfectly buoyant and supportive even in moderately choppy conditions.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "This armor is Leather Armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Three rings across the chest are made of brilliant gold that sheds dim light similar to daybreak.",
-      "Est. Value": "1,500. gp",
-      "Name": "Ring Mail of Three Wishes",
-      "Properties": "When you are hit by a melee or ranged attack while wearing this armor, you can use your reaction to wish that you hadn't been hit. The attack deals no damage, but the armor class provided by the armor decreases by 1. After the third wish, the armor's rings vanish and it becomes nonmagical leather armor.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "2nd Ed.",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Ring of Contrariness",
-      "Properties": "Cursed. Once attuned, the wearer of this ring cannot take it off and is forced to disagree with any idea, statement or action. On top of that, the wearer is also forced to resist any attempt to remove the curse.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Rod",
-      "Description": "You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.",
-      "Est. Value": "",
-      "Name": "Rod of Rulership",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "Brendan M",
-      "Category": "Weapon",
-      "Description": "A tough metal shield with a large stud in the center.",
-      "Est. Value": "",
-      "Name": "Shield of Bashing",
-      "Properties": "When running to a target from at least 20 feet. The target must make a Constitution saving throw of 14 or be knocked prone. Following attacks would then have advantage.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A simple but finely made silver and gold brooch.",
-      "Est. Value": "750. gp",
-      "Name": "Silver and Gold Brooch",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A silver chalice set with moonstones.",
-      "Est. Value": "750. gp",
-      "Name": "Silver Chalice",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A light silver platter, 6 inches in diameter, etched with ornate feathers.",
-      "Est. Value": "1,250. gp",
-      "Name": "Silver Platter of Feathers",
-      "Properties": "Anything placed on this platter has no weight whatsoever. The item must be fully supported by the platter and regains its weight over 1 second after leaving the platter",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Fin Fen",
-      "Category": "Weapon",
-      "Description": "You gain a +1 bonus to attack and damage rolls with this magical weapon, and it deals an additional 1d8 poison damage. The damage increases by 1d8 if the target is a Monstrosity or Beast.  This weapon has 7 spikes hidden within the Barb at the end of the pike. As a ranged attack, you can launch a single spike at a target, each having a range of 100/200 ft. Each of these spikes deal 1d8 piercing damage. Every Morning at dawn, this weapon regrows all of it's spikes.",
-      "Est. Value": "5,000. gp",
-      "Name": "Spire of the Manticore",
-      "Properties": "Heavy, Reach, Two-Handed",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "18 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "Weapon",
-      "Description": "This Morningstar is made of solid wrought steel, with a heavy spiked head. It behaves like a normal Morningstar, except within 60ft of Evil and Undead creatures and within an hour of Dawn. In any of these cases, the head glows like the tip of a Sunrod, and it becomes a Morningstar +2 which stuns for 1d4+1 rnds on a Critical. Fortitude saves vs stun, with a DC equal to the player's attack roll. Cannot be used by Evil creatures.",
-      "Est. Value": "3,200. gp",
-      "Name": "Star of Morning's Glory",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A translucent ruby with a white star-shaped center.",
-      "Est. Value": "1,000. gp",
-      "Name": "Star Ruby",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Star Sapphire is a precious variation of the sapphire, however is more translucent, with a white star highlighted in its center. A star sapphire has been known to ornament devices which protect against magic. ",
-      "Est. Value": "1,000. gp",
-      "Name": "Star Sapphire",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/Euphorbus11",
-      "Category": "Wondrous Item",
-      "Description": "A simple leather pouch filled with 4 small runestones.",
-      "Est. Value": "5. gp",
-      "Name": "Stones of Ruin",
-      "Properties": "Requires attunement by a druid. A pouch of stone runes that predict the worst event that will happen before the next full moon. Using the runes makes the events it predicts more likely to happen.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "This round and polished stone glows with a fierce light and seems to dispel the shadows around you. ",
-      "Est. Value": "500. gp",
-      "Name": "Sun Gem",
-      "Properties": "Properties of a torch.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Brendan M",
-      "Category": "Weapon",
-      "Description": "A sharp one-sided blade that is slightly curved.",
-      "Est. Value": "",
-      "Name": "Sword of Bleeding",
-      "Properties": "The creature must a Constitution saving throw of 14 or take an addition 1d6. The creature makes this check every turn until succeeded",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This is a magical Glaive, with an ornately decorated shaft made of solid (but light) steel. The blade is made of silver, and floats near the end unattached to the shaft. Three keywords act on this weapon: anda, sinta, and pahta (long, short, and closed, in Elven). Anda is the longest extent, and the weapon acts as a two-handed glaive. Sinta makes the weapon shorten and behave as a one-handed axe, and pahta shortens the weapon to throwing-axe size. The blade also changes shape and position to fit these weapon styles.",
-      "Est. Value": "1,400. gp",
-      "Name": "Telescoping Glaive",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Wondrous Item",
-      "Description": "This large basin has bloodstains permanently ingrained in it. Any liquid placed in the Clegane Bowl immediately turns into Potion of Greater Hype. When consumed, a dose of this potion doubles the Strength score of the user for 1 hour, up to a maximum of 30 Strength.",
-      "Est. Value": "",
-      "Name": "The Clegane Bowl",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "BG",
-      "Category": "Ring",
-      "Description": "This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.",
-      "Est. Value": "100. gp",
-      "Name": "The Iron Thorn",
-      "Properties": "Upon attunement this ring changes it's wearer's appearance to that of a Zombie. Requires 'Remove Curse' to remove.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A large tome, bound in leather and clasped with gold. A closer inspection of this volume will reveal that each page is perfectly preserved dragon scale which has been inscribed with the black blood of a fiend. The book describes the four spirits (quicksilver, orpiment, sal ammoniac, sulfur) and seven bodies (gold, silver, iron, quicksilver, lead, tin, copper) of traditional alchemy.",
-      "Est. Value": "200. gp",
-      "Name": "Tome of Alchemy",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Language: Common",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A yellow facet cut Topaz gemstone.",
-      "Est. Value": "500. gp",
-      "Name": "Topaz",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An uncut chunk of raw diamond. It is easily the size of a dwarf’s fist and is likely worth a substantial sum to the right jewel maker.",
-      "Est. Value": "1,000. gp",
-      "Name": "Uncut Diamond",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A wand with runic inscriptions that have been scratched out and rewritten several times",
-      "Est. Value": "250. gp",
-      "Name": "Wand of Arcane Errata",
-      "Properties": "Upon invoking the activation word, the wand will create a random effect. d20: 1-5: You or a target is made clean. 6-10: Glowing orbs dance around you as the dancing lights spell. 11-15: Conjures 1d4 loaves of warm bread. 16-19: The wand releases 20 gallons of pure, cool water. 20: The wand unfolded into a thin effigy of a man, who will serve you for 1 hour. Its strength is 6 and has 1 hp.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A black and white painted Oakwood wand, with card suits painted down the length of the wand beyond the handle.",
-      "Est. Value": "250. gp",
-      "Name": "Wand of Prestidigitation",
-      "Properties": "Allows the user to cast the spell Prestidigitation without the need of somatic or visual components on any object within 25 feet.  The staff has 5 charges that refill completely every morning.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This mask has been painted gold and appears to be a ceremonial mask worn to battle.",
-      "Est. Value": "750. gp",
-      "Name": "War Mask",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "A pair of elegantly decorated teacups that always feel warm to the touch. If filled with any liquid, it will somehow seep through invisible cracks in the cup.",
-      "Est. Value": "500. gp",
-      "Name": "Wellwizard's Teacups",
-      "Properties": "When held, the teacups will fill with hot, pleasant tea. If a pleasant conversation ensues, the teacups will refill up to three times. If someone holding the cups tells a lie, the tea will seep through invisible cracks.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A glass orb with a small slit opening, braced by fine grey metal.",
-      "Est. Value": "150. gp",
-      "Name": "Whispering Bauble",
-      "Properties": "A user may speak into this bauble for up to one minute. After this period, anyone who places the bauble to their ear will hear the message. The message can be replayed multiple times, until a new message is purposefully spoken into it.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A transparent fiery yellow or yellow· green Sapphire.",
-      "Est. Value": "1,000. gp",
-      "Name": "Yellow Sapphire",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Potion",
-      "Description": "A foul smelling liquid that shifts between bright red and burgundy as it swirls around it's flask.",
-      "Est. Value": "3,500. gp",
-      "Name": "Potion of Extra Health",
-      "Properties": "User gains 1d2 HP per level and will regenerate 1d2HP per round.  The effect is lost the next time the drinker goes to the toilet.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "A shiny silver sword with a purple hilt. There are three orange pommels at the center of the hilt that each resembles a triangle, placed together so they create a larger triangle as a group. The guard is shaped like two outstretched wings and along the blade of this sword are etchings in Elvish that read 'The Blade of Evil's Bane'. Looking into the history of this sword will tell of an order of Maesters who, upon growing weary of merely recording the passage of history, decided to make it themselves.",
-      "Est. Value": "",
-      "Name": "Maester Sword",
-      "Properties": "1d8 Slashing - Versatile (1d10)",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This oddly-shaped weapon looks like it might be made of roc’s feathers, bound together and strengthened by magic. There is a small emerald set in the weapon’s vertex amidst gilded furnishings that mark it as a weapon of some distinction.",
-      "Est. Value": "900. gp",
-      "Name": "Gale Boomerang",
-      "Properties": "1d4 + 2 Bludgeoning - Thrown (Range: 30/90) Special: Does not require direct line of sight, due to a curved trajectory. Once per day, you can cast the Gust of Wind (DC 15) spell as a free action with a successful attack.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A potion vial containing a purple concoction, labelled simply 'Ooze'. The bubbling, slimy fluid is dark purple with emerald accretions on the side. It smells like butyric acid (vomit) and tastes worse.",
-      "Est. Value": "900. gp",
-      "Name": "Potion of Purple Ooze",
-      "Properties": "Drinking this potion will turn you into an ooze for 1d8+1 days.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DOTA2",
-      "Category": "Wondrous Item",
-      "Description": "Grants the following, +2 fort saves, +2 reflex saves, +2 will saves",
-      "Est. Value": "",
-      "Name": "Power Treads",
-      "Properties": "Grants +2 fort saves, +2 reflex saves, +2 will saves",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The tiny figurine of a fertility goddess, carved from a rare, fist-sized pearl. Found deep beneath the surface of the earth, for two weeks after it is brought to the surface any woman touching the figurines will become pregnant. After the two week period has expired, the figure will never work again (or until returned to its original spot for 1d12 months).",
-      "Est. Value": "",
-      "Name": "Pregnancy Figure",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "Ring of Ghosts: the wearer of the ring can see and communicate with the ghost of any intelligent being that has died in the past 24 hours within a 1 mile radius. After the 24 hours, the ghost disappears. The ghosts are only visible and audible to the wearer, but remain intangible. Also, the ghosts likely aren't very cooperative if the players killed them.",
-      "Est. Value": "",
-      "Name": "Ring of Ghosts",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Rust-dust Bomb – metallic eating dust",
-      "Est. Value": "",
-      "Name": "Rust-Dust Bomb",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Book",
-      "Description": "Without a successful Arcana check of 25, this scroll appears to be a Scroll of Comprehend Language. When used, however a DC save must be made or the user will be unable to speak anything but gibberish for 1d20 days.",
-      "Est. Value": "",
-      "Name": "Scroll of Cursed Gibberish",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Book",
-      "Description": "Summons a moose.",
-      "Est. Value": "",
-      "Name": "Scroll of Summon Moose",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "extra planar/dimensional transport/escape to pocket dimension with scrying/teleportation stone/orb",
-      "Est. Value": "",
-      "Name": "Self-Incinerating Pellets",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Shadoweave armor is woven with darkness imbued into its silk. +6 armor +6 max bonus",
-      "Est. Value": "",
-      "Name": "Shadoweave Armor",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Monster presence detecting weapon (Hobbit – Sting, Orcs/Goblins)",
-      "Est. Value": "",
-      "Name": "Sting",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Knife of a god of undeath. It turned whoever owned it immediately undead.",
-      "Est. Value": "",
-      "Name": "Undead Knife",
-      "Properties": "Cursed",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DOTA",
-      "Category": "Wondrous Item",
-      "Description": "Urn of shadows-starts with no charges, user can grant allies 10HP, or deal 10 damage to enemies. gains additional uses for every 2 creatures that die within 40ft radius of holder",
-      "Est. Value": "",
-      "Name": "Urn of Shadows",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A small tortoise (STR 2, DEX 1, WIL 6, 1hp, Armour 1) that knows the way to anywhere you ask, but gets there very slowly. ",
-      "Est. Value": "",
-      "Name": "Worldly Tortoise",
-      "Properties": "",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "William Orfanakos",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "800. gp",
-      "Name": "Spear of the Hunter",
-      "Properties": "This spear grants a +2 to AC and summons a friendly wolf whenever a natural 20 is rolled to hit. 1d8 Piercing - Oversized (1d10), Thrown (20/60), Two-Handed",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "William Orfanakos",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "1,200. gp",
-      "Name": "Insanity Blade",
-      "Properties": "Once attuned, the user of this weapon must make a Wisdom save each day, starting at 0 and going up +1 DC with each subsequent check. On a failure, the character is thrown into a blind rage and must fight the nearest creature for 1d8 rounds or until they are killed. 1d8 Slashing & 1d4 Psychic",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "William Orfanakos",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "1,400. gp",
-      "Name": "Tracking Dagger",
-      "Properties": "On a successful hit with this dagger, the user knows exactly where the target is for 1d20 hours.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "The Patient Man's Key Ring",
-      "Properties": "Rusty key ring containing 100 rusty keys, for any given lock, one of the keys will open said lock. You just have to keep going until you find it. 1d100 to figure out how many keys the player has to try before they succeed.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Weapon",
-      "Description": "This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.",
-      "Est. Value": "3,500. gp",
-      "Name": "Adjatha the Drinker",
-      "Properties": "1d8+2 Slashing - Versatile (1d10+2) Heals the wielder 1 hit point every time it hits the target. Makes wielder immune to charm and domination status effects.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Weapon",
-      "Description": "Basalin was a large man, rumored, far from his hearing, to be a werebear. He long wielded the bastard sword Albruin in the protection of his village, slaying giant spiders that plagued the area. The sword protected him from their poison and also allowed him to see invisible Red Wizards who controlled some of the more fantastic variants. The reason for their enmity is unknown.",
-      "Est. Value": "2,000. gp",
-      "Name": "Albruin",
-      "Properties": "2d4+3 Slashing - Versatile (2d6+2) Renders user immune to poison. Can detect invisibility once per day.",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement Strength: 11",
-      "Weight": "8 lb"
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Wondrous Item",
-      "Description": "Algernon's cloak is imbued with magical properties such that the wearer will seem to shine with an inner glow. ",
-      "Est. Value": "1,750. gp",
-      "Name": "Algernon's Cloak",
-      "Properties": "Provides +2 to Charisma",
-      "Rarity": "Rare",
-      "Rarity Number": "4",
-      "Requirements": "Requires Attunement",
-      "Weight": "3 lb"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Arcane Eye spell.",
-      "Name": "Arcane Eye Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Aura of Life spell.",
-      "Name": "Aura of Life Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Aura of Purity spell.",
-      "Name": "Aura of Purity Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Banishment spell.",
-      "Name": "Banishment Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blight spell.",
-      "Name": "Blight Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Charm Monster spell.",
-      "Name": "Charm Monster Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Compulsion spell.",
-      "Name": "Compulsion Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Confusion spell.",
-      "Name": "Confusion Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Minor Elementals spell.",
-      "Name": "Conjure Minor Elementals Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Woodland Beings spell.",
-      "Name": "Conjure Woodland Beings Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Control Water spell.",
-      "Name": "Control Water Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Death Ward spell.",
-      "Name": "Death Ward Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dimension Door spell.",
-      "Name": "Dimension Door Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Divination spell.",
-      "Name": "Divination Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dominate Beast spell.",
-      "Name": "Dominate Beast Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Elemental Bane spell.",
-      "Name": "Elemental Bane Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Evard's Black Tentacles spell.",
-      "Name": "Evard's Black Tentacles Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fabricate spell.",
-      "Name": "Fabricate Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Find Greater Steed spell.",
-      "Name": "Find Greater Steed Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fire Shield spell.",
-      "Name": "Fire Shield Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Freedom of Movement spell.",
-      "Name": "Freedom of Movement Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Giant Insect spell.",
-      "Name": "Giant Insect Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Grasping Vine spell.",
-      "Name": "Grasping Vine Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Greater Invisibility spell.",
-      "Name": "Greater Invisibility Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Guardian of Faith spell.",
-      "Name": "Guardian of Faith Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Guardian of Nature spell.",
-      "Name": "Guardian of Nature Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hallucinatory Terrain spell.",
-      "Name": "Hallucinatory Terrain Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ice Storm spell.",
-      "Name": "Ice Storm Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Leomund's Secret Chest spell.",
-      "Name": "Leomund's Secret Chest Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Locate Creature spell.",
-      "Name": "Locate Creature Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mordenkainen's Faithful Hound spell.",
-      "Name": "Mordenkainen's Faithful Hound Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mordenkainen's Private Sanctum spell.",
-      "Name": "Mordenkainen's Private Sanctum Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Otiluke's Resilient Sphere spell.",
-      "Name": "Otiluke's Resilient Sphere Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Phantasmal Killer spell.",
-      "Name": "Phantasmal Killer Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Polymorph spell.",
-      "Name": "Polymorph Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shadow of Moil spell.",
-      "Name": "Shadow of Moil Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sickening Radiance spell.",
-      "Name": "Sickening Radiance Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Staggering Smite spell.",
-      "Name": "Staggering Smite Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Stone Shape spell.",
-      "Name": "Stone Shape Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Stoneskin spell.",
-      "Name": "Stoneskin Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Storm Sphere spell.",
-      "Name": "Storm Sphere Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Summon Greater Demon spell.",
-      "Name": "Summon Greater Demon Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Vitriolic Sphere spell.",
-      "Name": "Vitriolic Sphere Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Fire spell.",
-      "Name": "Wall of Fire Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Watery Sphere spell.",
-      "Name": "Watery Sphere Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Animate Objects spell.",
-      "Name": "Animate Objects Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Antilife Shell spell.",
-      "Name": "Antilife Shell Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Awaken spell.",
-      "Name": "Awaken Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Banishing Smite spell.",
-      "Name": "Banishing Smite Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Bigby's Hand spell.",
-      "Name": "Bigby's Hand Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Circle of Power spell.",
-      "Name": "Circle of Power Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cloudkill spell.",
-      "Name": "Cloudkill Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Commune spell.",
-      "Name": "Commune Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Commune with Nature spell.",
-      "Name": "Commune with Nature Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cone of Cold spell.",
-      "Name": "Cone of Cold Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Elemental spell.",
-      "Name": "Conjure Elemental Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Volley spell.",
-      "Name": "Conjure Volley Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Contact Other Plane spell.",
-      "Name": "Contact Other Plane Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Contagion spell.",
-      "Name": "Contagion Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Control Winds spell.",
-      "Name": "Control Winds Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Creation spell.",
-      "Name": "Creation Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Danse Macabre spell.",
-      "Name": "Danse Macabre Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dawn spell.",
-      "Name": "Dawn Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Destructive Wave spell.",
-      "Name": "Destructive Wave Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dispel Evil and Good spell.",
-      "Name": "Dispel Evil and Good Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dominate Person spell.",
-      "Name": "Dominate Person Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dream spell.",
-      "Name": "Dream Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Enervation spell.",
-      "Name": "Enervation Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Far Step spell.",
-      "Name": "Far Step Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Flame Strike spell.",
-      "Name": "Flame Strike Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Geas spell.",
-      "Name": "Geas Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Greater Restoration spell.",
-      "Name": "Greater Restoration Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hallow spell.",
-      "Name": "Hallow Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hold Monster spell.",
-      "Name": "Hold Monster Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Holy Weapon spell.",
-      "Name": "Holy Weapon Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Immolation spell.",
-      "Name": "Immolation Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Infernal Calling spell.",
-      "Name": "Infernal Calling Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Insect Plague spell.",
-      "Name": "Insect Plague Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Legend Lore spell.",
-      "Name": "Legend Lore Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Maelstrom spell.",
-      "Name": "Maelstrom Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mass Cure Wounds spell.",
-      "Name": "Mass Cure Wounds Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mislead spell.",
-      "Name": "Mislead Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Modify Memory spell.",
-      "Name": "Modify Memory Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Negative Energy Flood spell.",
-      "Name": "Negative Energy Flood Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Passwall spell.",
-      "Name": "Passwall Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Planar Binding spell.",
-      "Name": "Planar Binding Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Raise Dead spell.",
-      "Name": "Raise Dead Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Rary's Telepathic Bond spell.",
-      "Name": "Rary's Telepathic Bond Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Reincarnate spell.",
-      "Name": "Reincarnate Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Scrying spell.",
-      "Name": "Scrying Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Seeming spell.",
-      "Name": "Seeming Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Skill Empowerment spell.",
-      "Name": "Skill Empowerment Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Steel Wind Strike spell.",
-      "Name": "Steel Wind Strike Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Swift Quiver spell.",
-      "Name": "Swift Quiver Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Synaptic Static spell.",
-      "Name": "Synaptic Static Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Telekinesis spell.",
-      "Name": "Telekinesis Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Teleportation Circle spell.",
-      "Name": "Teleportation Circle Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Transmute Rock spell.",
-      "Name": "Transmute Rock Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tree Stride spell.",
-      "Name": "Tree Stride Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Force spell.",
-      "Name": "Wall of Force Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Light spell.",
-      "Name": "Wall of Light Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Stone spell.",
-      "Name": "Wall of Stone Spell Scroll",
-      "Rarity": "Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wrath of Nature spell.",
-      "Name": "Wrath of Nature Spell Scroll",
-      "Rarity": "Rare"
-    }
-  ],
-  "Uncommon": [
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An ornate block of ice carved into an ancient holy symbol. The carving has a subtle taint of magic to it, but it's not exactly clear what prevents it from melting.",
-      "Est. Value": "400. gp",
-      "Name": "Holy Ice Symbol",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/dustybullets",
-      "Category": "Wondrous Item",
-      "Description": "A wind instrument consisting of a reed melody pipe and from one to five drones with air supplied continuously either by a bag with valve-stopped mouth tube or by bellows. The bag itself is patterned in red and blue.",
-      "Est. Value": "",
-      "Name": "Bagpipe of Invisibility",
-      "Properties": "Renders the user invisible whilst the bagpipes are being played.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A contract with blank parts. Can be modified into any sort of deal you wish. The first party to break the contract is blasted with a beam from above (d12, ignore armour) and the contract dissolves into shredded parchment. ",
-      "Est. Value": "",
-      "Name": "Blank Contract",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Awakens any creature from sleep or unconsciousness, but they flail and scream in terror for a few seconds first. They have no memory of this afterwards. ",
-      "Est. Value": "",
-      "Name": "Devil Salts",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Neverfull Waterskin (It's always half empty.)",
-      "Est. Value": "200. gp",
-      "Name": "Neverfull Waterskin",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An obsidian figurine of a dolphin which is always wet to the touch.",
-      "Est. Value": "",
-      "Name": "Obsidian Dolphin",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Quest Hook",
-      "Description": "Within a rotten pouch found upon the body of a long dead soldier is a parchment with an unbroken seal. If the seal is broken and the message read, it warns its would-be recipient to guard against an eminent betrayal.",
-      "Est. Value": "",
-      "Name": "Old Guard's Note",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Treasure",
-      "Description": "An abacus with counting beads made of ivory, silver, gold, and vitrified eye balls.",
-      "Est. Value": "120. gp",
-      "Name": "Ornate Abacus",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A rapier in an ornate, electrum-trimmed steel scabbard worked in swirl-patterns. ",
-      "Est. Value": "65. gp",
-      "Name": "Ornate Rapier",
-      "Properties": "1d8 Piercing - Martial - Finesse",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "One hundred and sixteen 3” white porcelain discs, each has a 1 ounce knob of electrum embedded in its center",
-      "Est. Value": "",
-      "Name": "Porcelain Discs",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Weapon",
-      "Description": "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.",
-      "Est. Value": "25. gp",
-      "Name": "1d20 Ammunition +1",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit. ",
-      "Est. Value": "500. gp",
-      "Name": "Adamantine Armor",
-      "Properties": "Medium, Heavy (Not Hide)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "20 - 60"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty. You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named. Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn. ",
-      "Est. Value": "6,000. gp",
-      "Name": "Alchemy Jug",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "These pieces of unweatherd, thick parchment are lined by a thin string of gold woven into the paper. To anyone who cannot read magic, they are always blank and featureless. However, someone who can read magic realizes that these scrolls can contain spell charges—of ANY type of spell, rather than just Arcane. Paladins, Clerics, and Druids, rejoice! Two charges of the spell must be spent to write one to the scroll, and some scrolls might be found with magic already written to them. These scrolls, once written to, can be cast free of charge—but the scroll is consumed in the process. Store those odd utility spells on Allmagic Scrolls, and never waste an unused daily charge again!",
-      "Est. Value": "150. gp",
-      "Name": "Allmagic Scrolls",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An amber gemstone of watery gold colouring. It has been polished so that you can see a small petrified leaf suspended inside.",
-      "Est. Value": "100. gp",
-      "Name": "Amber Gemstone",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An ornate cup fashioned out of a deep purple Amethyst. This material was probably chosen as many believe it to prevent intoxication.",
-      "Est. Value": "100. gp",
-      "Name": "Amethyst Drinking Cup",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors. ",
-      "Est. Value": "20,000. gp",
-      "Name": "Amulet of Proof Against Detection and Location",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A cache of ancient coins left from the elder days of the world and made by a civilization utterly alien to the values of today: They are carved from bloodstone, moonstone, and jacinth – with unknown faces and unreadable runes decorating their surface.",
-      "Est. Value": "50. gp",
-      "Name": "Ancient Coins",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "Ancient gold cube – quite encumbering.",
-      "Est. Value": "200. gp",
-      "Name": "Ancient Gold Cube",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "An ancient mummy which was given full burial rites and laid within a stately sarcophagus. Arranged on five pedestals around the sarcophagus are the canopic jars in which the mummy’s vital organs were placed. Although the mummy is not of the undead, opening these jars will reveal that its organs continue to function: The heart beats, the lungs fill with air and empty again, and so forth.",
-      "Est. Value": "0. gp",
-      "Name": "Ancient Mummy",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A collection case holding fifty spent wands – crafted by the finest craftsman and enchanted by the mightiest wizards of a bygone age, but now reduced to mere wood, bone, and glass.",
-      "Est. Value": "40. gp",
-      "Name": "Ancient Wand Box",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small box of turquoise animal figurines.",
-      "Est. Value": "250. gp",
-      "Name": "Animal Figurines",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "In this room of the dungeon, there is an elaborate arm chair carved entirely of a single piece of coal. It has been inlaid with silver runes that age has rendered unreadable.",
-      "Est. Value": "80. gp",
-      "Name": "Anthracite Chair",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "60 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A tiny diorama made of oak and silver, depicting a prophecy of the last days of the world in vivid detail.",
-      "Est. Value": "80. gp",
-      "Name": "Armageddon Diorama",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Book",
-      "Description": "A very large scroll tube containing the plans for many of the ancient war engines of Armentarious.",
-      "Est. Value": "100. gp",
-      "Name": "Armentarious' Scroll Tube",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "An astrologer’s chart, inscribed with the finest instruments and the greatest precision upon a vellum which is both supple and expensive. Close inspection by those with the proper knowledge, however, reveals that these charts were constructed around an entirely different night sky – and, possibly, a calendrical system and length of year unlike anything known upon this world.",
-      "Est. Value": "100. gp",
-      "Name": "Astrologer's Chart",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A miniature golden chest with tiny emeralds lining the top that trace out a mage’s sigil. The chest is crafted in exquisite detail. (This is the material component of a “Secret Chest” (from the spell of the same name) for the ruthless lady-mage Aumurille, who will likely want it back....)",
-      "Est. Value": "75. gp",
-      "Name": "Aumurille's Chest",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action. If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate. Placing a bag of holding inside an extradimensional space created by a Heward's handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened. ",
-      "Est. Value": "4,000. gp",
-      "Name": "Bag of Holding",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "15 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A small bag of saffron. It can be used to flavor the parties travel rations, but is probably more valuable as a trade good.",
-      "Est. Value": "22. gp",
-      "Name": "Bag of Saffron",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This ordinary gray cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag’s color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.    ",
-      "Est. Value": "900. gp",
-      "Name": "Bag of Tricks, Grey",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "Witch’s Mad Sack of Bats – releases swarm of bats",
-      "Est. Value": "300. gp",
-      "Name": "Bat Sack",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A famous battle banner, long lost, smells badly",
-      "Est. Value": "200. gp",
-      "Name": "Battle Banner",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A pair of dark leather boots upon which a curious gnomish mechanism has been fastened around. There is a small lever on the side of the ankle that, when toggled, extends on each boot a set of sharp mountaineering claws. The boots are sized for medium humanoid but the mechanism itself would be easy enough for a blacksmith to scale up or down.",
-      "Est. Value": "300. gp",
-      "Name": "Bear Claw Boots",
-      "Properties": "The mountaineering claws provide a +2 circumstance bonus to climb checks. This bonus can be used in addition to a Climber's Kit.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Treasure",
-      "Description": "A stoppered behir horn containing 300 gp worth of powdered electrum",
-      "Est. Value": "300. gp",
-      "Name": "Behir Horn",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A dark, water-worn leather belt embossed with an intricate seascape all around its girth. It has a polished golden buckle, as well as the name “Jadmek” carved into the front. It confers a +2 bonus to all Use Rope checks, as well as a +2 bonus to knowledge of anything maritime. Any encounter with pirates or seafaring merchants might prove interesting if the NPCs spot this belt.",
-      "Est. Value": "220. gp",
-      "Name": "Belt of the Shippey",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An antique golden bird cage with an electrum filigree.",
-      "Est. Value": "250. gp",
-      "Name": "Bird Cage",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "Four half-pound bricks of compressed Black Lotus pollen",
-      "Est. Value": "400. gp",
-      "Name": "Black Lotus Pollen",
-      "Properties": "Potent poison. Very valuable to...the right people.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A 1’ x 3’ bronze plate bearing the ancient, and secret recipe for Black Mountain Stout",
-      "Est. Value": "",
-      "Name": "Black Mountain Stout Recipe",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Waterskin of lamb’s blood",
-      "Est. Value": "0.2 gp",
-      "Name": "Blood Waterskin",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A finely crafted figurine of a blue dragon, rampant, done in wood and painted. ",
-      "Est. Value": "0.6 gp",
-      "Name": "Blue Dragon Figurine",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently. ",
-      "Est. Value": "2,500. gp",
-      "Name": "Boots of Elvenkind",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "A pair of tan boots which are fastened around the foot with three adjustable belts. The inner sole of these boots feels springy to the touch and seems to mould itself around the user's foot for a fit so comfortable it's like walking on the clouds.",
-      "Est. Value": "5,000. gp",
-      "Name": "Boots of Striding and Springing",
-      "Properties": "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "A pair of hide boots lined with dense, warm white fur. The eyelet for each bootlace is patterned with small gemstones and the sole of the boot is spiked so as to benefit the user over icy and unstable terrain. These furred boots are snug and feel quite warm. ",
-      "Est. Value": "2,500. gp",
-      "Name": "Boots of the Winterlands",
-      "Properties": "See DMG page 156.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "An ornate box containing corked vials of different diseases",
-      "Est. Value": "",
-      "Name": "Box o' Diseases",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A collection of humanoid figurines, each poised in an unspeakable act of evil. They are packed in box which has been wrapped in lamb’s wool.",
-      "Est. Value": "30. gp",
-      "Name": "Box of Evil Miniatures",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.",
-      "Est. Value": "1,500. gp",
-      "Name": "Bracers of Archery",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Wondrous Item",
-      "Description": "The bracers appear to be Bracers of Specialization, but when donned, bind the wearer wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the Drow. The recipient, believing them to be very powerful, will often don them before examinating them. At this point, the drow find it amusing to conjure a hook horror. ",
-      "Est. Value": "300. gp",
-      "Name": "Bracers of Binding",
-      "Properties": "lower damage by 5 points, increase spell failure to 75% and give the wearer a +5 penalty to THACO. Since they are cursed, they can't be unequiped without a Remove Curse spell or the services of a priest",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A delicate brass dragon egg; hollowed out and painted into a seascape, resting on a wooden stand.",
-      "Est. Value": "35. gp",
-      "Name": "Brass Dragon Egg",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A plain brass mug with a surprisingly ornate jade inlay.",
-      "Est. Value": "250. gp",
-      "Name": "Brass Mug",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A cask full of bronze caltrops.",
-      "Est. Value": "3. gp",
-      "Name": "Bronze Caltrops",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An old bronze crown, once inlaid with gemstones. They have since been picked out, but the crown itself is wonderfully cast.",
-      "Est. Value": "250. gp",
-      "Name": "Bronze Crown",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell. ",
-      "Est. Value": "7,500. gp",
-      "Name": "Brooch of Shielding",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This wooden broom functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. The broom stops hovering when you land. You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you. ",
-      "Est. Value": "8,000. gp",
-      "Name": "Broom of Flying",
-      "Properties": "It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. ",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "A silver ring shaped into the likeness of a bull’s head.",
-      "Est. Value": "10. gp",
-      "Name": "Bull's Head Ring",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A complete barding for a war horse made of Bullette horn plates.",
-      "Est. Value": "",
-      "Name": "Bullette Horn Barding",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "40 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "The word “STYX” is sewn into the inner headband of this cap.",
-      "Est. Value": "1,000. gp",
-      "Name": "Cap of Water Breathing",
-      "Properties": "While wearing this cap underwater you can speak its command word as an action to create a bubble of air arround your head. It allows you to breathing normally underwater. This bubble stays with you until you speak the command word again, the cap is removed or you are no longer underwater.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "4 ceramic canopic jars, holding the stomach, intestines, lungs, and liver of a long-ago monarch. Each has a golden lid with a likeness of a paunchy, hook-nosed man with pale skin and a squint.",
-      "Est. Value": "80. gp",
-      "Name": "Ceramic Jars",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large, boxed chess set. All the pieces are small, dead pixies somehow sealed within glass.",
-      "Est. Value": "150. gp",
-      "Name": "Chess Set",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Chrysoberyl is a hard, transparent, green gem which is usually facet-cut. It is said that Chrysoberyl has ties to the outer planes and hence its use with battling demonic possession and the undead.        ",
-      "Est. Value": "100. gp",
-      "Name": "Chrysoberyl Gem",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A clàrsach harp in the style of the northern barbarians, but crafted with an elegance which suggests the decadence of a great civilization. Its strings are almost too fine to be perceived with the naked eye, and when they are played they resonate with the force of a full orchestra.",
-      "Est. Value": "375. gp",
-      "Name": "Clàrsach Harp",
-      "Properties": "Add your proficiency bonus to all Performance (Charisma) checks made when playing the harp.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "80 lb"
-    },
-    {
-      "Author": "AdamLapka",
-      "Category": "Armor",
-      "Description": "A normal looking black cloak with a high collar. When activated it gives off small puffs of black smoke that help obscure the wearer.",
-      "Est. Value": "250. gp",
-      "Name": "Cloak of Partial Shadow",
-      "Properties": "Speak the command word to activate the cloak and receive advantage on your next stealth roll. The wearer can only benefit from the effect once. It lasts for up to 6 seconds.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "5 lbs"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "A Companion Cube: It was created by a wizard who had stuck himself in a tower to show complete dedication to his studies. However, after several decades he became so lonely that he chose to make a friend... literally. Using what little non-component materials he had laying around his tower, he created a small cube and gave it sentience. It was able to communicate telepathically with anyone who made a link with the cube. Unfortunately, the wizard eventually died and the cube became lonely. Unable to travel and find a new friend, the cube simply sat there and waited for anyone to come along. Anyone seeing the cube would be compelled to be with the cube and have it in their possession. Upon holding the cube, they would feel the need to keep it with them at all times, and protect it as if it were their own child. Little by little, the connection between the cube and it's possessor would grow, until the two would be inseparable.",
-      "Est. Value": "",
-      "Name": "Companion Cube",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "30 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A dark crimson Coral gemstone fitted into a golden circlet.",
-      "Est. Value": "100. gp",
-      "Name": "Coral Circlet",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "This set of 12 torches burn different colors. There are two sets of Red, Yellow, Blue, Green, Orange and Purple torches.",
-      "Est. Value": "50. gp",
-      "Name": "Crayon Torches",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "12 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "When used this sword will deliver 1 instant hit for max damage, including bonuses. Once used, the sword shatters into crystal shards. Anyone within one square must roll reflex or take 1d4 damage from shard pieces.",
-      "Est. Value": "40. gp",
-      "Name": "Crystal Sword",
-      "Properties": "1d8 Slashing - Versatile (1d10)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Dagger of slicing – ignores armor bonus",
-      "Est. Value": "",
-      "Name": "Dagger of Slicing",
-      "Properties": "1d4 Piercing; Finesse, Light, Range, Thrown",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Charm that tells 1 truth about a creature killed in the area",
-      "Est. Value": "",
-      "Name": "Death Talker Charm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "Debt of a Soul – contract of soul ownership",
-      "Est. Value": "",
-      "Name": "Debt of a Soul",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An ancient deck of cards with five suits – clovers, swords, clubs, hearts, and dragons.",
-      "Est. Value": "50. gp",
-      "Name": "Deck of Cards",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "The skeletal remains of a long-dead warrior, wearing a suit of plate armor which has long since tarnished. The name of every warrior to ever die by the last wearer’s hand has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with chaotically written, black runes.",
-      "Est. Value": "",
-      "Name": "Decrepit Skeleton in Armor",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "60 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Potion",
-      "Description": "Dragon balm – reduced heat damage",
-      "Est. Value": "",
-      "Name": "Dragon Balm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A statuette of a dragon, forged from the finest mithril, which responds to yes or no questions which are posed to it in draconic. The answers given may appear prophetic or oracular, but are actually random.",
-      "Est. Value": "400. gp",
-      "Name": "Dragon Statuette",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A wood chip which acts as a magnet, despite its non-metallic nature.",
-      "Est. Value": "",
-      "Name": "Druid's Magnet",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Once per day, give +10ft to movement, and +1 to attack and damage rolls to all allies.",
-      "Est. Value": "",
-      "Name": "Drums of Endurance",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This compass is carved out of heavy, hard Petrebony (a wood that grows in caves). A brass needle sits in the center. However, this compass' needle points East, not North. There are no markings on its surface.",
-      "Est. Value": "135. gp",
-      "Name": "Duergar Compass",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Stack of 4, user covers 20ft radius in magic dust that shows anything that is hidden or dispellable.",
-      "Est. Value": "",
-      "Name": "Dust of Appearance",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Magical dust that makes anyone cough and sneeze (combat)",
-      "Est. Value": "",
-      "Name": "Dust of Coughing and Sneezing",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "stack of 4, user covers 20ft radius in magic dust that shows anything that is hidden or dispellable.",
-      "Est. Value": "",
-      "Name": "Dust of Dispelling",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "Works like a normal greatsword. Great tasting and low in calories! Regenerates 6 inches per day.",
-      "Est. Value": "400. gp",
-      "Name": "Edible Greatsword",
-      "Properties": "2d6 Slashing - Heavy - Two-Handed",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Eldritch flint & steel – 10’ reach – blinding/minor burns",
-      "Est. Value": "",
-      "Name": "Eldritch Flint & Steel",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "An elegant carved comb of oak, engraved with the name Aethelren and decorated with twin dragons. Elsewhere, a similar comb of ash, engraved with the name Ilthorien and decorated with twin unicorns, can be found.",
-      "Est. Value": "60. gp",
-      "Name": "Elven Engraved Combs",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This magical mason jar is made of uneven, lumpy, blue-green glass with a copper lid. No matter what is placed in this transparent jar, it will always appear to be empty from the outside--so long as the lid is on. On the lid is pressed “calasse,” Elven for “clean.” It cannot hold more than its actual volume.",
-      "Est. Value": "800. gp",
-      "Name": "Empty Mason Jar",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A purple-colored apple. (This enchanted apple has all the properties of a potion of Cure Light Wounds. 50gp)",
-      "Est. Value": "50. gp",
-      "Name": "Enchanted Apple",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Trap",
-      "Description": "Exploding gold coins (Looks legit. Should avoid contact with real gold coins for safety...)",
-      "Est. Value": "",
-      "Name": "Exploding Gold Coins",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Exploding rations – breathe weapon 1d6 hours for 1 use of color theme type",
-      "Est. Value": "",
-      "Name": "Exploding Rations",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "These appear to be normal Gnomish fireworks (although even those might seem unique and valuable to anyone unfamiliar with Gnomish ingenuity) but when they are eventually set off they spell out giant obscenities across the night's sky. It seems, in retrospect, that they may have been created by a rather angry Gnome. Sadly, whomever created the fireworks and who they were originally intended for will forever remain a mystery.",
-      "Est. Value": "30. gp",
-      "Name": "F**k You Fireworks",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Treasure",
-      "Description": "A finely made 10’ x 12’ wool floor rug. The center of the rug depicts a scene of siege warfare. A Halfling is being flung over a city wall by a trebuchet.",
-      "Est. Value": "100. gp",
-      "Name": "Finely Woven Rug",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Half-full flask of nightmare ale – 1 sip = 1d4 hours fear check per hour; full measure = 1d4 hours horrifying hallucinations vs DC save for early retirement",
-      "Est. Value": "",
-      "Name": "Flask of Nightmare Ale",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A pair of steel flasks, sealed with wax bearing the symbol of St. Cuthbert. (Holy water, 25 gp each)",
-      "Est. Value": "",
-      "Name": "Flask of St. Cuthbert",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A sundial which runs backwards.",
-      "Est. Value": "",
-      "Name": "Fundial",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Garnet is a general class of crystals ranging from deep red to violet in colour. a typical cut for this rare isometric gem is 12 to 24 sides, with the very rare 36 sides being known from time to time. it is rumored a 48-sided garnet exists although none have ever been able to track down its location. ",
-      "Est. Value": "100. gp",
-      "Name": "Garnet Gemstone",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Giant-King’s platinum necklace with crimson diamond worn by dragon",
-      "Est. Value": "",
-      "Name": "Giant-King's Necklace",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A huge arrow, with a steel tip and copper wire inlaid spirally down the shaft. To a medium or large creature, it behaves just like a javelin. However, when thrown, it whistles loudly.",
-      "Est. Value": "80. gp",
-      "Name": "Giant's Arrow",
-      "Properties": "1d6 Piercing - Simple - Thrown - Range: 30/120",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This is a short pole-arm resembling a Fauchard or Guan do, with an additional spike for thrusting. It deals slashing damage when wielded in one hand and piercing damage when wielded in two hands.",
-      "Est. Value": "5. gp",
-      "Name": "Glaive",
-      "Properties": "1d6 Slashing - Versatile (1d8 Piercing)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Globe of Invulnerability (It's a snowglobe. Not even the gods themselves can destroy it.)",
-      "Est. Value": "",
-      "Name": "Globe of Invulnerability",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Gloves that improve a skill but will randomly force the user to slap an ally/NPC during conversations at the DM's discretion.",
-      "Est. Value": "",
-      "Name": "Gloves of Slapping",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "This paint provides no protection, but grants 10 to disguise. The only way it works, however, is if the wearer is wearing no clothes, and covered head to toe in the stuff. It's hilarious when a disguise check fails, and they realize they are staring at a naked Gnome.",
-      "Est. Value": "",
-      "Name": "Gnome Camo Paint",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "Ring of a god",
-      "Est. Value": "",
-      "Name": "God Ring",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A golden bracelet.",
-      "Est. Value": "250. gp",
-      "Name": "Gold Bracelet",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small gold ring set with bloodstones.",
-      "Est. Value": "250. gp",
-      "Name": "Gold Ring",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A quiver of golden arrows, They are devoid of supernatural properties, but despite their unusual composition will perform as normal arrows would.",
-      "Est. Value": "",
-      "Name": "Golden Arrows",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A tablet of pure gold, inscribed with the core rites and beliefs of a venerable religion. Careful study of this tablet, however, will reveal subtle – but important – differences between these ancient practices and the current practices of the religion in question.",
-      "Est. Value": "",
-      "Name": "Golden Tablet",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "Weapon",
-      "Description": "This is a large greataxe, with a steel shaft and silver floating blade much like the Telescoping Glaive. ",
-      "Est. Value": "0. gp",
-      "Name": "Greataxe of Blindness",
-      "Properties": "1d14 Slashing - Martial - Heavy, Two-Handed When raising this axe to swing the wielder suffers 1 minute of total blindness.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "7 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A small, heart-shaped token carved out of rose-colored sandstone, holding the mad soul of a princess who was trapped there by a sorcerer many centuries ago. Her body remains in the hidden royal sepulchers of her homeland, perfectly preserved by ancient magic.",
-      "Est. Value": "",
-      "Name": "Heart Shaped Token",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "These start getting made after the party does something particularly heroic. Little cloth dolls that look like party members, when squeezed, the caster spouts illusionary flames, the cleric spouts prayers 'Praise Avandra!', the fighter has kung-fu action where he swings his sword.",
-      "Est. Value": "",
-      "Name": "Hero Dolls",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Horn Coral, which is also called night coral, is a deep black coral, similar to angel's skin save for its solid color. It is incredibly difficult to work with, and is used in jewelry as a polished twig or branch of material, or is cut cabochon. ",
-      "Est. Value": "100. gp",
-      "Name": "Horn Coral Gem",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Rod",
-      "Description": "This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.",
-      "Est. Value": "",
-      "Name": "Immovable Rod",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A carved sculpture of jungle animals on an ivory tusk.",
-      "Est. Value": "250. gp",
-      "Name": "Ivory Statuette",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small collection of antique Jade buttons.",
-      "Est. Value": "100. gp",
-      "Name": "Jade Buttons",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A Weather-worn jade statue depicting a desert beast known only to the people of the far south.",
-      "Est. Value": "300. gp",
-      "Name": "Jade Statue",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A telescope of jade and banded with bloodstone. A character looking through the telescope sees not the world around them, but a strange, alien panorama which – nonetheless – follows the motions of the telescope.",
-      "Est. Value": "",
-      "Name": "Jade Telescope",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A deep black brooch set with a Jet gemstone. Rumor suggests a brooch of this nature helps prevent the evil eye.",
-      "Est. Value": "100. gp",
-      "Name": "Jet Brooch",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Jewel encrusted sarcophagus – mummy inside",
-      "Est. Value": "",
-      "Name": "Jewel Encrusted Sarcophagus",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "When this Kazoo is played, it grants +2 to Intimidation checks. A +3 if the player has a kazoo in the room.",
-      "Est. Value": "",
-      "Name": "Kazoo of Intimidation",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A large snow globe, with a study base of polished oak, depicting a small farmhouse in the midst of a forest clearing. Shaking the globe causes the snow to gently fall, and as it does miniature figures exit the house and begin performing chores about the farmyard. The figures return to the house as the last flake falls.",
-      "Est. Value": "",
-      "Name": "Large Snow Globe",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Rocks stuffed with lava",
-      "Est. Value": "",
-      "Name": "Lava Rocks",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This is a rack of weapons, armor, books, wands, whatever you desire. It holds anywhere from 3-6 items, each usually magical in nature. Each can be examined visually and by a Detect Magic spell. However, as soon as one is touched, the others disappear—never to be found again. Multiple items cannot be removed at once. Optionally a password could dispel the magic, allowing all items to be removed.",
-      "Est. Value": "0. gp",
-      "Name": "Leomund's Loot Rack",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "300 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "The Longsword of Balanced Sums. Functions exactly like a generic +2 Longsword... except when you crit miss. Then it heals the target for half its max hit points.",
-      "Est. Value": "",
-      "Name": "Longsword of Balanced Sums",
-      "Properties": "1d8+2 Slashing, Versatile (1d10+2)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "You must have this item with you for 24 hours for it to become attuned to you. Once attuned, you may choose the result any time it is flipped, regardless of who actually flips it. Possible commands include heads, tails, and edge.",
-      "Est. Value": "",
-      "Name": "Lucky Coin",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Once an encounter, the player can choose to roll a d20 and use that as their base AC instead of 10. Player must take the value of the roll.",
-      "Est. Value": "",
-      "Name": "Lucky Dodge Belt",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Litmus magic paper: This paper can be used as a standard action by rubbing it on an object. It either detects no magic and can be used again, or changed color and brightness to reflect the school(s) and strengths of magic on the object.",
-      "Est. Value": "",
-      "Name": "Magic Litmus Paper",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A stone table in the midst of the wilderness which is, nevertheless, always filled with a fresh meal whenever travelers come across it.",
-      "Est. Value": "",
-      "Name": "Meal Table",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Once per day, swift. remove AC of target granted by armor, last one turn. user takes penalty to AC equal to target for same duration. ",
-      "Est. Value": "",
-      "Name": "Medallion of Courage",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "Book",
-      "Description": "This magical book has no discernable writings on the outside, or on any page. As soon as it is opened up, ask the player for the first three skills that come to mind. As soon as they tell you, the first page of the book becomes a table of contents with three chapters. The names of the chapters are the three skills they mentioned. Turning to the page of a skill chapter causes the book to disappear in a colored burst of light—and leaves the user with a permanent +1 rank to said skill. If their ranks are maxed out, the book is wasted.",
-      "Est. Value": "950. gp",
-      "Name": "Menesta's Book of Stored Skill",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "A merchant’s leather case containing a selection of twenty well-made daggers of varying designs.",
-      "Est. Value": "80. gp",
-      "Name": "Merchant's Dagger Box",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "22 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A set of dies and hammers for minting the king's coinage.",
-      "Est. Value": "400. gp",
-      "Name": "Minting Tools",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "Mithril is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.",
-      "Est. Value": "800. gp",
-      "Name": "Mithral Armor",
-      "Properties": "Medium, Heavy (Not Hide)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "20 - 60"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Moonbar is a pearly white, opaque gemstone, usually pale blue with green and gold mottling. Related in type to fire and black opals, but is only slightly more common. ",
-      "Est. Value": "375. gp",
-      "Name": "Moonbar Gemstone",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "Two peanut-sized balls of moss sit atop gnarled wooden knobs. Placing one of them in each ear causes total deafness—or total hearing protection, whichever your preference. The player cannot hear anything, and must succeed on a DC 16 Will save to speak a single sentence comprehensibly. However, they are totally immune to all sonic attacks and songs and can fall asleep extremely well. The earplugs can be removed at will.",
-      "Est. Value": "45. gp",
-      "Name": "Moss Earplugs",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Pearls consist of layers of aragonite agonizingly formed around a bit of grit or other irritant inside oysters and other mollusks. The resulting pearl has a rich, deep luster. Most of the pearls in the realms are white, however there are varieties that are much more rare such as rainbow and black. ",
-      "Est. Value": "100. gp",
-      "Name": "Pearl",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A large carry pouch made from the skin of a monkey. Inside are 1d6 Potions of Greater Healing. ",
-      "Est. Value": "300. gp",
-      "Name": "Pouch of Healing Potions",
-      "Properties": "You regain 4d4 + 4 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A small brown pouch that smells faintly musty. Inside it are 1d4 colourful mushrooms that are unrecognizable, even to a particularly knowledgeable alchemist or naturist. If determined, a painstaking delve through a herbalists library might identify the mushrooms as 'sub-space mushrooms' in a madly written diary of a man claiming to be a deposed king called Cooper.",
-      "Est. Value": "0. gp",
-      "Name": "Pouch of Mushrooms",
-      "Properties": "If eaten, each mushroom will increase the consumer's size to one greater than it currently is for an hour.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Jacos",
-      "Category": "Ring",
-      "Description": "A silver ring, encrusted with a small topaz. Upon wearing it on their finger, the wearer feels incredibly strong and confident. However, entering combat, their confidence immediately dissipates, leaving them terrified.",
-      "Est. Value": "20. gp",
-      "Name": "Ring of Dubious Might",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This sentient dagger attempts to help anytime it's owner tries to sneak by whistling inconspicuously.  For some reason it seems to have been discarded.",
-      "Est. Value": "300. gp",
-      "Name": "Sentient Dagger of Sneaking",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A long silk robe with golden embroidery.",
-      "Est. Value": "250. gp",
-      "Name": "Silk Robe",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "This silver necklace has a gemstone pendant.",
-      "Est. Value": "250. gp",
-      "Name": "Silver Necklace",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Sphene is a soft, brittle gemstone (and, like scapra, easily worked by unskilled cutters) of various yellow to green shades, the most prized of these being a fine emerald green. ",
-      "Est. Value": "225. gp",
-      "Name": "Sphene Gem",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A spun leather necklace of deep green Spinel beads.",
-      "Est. Value": "100. gp",
-      "Name": "Spinel Necklace",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A large, well-made tapestry depicting a local duke.",
-      "Est. Value": "250. gp",
-      "Name": "Tapestry",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "20 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Armor",
-      "Description": "The Rhinoclean helm is a large iron cap with visor shaped like the head of a certain kind of beetle. The helm's wearer has advantage on bull rushes and can stand up from being prone once on each of its turns without expending movement. ",
-      "Est. Value": "",
-      "Name": "The Rhinoclean Helm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Scribnibbler21",
-      "Category": "Armor",
-      "Description": "The Rhinocles helm is a large iron cap with visor shaped like the head of a certain kind of beetle. The helm's wearer has advantage on bull rushes and can stand up from being prone once on each of its turns without expending movement.",
-      "Est. Value": "",
-      "Name": "The Rhinocles Helm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A multi colored rectangular Tourmaline gemstone.",
-      "Est. Value": "100. gp",
-      "Name": "Tourmaline Gemstone",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "Townshend's Crudgels was invented by its namesake, Peter 'Unknown' Townshend, a traveling bard who wished his lute to both give beauty and take it away (preferably with a good old fashioned thrashing). His lute design, later copied by some of his admirers, was a simple oak lute, reinforced with an iron shell, to maintain the soft vibration of the sound against the wooden interior, and to give the lute the strength to crack open an orc's skull with a well placed blow. This weapon functions both as a lute and a weapon. When used as a lute, it is considered to be a lute and does not require a separate proficiency bonus to play. However, if the user rolls a critical miss with the weapon (a 1 on an attack roll) the lute may become slightly damaged and will require the user to spend an hour to retune it. If the instrument is not returned, whenever the instrument is played, the user is disadvantaged on the Perform check. This weapon can also be used as a bard's spellcasting focus. ",
-      "Est. Value": "38. gp",
-      "Name": "Townshend's Cudgel",
-      "Properties": "1d6 Bludgeoning - Versatile (1d8)",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "Water Opal is a colourless, clear opal with a play of colour. It is rare and valuable in the Realms, where it is used in scrying devices. ",
-      "Est. Value": "350. gp",
-      "Name": "Water Opal",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Unknown",
-      "Category": "Potion",
-      "Description": "A potion vial containing a sweet. honey-smelling golden syrup. There is a label on the vial written in common, which reads 'Potion of Deception'.",
-      "Est. Value": "1,000. gp",
-      "Name": "Potion of False Bluff",
-      "Properties": "The drinker of the potion perceives that they are an amazing liar. They believe that every bluff, diplomacy, and intimidation check they make for the next 1d4 hours succeeds, whether it does or not.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Sherwood Bosco",
-      "Category": "Potion",
-      "Description": "A pearlescent green potion in a glass vial that seems to swirl playfully when started at.",
-      "Est. Value": "400. gp",
-      "Name": "Potion of Harmless Flaying",
-      "Properties": "1d4 rounds after drinking this potion target produces the illusions of his/her innards becoming outards for 1d6 minutes. The illusion is entirely intangible, but nonetheless real looking.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A pair of pole mounted fans made of giant raven feathers",
-      "Est. Value": "",
-      "Name": "Raven Feather Fans",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A pen made from a raven’s feather. Through some magical means it writes continuously from an inexhaustible supply of golden ink upon whatever piece of parchment may be near by.",
-      "Est. Value": "",
-      "Name": "Raven Pen",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Ricochet-sling – up to 4 targets (d4 for targets, attack roll each; first attack fail causes ricochet to end [unless a tie, in the case of a tie to AC the ricochet continues])",
-      "Est. Value": "",
-      "Name": "Ricochet Sling",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "",
-      "Est. Value": "20. gp",
-      "Name": "Ring of Bad Luck",
-      "Properties": "This ring will appear to be a Ring of Good Luck without an appraise check of 25. It actually imbues the wearer -1 on all saves and is not removable for a full day without removing the enchantment.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "A silver ring inlaid with a trasluscent pearl. There is an inscription in Elvish which reads, 'To Elabella, perhaps now you will find your mirror less engrossing.'",
-      "Est. Value": "80. gp",
-      "Name": "Ring of Fake Invisibility",
-      "Properties": "The wearer of this ring is unable to see themselves or anything they are carrying.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A brown and red flecked egg, about the size of a loaf of bread, that gives off a rancid scent.",
-      "Est. Value": "50. gp",
-      "Name": "Troglodyte Egg",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Weapon",
-      "Description": "This massive boomerang requires two hands by medium sized humanoids. This may have been specially designed for an ogre, or giant. It has sharp metal blades that run down the side of each wing. The blades on the inner curves make it a bit tricky to wield.",
-      "Est. Value": "50. gp",
-      "Name": "Giant Boomerang",
-      "Properties": "1d8 Bludgeoning - Thrown (Range: 30/90) - Two-Handed Special: Does not require direct line of sight, due to a curved trajectory.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Martial Weapon Expertise",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Weapon",
-      "Description": "This otherwise normal looking boomerang has a sense of arcana deep within it's dark oak core. Researching it's history will reveal that this is, in fact, one of many created by a local wizard who was frustrated at being unable to throw a normal boomerang in such a way that it returned naturally.",
-      "Est. Value": "180. gp",
-      "Name": "Boomerang of Retrieval",
-      "Properties": "1d6 Bludgeoning (+1 force damage) - Thrown (Range: 30/90) Special: Does not require direct line of sight, due to a curved trajectory.  Unlike a normal boomerang, the boomerang of retrieval will always return to you after you make a ranged attack with it, even if you hit.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "An elegant puppet theater. Although its wood is brightly polished and the red of its satin curtains is bright and fresh, the hand-painted sign upon its front (reading “The Wondrous Show of Punch and Judy” in carnival lettering) is chipped and faded. If the curtains are opened (using a set of finely woven pulley ropes which lie inside the theater), the puppets – stored in a concealed compartment “backstage” – will come to life and perform elaborate shows of their own volition.",
-      "Est. Value": "",
-      "Name": "Puppet Theater",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "In a worn and decaying wall of mud bricks, a single black brick – polished and perfectly preserved – stands out in stark contrast. If the brick is pried out and broken open, it will reveal a quicksilver core.",
-      "Est. Value": "",
-      "Name": "Quicksilver Surprise",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A lucky rabbit’s foot which hangs from a golden chain. Although separated from the rest of the rabbit, the foot magically lives on: It will respond to touch, bleed if injured, and so forth.",
-      "Est. Value": "",
-      "Name": "Rabbit's Foot",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "This ring imbues the wearer +1 on all saves.",
-      "Est. Value": "",
-      "Name": "Ring of Good Luck",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A small metal tin which has been carefully labelled. Instructions are included on the inside of the lid, 'Smear on bare skin to grow a natural defence.' The paste inside is white and gritty. It smells like coconut.",
-      "Est. Value": "200. gp",
-      "Name": "Shell Paste Lotion",
-      "Properties": "Smearing Shell Paste lotion on your bare skin will cause an exoskeleton to grow for 1d4 hours. This exoskeleton increases your AC by 1.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A metallic egg-shaped weapon which, when thrown, sprouts magical wings and hovers above it's intended target.",
-      "Est. Value": "",
-      "Name": "Griffon Bomb",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "An ornate, egg-shaped device made with cast bronze. There is a pin in the top of the device with an etched note indicating the following: PULL THYS PINNE AND WAITE TENNE COUNTS BEFORRE BOOME. When the pin is pulled, an urgent ticking sound begins to eminate from the device.",
-      "Est. Value": "",
-      "Name": "Gnome Bomb",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "An orange-yellow shell with small claw-like protrusions. This appears more to have been grown rather than constructed.",
-      "Est. Value": "",
-      "Name": "Elven Bomb",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Dwarven Bomb",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A so-called 'Dryad Bomb', called such because when thrown it creates a mess of magically grown tangles and vines. Appears to be a glowing orange orb surrounded by a series of vines and roots.",
-      "Est. Value": "",
-      "Name": "Dryad Bomb",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Wondrous Item",
-      "Description": "A magical time-keeping device produced by a Gnomish artisan. Opening this circular locket allows you to check the current time based on where a delicate hand is pointing. On one half of the circular face is an ornate night's sky with a crescent moon indicating midnight. On the other half is a blue sky, with a bright sun indicating mid-day. It's unclear how the magic has been infused with the device, as no arcane presence is detectable, but pulling the silver panel off the back of the locket simply exposes a number of delicate, ticking gears. Gnome magic is compicated.",
-      "Est. Value": "150. gp",
-      "Name": "Gnome Timepiece",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A book detailing the general process of learning a language, from both a practical and theoretical angle. Written by a talented linguist called Chompsky the Gnome.",
-      "Est. Value": "200. gp",
-      "Name": "Learning Languages by Chompsky",
-      "Properties": "Allows any natural speaker of a language to be considered an 'instructor' of that language. ",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Language: Common",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "One of the most famous plays in the works of the famous Orcish bard; Villam Spearshaker. It tells the story of two starcrossed lovers whose familes are locked in a bitter rivalry. They attempt to run away together, only to end up eaten by an ogre. The ogre then proceeds to eat most of the two feuding families, all of the side characters and in a number of early renditions of the play a few members of the audience as well. A note to budding directors: Try not to cast an actual ogre as the ogre.",
-      "Est. Value": "180. gp",
-      "Name": "Romeot and Julio",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Book",
-      "Description": "A sequel to the original play by the famous Orcish bard; Villam Speakshaker. Romeot and Julio (or at least, what's left of them) are ressurected as shambling zombies in service to a wealthy merchant. The play ends with the merchant attempting to extract a pound of flesh from Romeot to pay for a debt before getting eaten alive by the two zombies. Their final moments of the play are spent lovingly feeding each other his bloody entrails.",
-      "Est. Value": "175. gp",
-      "Name": "Romeot and Julio II",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Salve of Silence – armor improving sound nullifier",
-      "Est. Value": "",
-      "Name": "Salve of Silence",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A quarry of 20 Screaming Arrows – intimidate/fear check",
-      "Est. Value": "",
-      "Name": "Screaming Arrows",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Shrunken head with command word – 1 ray spell per hour",
-      "Est. Value": "",
-      "Name": "Shrunken Head",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "A large signet ring of gold, worked with a unicorn crest. Any commoner who dons the ring will suddenly discover its metal heated to unbearable levels – causing one hit point of damage per round. However, anyone with noble blood (however slight), or destined to become a noble at some point in the future, who does the same will suffer only a momentary flash of pain (with an accompanying 1 hp of damage). They will find that the unicorn crest has reshaped itself to their own heraldry, which has also been branded in miniature form upon the back of the finger. From this point forward, they can put on or remove the ring at will without any further ill effects.",
-      "Est. Value": "",
-      "Name": "Signet Ring of Gold",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Gold dipped idol of several skulls",
-      "Est. Value": "600. gp",
-      "Name": "Skull Idol",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "One time use only, grants perfect hide and move silently rolls to all allies. effect is lost if moved within 10ft of enemy",
-      "Est. Value": "",
-      "Name": "Smoke of Deceit",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Armor",
-      "Description": "This heavy and thick bear hide is all that remains of the fabled Aeger. Several hundred years ago, the Aeger, a giant bear, terrorized hundreds of small villages up and down the Sword Coast. The bear was invulnerable to fire, cold, or acid. Finally the young men and women of several villages banded together, forming a militia almost two hundred people strong. The Aeger was surrounded and finally slain. Less than a dozen villagers survived, and they carved the Aeger's hide amongst themselves. Out of one of the pieces this armor was created. ",
-      "Est. Value": "9,000. gp",
-      "Name": "Aeger's Hide",
-      "Properties": "Medium Armor Armor Class: 12 + Dex Modifier (max 2) Provides +15% resistance to fire, cold, and acid Render's it's wearer immune to confusion",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "Requires Attunement",
-      "Weight": "35 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A cursed fishing pole made of blackened ash. It will never catch a fish – although, if one attempts to use it unbaited, they will succeed in catching skeleton fish.",
-      "Est. Value": "",
-      "Name": "Solomon's Fishing Pole",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Brass dungeon compass, runic markings, always points to nearest exit.",
-      "Est. Value": "",
-      "Name": "Sortida Compass",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Giant spider silk rope – sticks to most surfaces (including oiled gloves)",
-      "Est. Value": "",
-      "Name": "Spider-Silk Rope",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "once per day, standard. lifts target into air for 3 rounds. Enemy can make a reflex save each round to get out DC 10+User level. Deals 1d8 after 1 round, then 2d8, and 3d8 if they cannot get out after 3 rounds",
-      "Est. Value": "",
-      "Name": "Staff of Eulosus",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "once per day, standard. push target 10 ft the direction they are facing. once per day. If target is pushed into another creature, they deal 1d20 damage. to each other. If target is pushed into object, they take 1d20. Target can make a fort save against the push, goes against users 1d20+will mod ",
-      "Est. Value": "",
-      "Name": "Staff of Force",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Pebble that transforms into whatever inorganic substance it last touched. Currently the leather of your pouch. ",
-      "Est. Value": "",
-      "Name": "Stem-Stone",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Thirty storm giant minted gold coins, each is the size of a dinner plate and weighs 17 lbs. The image stuck on the coins shows a giant hand flicking a human off a table.",
-      "Est. Value": "",
-      "Name": "Storm Giant Coins",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A horn fashioned from the translucent bone of a storm giant. Those who put their ear to the horn hear it whisper the sounds of an unknown village square. Whether the village which they hear is – or was – a real place is a mystery which may never be solved. (Twin horn in village square allows communication between the two).",
-      "Est. Value": "",
-      "Name": "Storm Giant Horn",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Battle Fury-grants the feat Cleave",
-      "Est. Value": "",
-      "Name": "Sword of Battle Fury",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Enchanted talking toad – polymorphed noble – knowledge of multiple regions, religions & other worldly strangeness",
-      "Est. Value": "",
-      "Name": "Talking Toad",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Weapon",
-      "Description": "Each day this blade draws no blood it becomes heavier to bear.",
-      "Est. Value": "",
-      "Name": "The Bloody Burden",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A plain mirror with a frame of pale ashwood. Whenever someone looks in the mirror, however, they perceive an elven face in place of their own.",
-      "Est. Value": "",
-      "Name": "The Elven Mirror",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A famous (or forgotten) tapestry depicting the Fall of Erian. The figures upon the tapestry move and change, re-enacting – in an artistically abstracted form – the legendary battle over the course of half an hour.",
-      "Est. Value": "",
-      "Name": "The Erian Tapestry",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "Functions as a normal helmet other than the fact that it turns the user's head invisible.",
-      "Est. Value": "",
-      "Name": "The Headless Helm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The Living Lantern, it acts as a decent light source, but it hates wooden items and structures and tends to set them on fire. I haven't decided if it should take a liking to burning cloth. It has some very curious results, mostly involving villagers getting angry at their houses burning or support struts burning down resulting in some catastrophic collapse.",
-      "Est. Value": "",
-      "Name": "The Living Lantern",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "If the user of this throwing axe manages a critical hit, it will sever an appendage. – critical = appendage severed",
-      "Est. Value": "",
-      "Name": "Throwing Axe of Appendage Severing",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "When embedded in the hilt of a weapon. -deal and additional 1d6 lightning damage on attacks with an odd 1d20 roll",
-      "Est. Value": "",
-      "Name": "Thunder Pommel",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A floating mass of swirling colours the size of a penny. It follows your every command and leaves a multicolour trail across any surface it touches. Cannot physically interact in any other way.",
-      "Est. Value": "",
-      "Name": "Tiny Phantasm",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A pinewood totem pole of the northern barbarians, bearing six faces (from top to bottom): a hawk, a demon, an elk, a man, a fox, and a white dragon. The hawk has a silver feather on the left side of its face (8gp), the demon has a gold nose-ring (6gp), the elk has copper antlers (4gp), the man has electrum eyes (3gp each), the fox has a black onyx nose (15gp), and the dragon has ivory teeth (30 teeth worth 1gp each). The pole is fifteen feet tall and weighs 200 pounds. (4.57m, 90.7kg)",
-      "Est. Value": "",
-      "Name": "Totem Pole",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A token/key designed to deactivate all traps within the dungeon, requires activation at security box in secret depths of deepest part of dungeon",
-      "Est. Value": "",
-      "Name": "Trap Detection Key",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Triple ‘barreled’ crossbow",
-      "Est. Value": "",
-      "Name": "Triple Barreled Crossbow",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Armor",
-      "Description": "Troll-rubber boots. They give a +1 to stealth movement.",
-      "Est. Value": "",
-      "Name": "Troll-Rubber Boots",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "Underworld Currency – lead coins; purple rocks/crystals, fairy dust, dragon scales, dna globules (rocks/capsules with runic understanding of specific creatures), tally bones, soul traps/crystals",
-      "Est. Value": "",
-      "Name": "Underworld Currency",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "This dagger belonged to the great druid, Marcek, a wise and cunning elf who fell only to the fiery Wyrm, Brazzemel, during his quest to reclaim the lost Eladrin spell tomes. Marcek inherited this dagger from his master and mentor, Garbasen the Sage, who crafted it with ancient Eladrin magic. Covered in etched runes and jewels, this dagger holds a legendary history and a powerful magic core.",
-      "Est. Value": "",
-      "Name": "Visikus",
-      "Properties": "1d4 Piercing - Finesse, Light - Range: 20/60",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A wand of eye poking, four charges. It will unerringly poke out the eye of a target creature within arm’s reach.",
-      "Est. Value": "",
-      "Name": "Wand of Eye-Poking",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A sheep's bladder waterskin. It is lined with a suedelike fabric which has been beautifully stiched with the image of a stag's head. ",
-      "Est. Value": "600. gp",
-      "Name": "Waterskin of Inexplicable Amelioration",
-      "Properties": "When any liquid is poured into this waterskin it is instantly purified of disease, poison or other potentially harmful contaminents.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A leaf from the great tree Yggdrasil.",
-      "Est. Value": "",
-      "Name": "Yggdrasil Leaf",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A trolls hand mounted on a three foot rod. It will grasp objects or make a fist. Commands: Grabit, Leggo, Fist.",
-      "Est. Value": "",
-      "Name": "Zulabar's Fist-Stick",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "William Orfanakos",
-      "Category": "Wondrous Item",
-      "Description": "This appears to be a common cloth sack about 2 feet by 4 feet in size. ",
-      "Est. Value": "500. gp",
-      "Name": "Greedy Bag of Holding",
-      "Properties": "This functions as a normal Bag of Holding, but for every item you wish to remove from the bag you must put in a silver piece. Any money placed into the bag dissapears almost immediately. It's unclear where the coins go when placed into the bag.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "15 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Dice Mace",
-      "Properties": "-5 to hit but does 1d20 Bludgeoning Damage",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Thirsty Cup",
-      "Properties": "All liquid poured into this cup drains from it as if there was a hole in the bottom.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Susej Cup",
-      "Properties": "Turns any liquid that is poured into this cup into Elven wine.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Charm of Frost",
-      "Properties": "grants water-walking abilities, but requires concentration. Anything that disrupts a concentration spell disrupts the charm. 10 ft radius of ice",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Illusionary Coin Bag",
-      "Properties": "a bag that makes all coins in it appear as platinum. Coins revert to original form 5 minutes after being taken out of bag. Can not hold more than 50 coins. This means you do not actually gain any profit from using the bag, but you can trick people",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Sword of Frost",
-      "Properties": "1d6 slashing damage, 1d6 chill damage. Freezes/Slows enemies hit, upon death enemy turns to ice and shatters, damaging all nearby enemies for 1d4 chill damage. No effect on fire or ice enemies",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Axe of Blood",
-      "Properties": "crimson red axe that deals 1d6 slashing damage and 1d6 bludgeoning damage. Each hit restores +1 hp to wielding regardless of damage dealt",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "",
-      "Est. Value": "",
-      "Name": "Hypnotic Spinning Top",
-      "Properties": "a spinning top that causes all creatures that can see it, including the person spinning it, to become mesmerized by it and will do nothing but stand in place and stare at it until it stops spinning and falls. This effect is technically psionic",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A bronze circle held by a red ribbon.",
-      "Est. Value": "",
-      "Name": "Blood Amulet",
-      "Properties": "This amulet is constantly covered in blood. Any attempt to wash the blood off is unsuccessful, and the amulet must be wrapped in a waterproof cloth to prevent anything it is kept in frow slowly becoming drenched in blood.",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Armor",
-      "Description": "This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession. ",
-      "Est. Value": "600. gp",
-      "Name": "Adventurer's Robe",
-      "Properties": "AC: 11 + Dex Modifier Disadvantage on Stealth + 1 bonus vs. petrification & polymorph",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "Baldur's Gate II",
-      "Category": "Treasure",
-      "Description": "This enchanted statuette depicts the swirling form of an air elemental. When stood close, you can feel a cooling breeze swirling around the statuette.",
-      "Est. Value": "450. gp",
-      "Name": "Air Elemental Statue",
-      "Properties": "",
-      "Rarity": "Uncommon",
-      "Rarity Number": "3",
-      "Requirements": "",
-      "Weight": "10 lb"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Aganazzar's Scorcher spell.",
-      "Name": "Aganazzar's Scorcher Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Aid spell.",
-      "Name": "Aid Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Alter Self spell.",
-      "Name": "Alter Self Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Animal Messenger spell.",
-      "Name": "Animal Messenger Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Arcane Lock spell.",
-      "Name": "Arcane Lock Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Augury spell.",
-      "Name": "Augury Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Barkskin spell.",
-      "Name": "Barkskin Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Beast Sense spell.",
-      "Name": "Beast Sense Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blindness Deafness spell.",
-      "Name": "Blindness Deafness Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blur spell.",
-      "Name": "Blur Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Branding Smite spell.",
-      "Name": "Branding Smite Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Calm Emotions spell.",
-      "Name": "Calm Emotions Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cloud of Daggers spell.",
-      "Name": "Cloud of Daggers Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Continual Flame spell.",
-      "Name": "Continual Flame Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Cordon of Arrows spell.",
-      "Name": "Cordon of Arrows Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Crown of Madness spell.",
-      "Name": "Crown of Madness Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Darkness spell.",
-      "Name": "Darkness Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Darkvision spell.",
-      "Name": "Darkvision Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Detect Thoughts spell.",
-      "Name": "Detect Thoughts Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dragon's Breath spell.",
-      "Name": "Dragon's Breath Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dust Devil spell.",
-      "Name": "Dust Devil Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Earthbind spell.",
-      "Name": "Earthbind Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Enhance Ability spell.",
-      "Name": "Enhance Ability Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Enlarge Reduce spell.",
-      "Name": "Enlarge Reduce Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Enthrall spell.",
-      "Name": "Enthrall Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Find Steed spell.",
-      "Name": "Find Steed Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Find Traps spell.",
-      "Name": "Find Traps Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Flame Blade spell.",
-      "Name": "Flame Blade Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Flaming Sphere spell.",
-      "Name": "Flaming Sphere Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Gentle Repose spell.",
-      "Name": "Gentle Repose Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Gust of Wind spell.",
-      "Name": "Gust of Wind Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Healing Spirit spell.",
-      "Name": "Healing Spirit Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Heat Metal spell.",
-      "Name": "Heat Metal Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hold Person spell.",
-      "Name": "Hold Person Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Invisibility spell.",
-      "Name": "Invisibility Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Knock spell.",
-      "Name": "Knock Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Lesser Restoration spell.",
-      "Name": "Lesser Restoration Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Levitate spell.",
-      "Name": "Levitate Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Locate Animals or Plants spell.",
-      "Name": "Locate Animals or Plants Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Locate Object spell.",
-      "Name": "Locate Object Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Mouth spell.",
-      "Name": "Magic Mouth Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Weapon spell.",
-      "Name": "Magic Weapon Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Maximillian's Earthen Grasp spell.",
-      "Name": "Maximillian's Earthen Grasp Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Melf's Acid Arrow spell.",
-      "Name": "Melf's Acid Arrow Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mind Spike spell.",
-      "Name": "Mind Spike Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mirror Image spell.",
-      "Name": "Mirror Image Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Misty Step spell.",
-      "Name": "Misty Step Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Moonbeam spell.",
-      "Name": "Moonbeam Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Nystul's Magic Aura spell.",
-      "Name": "Nystul's Magic Aura Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Pass without Trace spell.",
-      "Name": "Pass without Trace Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Phantasmal Force spell.",
-      "Name": "Phantasmal Force Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Prayer of Healing spell.",
-      "Name": "Prayer of Healing Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Protection from Poison spell.",
-      "Name": "Protection from Poison Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Pyrotechnics spell.",
-      "Name": "Pyrotechnics Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Ray of Enfeeblement spell.",
-      "Name": "Ray of Enfeeblement Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Rope Trick spell.",
-      "Name": "Rope Trick Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Scorching Ray spell.",
-      "Name": "Scorching Ray Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the See Invisibility spell.",
-      "Name": "See Invisibility Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shadow Blade spell.",
-      "Name": "Shadow Blade Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Shatter spell.",
-      "Name": "Shatter Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Silence spell.",
-      "Name": "Silence Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Skywrite spell.",
-      "Name": "Skywrite Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Snilloc's Snowball Swarm spell.",
-      "Name": "Snilloc's Snowball Swarm Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Spider Climb spell.",
-      "Name": "Spider Climb Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Spike Growth spell.",
-      "Name": "Spike Growth Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Spiritual Weapon spell.",
-      "Name": "Spiritual Weapon Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Suggestion spell.",
-      "Name": "Suggestion Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Warding Bond spell.",
-      "Name": "Warding Bond Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Warding Wind spell.",
-      "Name": "Warding Wind Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Web spell.",
-      "Name": "Web Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Zone of Truth spell.",
-      "Name": "Zone of Truth Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Animate Dead spell.",
-      "Name": "Animate Dead Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Aura of Vitality spell.",
-      "Name": "Aura of Vitality Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Beacon of Hope spell.",
-      "Name": "Beacon of Hope Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Bestow Curse spell.",
-      "Name": "Bestow Curse Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blinding Smite spell.",
-      "Name": "Blinding Smite Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blink spell.",
-      "Name": "Blink Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Call Lightning spell.",
-      "Name": "Call Lightning Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Catnap spell.",
-      "Name": "Catnap Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Clairvoyance spell.",
-      "Name": "Clairvoyance Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Animals spell.",
-      "Name": "Conjure Animals Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Barrage spell.",
-      "Name": "Conjure Barrage Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Counterspell spell.",
-      "Name": "Counterspell Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Create Food and Water spell.",
-      "Name": "Create Food and Water Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Crusader's Mantle spell.",
-      "Name": "Crusader's Mantle Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Daylight spell.",
-      "Name": "Daylight Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Dispel Magic spell.",
-      "Name": "Dispel Magic Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Elemental Weapon spell.",
-      "Name": "Elemental Weapon Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Enemies Abound spell.",
-      "Name": "Enemies Abound Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Erupting Earth spell.",
-      "Name": "Erupting Earth Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fear spell.",
-      "Name": "Fear Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Feign Death spell.",
-      "Name": "Feign Death Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fireball spell.",
-      "Name": "Fireball Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Flame Arrows spell.",
-      "Name": "Flame Arrows Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fly spell.",
-      "Name": "Fly Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Gaseous Form spell.",
-      "Name": "Gaseous Form Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Glyph of Warding spell.",
-      "Name": "Glyph of Warding Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Haste spell.",
-      "Name": "Haste Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hunger of Hadar spell.",
-      "Name": "Hunger of Hadar Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Hypnotic Pattern spell.",
-      "Name": "Hypnotic Pattern Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Leomund's Tiny Hut spell.",
-      "Name": "Leomund's Tiny Hut Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Life Transference spell.",
-      "Name": "Life Transference Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Lightning Arrow spell.",
-      "Name": "Lightning Arrow Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Lightning Bolt spell.",
-      "Name": "Lightning Bolt Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Circle spell.",
-      "Name": "Magic Circle Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Major Image spell.",
-      "Name": "Major Image Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mass Healing Word spell.",
-      "Name": "Mass Healing Word Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Meld into Stone spell.",
-      "Name": "Meld into Stone Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Melf's Minute Meteors spell.",
-      "Name": "Melf's Minute Meteors Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Nondetection spell.",
-      "Name": "Nondetection Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Phantom Steed spell.",
-      "Name": "Phantom Steed Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Plant Growth spell.",
-      "Name": "Plant Growth Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Protection from Energy spell.",
-      "Name": "Protection from Energy Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Remove Curse spell.",
-      "Name": "Remove Curse Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Revivify spell.",
-      "Name": "Revivify Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sending spell.",
-      "Name": "Sending Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sleet Storm spell.",
-      "Name": "Sleet Storm Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Slow spell.",
-      "Name": "Slow Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Speak with Dead spell.",
-      "Name": "Speak with Dead Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Speak with Plants spell.",
-      "Name": "Speak with Plants Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Spirit Guardians spell.",
-      "Name": "Spirit Guardians Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Stinking Cloud spell.",
-      "Name": "Stinking Cloud Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Summon Lesser Demons spell.",
-      "Name": "Summon Lesser Demons Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Thunder Step spell.",
-      "Name": "Thunder Step Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tidal Wave spell.",
-      "Name": "Tidal Wave Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tiny Servant spell.",
-      "Name": "Tiny Servant Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tongues spell.",
-      "Name": "Tongues Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Vampiric Touch spell.",
-      "Name": "Vampiric Touch Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Sand spell.",
-      "Name": "Wall of Sand Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Water spell.",
-      "Name": "Wall of Water Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Water spell.",
-      "Name": "Wall of Water Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Water Breathing spell.",
-      "Name": "Water Breathing Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Water Walk spell.",
-      "Name": "Water Walk Spell Scroll",
-      "Rarity": "Uncommon"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wind Wall spell.",
-      "Name": "Wind Wall Spell Scroll",
-      "Rarity": "Uncommon"
-    }
-  ],
-  "Very Rare": [
-    {
-      "Author": "PlatypusPal",
-      "Category": "Quest Hook",
-      "Description": "A scroll that when signed with blood would enter the participant into an assassin ranking system. Upon the scroll was also an arrow that always pointed to the assassin that was a rank above you. The goal is to reach rank 1 for a single wish however the only way to gain a rank is to kill the assassin above you. The Rank is infamous and well paid for their trade so strong assassins are always waiting for a rank opening.",
-      "Est. Value": "",
-      "Name": "Blood Scroll",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Extract the consciousness of a pacified or willing being to be stored within. The consciousness can be injected into the still warm body of a dead being, giving them a new body to inhabit. ",
-      "Est. Value": "",
-      "Name": "Essence Extractor",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A person bandaged with this item will be unable to do anything for themselves and will rely on others for everything. They will not remove the bandage until the wound is healed. ",
-      "Est. Value": "",
-      "Name": "Helpless Bandage",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The wearer of this necklace has a general feeling that he is safe. The opposite is, in fact, the case. Any time something bad happens to the group, the wearer of this necklace bears the brunt of the misfortune",
-      "Est. Value": "",
-      "Name": "Ill-Fated Necklace",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A damp rag which carries a faint musty smell.",
-      "Est. Value": "",
-      "Name": "Permanently Damp Rag",
-      "Properties": "Can be wrung out infinitely to produce foul tasting water.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DangerousPuhson",
-      "Category": "Quest Hook",
-      "Description": "The potions are a polymorphed group of famous heroes transformed into oozes. Anyone with the ability to communicate telepathically are able to speak with them (and probably help them get back to normal).",
-      "Est. Value": "",
-      "Name": "Polymorphed Adventurers Potions",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Weapon",
-      "Description": "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.",
-      "Est. Value": "400. gp",
-      "Name": "1d20 Ammunition +3",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Weapon",
-      "Description": "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common. Value listed is for each arrow.",
-      "Est. Value": "600. gp",
-      "Name": "2d4 + 2 Arrows of Slaying",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure , you and each creature and object within 15 feet of you travel to a random destination. Roll a dlOO. On a 1- 60, you travel to a random location on the plane you named. On a 61- 100, you travel to a randomly determined plane of existence. ",
-      "Est. Value": "160,000. gp",
-      "Name": "Amulet of the Planes",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "These two amulets are enchanted as a pair and both must be worn at the same time for the enchantment to work. Anything wearing it cannot be considered as food.",
-      "Est. Value": "1,000. gp",
-      "Name": "Amulets of Inedibility",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "Once per day, you can remove AC of target granted by armor, last until end of your next turn. User takes -2 to AC for same duration. (I think lasting until the end of combat might be a bit op, also  I have named it after Hans Christian Anderson because it makes me thing of the Emperor's New Clothes)",
-      "Est. Value": "400. gp",
-      "Name": "Anderson's Medallion",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "Smart 50’ rope – obeys simple commands, animated like snake",
-      "Est. Value": "50gp",
-      "Name": "Animated Rope",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.",
-      "Est. Value": "6,000. gp",
-      "Name": "Animated Shield",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Armor",
-      "Description": "You have a +2 bonus to AC while wearing this armor.",
-      "Est. Value": "6,000. gp",
-      "Name": "Armor +2",
-      "Properties": "Light, Medium or Heavy",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "8 - 60"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Ring",
-      "Description": "When you take off this ring and it transports you to where you first put it on and disappears.",
-      "Est. Value": "9,000. gp",
-      "Name": "Back to the Beginning Ring",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This bag superficially resembles a bag of holding but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice. The extradimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a 50 percent chance that the creature is pulled inside the bag. A creature inside the bag can use its action to try to escape with a successful DC 15 Strength check. Another creature can use its action to reach into the bag to pull a creature out, doing so with a successful DC 20 Strength check (provided it isn't pulled inside the bag first). Any creature that starts its turn inside the bag is devoured, its body destroyed. Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The DM determines the time and plane. If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane. ",
-      "Est. Value": "10,000. gp",
-      "Name": "Bag of Devouring",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "15 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A beautiful, vibrantly colorful cloth parasol with a light wooden handle. The object feels delicate and weightless.",
-      "Est. Value": "1,500. gp",
-      "Name": "Bardweave Parisol",
-      "Properties": "As a reaction, you may open this parasol to defend you, provided it is easily reachable on your character. When you make a dexterity save, you may use your reaction to open the magical parasol, giving you resistance to all damage. If you suffer more than 10 damage after this resistance, the parasol is damaged and can no longer protect you. It can be repaired with a sewing kit or a proficient tailor.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 25. If your Strength is already equal to or greater than 25, the item has no effect on you.",
-      "Est. Value": "24,000. gp",
-      "Name": "Belt of Fire Giant Strength",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 23. If your Strength is already equal to or greater than 23, the item has no effect on you.",
-      "Est. Value": "19,000. gp",
-      "Name": "Belt of Frost Giant Strength",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "While wearing this belt, your Strength score changes to 23. If your Strength is already equal to or greater than 23, the item has no effect on you.",
-      "Est. Value": "19,000. gp",
-      "Name": "Belt of Stone Giant Strength",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "PlatypusPal",
-      "Category": "Wondrous Item",
-      "Description": "A plain, unadorned black obelisk. If brought above ground and into the open, the obelisk will draw down a near-constant barrage of lightning to itself – even if the sky is clear.",
-      "Est. Value": "17,500. gp",
-      "Name": "Black Obelisk",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1000 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A translucent lustrous black Sapphire with glowing highlights.",
-      "Est. Value": "5,000. gp",
-      "Name": "Black Sapphire",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Weapon",
-      "Description": "Twice per day, whomever users this dagger can instantly teleport up to 30 ft in any direction. Cannot be used if you were attacked since your last turn.",
-      "Est. Value": "7,000. gp",
-      "Name": "Blink Dagger",
-      "Properties": "1d4+2 Piercing | Finesse, Light",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "An old looking brass harp that has only 3 strings left. The strings are flecked with rust, or so it seems. Holding it gives you a feeling of cold anxiety.",
-      "Est. Value": "2,500. gp",
-      "Name": "Bloodied Harp",
-      "Properties": "Plucking the harp strings causes you great pain and triggers magical effects. The first string deals 1d6 damage to you, and casts the 'sleep' spell at first level, using Charisma. The second string deals 2d6 damage to you, and 2d6 damage to all targets within 20 feet. The third string deals 3d6 damage to you, and heals a target in 20 feet for 4d6. You may pluck 3 strings each day.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "The wearer of the boots gains water-walking, with a twist. On any body of salt water, the boots generate a 30 ft. radius of dry, walkable sand beneath the wearer. Which means several party members could benefit from the effect. They functioned for an hour per day, but it didn't have to be continuous.",
-      "Est. Value": "",
-      "Name": "Boots of Dry Land",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Brazier of infinite imps. 1d4 imps spawn every 24 hours. If they are not killed by the time the brazier spawns a new set, the previous imps die and vanish.",
-      "Est. Value": "500. gp",
-      "Name": "Brazier of Infinite Imps",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "A wooden buckler with a burned-in sigil of a bee on the shield face. It vibrates ferociously when struck.",
-      "Est. Value": "2,500. gp",
-      "Name": "Buzzing Buckler",
-      "Properties": "Adds no armor. If you are the victim of a ranged attacked, you may use your reaction to increase your AC by +1. If you choose to do this, and the attack fails to hit you, the projectile is deflected by your shield, and bursts into a cloud of angry bees that will seek the attacker and sting it relentlessly, causing 1d6 poison damage at the beginning of each of their turns for one minute, or until you recall the bees. The victim also suffers disadvantage on attack rolls and can no longer maintain concentration.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Wondrous Item",
-      "Description": "This slender taper is dedicated to a deity and shares that deity's alignment. The candle's alignment can be detected with the detect evil and good spell. The DM chooses the god and associated alignment or determines the alignment randomly. The candle's magic is activated when the candle is lit, which requires an action. After burning for 4 hours, the candle is destroyed. You can snuff it out early for use at a later time. Deduct the time it burned in increments of 1 minute from the candle's total burn time. While lit, the candle sheds dim light in a 30-foot radius. Any creature within that light whose alignment matches that of the candle makes attack rolls, saving throws, and ability checks with advantage. In addition, a cleric or druid in the light whose alignment matches the candle's can cast 1st-level spells he or she has prepared without expending spell slots, though the spell's effect is as if cast with a 1st-level slot. Alternatively, when you light the candle for the first time, you can cast the gate spell with it. Doing so destroys the candle.",
-      "Est. Value": "8,400. gp",
-      "Name": "Candle of Invocation",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "Two rings, user may opt to take damage for the other person wearing the ring",
-      "Est. Value": "1,000. gp",
-      "Name": "Companion Rings",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A crown of severed, mummified fingers. Each finger bears three jeweled rings.",
-      "Est. Value": "2,200. gp",
-      "Name": "Crown of Fingers",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "2 lbs."
-    },
-    {
-      "Author": "",
-      "Category": "Treasure",
-      "Description": "A finely-crafted, clear crystal pyramid with no noticeable impurities.",
-      "Est. Value": "",
-      "Name": "Crystal Pyramid",
-      "Properties": "If a creature focuses on the item for at least 30 seconds,  the creature sees a glimpse of a historical event in extraplanar history and takes 1d4 Int (psychic) damage. The image changes every 30 seconds of concentration and the creature takes 1d4 Int (psychic damage) for every event seen.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "asdf3011",
-      "Category": "Wondrous Item",
-      "Description": "Allows a blind user to see but at a cost. (will at random cause you to attack others)",
-      "Est. Value": "",
-      "Name": "Cursed Eye",
-      "Properties": "May attack the player while not connected. (The player has to lack at least one eye) ",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A set of dark blue rings, which rotate freely against each other, but cannot be separated.",
-      "Est. Value": "0. gp",
-      "Name": "Dark Gemini Ring",
-      "Properties": "Donning this ring will spawn a replica of you with inverse motivations. The replica will have dark blue eyes, and will seek to ruin you. The ring cannot come off as long as the clone survives, and you always know the direction of the clone.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Diamond is a hard clear gem which can be clear blue-white, rich blue, yelow or pink. The hardest of all the gemstones, and among the most valuable. Diamonds are usually found in northern mountains by underground races, and then traded to the surface world. ",
-      "Est. Value": "5,000. gp",
-      "Name": "Diamond",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/SPYROHAWK",
-      "Category": "Wondrous Item",
-      "Description": "These wooden donkey legs can be attached to anything  (but are not strong enough to carry literally anything).  Once attached, the thing will follow you around like a loyal donkey.  For example, you can attach them to a heavy statue and then have it walk itself out of the dungeon.  Donkey legs are as strong as two donkeys! ",
-      "Est. Value": "",
-      "Name": "Donkey Legs",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A thick shaft of wood with totemic carvings. It has a slight gradual spike shape, being thinner and sharper at one end, and thick and flat at the other.",
-      "Est. Value": "1,500. gp",
-      "Name": "Earthbreaker Totem",
-      "Properties": "You may use your action to plant this into any reasonably soft ground. If the totem takes 15 bludgeoning damage (from being forcibly smashed deeper into the ground), it will trigger an earthquake, causing 4d12 thunder damage to all ground-bound targets within 200 feet. Constructs and buildings are considered vulnerable. Targets within 10 feet of the totem are unaffected.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "In the laboratory, vault, or home of the famed (and thought long dead) Eldhand the Scholar sits a small glass box. Across the lid is a grid of very tiny holes for air. The box contains a pink, slimy slug admidst some wet sawdust. A tag on the box reads “Eldhand.” The bug can be killed easily, like any slug. However, placing the slug near one's nose or mouth allows it to crawl up into the player's brain. The player will go into a coma for 3d4 hours and, upon awakening, will find that the voice of Eldhand the Scholar can be heard inside their head. He is quite sarcastic, pessimistic, and usually upset that someone so “pea-brained” ended up finding him. However, he can be convinced to give help in scholarly matters—granting the host +6 on all Knowledge Arcana, Knowledge History, and Spellcraft checks. He is reluctant to give out help unless you have proven yourself a more than worthy host. But he is generally willing to help in exchange for your player eating some odd or expensive food item (plums, goat cheese, and Ruby Port liquor tend to be his favorites).",
-      "Est. Value": "0. gp",
-      "Name": "Eldhand's Mind Slug",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/BardicFire",
-      "Category": "Wondrous Item",
-      "Description": "A large, unmarked blue tome. Every page inside is blank.",
-      "Est. Value": "500. gp",
-      "Name": "Encyclopedia Approximatus",
-      "Properties": "Speak any subject to its spine and roll 1d4. On a 4, the reader is given a couple pages of accurate and detailed information on the subject (more accurate and detailed the most specific you are). All other rolls provides the user with approximate information, with regular errors. Regardless of accuracy, it's always written in a condescending tone.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Treasure",
-      "Description": "A plain, heavy ring of dark metal. It seems occasionally heavy.",
-      "Est. Value": "2,000. gp",
-      "Name": "Fulcrum Ring",
-      "Properties": "Mundane in most respects--except when pinched hard from the sides, it will refuse to move. It does not need to be worn for this to take effect.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A high quality, perfectly balanced gladius that is excessively comfortable to wield. The blade only seems to sharpen with use.",
-      "Est. Value": "4,000. gp",
-      "Name": "Gladiator's Prizeblade",
-      "Properties": "1d8, +1 to hit. Whenever you kill a foe in combat, the blade gains an additional +1 slashing damage on a hit, up to 10 total bonus damage. If the wielder is reduced to 0 hit points, the blade dulls and loses its damage bonus in exchange for a -1 damage penalty. The bonus damage then accrues normally by slaying foes.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A jeweled gold crown of superb quality.",
-      "Est. Value": "7,500. gp",
-      "Name": "Gold Crown",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A solid gold jewelry box with a platinum filigree.",
-      "Est. Value": "7,500. gp",
-      "Name": "Gold Jewelry Box",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "5 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A small gold statuette of a man, set with rubies.",
-      "Est. Value": "7,500. gp",
-      "Name": "Gold Statuette",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A cloth tool-roll that contains six needles of varying thickness. A melody is embroidered on the inside of the roll.",
-      "Est. Value": "500. gp",
-      "Name": "Harkol's Agonizing Instruments",
-      "Properties": "While humming the melody inscribed in the roll, the needles will move very slowly and very accurately according to the user's will. It would not be possible to cause bodily harm to an unrestrained creature by using these.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Armor",
-      "Description": "A set of enhanced, heavenly armor. Powerful enough to protect and shield a hero on his journey through the the world, or even beyond the Gates of Hell itself. These armors are made for the most faithful and divine mortals and angels alike. While wearing this armor, you gain a +2 bonus to AC, you have advantage on all saving throws against effects caused by fiends, and it creates an aura in a 5-foot radius around you. Fiends in the aura have disadvantage on saving throws.",
-      "Est. Value": "",
-      "Name": "Heavenly Armor",
-      "Properties": "Light, Medium or Heavy",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement Lawful Good",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A bejeweled ivory drinking horn with gold filigree.",
-      "Est. Value": "7,500. gp",
-      "Name": "Ivory Drinking Horn",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A transparent fiery orange gem variety of Zircon.",
-      "Est. Value": "5,000. gp",
-      "Name": "Jacinth",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "An ornate game board made of jade, with 40 solid gold playing pieces.",
-      "Est. Value": "7,500. gp",
-      "Name": "Jade Game Board",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "2 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "King's Tears are very rare and are sometimes called frozen tears. Clear, teardrop-shaped, smooth surfaced, and totally unbreakable so far by any means. These stones are said to be the crystallized tears of long-dead necromancer kings. In each gem can be seen that which the weeping king loved long ago. Their true nature is unknown but suffice it to say that sages prize these gems above all others",
-      "Est. Value": "5,000. gp",
-      "Name": "King's Tears",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "Plain, but exceptionally clean chainmail that feels light, and always cold.",
-      "Est. Value": "1,250. gp",
-      "Name": "Links of Truth",
-      "Properties": "Grants 13 AC +Dex. If the bearer tells a lie, the armor will fall into hundreds of metal rings. If the lie is redeemed, the armor will reassemble itself.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/BrainBlowX",
-      "Category": "Wondrous Item",
-      "Description": "A gold-rimmed cobalt locket inscribed with draconic runes. Inside is a small replaceable portrait.",
-      "Est. Value": "1,250. gp",
-      "Name": "Mother's Love",
-      "Properties": "Requires attunement by someone of female sex. While wearing this magical item, the wearer gains the following benefits:  Whenever the wearer has to make a death saving throw, they can roll a 1d4 and add the rolled number to the total. This bonus is 1d4+2 if the wearer is pregnant.  The wearer can choose to turn a death saving throw roll into a critical success, but the locket's magic then fades for one full year. The locket can be restored if specifically targeted by a Greater Restoration spell after one month.  The wearer has advantage on Charisma-based skill checks and saving throws against individuals of early childhood.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Kokkusu",
-      "Category": "Weapon",
-      "Description": "A mysterious ornamental club hammer of dwarf origin, only someone with extensive knowledge of weapons or magic (Eg. Blacksmith, Enchanter, etc) can discover its true meaning.",
-      "Est. Value": "2,700. gp",
-      "Name": "Mysterious Dwarven Club Hammer",
-      "Properties": "Glows when a mimic is near and occasionally at random. Instantly kills disguised mimics, forces undisguised mimics to return to hidden form. 1d3 Bludgeoning Damage.  [Before it is discovered what this item does, the PC knows that it does 1d3 Bludgeoning Damage and glows sometimes, other effects are still present yet the PC is not to be aware of them until true meaning is discovered]",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "4lb."
-    },
-    {
-      "Author": "Fin Fen",
-      "Category": "Wondrous Item",
-      "Description": "This fiber necklace contains beads that separate several teeth from a variety of creatures. All together, it can support up to 7 teeth. ",
-      "Est. Value": "5,000. gp",
-      "Name": "Necklace of the Fang Pact",
-      "Properties": "While wearing this amulet, you can use an action to sap the remaining essence from a creature that has been brought to 0 hit points. Doing so turns the creature's flesh into ash and forges its life force into a tooth appropriate for its type which magically binds itself to the amulet.  Each tooth has a type and a property. As a ritual, you can expend one tooth to gain its property for 24 hours or until a new ritual has been performed. Constructs, Oozes, and Plants are unaffected by this item. Undead whose essence you sap grant you a tooth with the type that it possessed in life rather than undeath.  *Aberrations: You can magically transmit simple messages and images to any creature within 120 ft. that can understand a Language. This form of telepathy doesn't allow the receiving creature to telepathically respond.  *Beasts: Your hit point maximum increases by an amount equal to twice your level.  *Celestials: As an action, you can touch a target and remove any curse, disease, poison, blindness, or deafness condition.  *Dragons: Your breath weapon gains a recharge of 6 and its damage die is increased to d8.  *Elemental: You choose acid, cold, fire, lightning, poison, or thunder and gain resistance to that element.  *Fey: Touching a creature, you magically know the creature's current emotional state. If the target fails a Charisma saving throw, you also know the creature's alignment. Celestials, Fiends, and Undead automatically fail the saving throw.  *Fiends: You gain advantage on saving throws against Spells and other magical effects.  *Giants: Your Strength score is 21. This property has no effect on you if your Strength is already 21 or higher without this necklace.  *Humanoids: You become proficient in any two skills. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.  *Monstrosities: You gain Darkvision 60 Ft. and Tremorsense 60 Ft. In addition, you gain a keen sense of hearing and smelling which grants you advantage on Wisdom (Perception) checks that rely on hearing or smell.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A small pouch of tiny dry seeds that leave black soot on your fingers and smell of pungent incense.",
-      "Est. Value": "350. gp",
-      "Name": "Nevermore Seed",
-      "Properties": "Throwing these seeds causes shadowy ravens to appear from thin air to invade a 15 ft area. The ravens create a cloud of inky soot that grants full cover to the affected area. The affected targets also take 2d6 damage at the beginning of each turn each turn inside the area. Lasts 1 minute, the pouch contains 5 handfuls.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This is a small brass whistle, shaped like the head of a horse and stained with age. When the whistle is blown an extremely high-pitched note is emitted, summoning a magical steed that serves just like a Heavy Warhorse. It will stay until the whistle is blown again—at which time it unsummons. However, if the horse is slain, its body disappears, and the whistle will never emit a sound again.",
-      "Est. Value": "4,600. gp",
-      "Name": "Phamea's Pocket Steed",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Potion",
-      "Description": "A thick, velvety flower petal of pastel pink and flecks of red. It leaves a fragrant, pleasant dust on your fingertips.",
-      "Est. Value": "200. gp",
-      "Name": "Pink Nayla Petal",
-      "Properties": "Placing the petal over a wound causes it to meld with flesh, restoring half of the subject's maximum hit points. The recipient's skin color will permanently change to a pastel pink wherever this is applied.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A jeweled platinum ring.",
-      "Est. Value": "7,500. gp",
-      "Name": "Platinum Ring",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Potion",
-      "Description": "A thick green potion in a small clear bottle. Closer examination reveals silver particles suspended in the liquid.",
-      "Est. Value": "1000gp",
-      "Name": "Potion of Lycanthropy Immunization",
-      "Properties": "Drinking this potion will prevent you from being cursed with lycanthropy.  Effective for one day.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "D&D Wiki",
-      "Category": "Potion",
-      "Description": "Inside this strangely shaped vial swirls a blackish purple liquid. When used it will randomly and instantly teleport the user to a free spot up to 50 feet away. This includes through walls, into pits and between floors. However the potion will not work if you are otherwise prevented from teleporting either by Dimensional shackles or other by means.",
-      "Est. Value": "",
-      "Name": "Potion of Sudden Translocation",
-      "Properties": "Teleport to a random spot up to 50 feet away. One use only.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Potion",
-      "Description": "A large carry pouch made from the skin of a monkey. Inside are 1d6 Potions of Superior Healing. ",
-      "Est. Value": "1,000. gp",
-      "Name": "Pouch of Healing Potions",
-      "Properties": "You regain 10d4 + 10 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1/2 lb"
-    },
-    {
-      "Author": "asdf3011",
-      "Category": "Weapon",
-      "Description": "A gray powder that when thrown vastly increases speed and creates many small holes in the target",
-      "Est. Value": "1,000. gp",
-      "Name": "Powder of Piercing ",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "0-2"
-    },
-    {
-      "Author": "Fin Fen",
-      "Category": "Weapon",
-      "Description": "'The handle was made of black leathers which connected two chains down to the head of a cylinder-shaped flail head. The head was like a cage that had interlocking strips of steel with spikes pointing outwards at every link. Inside, it contained a brilliant blue light that hummed which grew with intensity when spun.'",
-      "Est. Value": "40,000. gp",
-      "Name": "Remnant",
-      "Properties": "You have a + 1 bonus to attack and damage rolls made with this magic weapon.  The Flail Head sheds dim light in a 10-foot radius.  When you roll a 20 on a weapon attack with Remnant, you may conjure forth a frost giant from a mist that flows out from the blue light in the head of this weapon. The creature appears in the same space you are in, using its height to leave the user room to move. If he cannot fit in the space, the creature refuses to be summoned.  After your turn ends, The creature immediately takes it's initiative. The creature hears what commands you have, but acts on it's own and is capable of making it's own decisions. After it's turn is over, the creature remains until the start of your next turn before returning to mist and binding itself to Remnant once more. Once this ability is used, it cannot be used again until you complete a short rest.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "4 lb"
-    },
-    {
-      "Author": "BGII",
-      "Category": "Treasure",
-      "Description": "A small, shifting, rainbow coloured, irridecent gemstone. The fluid shades of colour appear almost liquid under normal sunlight, it is truly a beautiful sight to behold. Rogue stones are extremely rare and are used for the gemjump spell, hence one of the most sought after gems in the Realms. ",
-      "Est. Value": "5,000. gp",
-      "Name": "Rogue Stone",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "Ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum.",
-      "Est. Value": "5,000. gp",
-      "Name": "Ruby",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A painted gold child's sarcophagus. It is empty, but itself valuable.",
-      "Est. Value": "7,500. gp",
-      "Name": "Sarcophagus",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "50 lb"
-    },
-    {
-      "Author": "DMG",
-      "Category": "Treasure",
-      "Description": "A set of golden cups, each set with emeralds.",
-      "Est. Value": "7,500. gp",
-      "Name": "Set of Golden Cups",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "6 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "A knotted and well-worn walking stick with living vines that grow from it. There are druidic symbols for everlasting life etched near the handle.",
-      "Est. Value": "2,500. gp",
-      "Name": "Staff of the Verdant Grove",
-      "Properties": "1d6. The vines that grow from the staff will aid the wielder, allowing you to grapple a target with a 10 foot reach, with a +4 bonus. You may also lash a target with the vines, like a whip (you don't need proficiency), dealing 1d6 damage at 10 feet. The staff increases the prosperity of plant life within 25 feet by twenty fold.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "Jeff C",
-      "Category": "Weapon",
-      "Description": "A dull, rather drab looking rapier inhabited with the intelligence of a hyper-particular grammarian.",
-      "Est. Value": "",
-      "Name": "Stern Sword of Grammar Correction",
-      "Properties": "Acts as a +1 sword vs any creature speaking with poor grammar construction. On a successful hit, the creature must save or begin using immaculate grammar (spelling gets a bump too), after which the sword attacks the creature as a mundane weapon. Shocks the wielder for 1 hp damage each time he or she uses poor grammar.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A carved, thumb-width stick of great sturdiness. Holding it fills you with a furious urge to break it.",
-      "Est. Value": "500. gp",
-      "Name": "Stick of Rage",
-      "Properties": "Holding this stick fills you with an insurmountable urge to try to break it. You must use your action and make a DC 22 Strength check to attempt to break it. If you fail, you throw the stick 20 feet in a random direction. If you succeed, your strength score becomes 20 for 24 hours, and you enter a Rage, as the Barbarian trait.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "A set of two Chakrams, one copper and the other bronze, both wrapped with old leather handles. Each deals 1d6 damage and an additional +2 Fire damage, when either thrown or swung in melee. If a Chakram is thrown and hits, it returns to the thrower's hand by magical means. Treated as an exotic weapon. 1.5lbs each",
-      "Est. Value": "2,300. gp",
-      "Name": "Sunfire Chakrams",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "3 lb"
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This is a bag of shurikens, made of flat bronze blades with a large copper ball set in the center. They are very heavy, and suffer a -2 to attack rolls. However, once they are thrown, they explode upon touching anything substantial and deal 4d6 Fire damage within 10 feet. Survivors within 20 feet are deafened for 1d6 rounds. 0.5lb each",
-      "Est. Value": "600. gp",
-      "Name": "Sunfire Shurikens",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "1 lb"
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Wondrous Item",
-      "Description": "A heavy, simple platinum torch that will not ignite under normal circumstances.",
-      "Est. Value": "8,000. gp",
-      "Name": "The Blaze of Glory",
-      "Properties": "A willing creature holding this item may choose to ignite it at will. When you do, you are consumed by a brilliant white flame and you lose all of your remaining hit points, and then suffer damage equal to your maximum hit points. Up to 3 targets within 50 feet each take radiant damage equal to 1d10 damage per character level that you have, plus half of your maximum hit points, or half that amount on a successful Dexterity save (DC17). The torch becomes mundane after this effect takes place.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Armor",
-      "Description": "A circular shield with an amber edge, and covered in a lustrous, gold-colored metal. On the face of the shield is a depiction of a man destroying a dragon while the dragon destroys the man, as in an ouroboros.",
-      "Est. Value": "1,500. gp",
-      "Name": "The Olm Shield",
-      "Properties": "Grants +2 AC when equipped. While carried, it grants immunity to fear effects, and you have advantage on Charisma skill checks to inspire others. If the shield is struck with Dragonfire, the bearer is enveloped with amber scales, grants resistance to fire damage, increases size by 1 category, and grants a fly speed of 60 for as long as you remain in combat.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/gimme_some_sunshine",
-      "Category": "Weapon",
-      "Description": "Obviously mystical arrows of superior make. They have a metallic shaft etched with elegant marks of clouds and storms, and always glow with a pale shimmer. The markings occasionally gleam with bright light. A full set is 13 arrows or bolts.",
-      "Est. Value": "150. gp",
-      "Name": "Thunderhead Bolts",
-      "Properties": "Whether inside or outdoors, these arrows grant +1 to attack as long as the sky is not clear. A full round after an arrow is launched, a bolt of lightning will strike the arrow, dealing 4d12 lightning damage to anything in its space. You must be outside on a clouded day for the latter effect to occur.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "/u/LittleDizzleDaGusha",
-      "Category": "",
-      "Description": "This extremely tiny Beholder creature has wings in addition to its ten eyed tentacles. It is made of delicate glass that is finely stained. Any arcane spellcaster can activate it, as can any creature that succeeds on a DC 20 Use Magic Device skill check. When activated, it will come to life in all respects—except that it is tethered to the mind of the activator. It cannot attack, move objects, or affect the physical setting in any way. However, it can fly up to 100 ft away at a speed of 10 ft per round. The activator can now see as though their head were the eye, and can ONLY see what the eye would see. This means the original PC is temporarily “blinded.” The eye can be deactived at any time from any distance within 100 ft. However, as soon as it is deactived, it turns back to delicate glass—wherever it was. Thus deactivating it before flying it back is not recommended.",
-      "Est. Value": "6,400. gp",
-      "Name": "Winged Eye",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Uberbeard",
-      "Category": "Trap",
-      "Description": "A simple white pearlescent ring. Curse: Lose 1d4 max health once per day. The effect stacks each day. Once worn, this ring cannot be removed. Any attempt to remove the ring sees it reappear after a few seconds. Any attempt to circumvent the curse by removing the ring finger sees it appear on a different finger. If the wearer removes every finger, the curse ends. Should they fail to get the curse removed before their health falls below 0 they become an undead thrall.",
-      "Est. Value": "0. gp",
-      "Name": "Zoltar's Pearlescent Ring",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "DOTA2",
-      "Category": "Wondrous Item",
-      "Description": "This axe appears to be like any other felling axe, but when used it will unerringly cut down any tree with one swing. Its formidable weight and uneven balancing make it a slow, inefficient weapon.",
-      "Est. Value": "7,000. gp",
-      "Name": "Quelling Axe",
-      "Properties": "1d10 Slashing - Martial - Heavy, Two-Handed",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "Requires Attunement",
-      "Weight": "10 lb"
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "Re-animation bomb",
-      "Est. Value": "",
-      "Name": "Reanimation Bomb",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Wondrous Item",
-      "Description": "A miniature model of a pyramid, which glows a faint blue. If a deceased creature of Diminutive or Fine size is placed beneath the pyramid, they will be reincarnated in 1d20 hours. The pyramid can manifest this ability once per lunar month.",
-      "Est. Value": "",
-      "Name": "Pyramid Model",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": ""
-    },
-    {
-      "Author": "",
-      "Category": "Ring",
-      "Description": "Ring of Sustenance – require no food/water/rations",
-      "Est. Value": "",
-      "Name": "Ring of Sustenance",
-      "Properties": "",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "n/a"
-    },
-    {
-      "Author": "Rutin75",
-      "Category": "Wondrous Item",
-      "Description": "A tall mirror in ornate silvery frame with perfectly reflecting surface. The ornaments depicting faceless humanoids locked in battle. ",
-      "Est. Value": "15,000. gp",
-      "Name": "Psyche of Strife",
-      "Properties": "Anyone who looks into the mirror will see their own perfect reflection. However, when the first character takes a glimpse on someone else's image, they will see a horrifying visage of a powerful monster (lich, mind flayer, etc.), likely to be found in the complex where the Psyche is located. This effect is commanded by a demonic intelligence imprisoned in the shiny surface, and will occur in a manner to cause maximum confusion, mistrust and likely infighting to bands of adventurers. It's very easy to shatter the mirror, however all the fragments will have the same tendency to occasionally show your best friend as a rotting undead - only to you.",
-      "Rarity": "Very Rare",
-      "Rarity Number": "5",
-      "Requirements": "",
-      "Weight": "70 lb"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Arcane Gate spell.",
-      "Name": "Arcane Gate Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Blade Barrier spell.",
-      "Name": "Blade Barrier Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Bones of the Earth spell.",
-      "Name": "Bones of the Earth Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Chain Lightning spell.",
-      "Name": "Chain Lightning Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Circle of Death spell.",
-      "Name": "Circle of Death Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Fey spell.",
-      "Name": "Conjure Fey Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Contingency spell.",
-      "Name": "Contingency Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Create Homunculus spell.",
-      "Name": "Create Homunculus Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Create Undead spell.",
-      "Name": "Create Undead Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Disintegrate spell.",
-      "Name": "Disintegrate Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Drawmij's Instant Summons spell.",
-      "Name": "Drawmij's Instant Summons Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Druid Grove spell.",
-      "Name": "Druid Grove Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Eyebite spell.",
-      "Name": "Eyebite Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Find the Path spell.",
-      "Name": "Find the Path Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Flesh to Stone spell.",
-      "Name": "Flesh to Stone Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Forbiddance spell.",
-      "Name": "Forbiddance Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Globe of Invulnerability spell.",
-      "Name": "Globe of Invulnerability Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Guards and Wards spell.",
-      "Name": "Guards and Wards Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Harm spell.",
-      "Name": "Harm Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Heal spell.",
-      "Name": "Heal Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Heroes' Feast spell.",
-      "Name": "Heroes' Feast Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Investiture of Flame spell.",
-      "Name": "Investiture of Flame Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Investiture of Ice spell.",
-      "Name": "Investiture of Ice Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Investiture of Stone spell.",
-      "Name": "Investiture of Stone Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Investiture of Wind spell.",
-      "Name": "Investiture of Wind Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Magic Jar spell.",
-      "Name": "Magic Jar Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mass Suggestion spell.",
-      "Name": "Mass Suggestion Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mental Prison spell.",
-      "Name": "Mental Prison Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Move Earth spell.",
-      "Name": "Move Earth Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Otiluke's Freezing Sphere spell.",
-      "Name": "Otiluke's Freezing Sphere Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Otto's Irresistible Dance spell.",
-      "Name": "Otto's Irresistible Dance Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Planar Ally spell.",
-      "Name": "Planar Ally Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Primordial Ward spell.",
-      "Name": "Primordial Ward Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Programmed Illusion spell.",
-      "Name": "Programmed Illusion Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Scatter spell.",
-      "Name": "Scatter Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Soul Cage spell.",
-      "Name": "Soul Cage Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sunbeam spell.",
-      "Name": "Sunbeam Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Tenser's Transformation spell.",
-      "Name": "Tenser's Transformation Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Transport via Plants spell.",
-      "Name": "Transport via Plants Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the True Seeing spell.",
-      "Name": "True Seeing Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Ice spell.",
-      "Name": "Wall of Ice Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wall of Thorns spell.",
-      "Name": "Wall of Thorns Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Wind Walk spell.",
-      "Name": "Wind Walk Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Word of Recall spell.",
-      "Name": "Word of Recall Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Conjure Celestial spell.",
-      "Name": "Conjure Celestial Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Crown of Stars spell.",
-      "Name": "Crown of Stars Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Delayed Blast Fireball spell.",
-      "Name": "Delayed Blast Fireball Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Divine Word spell.",
-      "Name": "Divine Word Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Etherealness spell.",
-      "Name": "Etherealness Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Finger of Death spell.",
-      "Name": "Finger of Death Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Fire Storm spell.",
-      "Name": "Fire Storm Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Forcecage spell.",
-      "Name": "Forcecage Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mirage Arcane spell.",
-      "Name": "Mirage Arcane Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mordenkainen's Magnificent Mansion spell.",
-      "Name": "Mordenkainen's Magnificent Mansion Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Mordenkainen's Sword spell.",
-      "Name": "Mordenkainen's Sword Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Plane Shift spell.",
-      "Name": "Plane Shift Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Power Word Pain spell.",
-      "Name": "Power Word Pain Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Prismatic Spray spell.",
-      "Name": "Prismatic Spray Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Project Image spell.",
-      "Name": "Project Image Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Regenerate spell.",
-      "Name": "Regenerate Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Resurrection spell.",
-      "Name": "Resurrection Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Reverse Gravity spell.",
-      "Name": "Reverse Gravity Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Sequester spell.",
-      "Name": "Sequester Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Simulacrum spell.",
-      "Name": "Simulacrum Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Symbol spell.",
-      "Name": "Symbol Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Teleport spell.",
-      "Name": "Teleport Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Temple of the Gods spell.",
-      "Name": "Temple of the Gods Spell Scroll",
-      "Rarity": "Very Rare"
-    },
-    {
-      "Category": "Scroll",
-      "Description": "A scroll with the Whirlwind spell.",
-      "Name": "Whirlwind Spell Scroll",
-      "Rarity": "Very Rare"
-    }
-  ]
-};
+var Items = [{
+		Name: "Adamantine Armor",
+		Value: 500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Animated Shield",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Armor +1",
+		Value: 1500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Armor +2",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Armor +3",
+		Value: 24000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Armor of Invulnerability",
+		Value: 18000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Armor of Resistance",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Armor of Vulnerability",
+		Value: 2000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Arrow-catching Shield",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Mithral Armor",
+		Value: 800,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Alexandrite Emerald",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Amber Gemstone",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Amethyst Drinking Cup",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Animal Figurines",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Aquamarine",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Banded Agate Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Bird Cage",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Black Opal",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Black Pearl",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Black Sapphire",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Black Velvet Mask",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Bloodstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Blue Quartz Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Blue Sapphire Ring",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Blue Spinel Ring",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Bone Dice",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Bottle Stopper",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Brass Mug",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Bronze Crown",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Carnelian Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Carved Bone Statuette",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Ceremonial Dagger",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Chalcedony Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Chrysoberyl Gem",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Chrysoprase Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Citrine Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Cloth-of-gold Vestments",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Copper Chalice",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Coral Circlet",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Diamond",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dragon Comb Set",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Embroidered Gloves",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Emerald",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Eye Agate Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Eye Patch",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Fire Opal",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Fire Opal Chain",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Garnet Gemstone",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gem of Azurite",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Gold Bracelet",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Gold Bracelet",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gold Circlet",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gold Crown",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gold Idol",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gold Jewelry Box",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gold Locket",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Gold Ring",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gold Statuette",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Harp",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Hematite",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Ivory Drinking Horn",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ivory Statuette",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Jacinth",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Jade Buttons",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Jade Game Board",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Jet Brooch",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Jeweled Anklet",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Lapis Lazuli Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Malachite Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Mantle Set",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Masterpiece Painting",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Moonstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Moss Agate Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Music Box",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Obsidian Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Obsidian Statuette",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Onyx Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Opal",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ornate Longsword",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Pearl",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Pearl Necklace",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Peridot Gemstone",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Platinum Bracelet",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Platinum Ring",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rhodochrosite Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Ruby",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sarcophagus",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sardonyx Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Set of Golden Cups",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Silk Handkerchief",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Silk Robe",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Silver and Gold Brooch",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Silver Chalice",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Silver Ewer",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Silver Necklace",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Small Mirror",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Spinel Necklace",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Star Rose Quartz",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Star Ruby",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Star Sapphire",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Tapestry",
+		Value: 250,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Tiger Eye Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Topaz",
+		Value: 500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Tourmaline Gemstone",
+		Value: 100,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Turquoise Gem",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "War Mask",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Yellow Sapphire",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Zircon Gemstone",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Ammunition +1",
+		Value: 25,
+		Quantity: "1d20",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ammunition +2",
+		Value: 100,
+		Quantity: "1d20",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ammunition +3",
+		Value: 400,
+		Quantity: "1d20",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Arrows of Slaying",
+		Value: 600,
+		Quantity: "2d4+2",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Berserker Axe",
+		Value: 4000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Beads of Force",
+		Value: 960,
+		Quantity: "1d4+4",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Alchemy Jug",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Amulet of Health",
+		Value: 8000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Amulet of Proof Against Detection and Location",
+		Value: 20000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Amulet of the Planes",
+		Value: 160000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Apparatus of Kwalish",
+		Value: 10000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Beans",
+		Value: 10000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Devouring",
+		Value: 10000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Holding",
+		Value: 4000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Tricks, Grey",
+		Value: 900,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Tricks, Rust",
+		Value: 3000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Bag of Tricks, Tan",
+		Value: 6480,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Cloud Giant Strength",
+		Value: 36000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Dwarvenkind",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Fire Giant Strength",
+		Value: 24000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Frost Giant Strength",
+		Value: 19000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Hill Giant Strength",
+		Value: 13000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Stone Giant Strength",
+		Value: 19000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Belt of Storm Giant Strength",
+		Value: 45000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Boots of Elvenkind",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Boots of Levitation",
+		Value: 4000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Boots of Speed",
+		Value: 4000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Boots of Striding and Springing",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Boots of the Winterlands",
+		Value: 2500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Bowl of Commanding Water Elementals",
+		Value: 8000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Bracers of Archery",
+		Value: 1500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Bracers of Defense",
+		Value: 6000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Brazier of Commanding Fire Elementals",
+		Value: 8000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Brooch of Shielding",
+		Value: 7500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Broom of Flying",
+		Value: 8000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Candle of Invocation",
+		Value: 8400,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cap of Water Breathing",
+		Value: 1000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Breastplate Armor",
+		Value: 400,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Chain Mail Armor",
+		Value: 75,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Chain Shirt Armor",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Half Plate Armor",
+		Value: 750,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Hide Armor",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Leather Armor",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Padded Armor",
+		Value: 5,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Plate Armor",
+		Value: 1500,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Ring Mail Armor",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Scale Mail Armor",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Shield",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Splint Armor",
+		Value: 200,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Studded Armor",
+		Value: 45,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Potion of Healing",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "PHB"
+	}, {
+		Name: "Alchemist's Supplies",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Brewer's supplies",
+		Value: 20,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Calligrapher's supplies",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Carpenter's tools",
+		Value: 8,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Cartographer's tools",
+		Value: 15,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Cobbler's tools",
+		Value: 5,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Cook's utensils",
+		Value: 1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Glassblower's tools",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Jeweler's tools",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Leatherworker's tools",
+		Value: 5,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Mason's tools",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Painter's supplies",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Potter's tools",
+		Value: 10,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Smith's tools",
+		Value: 20,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Tinker's tools",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Weaver's tools",
+		Value: 1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Woodcarver's tools",
+		Value: 1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Disguise kit",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Forgery kit",
+		Value: 15,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Dice set",
+		Value: 0.1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Dragonchess set",
+		Value: 1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Playing card set",
+		Value: 0.5,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Three-Dragon Ante set",
+		Value: 1,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Herbalism kit",
+		Value: 5,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Bagpipes",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Drum",
+		Value: 6,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Dulcimer",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Flute",
+		Value: 2,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Lute",
+		Value: 35,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Lyre",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Horn",
+		Value: 3,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Pan Rute",
+		Value: 12,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Shawm",
+		Value: 2,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Viol",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Navigator's tools",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Poisoner's kit",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Thieves' tools",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Pound of Platinum",
+		Value: 500,
+		Quantity: "1d4",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Pound of Gold",
+		Value: 50,
+		Quantity: "1d10",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Pound of Silver",
+		Value: 5,
+		Quantity: "1d20",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Pound of Saffron",
+		Value: 15,
+		Quantity: "1d20",
+		Type: "Mundane",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Cape of the Mountebank",
+		Value: 2805,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Carpet of Flying, Small",
+		Value: 27322,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Carpet of Flying, Medium",
+		Value: 27250,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Carpet of Flying, Large",
+		Value: 28165,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Carpet of Flying, Very Large",
+		Value: 27567,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Censer of Controlling Air Elementals",
+		Value: 2842,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Chime of Opening",
+		Value: 2803,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Circlet of Blasting",
+		Value: 277,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of Arachnida",
+		Value: 26163,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of Displacement",
+		Value: 3368,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of Elvenkind",
+		Value: 262,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of Invisibility",
+		Value: 88078,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of Protection",
+		Value: 143,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of the Bat",
+		Value: 1329,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cloak of the Manta Ray",
+		Value: 295,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Crystal Ball",
+		Value: 28271,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Crystal Ball of Mind Reading",
+		Value: 59906,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Crystal Ball of  Telepathy",
+		Value: 73324,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Crystal Ball of True Seeing",
+		Value: 75008,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Cube of Force",
+		Value: 2830,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cubic Gate",
+		Value: 70455,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Daern's Instant Fortress",
+		Value: 3151,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dagger of Venom",
+		Value: 1797,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (0)",
+		Value: 25,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (1)",
+		Value: 50,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (2)",
+		Value: 150,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (3)",
+		Value: 500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (4)",
+		Value: 2250,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (5)",
+		Value: 5000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (6)",
+		Value: 12500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (7)",
+		Value: 22500,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (8)",
+		Value: 50000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll (9)",
+		Value: 75000,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Dancing Sword",
+		Value: 27457,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Decanter of Endless Water",
+		Value: 311,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Deck of Illusions",
+		Value: 285,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Deck of Many Things",
+		Value: 67066,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Defender",
+		Value: 77559,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Demon Armor",
+		Value: 27198,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dimensional Shackles",
+		Value: 2980,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dragon Scale Mail",
+		Value: 27064,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dragon Slayer",
+		Value: 1809,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Driftglobe",
+		Value: 202,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Dust of  Disappearance",
+		Value: 262,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Dust of Dryness",
+		Value: 365,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Dust of Sneezing and Chocking",
+		Value: 211,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Dwarven Plate",
+		Value: 26486,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Dwarven Thrower",
+		Value: 26588,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Efreeti Bottle",
+		Value: 26677,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Efreeti Chain",
+		Value: 64925,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Elemental Gem",
+		Value: 307,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Elixir of Health",
+		Value: 3876,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Elven Chain",
+		Value: 3028,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Eversmoking Bottle",
+		Value: 446,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Eyes of Charming",
+		Value: 321,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Eyes of Minute Seeing",
+		Value: 323,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Eyes of the Eagle",
+		Value: 439,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Bronze Griffin",
+		Value: 3014,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Ebony Fly",
+		Value: 2715,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Golden Lions",
+		Value: 1972,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Ivory Goats",
+		Value: 2519,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Marble Elephant",
+		Value: 2385,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Obsidian Steed",
+		Value: 27751,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Onyx Dog",
+		Value: 3711,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Serpentine Owl",
+		Value: 2002,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Figuring of Wondrous Power: Silver Raven",
+		Value: 244,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Flame Tongue",
+		Value: 1990,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Folding Boat",
+		Value: 3169,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Frost Brand",
+		Value: 27805,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gauntlets of Ogre Power",
+		Value: 346,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gem of Brightness",
+		Value: 243,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gem of Seeing",
+		Value: 2693,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Giant Slayer",
+		Value: 3233,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Glamoured Studded Leather",
+		Value: 2014,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Gloves of Missile Snaring",
+		Value: 357,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gloves of Swimming and Climbing",
+		Value: 366,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Gloves of Thievery",
+		Value: 301,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Goggles of Night",
+		Value: 312,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Hammer of Thunderbolts",
+		Value: 63804,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Hat of Disguise",
+		Value: 283,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Headband of Intellect",
+		Value: 295,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Helm of Brilliance",
+		Value: 28130,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Helm of Comprehending Languages",
+		Value: 306,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Helm of Telepathy",
+		Value: 472,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Helm of Teleportation",
+		Value: 3755,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Heward's Handy Haversack",
+		Value: 3394,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Holy Avenger",
+		Value: 75706,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Horn of Blasting",
+		Value: 3626,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Horn of Valhalla (Sliver)",
+		Value: 2996,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Horn of Valhalla (Brass)",
+		Value: 1710,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Horn of Valhalla (Bronze)",
+		Value: 27835,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Horn of Valhalla (Iron)",
+		Value: 72802,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Horseshoes of a Zephyr",
+		Value: 27253,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Horseshoes of Speed",
+		Value: 2657,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Immovable Rod",
+		Value: 273,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Anstruth Harp",
+		Value: 28929,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Canaith Mandolin",
+		Value: 3447,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Cli Lyre",
+		Value: 2365,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Doss Lute",
+		Value: 279,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Fochlucan Bandore",
+		Value: 355,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Mac-Fuirmidh Cittern",
+		Value: 291,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ollamh Harp",
+		Value: 71155,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Absorption)",
+		Value: 27552,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Agility)",
+		Value: 28025,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Awareness)",
+		Value: 2920,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Fortitude)",
+		Value: 28253,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Greater Absorption)",
+		Value: 74489,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Insight)",
+		Value: 26948,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Intellect)",
+		Value: 27671,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Leadership)",
+		Value: 28200,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Mastery)",
+		Value: 76659,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Protection)",
+		Value: 3017,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Regeneration)",
+		Value: 76180,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Reserve)",
+		Value: 3425,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Strength)",
+		Value: 28964,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ioun Stone (Sustenance)",
+		Value: 2351,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Iron Bands of Bilarro",
+		Value: 3059,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Iron Flask",
+		Value: 78470,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Javelin of Lightning",
+		Value: 314,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Keoghtom's Ointment",
+		Value: 275,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Lantern of Revealing",
+		Value: 269,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Luck Blade",
+		Value: 83807,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Mace of Disruption",
+		Value: 2054,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Mace of Smiting",
+		Value: 2577,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Mace of Terror",
+		Value: 1897,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Mantle of Spell Resistance",
+		Value: 1735,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Bodily Health",
+		Value: 27618,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Gainful Experience",
+		Value: 27251,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Clay Golems",
+		Value: 27937,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Flesh Golems",
+		Value: 26628,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Iron Golems",
+		Value: 28280,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Stone Golems",
+		Value: 27792,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Manual of Quickness of Action",
+		Value: 27985,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Mariner's Armor",
+		Value: 266,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Medallion of Thoughts",
+		Value: 293,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Mirror of Life Trapping",
+		Value: 26810,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Necklace of Adaptation",
+		Value: 287,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Necklace of Fireballs",
+		Value: 2059,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Necklace of Prayer Beads",
+		Value: 2746,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Nine Lives Stealer",
+		Value: 25510,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Nolzur's Marvelous Pigments",
+		Value: 26391,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Oathbow",
+		Value: 26574,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Oil of Etherealness",
+		Value: 2668,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Oil of Sharpness",
+		Value: 26795,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Oil of Slipperiness",
+		Value: 359,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Pearl of Power",
+		Value: 190,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Periapt of Health",
+		Value: 409,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Periapt of Proof Against Poison",
+		Value: 3580,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Periapt of Wound Closure",
+		Value: 281,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Philter of Love",
+		Value: 329,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Pipes of Haunting",
+		Value: 286,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Pipes of the Sewers",
+		Value: 401,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Plate Armor of Etherealness",
+		Value: 59885,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Portable Hole",
+		Value: 2512,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Animal Friendship",
+		Value: 315,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Clairvoyance",
+		Value: 3576,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Climbing",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Diminution",
+		Value: 2324,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Fire Breath",
+		Value: 315,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Flying",
+		Value: 27915,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Gaseous Form",
+		Value: 2042,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Hill Giant Strength",
+		Value: 335,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Frost Giant Strength",
+		Value: 2398,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Stone Giant Strength",
+		Value: 2048,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Fire Giant Strength",
+		Value: 1717,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Cloud Giant Strength",
+		Value: 25686,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Storm Giant Strength",
+		Value: 78083,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Growth",
+		Value: 266,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Greater Healing",
+		Value: 218,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Superior Healing",
+		Value: 2765,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Supreme Healing",
+		Value: 27780,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Heroism",
+		Value: 3489,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Invisibility",
+		Value: 28136,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Invulnerability",
+		Value: 2256,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Longevity",
+		Value: 26390,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Mind Reading",
+		Value: 3527,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Poison",
+		Value: 282,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Resistance",
+		Value: 306,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Speed",
+		Value: 27527,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Vitality",
+		Value: 28195,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Potion of Water Breathing",
+		Value: 272,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Quaal's Feather Token",
+		Value: 2539,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Quiver of Ehlonna",
+		Value: 294,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Animal Influence",
+		Value: 2067,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Djinni Summoning",
+		Value: 56508,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Air Elemental Command",
+		Value: 70240,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Earth Elemental Command",
+		Value: 68697,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Water Elemental Command",
+		Value: 83889,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Fire Elemental Command",
+		Value: 73019,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Evasion",
+		Value: 3247,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Feather Falling",
+		Value: 3082,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Free Action",
+		Value: 3117,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Invisibility",
+		Value: 66388,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Jumping",
+		Value: 407,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Mind Shielding",
+		Value: 264,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Protection",
+		Value: 4066,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Regeneration",
+		Value: 28344,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Resistance",
+		Value: 2302,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Shooting Stars",
+		Value: 27436,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Spell Storing",
+		Value: 3824,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Spell Turning",
+		Value: 78745,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Swimming",
+		Value: 223,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Telekinesis",
+		Value: 27755,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of the Ram",
+		Value: 1761,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Three Wishes",
+		Value: 80127,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Warmth",
+		Value: 192,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of Water Walking",
+		Value: 224,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Ring of X-Ray Vision",
+		Value: 2779,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Robe of Eyes",
+		Value: 1282,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Robe of Scintillating Colors",
+		Value: 27057,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Robe of Stars",
+		Value: 26599,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Robe of the Archmagi",
+		Value: 63224,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Robe of Useful Items",
+		Value: 297,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Absorption",
+		Value: 27268,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Alertness",
+		Value: 28499,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Lordly Might",
+		Value: 76819,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Rod of the Pact Keeper +1",
+		Value: 224,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Rod of the Pact Keeper +2",
+		Value: 2696,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rod of the Pact Keeper +3",
+		Value: 27363,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Resurrection",
+		Value: 77634,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Rulership",
+		Value: 1948,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rod of Security",
+		Value: 28094,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Rope of Climbing",
+		Value: 435,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Rope of Entanglement",
+		Value: 2243,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Saddle of the Cavalier",
+		Value: 345,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Scarab of Protection",
+		Value: 71352,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Scimitar of Speed",
+		Value: 28624,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Scroll of Protection",
+		Value: 3314,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sending Stones",
+		Value: 425,
+		Quantity: "2",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Sentinel Shield",
+		Value: 362,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Shield +1",
+		Value: 166,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Shield +2",
+		Value: 2383,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Shield +3",
+		Value: 25883,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Shield of Missile Attraction",
+		Value: 2464,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Slippers of Spider Climbing",
+		Value: 339,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Sovereign Glue",
+		Value: 73119,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Spellguard Shield",
+		Value: 26794,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sphere of Annihilation",
+		Value: 90539,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Charming",
+		Value: 2736,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Fire",
+		Value: 28188,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Frost",
+		Value: 27555,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Healing",
+		Value: 3182,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Power",
+		Value: 28122,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Striking",
+		Value: 27461,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Swarming Insects",
+		Value: 3274,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of the Adder",
+		Value: 183,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Staff of the Magi",
+		Value: 63082,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Staff of the Python",
+		Value: 261,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Staff of the Woodlands",
+		Value: 3167,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Thunder and Lightning",
+		Value: 27553,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Staff of Withering",
+		Value: 2407,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Stone of Controlling Earth Elementals",
+		Value: 2026,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Stone of Good Luck",
+		Value: 401,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Sun Blade",
+		Value: 2832,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sword of Answering",
+		Value: 77093,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Sword of Life Stealing",
+		Value: 1065,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sword of Sharpness",
+		Value: 26627,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Sword of Vengence",
+		Value: 414,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Sword of Wounding",
+		Value: 3668,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Talisman of Pure Good",
+		Value: 61967,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Talisman of the Sphere",
+		Value: 76166,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Talisman of Ultimate Evil",
+		Value: 76674,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Tentacle Rod",
+		Value: 3879,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Tome of Clear Thought",
+		Value: 26796,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Tome of Leadership and Influence",
+		Value: 27953,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Tome of the Stilled Tongue",
+		Value: 73714,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Tome of Understanding",
+		Value: 27488,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Trident of Fish Command",
+		Value: 332,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Universal Solvent",
+		Value: 86446,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Vicious Weapon",
+		Value: 2987,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Vorpal Sword",
+		Value: 79196,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Binding",
+		Value: 2279,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Enemy Detection",
+		Value: 2067,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Fear",
+		Value: 1869,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Fireball",
+		Value: 1128,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Magic Detection",
+		Value: 318,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Magic Missile",
+		Value: 334,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Paralysis",
+		Value: 3839,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Polymorph",
+		Value: 26938,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Secrets",
+		Value: 354,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Wand of the War Mage +1",
+		Value: 255,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Wand of the War Mage +2",
+		Value: 3510,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of the War Mage +3",
+		Value: 28064,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Wand of the Web",
+		Value: 305,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Wand of Wonder",
+		Value: 1019,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Weapon +1",
+		Value: 290,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Weapon +2",
+		Value: 1685,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "DMG"
+	}, {
+		Name: "Weapon +3",
+		Value: 28610,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "DMG"
+	}, {
+		Name: "Weapon of Warning",
+		Value: 395,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Well of Many Worlds",
+		Value: 65582,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "DMG"
+	}, {
+		Name: "Wind Fan",
+		Value: 381,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "DMG"
+	}, {
+		Name: "Hand Crossbow",
+		Value: 75,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Heavy Crossbow",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Longbow",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Greatsword",
+		Value: 50,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Rapier",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Scimitar",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Greataxe",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Uncommon",
+		Source: "PHB"
+	}, {
+		Name: "Estoc",
+		Value: 40,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "PHB"
+	}, {
+		Name: "Greatspear",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Heavy Flail",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Katana",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Khopesh",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Nagamaki",
+		Value: 30,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Naginata",
+		Value: 25,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Odachi",
+		Value: 75,
+		Quantity: "1",
+		Type: "Mundane",
+		Rarity: "Rare",
+		Source: "5e Expanded Weapon Table"
+	}, {
+		Name: "Helm of Agility",
+		Value: 2519,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Critical Defense",
+		Value: 2341,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Health",
+		Value: 1763,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Fortitude",
+		Value: 26361,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Protection",
+		Value: 244,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Resilience",
+		Value: 1722,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Resistance",
+		Value: 3248,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Restoration",
+		Value: 26580,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of the Seas",
+		Value: 65575,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of the Skies",
+		Value: 78726,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of the Soil",
+		Value: 75686,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of the Sun",
+		Value: 82101,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Helm of Vigor",
+		Value: 2354,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Acrobat's Javelin",
+		Value: 85821,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Club of Smashing",
+		Value: 73457,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Energy Bow",
+		Value: 69476,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Magician's Hat",
+		Value: 64949,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Shield of Deflecting",
+		Value: 77561,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "D&D 5e Magic Item Expansion v.3"
+	}, {
+		Name: "Autumn's Harvest",
+		Value: 3328,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Dagger of the Claw",
+		Value: 451,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Graceful",
+		Value: 27732,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Blind Eye",
+		Value: 28299,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Bottled Rage",
+		Value: 1456,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Escape Rope",
+		Value: 28370,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Fabled Fruit",
+		Value: 368,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Khepri's Locket",
+		Value: 2181,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Long Sight",
+		Value: 27560,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Moon Shell",
+		Value: 79236,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Piercing Light",
+		Value: 3783,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Plague Mask",
+		Value: 2511,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Ring of All Speed",
+		Value: 26970,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Ship in a Bottle",
+		Value: 27164,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Storm Sphere",
+		Value: 28618,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Strange Device",
+		Value: 3377,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Thoughtful Stones",
+		Value: 27010,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Trail Totem",
+		Value: 27630,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Inktober Artifacts & Curiosities"
+	}, {
+		Name: "Anaidni's Whip",
+		Value: 176,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Forget-Me-Not",
+		Value: 419,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Hole Puncher",
+		Value: 218,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "The Lumberer",
+		Value: 316,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "The Machette",
+		Value: 222,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Mjoln Hammer",
+		Value: 382,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Peeking Bow",
+		Value: 238,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "The Punctuator",
+		Value: 261,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "The Yielder",
+		Value: 281,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Acid Resistant Leather Armor",
+		Value: 317,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Grounded Chain Mail",
+		Value: 342,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Muffling Scale Mail",
+		Value: 251,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Reflecting Plate Armor",
+		Value: 361,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Scorched Leather Armor",
+		Value: 366,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Shield of Tall Tales",
+		Value: 230,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Stable Half Plate Armor",
+		Value: 168,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Still Living Hide",
+		Value: 282,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Sweltering Scale Armor",
+		Value: 356,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Bag of Colding",
+		Value: 406,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Feather Cloak",
+		Value: 332,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Fork of Alu Kanit",
+		Value: 207,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Lion Pelt Cloak",
+		Value: 189,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "The Talking Skull",
+		Value: 211,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Quill of Grammaticus",
+		Value: 235,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Umbrella Magica",
+		Value: 210,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "25 Magic Items"
+	}, {
+		Name: "Amulet of the Exorcist",
+		Value: 324,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Arcanist's Crown",
+		Value: 1817,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Bloodbound Striker",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Boneless Costume",
+		Value: 2639,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Circlet of Neverdeath",
+		Value: 222,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Claws of Chaos",
+		Value: 28271,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Doomsight",
+		Value: 3031,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Dragoneye",
+		Value: 4006,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Elixir of Absolution",
+		Value: 73232,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Flamechaser Bottle",
+		Value: 3118,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Flowedge Slayer",
+		Value: 252,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Fool's Chapeau",
+		Value: 210,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Gambler's Club",
+		Value: 167,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Giggling Bracelet",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Golden Cutlery",
+		Value: 272,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Graverobber's Mittens",
+		Value: 416,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Hollowblade Sword",
+		Value: 2561,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Immaculate Cloak",
+		Value: 2253,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "King's Cross",
+		Value: 3481,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Map of Wandering Souls",
+		Value: 420,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Mask of Many Friends",
+		Value: 353,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Mask of the Dead",
+		Value: 2365,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Molemantle",
+		Value: 288,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Morenth's Line",
+		Value: 1657,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Orb of the Prophet",
+		Value: 26991,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Pacifist",
+		Value: 2775,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Plaguebearer's Ring",
+		Value: 228,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Pledgekeeper",
+		Value: 3107,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Pondhopper's Necklace",
+		Value: 202,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Quartermaster's Pouch",
+		Value: 2187,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Resistance Wristlet",
+		Value: 59,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Shield-Maiden's Buckler",
+		Value: 337,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Shoes of Blinking",
+		Value: 1882,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Slippery Sandals",
+		Value: 357,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Springboard",
+		Value: 342,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Staff of the Trickster",
+		Value: 3478,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Tooth of Chaos",
+		Value: 3167,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Universal Gear",
+		Value: 26006,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Vendetta",
+		Value: 79666,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 1"
+	}, {
+		Name: "Anaconda's Bracers",
+		Value: 414,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Amulet of Quickening",
+		Value: 84924,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Ancestral Battleaxe",
+		Value: 28428,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Arachnophile's Mask",
+		Value: 174,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Belt of the Monkey King",
+		Value: 2970,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Big Bag of Traps",
+		Value: 254,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Bloodstained Wraps",
+		Value: 483,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Book of Endless Puzzles",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Boots of the Mammoth",
+		Value: 341,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Carnage",
+		Value: 75809,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Bow of the Mists",
+		Value: 3380,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Cassock of the Archbishop",
+		Value: 53233,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Claws of Felex'ja",
+		Value: 26040,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Clovercloak",
+		Value: 247,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Dissonant Beverage",
+		Value: 360,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Eyepatch of the Pirate King",
+		Value: 2632,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Fairy Stone",
+		Value: 331,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Flail of the Three Mountains",
+		Value: 64273,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Gnomish Repeater Crossbow",
+		Value: 1990,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Hanseath's Rage",
+		Value: 292,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Harvester's Crescent",
+		Value: 2311,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Haunted Effigy",
+		Value: 2679,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Hungering Shield",
+		Value: 296,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Kinslayer's Blade",
+		Value: 1824,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Lance of the Cavalier",
+		Value: 2083,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Last Stand",
+		Value: 27233,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Overseer's Cleaver",
+		Value: 334,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Mage-Slayer's Edge",
+		Value: 2644,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Manstabber",
+		Value: 61,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Mime's Medallion",
+		Value: 339,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Molluse's Mace",
+		Value: 2072,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Polearm of the Seven Saints",
+		Value: 3540,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Rat-King's Leathers",
+		Value: 2599,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Ring of Scars",
+		Value: 28734,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Salamander Skin",
+		Value: 26719,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Sandstone Bulwark",
+		Value: 26860,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Thayan Cheat Sheet",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Twin Gates",
+		Value: 81737,
+		Quantity: "2",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Taxman's Claw",
+		Value: 345,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Thrall's Neckpiece",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Whispering Blade",
+		Value: 337,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Arcane Armoury Volume 3"
+	}, {
+		Name: "Spider's Touch Poison",
+		Value: 310,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Happy Drops Poison",
+		Value: 251,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Hanged Man's Luck Poison",
+		Value: 247,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Brawler's Punch Poison",
+		Value: 255,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Starry Nights Poison",
+		Value: 370,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Dizzy Disease Poison",
+		Value: 252,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Justice Poison",
+		Value: 317,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Wicked Sick Poison",
+		Value: 494,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Widow's Kiss Poison",
+		Value: 287,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Good Times Poison",
+		Value: 336,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Third Eye Poison",
+		Value: 281,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Devils Face Poison",
+		Value: 270,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Vampire's Fate Poison",
+		Value: 2312,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Dead Speech Poison",
+		Value: 3281,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Empty Mind Poison",
+		Value: 3322,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Demon's Screech Poison",
+		Value: 2511,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Mad Dog's Teeth Poison",
+		Value: 3179,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Sins of the Father Poison",
+		Value: 1955,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Dead Man's Favour Poison",
+		Value: 3038,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Dragon's Scales Poison",
+		Value: 1596,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Drowned Draught Poison",
+		Value: 3686,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Weakling's Grace Poison",
+		Value: 3417,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Poisoned Potion",
+		Value: 3912,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Ghost of Self Poison",
+		Value: 2357,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Somnus Aerternam Poison",
+		Value: 26667,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "The Reaper's Hound Poison",
+		Value: 27023,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Lil' Tommy's Teacup Poison",
+		Value: 25549,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Breath of Bhaal Poison",
+		Value: 28781,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Vecna's Lament Poison",
+		Value: 27093,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Tasha's Final Laughter Poison",
+		Value: 26741,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "INANIMISâ€™ 30 POISONS FOR A POISONERâ€™S KIT"
+	}, {
+		Name: "Ring of Taur'ohtar",
+		Value: 87048,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Ring of the Dawnsinger",
+		Value: 73221,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "The Sun's Blessing",
+		Value: 2343,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Valor's Call",
+		Value: 75094,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Champion of the Just",
+		Value: 89860,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Shatterrain",
+		Value: 69031,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Temptest's Howl",
+		Value: 67585,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Arborea's Favor",
+		Value: 84624,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Shield of Platinum Light",
+		Value: 64175,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Might of Pelor",
+		Value: 71357,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Cloak of Dread",
+		Value: 94129,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Leathers of the Phoenix's Song",
+		Value: 76476,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Fists of the Warrior King",
+		Value: 91844,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Amulet of Energy Absorption",
+		Value: 3553,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Iris",
+		Value: 3272,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Ring of Whispers",
+		Value: 4324,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Blade of Beasts",
+		Value: 2376,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Fatal Touch",
+		Value: 2160,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Broken Skull Hammer",
+		Value: 25636,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Dragonstrike Bow",
+		Value: 28323,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Bands of the Virtuous",
+		Value: 27382,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Shroud Scythe",
+		Value: 81591,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Maverick's Belt",
+		Value: 316,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Old Hat of New Tricks",
+		Value: 314,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Night Glasses",
+		Value: 267,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Windwalk Naginata",
+		Value: 2197,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "Magical Mysteries and Legendary Loot"
+	}, {
+		Name: "Amulet of Solidarity",
+		Value: 27938,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Amulet of Knowledge",
+		Value: 26834,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Amulet of Strength",
+		Value: 27992,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Amulet of Ambition",
+		Value: 27069,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Amulet of Zeal",
+		Value: 26554,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Stone of Emergence",
+		Value: 27781,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Outsider Detector",
+		Value: 27305,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Ring of Substance",
+		Value: 27725,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "McGovern's Items"
+	}, {
+		Name: "Amulet of the Enhanced Mind",
+		Value: 941,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Basha's Amulet",
+		Value: 2662,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Belt of Vigor",
+		Value: 244,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Beserker's Belt",
+		Value: 340,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Bleeder",
+		Value: 28368,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Boots of Bounding",
+		Value: 3398,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Bottle of Secret Spells",
+		Value: 339,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Crowcaller",
+		Value: 27333,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Dust of the Center of the Earth",
+		Value: 2704,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Elixer of Luck",
+		Value: 244,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Fey Bow",
+		Value: 351,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Frost Fist Amulet",
+		Value: 2601,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Genuflection",
+		Value: 27682,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Gloves of Ammunition",
+		Value: 1896,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Guidance",
+		Value: 67582,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Lesser Mask of Giants",
+		Value: 1787,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Medic's Brooch",
+		Value: 258,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Ring of the Maimed Hand",
+		Value: 27597,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Spirit Caller",
+		Value: 27967,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Spirit Shield",
+		Value: 2815,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Chult Treasure"
+	}, {
+		Name: "Ace of Pentacles",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ahelion Disk",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Arctic Pearl",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Atrium Trinket",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Bandit's Gold",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Basaltic Bracer",
+		Value: 56,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Brocade Moth",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Cadium Wand",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Cauldron Bug",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Cindercap",
+		Value: 63,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Cobalt Clam",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Dartrix",
+		Value: 93,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Dragonspice",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Dwelling Pin",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ebb Bottle",
+		Value: 100,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Eelskin",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Erking Charm",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Etherling",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Felwasp Honey",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Fjord Ice",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Flag of Mice",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Garnet Beads",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ghand Tea",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Glamoui",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Hallion Gem",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Herringbone",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Hillstone",
+		Value: 60,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Hopeless Sprout",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Icarian Wax",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ichthy",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Isthmus Oil",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Javian Varnish",
+		Value: 90,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Kettle Ash",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Kinetic Rocks",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Kouros-Min",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Landen Mark",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Lake's Call",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Lordly Dice",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Luckcharm",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Lysander's Eyes",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Malice Drops",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Mandrake Soil",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Marigold Bow",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Memento Diem",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Mutable Journal",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Nessian Circlet",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Never-Page",
+		Value: 62,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Nollian Ink",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Nurgaal's Flask",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Oakstone",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Octarine Lens",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ode String",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Oilifera",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Patterquill",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Plum Sepsis",
+		Value: 63,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ptero Bone",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Python Rope",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quake Dirt",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quartz Nails",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quetzal Plume",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quiver Efores",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Rain Earrings",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Raven Cloth",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ring of Realms",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Rumoric Root",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ryder's Fire",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Sand Urchin",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Scarab Knight",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Seafarer's Tears",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Selkie Comb",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Shard-Pen",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Silver Chalk",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Talisman Sai",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Talus Marbles",
+		Value: 59,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Tarnish Wand",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Terralink",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Thunderstick",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Uggling",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Unden Torch",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ursa Cape",
+		Value: 88,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Useless Rune",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vharen's Bottle",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vrock Eye",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vulture Fork",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Wind Circlet",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Winter's Eyes",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Worn Scarf",
+		Value: 88,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Wyrm's Smile",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Xenon Glow",
+		Value: 53,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Xeric Charm",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Yowling Box",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zaxslate",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zenith Crown",
+		Value: 62,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zodiac Disk",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zorilskin",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vial of Drake Spit",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Dead Slaad-Tadpole",
+		Value: 90,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Petrified Stirge",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Pixie Wings",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Gazer Eye",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Aci Feather",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Aberrant Toy",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Air Jar",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Anchor Charm",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Amote Shell",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Azurite Pendant",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Beetle Grounds",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Blink Ring",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Bodacious Ink",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Bread of Eating",
+		Value: 101,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Candy Bugs",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Carnival Mirror",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Chalice of Sobriety",
+		Value: 63,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Clay Cat",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Decadent Spoon",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Doom Box",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Duck's Cape",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ebon Needle",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Eden's Rose",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Elkhorn Flute",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Exalted Earrings",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Farland Vase",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Fern Wrap",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Fmandir Token",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Gargoyle Seeds",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Glove of Nurgaal",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Grave Pebble",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Havic's Key",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Hazel Wand",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Hells Pennant",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Iados Sand",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ironflower",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ivory Clasp",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Jabbercatch",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Jackal's Disk",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Jarman Circlet",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Jupiter Wine",
+		Value: 62,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Kestrel's Eye",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Kiss of Water",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Knurlstone",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ladon's Quill",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Leaf of Summer",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Lilting Horn",
+		Value: 94,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Lute Inversei",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Manta Mask",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Medusa Locket",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Mimic Eyes",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Mongrel Fang",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Nightwatch",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Noble's Cards",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Notright",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Null-Ale",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Obtune String",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Octave Choker",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Orea Beans",
+		Value: 51,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Patchglobe",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Pathleg",
+		Value: 88,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Phasestone",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Purple Breath",
+		Value: 55,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quasit Bone",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quell Orb",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Quicksand Jar",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Rat-Tail Knot",
+		Value: 60,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Redlock",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Rocktopus Bit",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ruddy Amulet",
+		Value: 48,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Rum of Toxicity",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Russet Shell",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Salve Pyrus",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Scorpion Rook",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Sedimet",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Shale Wand",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Specimen Tube",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Tea Lamp",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Thatchment",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Thistle of Hell",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Thornskin",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Turquoise Drop",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Ukial",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Unknown Goo",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Valiance",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vale Powder",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Veld's Ash",
+		Value: 59,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Vorpal Utencil",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Water Jar",
+		Value: 88,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Waking Bolt",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Welding Fork",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "West Arrow",
+		Value: 58,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Worm Can",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Wyrm Ale",
+		Value: 62,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Xander's Dust",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "X-Mark",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Yarn of Fate",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Yearspinner",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Youth's Vine",
+		Value: 91,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zafflr Rust",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zalt Salt",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zephyr Fan",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zircon Bead",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Zombie Plant",
+		Value: 49,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items"
+	}, {
+		Name: "Amulet of Alms",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Archer's Assistant",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ax of Armistice",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Babbley Fish",
+		Value: 93,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Banana Phone",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Bangle of Soothing Winds",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Beholderâ€™s Amulet",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Belt of BiteBack",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Bigger Knife",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Bolts of Seeking",
+		Value: 87,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Boogie Boots",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Bottomless Mug",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Bow of Base",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Cape of Chlorophyll",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Chalk of Doors",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Champions Chessboard",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Clickity Clunker",
+		Value: 91,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Cloak of Grace",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Coin of Certainty",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Coldforge",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Conch of Gnome",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Creatureâ€™s Crossbow",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Cursed Crystal Cantos",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Dagger of Whittling",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Daymanâ€™s medallion",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Deck of Solitary",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Dr Widdershinâ€™s Discount Healing potions",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Dr Widdershinâ€™s Fantastic Battletrowsers",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Dr Widdershinâ€™s Invisibility Ingress Potions",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Drunkardâ€™s Hat",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Dyson of dead sun",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ever-Cold Chalice",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Flint & Steel",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Food Stamps",
+		Value: 76,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Forceful Hand",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Fork of Lies",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Frying Pan of Fire",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Geomancerâ€™s Glyph",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Heavenly headpiece",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Hunter Fishhook",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ice Chest",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Image Globe",
+		Value: 104,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Instant Incense",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Jar of Gaseous Gust",
+		Value: 99,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Kaleidoscope of Dreams",
+		Value: 55,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Knuckles of Knock",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Lash of Time",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Laughing Lock",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Lazy Boomerang",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Luggage",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Magnifier of Mayhem",
+		Value: 95,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Menace of Marbles",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mimic Mimic",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mirror of Morality",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mirror of Positive Reinforcement",
+		Value: 56,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mouth of minty",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mutual Annihilation",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mystic Magnet",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Mystic Mouse",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Nightmanâ€™s locket",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Orange Crate",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Orator's Scribe",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Orb of Advice",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Orb of crack detection",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Paper of Message",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Percussion of Movement",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Perfect Catch Fishing Lure",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Perfume Atraction FÃ©line",
+		Value: 94,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Pipe of Peculiar",
+		Value: 77,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Pointy Prestidigitation Relic",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Pot of Pleasantness",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Power",
+		Value: 83,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Pyramid Plan",
+		Value: 57,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Pyromaniacâ€™s Peppers",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Quartz of Procrastination",
+		Value: 89,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Rake of Terror",
+		Value: 66,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ring of Fire",
+		Value: 78,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ring of Roundup",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ring of Tracking",
+		Value: 65,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Robe of Randomness",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Rock of Healing",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Rock of Uncertainty",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Roosterâ€™s Ruin",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Scarlet Salmon",
+		Value: 71,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Screaming sword",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Self-Erasing Ink/Pen",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Shepherd's Staff",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Shield of sorrow",
+		Value: 58,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Shielding of Stoneskin",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Shoes of serpents",
+		Value: 80,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Shovel of Jumping",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Sir Stuffed",
+		Value: 79,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Six String Stronginthearm",
+		Value: 92,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Smugglers shoes",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Sonic Soother",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Spellslingerâ€™s Staff",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Staff of Detect Magic",
+		Value: 82,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Staff of Serendipity",
+		Value: 64,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Staff of Weather Prediction",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Stone of Skipping",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Sun Candles",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Theft Deterring Bag",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Tome of PseudoMagic",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Tome of Summon Cat",
+		Value: 63,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Tool of Truth",
+		Value: 67,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Trace Paper",
+		Value: 74,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Trampish Bag Of Dreams",
+		Value: 68,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Vampire's Vanity",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Violet Vexillum Mask",
+		Value: 97,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Walking Stick",
+		Value: 61,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Wand of tomato slinging",
+		Value: 86,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Weapon of Eternal Forge",
+		Value: 81,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Weapon of mercy",
+		Value: 69,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Wheedish Whef What",
+		Value: 84,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Witchy Wonder",
+		Value: 85,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Ze Phoenix Feather Blade",
+		Value: 73,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Zirconâ€™s Homemade peanut brittle",
+		Value: 70,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Zirconâ€™s Relic of Fire Fiendishness",
+		Value: 75,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "Common Magical Items Reddit"
+	}, {
+		Name: "Catskin Leather Armor",
+		Value: 4118,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Garb of the Golden Dawn",
+		Value: 73393,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "More Treasure"
+	}, {
+		Name: "Moon Bracers",
+		Value: 27021,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Shield of Valor",
+		Value: 3689,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Blade of the Sword Saint",
+		Value: 79370,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Legendary",
+		Source: "More Treasure"
+	}, {
+		Name: "Grayflame Longsword",
+		Value: 27610,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Rod of Ruin",
+		Value: 2957,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Ancient Brooch of Shielding",
+		Value: 261,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Belt of Stoneskin",
+		Value: 3026,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Belt of the Plague Rat",
+		Value: 346,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Boots of Escape",
+		Value: 293,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Campfire Bead",
+		Value: 446,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Dragonbone Divination Sticks",
+		Value: 345,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Ioun Stone (Grey Stone)",
+		Value: 292,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Grim Lantern",
+		Value: 3474,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Helm of the Freed Mind",
+		Value: 28699,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Very Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Ioun Torch",
+		Value: 72,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Common",
+		Source: "More Treasure"
+	}, {
+		Name: "Jade Monkey",
+		Value: 3152,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Maryr's Tear",
+		Value: 292,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Quickchange Cloak",
+		Value: 446,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Restful Bedroll",
+		Value: 3466,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Ring of Heroes",
+		Value: 2469,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Ring of Hero's Luck",
+		Value: 175,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Ring of Life",
+		Value: 268,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Ring of Swarming Stabs",
+		Value: 343,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Shining Wayfarer",
+		Value: 3223,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Silverhelm of the Guardian",
+		Value: 3238,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Singing Bell of Striking",
+		Value: 2861,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Solidsmoke Pipe",
+		Value: 219,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Stone of Alarm",
+		Value: 320,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Swift Boots",
+		Value: 223,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Token of Luck",
+		Value: 1920,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Rare",
+		Source: "More Treasure"
+	}, {
+		Name: "Treeform Cloak",
+		Value: 229,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}, {
+		Name: "Whispering Coin",
+		Value: 290,
+		Quantity: "1",
+		Type: "Magical",
+		Rarity: "Uncommon",
+		Source: "More Treasure"
+	}];

@@ -5719,33 +5719,63 @@ var GetTreasureHoard = function(cr) {
 	var i;
 	var item;
 	var totalValue = 0;
-	for (i=0; i<(Roll(2,12)+Roll(2,8))/4-3; i++) {
-		item = chooseRandomItem("Mundane");
+	// for (i=0; i<(Roll(2,12)+Roll(2,8))/4-3; i++) {
+	// 	item = chooseRandomItem("Mundane");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	// for (i=0; i<(Roll(4,12)+Roll(4,8))/8-Math.floor(Math.max(5-cr/5,3)); i++) {
+	// 	item = chooseRandomItem("Common");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	// for (i=0; i<(Roll(4,12)+Roll(4,8))/8-Math.max(Math.floor(6-cr/5),3); i++) {
+	// 	item = chooseRandomItem("Uncommon");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	// for (i=0; i<(Roll(6,12)+Roll(6,8))/10-Roll(4,6)+Math.floor(cr/2.5); i++) {
+	// 	item = chooseRandomItem("Rare");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	// for (i=0; i<(Roll(6,12)+Roll(6,8))/Roll(3,8)-17+Math.floor(cr/2); i++) {
+	// 	item = chooseRandomItem("Very Rare");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	// for (i=0; i<(Roll(8,12)+Roll(8,8))/Roll(3,8)-22+Math.floor((cr/2)); i++) {
+	// 	item = chooseRandomItem("Legendary");
+	// 	totalValue += GetValue(item);
+	// 	items.push(formatItem(item));
+	// }
+	var common_prob = GetLevelProbabilityValue(cr, 30, 5, .5);
+	while (Math.random() < common_prob) {
+		item = chooseRandomItem("Common", "Magical");
 		totalValue += GetValue(item);
 		items.push(formatItem(item));
 	}
-	for (i=0; i<(Roll(4,12)+Roll(4,8))/8-Math.floor(Math.max(5-cr/5,3)); i++) {
-		item = chooseRandomItem("Common");
+	var uncommon_prob = GetLevelProbabilityValue(cr, 30, 9, .45);
+	while (Math.random() < uncommon_prob) {
+		item = chooseRandomItem("Uncommon", "Magical");
 		totalValue += GetValue(item);
 		items.push(formatItem(item));
 	}
-	for (i=0; i<(Roll(4,12)+Roll(4,8))/8-Math.max(Math.floor(6-cr/5),3); i++) {
-		item = chooseRandomItem("Uncommon");
+	var rare_prob = GetLevelProbabilityValue(cr, 30, 13, .4);
+	while (Math.random() < rare_prob) {
+		item = chooseRandomItem("Rare", "Magical");
 		totalValue += GetValue(item);
 		items.push(formatItem(item));
 	}
-	for (i=0; i<(Roll(6,12)+Roll(6,8))/10-Roll(4,6)+Math.floor(cr/2.5); i++) {
-		item = chooseRandomItem("Rare");
+	var veryrare_prob = GetLevelProbabilityValue(cr, 30, 17, .35);
+	while (Math.random() < veryrare_prob) {
+		item = chooseRandomItem("Very Rare", "Magical");
 		totalValue += GetValue(item);
 		items.push(formatItem(item));
 	}
-	for (i=0; i<(Roll(6,12)+Roll(6,8))/Roll(3,8)-17+Math.floor(cr/2); i++) {
-		item = chooseRandomItem("Very Rare");
-		totalValue += GetValue(item);
-		items.push(formatItem(item));
-	}
-	for (i=0; i<(Roll(8,12)+Roll(8,8))/Roll(3,8)-22+Math.floor((cr/2)); i++) {
-		item = chooseRandomItem("Legendary");
+	var legendary_prob = GetLevelProbabilityValue(cr, 30, 20, .3);
+	while (Math.random() < legendary_prob) {
+		item = chooseRandomItem("Legendary", "Magical");
 		totalValue += GetValue(item);
 		items.push(formatItem(item));
 	}
@@ -5779,72 +5809,33 @@ var GetTreasureHoard = function(cr) {
 		gp += Roll(12,6)*1000;
 		pp += Roll(8,6)*1000;
 	}
+	cp = Math.floor(cp * (Math.random()*0.9+0.2));
+	sp = Math.floor(sp * (Math.random()*0.9+0.2));
+	ep = Math.floor(ep * (Math.random()*0.9+0.2));
+	gp = Math.floor(gp * (Math.random()*0.9+0.2));
+	pp = Math.floor(pp * (Math.random()*0.9+0.2));
 	totalValue += cp/100 + sp/10 + ep/2 + gp + pp*10;
 	goalValue = 100*Math.pow(cr+1, 2.3) * ((Math.random()*0.5)+0.6);
 	goalValue = Math.round(goalValue*100)/100;
+	console.log(goalValue);
 	goalValue -= totalValue;
 	while (goalValue > 0) {
-		var rand = Math.random();
-		if (goalValue > 10) {
-			if (rand > 0.5) {
-				pp++;
-				goalValue -= 10;
-				totalValue += 10;
-			} else if (rand > 0.75) {
-				gp++;
-				goalValue -= 1;
-				totalValue += 1;
-			} else if (rand > 0.87) {
-				ep++;
-				goalValue -= 0.5;
-				totalValue += 0.5;
-			} else if (rand > 0.96) {
-				sp++;
-				goalValue -= 0.1;
-				totalValue += 0.1;
-			} else {
-				cp++;
-				goalValue -= 0.01;
-				totalValue += 0.01;
-			}
-		} else if (goalValue > 1) {
-			if (rand > 0.6) {
-				gp++;
-				goalValue -= 1;
-				totalValue += 1;
-			} else if (rand > 0.77) {
-				ep++;
-				goalValue -= 0.5;
-				totalValue += 0.5;
-			} else if (rand > 0.93) {
-				sp++;
-				goalValue -= 0.1;
-				totalValue += 0.1;
-			} else {
-				cp++;
-				goalValue -= 0.01;
-				totalValue += 0.01;
-			}
-		} else if (goalValue > 0.1) {
-			if (goalValue > 0.5 && rand < 0.4) {
-				ep++;
-				goalValue -= .5;
-				totalValue += .5;
-			} else {
-				if (rand < 0.5) {
-					sp++;
-					goalValue -= 0.1;
-					totalValue += 0.1;
-				} else {
-					cp++;
-					goalValue -= 0.01;
-					totalValue += 0.01;
-				}
-			}
+		var rand = Roll(1,80) + cr;
+		if (rand >= 80) {
+			item = chooseRandomItem("Rare", "Mundane");
+			totalValue += GetValue(item);
+			goalValue -= GetValue(item);
+			items.push(formatItem(item));
+		} else if (rand >= 50) {
+			item = chooseRandomItem("Uncommon", "Mundane");
+			totalValue += GetValue(item);
+			goalValue -= GetValue(item);
+			items.push(formatItem(item));
 		} else {
-			cp++;
-			goalValue -= 0.01;
-			totalValue += 0.01;
+			item = chooseRandomItem("Common", "Mundane");
+			totalValue += GetValue(item);
+			goalValue -= GetValue(item);
+			items.push(formatItem(item));
 		}
 	}
 	var ret = "Total Value: " + Math.round(totalValue*100)/100 + " gp<ul><li>";
@@ -5878,64 +5869,45 @@ var GetTreasureHoard = function(cr) {
 	return ret + "</li><li>" + items.join("</li><li>") + "</li></ul>";
 };
 
-var chooseRandomItem = function(rarity) {
-	var item = randomChoice(items[rarity]);
+var chooseRandomItem = function(rarity, type) {
+	var item = randomChoice(Items.filter(item => (item.Type === type && (rarity === "" || item.Rarity === rarity))));
+	if (item.Quantity === "1") {
+		return item;
+	}
+	var re = /([0-9]+)d([0-9]+)( ?(\+|-)([0-9]+))?/
+	var matches = re.exec(item.Quantity);
+	console.log(matches);
+	var quantity = Roll(parseInt(matches[1]), parseInt(matches[2]));
+	if (matches[4]) {
+		quantity += (matches[4] === "-" ? -matches[5] : matches[5]);
+	}
+	item.Value *= quantity;
+	item.Name = quantity + " " + item.Name;
 	return item;
+};
+
+var GetLevelProbabilityValue = function(cr, max_cr, peak_cr, peak_prob) {
+	var pdf = 0;
+	if (cr <= peak_cr) {
+		pdf = (2 * ((cr / (max_cr + 1)) - 0)) / ((1 - 0) * ((peak_cr / (max_cr + 1)) - 0));
+	} else {
+		pdf = (2 * (1 - (cr / (max_cr + 1))) / ((1 - 0) * (1 - (peak_cr / (max_cr + 1)))))
+	}
+	return pdf * (peak_prob / 2);
 };
 
 var formatItem = function(item) {
 	var s = "";
 	s += "<b>" + item.Name + ".</b>";
-	if (item.Description && item.Description !== "" && item.Description.toLowerCase() !== 'n/a') {
-		s += " " + item.Description;
-	}
-	if (item.Rarity && item.Rarity !== "" && item.Rarity.toLowerCase() !== 'n/a') {
-		s += "</br><i>Rarity: </i>" + item.Rarity;
-	}
-	if (item["Est. Value"] && item["Est. Value"] !== "" && item["Est. Value"].toLowerCase() !== 'n/a') {
-		s += "</br><i>Estimated Value: </i>" + item["Est. Value"];
-	}
-	if (item.Weight && item.Weight !== "" && item.Weight.toLowerCase() !== 'n/a') {
-		s += "</br><i>Weight: </i>" + item.Weight;
-	}
-	if (item.Properties && item.Properties !== "" && item.Properties.toLowerCase() !== 'n/a') {
-		s += "</br><i>Properties: </i>" + item.Properties;
-	}
-	if (item.Requirements && item.Requirements !== "" && item.Requirements.toLowerCase() !== 'n/a') {
-		s += "</br><i>Requirements: </i>" + item.Requirements;
-	}
+	s += "</br><i>" + item.Type + "</i>";
+	s += "</br><i>Source: </i>" + item.Source;
+	s += "</br><i>Rarity: </i>" + item.Rarity;
+	s += "</br><i>Value: </i>" + item["Value"];
 	return s;
 };
 
 var GetValue = function(item) {
-	var value = 0;
-	v = item["Est. Value"];
-	if (v) {
-		var re = /([0-9\.]+)/;
-		value = parseFloat(re.exec(v.replace(",",""))[0]);
-	} else {
-		switch (item.Rarity) {
-		case "Mundane":
-			value = Roll(1,50);
-			break;
-		case "Common":
-			value = Roll(1, 150);
-			break;
-		case "Uncommon":
-			value = Roll(1, 400) + 100;
-			break;
-		case "Rare":
-			value = Roll(1, 4500) + 500;
-			break;
-		case "Very Rare":
-			value = Roll(1, 45000) + 5000;
-			break;
-		case "Legendary":
-			value = Roll(1, 50000) + 50000;
-			break;
-		}
-	}
-	return value;
+	return item.Value;
 };
 
 var ArmorForTableI = function(n=1) {
@@ -6182,13 +6154,13 @@ var HoardTreasureImpossibleCR = function(n=1) {
 		if (rand <= 2) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art7500gp((Roll(1,4)*1)) + '</li><li>' + MagicItemTableH((Roll(1,4)*1)));
 		} else if (rand <= 7) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableE((Roll(1,6)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableE((Roll(1,6)*1)));
 		} else if (rand <= 15) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art7500gp((Roll(1,4)*1)) + '</li><li>' + MagicItemTableD((Roll(1,6)*1)));
 		} else if (rand <= 23) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems1000gp((Roll(3,6)*1)) + '</li><li>' + MagicItemTableD((Roll(1,6)*1)));
 		} else if (rand <= 28) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableI((Roll(1,3)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableI((Roll(1,3)*1)));
 		} else if (rand <= 33) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art7500gp((Roll(1,4)*1)) + '</li><li>' + MagicItemTableI((Roll(1,3)*1)));
 		} else if (rand <= 34) {
@@ -6196,7 +6168,7 @@ var HoardTreasureImpossibleCR = function(n=1) {
 		} else if (rand <= 42) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art2500gp((Roll(1,10)*1)) + '</li><li>' + MagicItemTableD((Roll(1,6)*1)));
 		} else if (rand <= 54) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableH((Roll(1,4)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableH((Roll(1,4)*1)));
 		} else if (rand <= 60) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art2500gp((Roll(1,10)*1)) + '</li><li>' + MagicItemTableE((Roll(1,6)*1)));
 		} else if (rand <= 65) {
@@ -6208,9 +6180,9 @@ var HoardTreasureImpossibleCR = function(n=1) {
 		} else if (rand <= 72) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art2500gp((Roll(1,10)*1)) + '</li><li>' + MagicItemTableH((Roll(1,4)*1)));
 		} else if (rand <= 80) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableD((Roll(1,6)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableD((Roll(1,6)*1)));
 		} else if (rand <= 83) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableC((Roll(1,8)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableC((Roll(1,8)*1)));
 		} else if (rand <= 84) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Art7500gp((Roll(1,4)*1)) + '</li><li>' + MagicItemTableG((Roll(1,4)*1)));
 		} else if (rand <= 85) {
@@ -6224,7 +6196,7 @@ var HoardTreasureImpossibleCR = function(n=1) {
 		} else if (rand <= 101) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems1000gp((Roll(3,6)*1)) + '</li><li>' + MagicItemTableI((Roll(1,3)*1)));
 		} else if (rand <= 102) {
-			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gpgp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableG((Roll(1,4)*1)));
+			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems5000gp((Roll(1,8)*1)) + '</li><li>' + MagicItemTableG((Roll(1,4)*1)));
 		} else if (rand <= 104) {
 			items.push((Roll(12,6)*1000) + ' gp</li><li>' + (Roll(8,6)*1000) + ' pp</li><li>' + Gems1000gp((Roll(3,6)*1)) + '</li><li>' + MagicItemTableH((Roll(1,4)*1)));
 		} else {
