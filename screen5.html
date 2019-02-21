@@ -22,6 +22,7 @@
     <script src="data/skill_map.js"></script>
     <script src="data/skills.js"></script>
     <script src="data/tools.js"></script>
+    <script src="data/herbs.js"></script>
     <script src="random.js"></script>
     <script src="utilities.js"></script>
     <script src="npcs.js"></script>
@@ -29,6 +30,7 @@
     <script src="encounters.js"></script>
     <script src="shops.js"></script>
     <script src="weather.js"></script>
+    <script src="forage.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -417,6 +419,40 @@
         </div>
         </md-tab-body>
         </md-tab>
+        <md-tab>
+        <md-tab-label><span class="fas fa-leaf"></span></md-tab-label>
+        <md-tab-body>
+        <div class="panel no-outline">
+            <h1>Forage Generator</h1>
+            <div>
+                <p style="margin-bottom: 0;">Forage for...</p>
+                <md-radio-group ng-model="forageType">
+                    <md-radio-button value="Food">Food</md-radio-button>
+                    <md-radio-button value="Water">Water</md-radio-button>
+                    <md-radio-button value="Herbs">Herbs</md-radio-button>
+                </md-radio-group>
+                <md-input-container>
+                    <label>Terrain</label>
+                    <md-select ng-model="forageTerrain">
+                        <md-option ng-value="t" ng-repeat="t in forageTerrains">{{t}}</md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container>
+                    <label>Check Value</label>
+                    <input ng-model="forageCheckValue" type="number" min="-100" max="100" step="1">
+                </md-input-container>
+                <md-input-container>
+                    <label>Modifier (Wisdom, etc.)</label>
+                    <input ng-model="forageModifier" type="number" min="-100" max="100" step="1">
+                </md-input-container>
+                <md-input-container>
+                    <md-button ng-click="GetForage(forageType, forageTerrain, forageCheckValue, forageModifier)">Get Forage</md-button>
+                </md-input-container>
+            </div>
+            <div id="forage"></div>
+        </div>
+        </md-tab-body>
+        </md-tab>
         </md-tabs>
         </div>
         </md-grid-tile>
@@ -492,6 +528,13 @@ app.controller('appCtrl', function($scope) {
     $scope.prejudices = [];
     $scope.isUrban = false;
 
+    $scope.forageTerrains = GetForageTerrains();
+
+    $scope.forageType = "Food";
+    $scope.forageTerrain = $scope.forageTerrains[0];
+    $scope.forageCheckValue = 0;
+    $scope.forageModifier = 0;
+
     $scope.calculateCharaters = function() {
         $scope.characters.forEach(function(character) {
             calculateCharacter(character.Name, character);
@@ -535,8 +578,11 @@ app.controller('appCtrl', function($scope) {
 
     $scope.GetNPC = function(regionHappiness, prejudices, isUrban) {
         $scope.npc = GetNPC(regionHappiness, prejudices, isUrban);
-        console.log($scope.npc);
         document.getElementById("npc").innerHTML = $scope.npc.Description;
+    };
+
+    $scope.GetForage = function(forageType, forageTerrain, forageCheckValue, forageModifier) {
+        document.getElementById("forage").innerHTML = GetForage(forageType, forageTerrain, forageCheckValue, forageModifier);
     };
 });
 
