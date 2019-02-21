@@ -7,11 +7,42 @@ This project still has a lot of work to go, especially in code clean-up and tran
 ## How to Use
 
 Open whichever screen you would like:
-* [Screen1](https://jakekausler.github.io/DnDGenerators/screen1.html)
-* [Screen2](https://jakekausler.github.io/DnDGenerators/screen2.html)
-* [Screen3](https://jakekausler.github.io/DnDGenerators/screen3.html)
-* [Screen4](https://jakekausler.github.io/DnDGenerators/screen4.html)
-* [Screen5](https://jakekausler.github.io/DnDGenerators/screen5.html)
+* [Screen 1](https://jakekausler.github.io/DnDGenerators/screen1.html)
+  * Chase
+  * Character Advancement
+  * CR Details
+  * Obsured Areas
+  * Surprise
+  * Falling and Squeezing
+  * Lights
+  * Donning/Duffing Armor
+  * DCs
+  * Cover
+* [Screen 2](https://jakekausler.github.io/DnDGenerators/screen2.html)
+  * Conditions
+  * Actions
+  * Strength
+  * Intelligence
+* [Screen 3](https://jakekausler.github.io/DnDGenerators/screen3.html)
+  * Dexterity
+  * Constitution
+  * Wisdom
+  * Charisma
+* [Screen 4](https://jakekausler.github.io/DnDGenerators/screen4.html)
+  * Travel Activities
+  * Food and Water
+  * Tracking
+  * Exhaustion
+  * Rest
+  * Travel Rate
+  * Damage and Dying
+  * Damaging Objects
+  * Getting Lost
+* [Screen 5](https://jakekausler.github.io/DnDGenerators/screen5.html)
+  * Dangers
+  * Merchant Types
+  * Region Types
+  * Generators
 
 ## Resources Used
 
