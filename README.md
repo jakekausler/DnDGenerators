@@ -6,7 +6,12 @@ This project still has a lot of work to go, especially in code clean-up and tran
 
 ## How to Use
 
-Go to the [GitHub IO](https://jakekausler.github.io/DnDGenerators/index.html)
+Open whichever screen you would like:
+* [Screen1](https://jakekausler.github.io/DnDGenerators/screen1.html)
+* [Screen2](https://jakekausler.github.io/DnDGenerators/screen2.html)
+* [Screen3](https://jakekausler.github.io/DnDGenerators/screen3.html)
+* [Screen4](https://jakekausler.github.io/DnDGenerators/screen4.html)
+* [Screen5](https://jakekausler.github.io/DnDGenerators/screen5.html)
 
 ## Resources Used
 
